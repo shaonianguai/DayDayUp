@@ -3,9 +3,11 @@
   <ItemGroup>
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SingletionSample.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SingletionSample.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
 </Project>
