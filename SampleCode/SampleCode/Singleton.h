@@ -35,3 +35,27 @@ std::mutex singleton<T>::m_bmutex;
 
 template <class T>
 T* singleton<T>::m_instance = NULL;
+
+
+
+//  Singleton& instance_1 = Singleton::getInstance();
+//class Singleton
+//{
+//public:
+//    ~Singleton() {
+//        std::cout << "destructor called!" << std::endl;
+//    }
+//
+//    Singleton(const Singleton&) = delete;
+//    Singleton& operator=(const Singleton&) = delete;
+//
+//    static Singleton& getInstance() {
+//        static Singleton instance;
+//        return instance;
+//    }
+//
+//private:
+//    Singleton() {
+//        std::cout << "constructor called!" << std::endl;
+//    }
+//};
