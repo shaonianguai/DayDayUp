@@ -99,7 +99,7 @@ inline void fill_string(char* str, size_t size, size_t offset)
 {
     if (offset < size)
     {
-        memset(str + offset, 0, (size - offset) * sizeof(char));
+        Util::my_memeset(str + offset, 0, (size - offset) * sizeof(char));
     }
 }
 
@@ -131,7 +131,48 @@ int Util::my_strcpy_s(char* strDest, size_t size, const char* strSrc)
         return -1; // error range
     }
 
-    fill_string(strDest, size, size - available + 1);
+    fill_string(strDest, size, size - available);
 
     return 0;
+}
+
+void* Util::my_memeset(void* dest, int val, size_t len)
+{
+    unsigned char* ptr = (unsigned char*)dest;
+    while (len-- > 0)
+    {
+        *ptr = val;
+        ptr++;
+    }
+
+    return dest;
+}
+
+
+int Util::my_memcmp(const void* str1, const void* str2, size_t count)
+{
+    const unsigned char* s1 = (const unsigned char*)str1;
+    const unsigned char* s2 = (const unsigned char*)str2;
+    while (count-- > 0)
+    {
+        if (*s1++ != *s2++)
+        {
+            s1--;
+            s2--;
+            return *s1 < *s2 ? -1 : 1;
+        }
+    }
+    return 0;
+}
+
+char* Util::my_strstr(const char* s1, const char* s2)
+{
+    const size_t len = strlen(s2);
+    while (*s1)
+    {
+        if (!memcmp(s1, s2, len))
+            return (char*)s1;
+        ++s1;
+    }
+    return (0);
 }
