@@ -1,6 +1,7 @@
 #include <iostream>
 #include "SingletionSample.h"
 #include "Utils.h"
+#include "BlockingCollection.h"
 
 struct S
 {

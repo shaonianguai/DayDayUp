@@ -4,6 +4,7 @@
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SingletionSample.h" />
     <ClInclude Include="Utils.h" />
+    <ClInclude Include="BlockingCollection.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SingletionSample.cpp" />
