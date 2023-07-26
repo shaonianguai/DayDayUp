@@ -16,6 +16,7 @@
 #ifndef BlockingCollection_h
 #define BlockingCollection_h
 
+#include <Windows.h>
 #include <unordered_set>
 #include <condition_variable>
 #include <type_traits>

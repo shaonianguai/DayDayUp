@@ -1,3 +1,4 @@
+#include <Windows.h>
 #include <iostream>
 #include "SingletionSample.h"
 #include "Utils.h"
@@ -8,6 +9,26 @@ struct S
     char name[10];
     int age;
 };
+
+class aaa
+{
+public:
+    aaa()
+    {
+        asd = 0;
+        qwe = 0;
+        int b = 1;
+    }
+    ~aaa()
+    {
+        int c = 1;
+    }
+private:
+    int asd;
+    int qwe;
+};
+
+static aaa wo;
 
 int main()
 {
@@ -29,6 +50,9 @@ int main()
     const char* source = "123456789";
     char dest[20];
     Util::my_strcpy_s(dest, sizeof(dest), source);
+
+
+
 
     return 0;
 }
