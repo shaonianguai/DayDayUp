@@ -58,6 +58,9 @@ int main()
 }
 
 
+// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
 //【输入】I am @!#$software1234engineer1234
 
 //【输出】engineer software am I
@@ -69,79 +72,60 @@ int main()
 //{
 //    std::string ret;
 //    std::string tmp;
+//    std::string tmpSource;
 //
 //    for (int i = 0; i < source.length(); i++)
 //    {
-//        if (!(source[i] >= 'a' && source[i] <= 'z' || source[i] >= 'A' && source[i] <= 'Z'))
+//        if (source[i] >= 'a' && source[i] <= 'z' || source[i] >= 'A' && source[i] <= 'Z')
 //        {
-//            source[i] = ' ';
+//            tmpSource += source[i];
 //        }
-//    }
-//
-//    reverse(source.begin(), source.end());
-//
-//    for (int i = 0; i < source.length(); i++)
-//    {
-//        if (ret.empty())
+//        else
 //        {
-//            if (source[i] >= 'a' && source[i] <= 'z' || source[i] >= 'A' && source[i] <= 'Z')
+//            if (tmpSource.empty())
 //            {
-//                tmp += source[i];
+//                continue;
 //            }
 //            else
 //            {
-//                if (tmp.empty())
+//                if (tmpSource[tmpSource.length() - 1] == ' ')
 //                {
 //                    continue;
 //                }
 //                else
 //                {
-//                    reverse(tmp.begin(), tmp.end());
-//                    ret += tmp;
-//                    tmp.clear();
-//                }
-//            }
-//        }
-//        else
-//        {
-//            if (source[i] >= 'a' && source[i] <= 'z' || source[i] >= 'A' && source[i] <= 'Z')
-//            {
-//                tmp += source[i];
-//
-//                if (i == source.length() - 1)
-//                {
-//                    reverse(tmp.begin(), tmp.end());
-//                    ret += tmp;
-//                    tmp.clear();
-//                }
-//            }
-//            else
-//            {
-//                if (tmp.empty())
-//                {
-//                    if (ret[ret.length() - 1] == ' ')
-//                    {
-//                        continue;
-//                    }
-//                    else
-//                    {
-//                        ret += ' ';
-//                    }
-//                }
-//                else
-//                {
-//                    reverse(tmp.begin(), tmp.end());
-//                    ret += tmp;
-//                    tmp.clear();
-//
-//                    ret += ' ';
+//                    tmpSource += ' ';
 //                }
 //            }
 //        }
 //    }
 //
-//    if (ret[ret.length() - 1] == ' ')
-//        ret.erase(ret.length() - 1);
+//    if (tmpSource[tmpSource.length() - 1] == ' ')
+//    {
+//        tmpSource.erase(tmpSource.length() - 1);
+//    }
+//
+//    reverse(tmpSource.begin(), tmpSource.end());
+//
+//    for (int i = 0; i < tmpSource.length(); i++)
+//    {
+//        if (tmpSource[i] >= 'a' && tmpSource[i] <= 'z' || tmpSource[i] >= 'A' && tmpSource[i] <= 'Z')
+//        {
+//            tmp += tmpSource[i];
+//            if (i == tmpSource.length() - 1)
+//            {
+//                reverse(tmp.begin(), tmp.end());
+//                ret += tmp;
+//            }
+//        }
+//        else
+//        {
+//            reverse(tmp.begin(), tmp.end());
+//            ret += tmp;
+//            ret += ' ';
+//            tmp.clear();
+//        }
+//    }
 //
 //    return ret;
 //}
@@ -152,3 +136,4 @@ int main()
 //    std::string ret = Slove(input);
 //    std::cout << ret;
 //}
+
