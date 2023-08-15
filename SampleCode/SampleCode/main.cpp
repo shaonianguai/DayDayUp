@@ -1,4 +1,4 @@
-#include <Windows.h>
+﻿#include <Windows.h>
 #include <iostream>
 #include "SingletionSample.h"
 #include "Utils.h"
@@ -56,3 +56,99 @@ int main()
 
     return 0;
 }
+
+
+//【输入】I am @!#$software1234engineer1234
+
+//【输出】engineer software am I
+
+//#include <iostream>
+//#include <string>
+//
+//std::string Slove(std::string source)
+//{
+//    std::string ret;
+//    std::string tmp;
+//
+//    for (int i = 0; i < source.length(); i++)
+//    {
+//        if (!(source[i] >= 'a' && source[i] <= 'z' || source[i] >= 'A' && source[i] <= 'Z'))
+//        {
+//            source[i] = ' ';
+//        }
+//    }
+//
+//    reverse(source.begin(), source.end());
+//
+//    for (int i = 0; i < source.length(); i++)
+//    {
+//        if (ret.empty())
+//        {
+//            if (source[i] >= 'a' && source[i] <= 'z' || source[i] >= 'A' && source[i] <= 'Z')
+//            {
+//                tmp += source[i];
+//            }
+//            else
+//            {
+//                if (tmp.empty())
+//                {
+//                    continue;
+//                }
+//                else
+//                {
+//                    reverse(tmp.begin(), tmp.end());
+//                    ret += tmp;
+//                    tmp.clear();
+//                }
+//            }
+//        }
+//        else
+//        {
+//            if (source[i] >= 'a' && source[i] <= 'z' || source[i] >= 'A' && source[i] <= 'Z')
+//            {
+//                tmp += source[i];
+//
+//                if (i == source.length() - 1)
+//                {
+//                    reverse(tmp.begin(), tmp.end());
+//                    ret += tmp;
+//                    tmp.clear();
+//                }
+//            }
+//            else
+//            {
+//                if (tmp.empty())
+//                {
+//                    if (ret[ret.length() - 1] == ' ')
+//                    {
+//                        continue;
+//                    }
+//                    else
+//                    {
+//                        ret += ' ';
+//                    }
+//                }
+//                else
+//                {
+//                    reverse(tmp.begin(), tmp.end());
+//                    ret += tmp;
+//                    tmp.clear();
+//
+//                    ret += ' ';
+//                }
+//            }
+//        }
+//    }
+//
+//    if (ret[ret.length() - 1] == ' ')
+//        ret.erase(ret.length() - 1);
+//
+//    return ret;
+//}
+//
+//int main()
+//{
+//    std::string input("   I am @!#$software1234engineer1234");
+//    std::string ret = Slove(input);
+//    std::cout << ret;
+//}
