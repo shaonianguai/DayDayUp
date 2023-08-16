@@ -16,7 +16,6 @@ namespace MySpace {
         {
             if (m_ptr != nullptr)
             {
-                std::cout << "smart point delete" << std::endl;
                 delete m_ptr;
                 m_ptr = nullptr;
             }

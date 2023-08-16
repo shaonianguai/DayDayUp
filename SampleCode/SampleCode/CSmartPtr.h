@@ -1,4 +1,31 @@
 ﻿#pragma once
+
+//对资源进行引用计数的类
+template<class T>
+class CRefCount
+{
+public:
+    CRefCount(T* ptr = nullptr) :m_ptr(ptr)
+    {
+        if (m_ptr != nullptr)
+            m_refCount++;
+    }
+
+    void AddReff()
+    {
+        m_refCount++;//增加资源的引用计数
+    }
+
+    int DelRef()
+    {
+        return m_refCount--;//减少资源的引用计数
+    }
+
+private:
+    T* m_ptr;
+    int m_refCount;
+};
+
 template<class T>
 class CSmartClass
 {
@@ -55,30 +82,4 @@ public:
 private:
     T* m_ptr;//指向管理内存资源的指针
     CRefCount<T>* m_RefCount;
-};
-
-//对资源进行引用计数的类
-template<class T>
-class CRefCount
-{
-public:
-    CRefCount(T* ptr = nullptr) :m_ptr(ptr)
-    {
-        if (m_ptr != nullptr)
-            m_refCount++;
-    }
-
-    void AddReff()
-    {
-        m_refCount++;//增加资源的引用计数
-    }
-
-    int DelRef()
-    {
-        return m_refCount--;//减少资源的引用计数
-    }
-
-private:
-    T* m_ptr;
-    int m_refCount;
 };

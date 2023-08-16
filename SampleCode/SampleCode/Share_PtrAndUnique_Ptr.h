@@ -44,7 +44,7 @@ public:
             (*this->m_count)--;
             if (*this->m_count == 0)
             {
-                delete this->_pm_ptrtr;
+                delete this->m_ptr;
                 delete this->m_count;
             }
         }
