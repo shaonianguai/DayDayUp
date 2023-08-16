@@ -3,32 +3,14 @@
 #include "SingletionSample.h"
 #include "Utils.h"
 #include "BlockingCollection.h"
+#include "MySharedPtr.h"
+#include "SmartPtr.h"
 
 struct S
 {
     char name[10];
     int age;
 };
-
-class aaa
-{
-public:
-    aaa()
-    {
-        asd = 0;
-        qwe = 0;
-        int b = 1;
-    }
-    ~aaa()
-    {
-        int c = 1;
-    }
-private:
-    int asd;
-    int qwe;
-};
-
-static aaa wo;
 
 int main()
 {
@@ -52,7 +34,8 @@ int main()
     Util::my_strcpy_s(dest, sizeof(dest), source);
 
 
-
+    TestMySharedPtr();
+    TestMySmpartPtr();
 
     return 0;
 }

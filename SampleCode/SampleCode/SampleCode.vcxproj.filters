@@ -1,14 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="Singleton.h" />
-    <ClInclude Include="SingletionSample.h" />
-    <ClInclude Include="Utils.h" />
-    <ClInclude Include="BlockingCollection.h" />
+    <ClInclude Include="BlockingCollection.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SingletionSample.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MySharedPtr.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartPtr.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CSmartPtr.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Share_PtrAndUnique_Ptr.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SingletionSample.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="SingletionSample.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMySharedPtr.cpp" />
+    <ClCompile Include="TestSmartPtr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{d9b778b3-6e86-477b-b175-bc9ecc6b6399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{7f76d475-b2be-493a-95e3-c9e6317d1bad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

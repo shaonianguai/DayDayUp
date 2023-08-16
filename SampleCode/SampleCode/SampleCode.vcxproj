@@ -128,13 +128,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BlockingCollection.h" />
+    <ClInclude Include="CSmartPtr.h" />
+    <ClInclude Include="MySharedPtr.h" />
+    <ClInclude Include="Share_PtrAndUnique_Ptr.h" />
     <ClInclude Include="SingletionSample.h" />
     <ClInclude Include="Singleton.h" />
+    <ClInclude Include="SmartPtr.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SingletionSample.cpp" />
+    <ClCompile Include="TestMySharedPtr.cpp" />
+    <ClCompile Include="TestSmartPtr.cpp" />
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
