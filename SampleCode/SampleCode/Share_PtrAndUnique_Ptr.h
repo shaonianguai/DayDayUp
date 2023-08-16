@@ -28,7 +28,7 @@ public:
             this->m_ptr = ptr.m_ptr;
             this->m_count = ptr.m_count;
 
-            (*this->m_count)++;
+            *m_count++;
         }
     }
 
@@ -39,30 +39,20 @@ public:
         {
             return *this;
         }
+
         if (this->m_ptr)
-        {
-            (*this->m_count)--;
-            if (*this->m_count == 0)
-            {
-                delete this->m_ptr;
-                delete this->m_count;
-            }
-        }
+            Release();
+
         this->m_ptr = ptr.m_ptr;
         this->m_count = ptr.m_count;
-        (*this->m_count)++;
+        *m_count++;
         return *this;
     }
 
     //析构函数
     ~smart()
     {
-        (*this->m_count)--;
-        if (*this->m_count == 0)
-        {
-            delete this->m_ptr;
-            delete this->m_count;
-        }
+        Release();
     }
 
     //operator*重载
@@ -82,10 +72,15 @@ public:
             return this->m_ptr;
         }
     }
-    //return reference couting
-    int use_count()
+
+    void Release()
     {
-        return *this->m_count;
+        *m_count--;
+        if (*m_count == 0)
+        {
+            delete m_ptr;
+            delete m_count;
+        }
     }
 };
 
