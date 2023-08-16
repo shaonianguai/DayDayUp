@@ -11,13 +11,9 @@ public:
     smart(T* ptr = nullptr) :m_ptr(ptr)
     {
         if (m_ptr)
-        {
             m_count = new int(1);
-        }
         else
-        {
             m_count = new int(0);
-        }
     }
 
     //拷贝构造
@@ -25,8 +21,8 @@ public:
     {
         if (this != &ptr)
         {
-            this->m_ptr = ptr.m_ptr;
-            this->m_count = ptr.m_count;
+            m_ptr = ptr.m_ptr;
+            m_count = ptr.m_count;
 
             *m_count++;
         }
@@ -35,16 +31,16 @@ public:
     //重载operator=
     smart& operator=(const smart& ptr)
     {
-        if (this->m_ptr == ptr.m_ptr)
+        if (m_ptr == ptr.m_ptr)
         {
             return *this;
         }
 
-        if (this->m_ptr)
+        if (m_ptr)
             Release();
 
-        this->m_ptr = ptr.m_ptr;
-        this->m_count = ptr.m_count;
+        m_ptr = ptr.m_ptr;
+        m_count = ptr.m_count;
         *m_count++;
         return *this;
     }
@@ -58,18 +54,18 @@ public:
     //operator*重载
     T& operator*()
     {
-        if (this->m_ptr)
+        if (m_ptr)
         {
-            return *(this->m_ptr);
+            return *m_ptr;
         }
     }
 
     //operator->重载
     T* operator->()
     {
-        if (this->m_ptr)
+        if (m_ptr)
         {
-            return this->m_ptr;
+            return m_ptr;
         }
     }
 
