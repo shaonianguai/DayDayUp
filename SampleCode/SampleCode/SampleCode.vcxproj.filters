@@ -25,6 +25,9 @@
     <ClInclude Include="Share_PtrAndUnique_Ptr.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="SpinLock.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

@@ -7,6 +7,7 @@
 #include "SmartPtr.h"
 #include "CSmartPtr.h"
 #include "Share_PtrAndUnique_Ptr.h"
+#include "SpinLock.h"
 
 struct S
 {

@@ -134,6 +134,7 @@
     <ClInclude Include="SingletionSample.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SmartPtr.h" />
+    <ClInclude Include="SpinLock.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>

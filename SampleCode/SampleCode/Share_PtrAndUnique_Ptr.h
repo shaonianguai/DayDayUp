@@ -28,6 +28,12 @@ public:
         }
     }
 
+    //析构函数
+    ~smart()
+    {
+        Release();
+    }
+
     //重载operator=
     smart& operator=(const smart& ptr)
     {
@@ -43,12 +49,6 @@ public:
         m_count = ptr.m_count;
         *m_count++;
         return *this;
-    }
-
-    //析构函数
-    ~smart()
-    {
-        Release();
     }
 
     //operator*重载
