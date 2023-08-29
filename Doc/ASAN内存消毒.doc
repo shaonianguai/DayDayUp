@@ -1,0 +1,3513 @@
+Date: Tue, 29 Aug 2023 15:27:45 +0800 (CST)
+Message-ID: <98585490.386.1693294065372@Ubuntu20.04>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_385_1748790634.1693294065371"
+
+------=_Part_385_1748790634.1693294065371
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92</h1>
+    <div class=3D"Section1">
+        <p class=3D"auto-cursor-target"><style type=3D"text/css">/*<![CDATA=
+[*/
+div.rbtoc1693294065228 {padding: 0px;}
+div.rbtoc1693294065228 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1693294065228 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1693294065228">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=AE=89=E8=A3=85=
+">=E5=AE=89=E8=A3=85</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E7=89=B9=E7=82=B9=
+">=E7=89=B9=E7=82=B9</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=8E=9F=E7=90=86=
+=E7=AE=80=E4=BB=8B">=E5=8E=9F=E7=90=86=E7=AE=80=E4=BB=8B</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E6=A3=80=E6=9F=A5=
+=E9=94=99=E8=AF=AF=E8=8C=83=E4=BE=8B">=E6=A3=80=E6=9F=A5=E9=94=99=E8=AF=AF=
+=E8=8C=83=E4=BE=8B</a>=20
+<ul class=3D"toc-indentation">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=9F=BA=E7=A1=80=
+=E7=BC=93=E5=AD=98=E6=BA=A2=E5=87=BA">=E5=9F=BA=E7=A1=80=E7=BC=93=E5=AD=98=
+=E6=BA=A2=E5=87=BA</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=88=86=E9=85=8D=
+=E3=80=81=E9=87=8A=E6=94=BE=E4=B8=8D=E5=8C=B9=E9=85=8D">=E5=88=86=E9=85=8D=
+=E3=80=81=E9=87=8A=E6=94=BE=E4=B8=8D=E5=8C=B9=E9=85=8D</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=BB=8E=E5=A0=86=
+=E5=88=86=E9=85=8D=E7=A9=BA=E9=97=B4=E8=B6=85=E5=A4=A7">=E4=BB=8E=E5=A0=86=
+=E5=88=86=E9=85=8D=E7=A9=BA=E9=97=B4=E8=B6=85=E5=A4=A7</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-Calloc=E8=B0=83=E7=
+=94=A8=E6=BA=A2=E5=87=BA">Calloc=E8=B0=83=E7=94=A8=E6=BA=A2=E5=87=BA</a></l=
+i>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=B8=A4=E6=AC=A1=
+free">=E4=B8=A4=E6=AC=A1free</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=8A=A8=E6=80=81=
+=E6=A0=88=E6=BA=A2=E5=87=BA">=E5=8A=A8=E6=80=81=E6=A0=88=E6=BA=A2=E5=87=BA<=
+/a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=85=A8=E5=B1=80=
+=E5=8F=98=E9=87=8F=E7=BC=93=E5=AD=98=E6=BA=A2=E5=87=BA">=E5=85=A8=E5=B1=80=
+=E5=8F=98=E9=87=8F=E7=BC=93=E5=AD=98=E6=BA=A2=E5=87=BA</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=A0=86=E6=BA=A2=
+=E5=87=BA">=E5=A0=86=E6=BA=A2=E5=87=BA</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=AF=B9=E5=A0=86=
+=E4=BD=BF=E7=94=A8=E9=87=8A=E6=94=BE=E5=90=8E=E7=9A=84=E5=86=85=E5=AD=98">=
+=E5=AF=B9=E5=A0=86=E4=BD=BF=E7=94=A8=E9=87=8A=E6=94=BE=E5=90=8E=E7=9A=84=E5=
+=86=85=E5=AD=98</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E6=97=A0=E6=95=88=
+=E7=9A=84=E5=88=86=E9=85=8D=E5=AF=B9=E9=BD=90">=E6=97=A0=E6=95=88=E7=9A=84=
+=E5=88=86=E9=85=8D=E5=AF=B9=E9=BD=90</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-Memcpy=E5=8F=82=E6=
+=95=B0=E9=87=8D=E5=8F=A0">&nbsp;Memcpy=E5=8F=82=E6=95=B0=E9=87=8D=E5=8F=A0<=
+/a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-New/delete=E7=B1=
+=BB=E5=9E=8B=E4=B8=8D=E5=8C=B9=E9=85=8D">New/delete=E7=B1=BB=E5=9E=8B=E4=B8=
+=8D=E5=8C=B9=E9=85=8D</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E6=A0=88=E6=BA=A2=
+=E5=87=BA">=E6=A0=88=E6=BA=A2=E5=87=BA</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=B8=8B=E6=A0=87=
+=E4=B8=8B=E6=BA=A2">=E4=B8=8B=E6=A0=87=E4=B8=8B=E6=BA=A2</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=BD=BF=E7=94=A8=
+=E5=B7=B2=E7=BB=8F=E8=BF=94=E5=9B=9E=E7=9A=84=E5=A0=86=E6=A0=88=E5=86=85=E5=
+=AD=98">=E4=BD=BF=E7=94=A8=E5=B7=B2=E7=BB=8F=E8=BF=94=E5=9B=9E=E7=9A=84=E5=
+=A0=86=E6=A0=88=E5=86=85=E5=AD=98</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=BD=BF=E7=94=A8=
+=E5=A0=86=E6=A0=88=E4=B8=8A=E8=B6=85=E5=87=BA=E7=94=9F=E5=91=BD=E5=91=A8=E6=
+=9C=9F=E7=9A=84=E5=9C=B0=E5=9D=80">=E4=BD=BF=E7=94=A8=E5=A0=86=E6=A0=88=E4=
+=B8=8A=E8=B6=85=E5=87=BA=E7=94=9F=E5=91=BD=E5=91=A8=E6=9C=9F=E7=9A=84=E5=9C=
+=B0=E5=9D=80</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-Strncat=E5=8F=82=
+=E6=95=B0=E9=87=8D=E5=8F=A0">Strncat=E5=8F=82=E6=95=B0=E9=87=8D=E5=8F=A0</a=
+></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E7=94=A8=E6=88=B7=
+=E8=87=AA=E8=A1=8C=E4=B8=8B=E6=AF=92">=E7=94=A8=E6=88=B7=E8=87=AA=E8=A1=8C=
+=E4=B8=8B=E6=AF=92</a></li>=20
+</ul>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=BD=BF=E7=94=A8=
+=E6=8A=80=E5=B7=A7">=E4=BD=BF=E7=94=A8=E6=8A=80=E5=B7=A7</a></li>=20
+<li><a href=3D"#ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=85=BC=E5=AE=B9=
+=E6=80=A7">=E5=85=BC=E5=AE=B9=E6=80=A7</a></li>=20
+</ul> </li>=20
+</ul>=20
+</div>
+<p></p>
+<p class=3D"auto-cursor-target">=E9=95=BF=E4=B9=85=E4=BB=A5=E6=9D=A5=EF=BC=
+=8C=E5=86=85=E5=AD=98=E8=AE=BF=E9=97=AE=E5=87=BA=E9=94=99=E9=97=AE=E9=A2=98=
+=E4=B8=80=E7=9B=B4=E5=9B=B0=E6=83=91=E7=9D=80C++=E7=94=A8=E6=88=B7=E3=80=82=
+=E7=BC=93=E5=AD=98=E6=BA=A2=E5=87=BA=E3=80=81=E9=87=8A=E6=94=BE=E5=90=8E=E4=
+=BD=BF=E7=94=A8=E3=80=81=E4=B8=8B=E6=A0=87=E8=B6=8A=E7=95=8C=E7=AD=89=E9=97=
+=AE=E9=A2=98=E6=88=96=E5=AF=BC=E8=87=B4=E5=86=85=E5=AD=98=E8=85=90=E8=B4=A5=
+=EF=BC=8C=E9=9D=9E=E5=B8=B8=E9=9A=BE=E4=BB=A5=E8=B0=83=E8=AF=95=E5=8F=91=E7=
+=8E=B0=E5=92=8C=E4=BF=AE=E5=A4=8D=E3=80=82=E6=A0=B9=E6=8D=AE=E5=BE=AE=E8=BD=
+=AF=E4=BC=B0=E8=AE=A1=EF=BC=8CWindows=E8=87=AA=E8=BA=AB=E7=9A=84Bug=E6=9C=
+=8930%=E5=B7=A6=E5=8F=B3=E6=98=AF=E5=86=85=E5=AD=98=E7=9B=B8=E5=85=B3=E9=97=
+=AE=E9=A2=98=E3=80=82</p>
+<p class=3D"auto-cursor-target">ASAN=E7=94=B1Google=E5=8F=91=E6=98=8E=EF=BC=
+=8C=E6=98=AF=E6=9F=A5=E5=87=BA=E5=86=85=E5=AD=98=E8=85=90=E8=B4=A5=E7=9A=84=
+=E5=BC=BA=E6=9C=89=E5=8A=9B=E5=B7=A5=E5=85=B7=E3=80=82=E5=BE=AE=E8=BD=AF=E5=
+=9C=A8VS 2019 (16.4)=E4=B8=AD=E7=A7=BB=E6=A4=8D=E4=BA=86ASAN=EF=BC=8C=E7=8E=
+=B0=E5=9C=A8=E9=80=9A=E8=BF=87=E6=B7=BB=E5=8A=A0=E7=BC=96=E8=AF=91=E9=80=89=
+=E9=A1=B9=E5=B0=B1=E5=8F=AF=E4=BB=A5=E4=BD=BF=E7=94=A8=E4=BA=86=E3=80=82</p=
+>
+<h2 class=3D"auto-cursor-target" id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=
+=AF=92-=E5=AE=89=E8=A3=85">=E5=AE=89=E8=A3=85</h2>
+<p>=E6=89=93=E5=BC=80visual studio installer=EF=BC=8C=E6=A3=80=E6=9F=A5=E6=
+=98=AF=E5=90=A6=E6=9C=89c++ AddressSanitizer=E3=80=82</p>
+<h2 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E7=89=B9=E7=82=B9">=E7=
+=89=B9=E7=82=B9</h2>
+<p>=E9=9C=80=E8=A6=81=E7=BC=96=E8=AF=91=E6=97=B6=E5=BC=80=E5=90=AF=E9=80=89=
+=E9=A1=B9=EF=BC=9A/fsanitize=3Daddress=EF=BC=8C=E4=BC=9A=E8=87=AA=E5=8A=A8=
+=E9=93=BE=E6=8E=A5=E4=B8=8AASAN=E8=BF=90=E8=A1=8C=E6=97=B6</p>
+<p>=E5=B8=A6=E6=9D=A5=E8=BF=90=E8=A1=8C=E5=BC=80=E9=94=80=EF=BC=8C=E8=BF=90=
+=E8=A1=8C=E6=97=B6=E5=A6=82=E6=9E=9C=E5=8F=91=E7=8E=B0bug=E5=B0=86=E7=BB=88=
+=E6=AD=A2=E8=BF=90=E8=A1=8C=E6=89=93=E5=8D=B0=E6=B6=88=E6=81=AF</p>
+<p>=E6=94=AF=E6=8C=81=E6=89=80=E6=9C=89=E4=BC=98=E5=8C=96=E7=BA=A7=E5=88=AB=
+</p>
+<p>=E6=94=AF=E6=8C=81=E6=89=80=E6=9C=89CRT=EF=BC=9A=E5=8C=85=E6=8B=AC=E9=9D=
+=99=E6=80=81=E3=80=81=E5=8A=A8=E6=80=81=E3=80=81DLL=E7=AD=89</p>
+<h2 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=8E=9F=E7=90=86=E7=AE=
+=80=E4=BB=8B">=E5=8E=9F=E7=90=86=E7=AE=80=E4=BB=8B</h2>
+<p>C++=E4=B8=AD=E5=90=84=E4=B8=AA=E8=BF=90=E8=A1=8C=E6=97=B6C=E5=BA=93=E5=
+=87=BD=E6=95=B0=E5=AF=B9=E5=86=85=E5=AD=98=E5=9C=B0=E5=9D=80=E9=83=BD=E6=98=
+=AF=E6=B2=A1=E6=9C=89=E6=A3=80=E6=9F=A5=E7=9A=84=EF=BC=88=E6=AD=A4=E5=A4=84=
+=E4=B8=8D=E8=80=83=E8=99=91=E5=BE=AE=E8=BD=AF=E7=9A=84RTC=E6=A3=80=E6=9F=A5=
+)=E3=80=82=E8=80=8CASAN=E9=80=9A=E8=BF=87ASAN=E8=BF=90=E8=A1=8C=E6=97=B6=EF=
+=BC=8C=E5=AF=B9CRT=E7=AD=89=E5=86=85=E5=AD=98=E7=9B=B8=E5=85=B3=E5=87=BD=E6=
+=95=B0=E6=9B=BF=E6=8D=A2=E4=B8=BAASAN=E7=89=88=E6=9C=AC=E3=80=82=E4=BE=8B=
+=E5=A6=82=EF=BC=8C=E6=96=B0=E7=9A=84malloc()=E5=87=BD=E6=95=B0=E5=B0=86=E5=
+=88=86=E9=85=8D=E5=A4=9A=E4=BD=99=E7=9A=84=E5=86=85=E5=AD=98=E4=BD=9C=E4=B8=
+=BA=E2=80=9C=E7=BA=A2=E5=8C=BA=E2=80=9D=EF=BC=8C=E5=8C=85=E8=A3=B9=E8=BF=94=
+=E5=9B=9E=E5=86=85=E5=AD=98=E5=9C=B0=E5=9D=80=E7=9A=84=E5=91=A8=E5=9B=B4=E3=
+=80=82=E8=BF=99=E6=A0=B7=E8=83=BD=E6=8D=95=E6=8D=89=E5=88=B0=E8=B6=8A=E7=95=
+=8C=E8=AE=BF=E9=97=AE=E3=80=82</p>
+<p>=E8=80=8Cfree()=E5=87=BD=E6=95=B0=E4=BC=9A=E5=B0=86=E9=87=8A=E6=94=BE=E7=
+=9A=84=E5=86=85=E5=AD=98=E4=B8=8B=E6=AF=92=E5=B9=B6=E9=9A=94=E7=A6=BB=EF=BC=
+=88=E5=9C=A8=E7=9F=AD=E6=97=B6=E9=97=B4=E4=B9=8B=E5=86=85=E4=B8=8D=E4=BC=9A=
+=E8=A2=AB=E5=9B=9E=E6=94=B6=E9=87=8D=E6=96=B0=E5=88=86=E9=85=8D=E7=BB=99=E6=
+=96=B0=E7=9A=84=E5=86=85=E5=AD=98=E7=94=B3=E8=AF=B7=E8=B0=83=E7=94=A8=EF=BC=
+=89=E3=80=82</p>
+<p>=E5=87=A1=E6=98=AF=E5=9C=A8CRT=E5=87=BD=E6=95=B0=E4=B8=AD=E6=8F=90=E4=BE=
+=9B=E4=BA=86=E7=BA=A2=E5=8C=BA=E6=88=96=E4=B8=8B=E6=AF=92=E7=9A=84=E5=86=85=
+=E5=AD=98=E5=9C=B0=E5=9D=80=EF=BC=8C=E5=B0=86=E7=BB=88=E6=AD=A2=E8=BF=90=E8=
+=A1=8C=E5=B9=B6=E6=8A=A5=E5=91=8A=E9=94=99=E8=AF=AF=E3=80=82=E8=BF=99=E6=98=
+=AFASAN=E7=9A=84=E7=AC=AC=E4=B8=80=E9=81=93=E6=A3=80=E6=9F=A5=E3=80=82</p>
+<p>=E5=8F=A6=E5=A4=96=EF=BC=8CASAN=E4=BD=BF=E7=94=A8=E4=BA=86=E7=BC=96=E8=
+=AF=91=E5=99=A8=E6=8F=92=E4=BB=B6=E6=8A=80=E6=9C=AF=EF=BC=8C=E7=BC=96=E8=AF=
+=91=E7=94=9F=E6=88=90=E7=9A=84=E6=89=80=E6=9C=89=E5=86=85=E5=AD=98=E8=AE=BF=
+=E9=97=AE=E9=83=BD=E4=BC=9A=E8=A2=AB=E5=8A=A0=E4=BB=A5ASAN=E6=A3=80=E6=9F=
+=A5=EF=BC=9A</p>
+<p><br></p>
+<p>ASAN=E4=B9=8B=E5=89=8D=E7=9A=84=E4=BB=A3=E7=A0=81=EF=BC=9A</p>
+<p><code>*address =3D .... //... =3D *address</code></p>
+<p><br></p>
+<p><code>ASAN=E4=B9=8B=E5=90=8E=E7=9A=84=E4=BB=A3=E7=A0=81=EF=BC=9A</code><=
+/p>
+<p><code>if (IsPoisoned(address)) {</code><br><code>&nbsp; ReportError(addr=
+ess, kAccessSize, kIsWrite);</code><br><code>}</code><br><code>*address =3D=
+ ...; &nbsp;// or: ... =3D *address;</code></p>
+<p><br></p>
+<p>=E4=B9=9F=E5=B0=B1=E6=98=AF=E8=AF=B4=E8=AE=BF=E9=97=AE=E5=86=85=E5=AD=98=
+=E9=83=BD=E8=A6=81=E5=85=88=E6=A3=80=E6=9F=A5=E4=B8=8B=E6=98=AF=E5=90=A6=E5=
+=B1=9E=E4=BA=8E=E6=9C=89=E6=AF=92=E7=9A=84=E5=86=85=E5=AD=98=EF=BC=8C=E7=84=
+=B6=E5=90=8E=E6=89=8D=E8=AE=A9=E8=AE=BF=E9=97=AE=E3=80=82</p>
+<p>=E4=B8=BA=E4=BA=86=E6=9B=B4=E6=9C=89=E6=95=88=E7=9A=84=E5=88=92=E5=88=86=
+=E5=93=AA=E4=BA=9B=E5=86=85=E5=AD=98=E5=9C=B0=E5=9D=80=E6=98=AF=E6=9C=89=E6=
+=95=88=E7=9A=84=EF=BC=8CASAN=E4=BD=BF=E7=94=A8=E4=BA=86=E9=98=B4=E5=BD=B1=
+=E5=86=85=E5=AD=98=E7=9A=84=E6=A6=82=E5=BF=B5=E3=80=82=E5=AE=83=E9=A2=9D=E5=
+=A4=96=E5=88=86=E9=85=8D=E4=BA=861/8=E7=9A=84=E8=BF=9B=E7=A8=8B=E7=A9=BA=E9=
+=97=B4=E7=94=A8=E4=BA=8E=E4=BF=9D=E5=AD=98=E5=BA=94=E7=94=A8=E5=86=85=E5=AD=
+=98=E7=9A=84=E7=8A=B6=E6=80=81=E3=80=82=E5=8F=AF=E4=BB=A5=E7=90=86=E8=A7=A3=
+=E4=B8=BA=E5=BA=94=E7=94=A8=E7=A8=8B=E5=BA=8F=E5=86=85=E5=AD=98=E7=A9=BA=E9=
+=97=B4=E9=83=BD=E5=9C=A8=E9=98=B4=E5=BD=B1=E5=86=85=E5=AD=98=E4=B8=AD=E8=AE=
+=B0=E5=BD=95=E4=BA=86=E5=BD=93=E5=89=8D=E7=9A=84=E8=AE=BF=E9=97=AE=E7=8A=B6=
+=E6=80=81=E3=80=82</p>
+<p>=E5=BA=94=E7=94=A8=E7=A8=8B=E5=BA=8F=E6=AF=8F8=E4=B8=AA=E5=AD=97=E8=8A=
+=82=E8=A2=AB=E6=98=A0=E5=B0=84=E4=B8=BA1=E4=B8=AA=E9=98=B4=E5=BD=B1=E5=86=
+=85=E5=AD=98=E5=AD=97=E8=8A=82=E3=80=82=E8=AE=BF=E9=97=AE=E7=8A=B6=E6=80=81=
+=E6=9C=89=E4=BB=A5=E4=B8=8B=E5=87=A0=E4=B8=AA=E5=80=BC=EF=BC=9A</p>
+<ul>
+<li>0=EF=BC=9A =E5=85=A8=E9=83=A88=E4=B8=AA=E5=AD=97=E8=8A=82=E9=83=BD=E6=
+=98=AF=E6=B2=A1=E6=9C=89=E4=B8=8B=E6=AF=92=E7=9A=84=EF=BC=88=E5=8F=AF=E4=BB=
+=A5=E8=AE=BF=E9=97=AE=EF=BC=89</li>
+<li>=E8=B4=9F=E6=95=B0=EF=BC=9A=E5=85=A8=E9=83=A88=E4=B8=AA=E5=AD=97=E8=8A=
+=82=E9=83=BD=E6=98=AF=E4=B8=8B=E6=AF=92=E7=9A=84=EF=BC=88=E4=B8=8D=E5=8F=AF=
+=E8=AE=BF=E9=97=AE=EF=BC=89</li>
+<li>n=EF=BC=8C=E5=85=B6=E4=B8=ADn=3D1~7=EF=BC=9A=E5=89=8D=E9=9D=A2n=E4=B8=
+=AA=E5=AD=97=E8=8A=82=E6=98=AF=E6=B2=A1=E6=9C=89=E4=B8=8B=E6=AF=92=E7=9A=84=
+=E3=80=82=E5=90=8E=E9=9D=A28-n=E4=B8=AA=E5=AD=97=E8=8A=82=E4=B8=8B=E6=AF=92=
+=E4=BA=86=E3=80=82</li>
+</ul>
+<p>=E5=B0=86=E5=BA=94=E7=94=A8=E5=86=85=E5=AD=98=E8=BD=AC=E6=8D=A2=E4=B8=BA=
+=E9=98=B4=E5=BD=B1=E5=86=85=E5=AD=98=E5=9C=B0=E5=9D=80=EF=BC=8C=E5=BE=AE=E8=
+=BD=AF=E7=9A=84=E5=AE=9E=E7=8E=B0=E4=B8=8E=E8=B0=B7=E6=AD=8C=E6=9C=89=E6=89=
+=80=E4=B8=8D=E5=90=8C=EF=BC=9A</p>
+<p>x86 32=E4=BD=8D=EF=BC=9A</p>
+<p><code><span class=3D"hljs-keyword"><span>char</span></span><span> shadow=
+_byte_value =3D *((Your_Address &gt;&gt; </span><span class=3D"hljs-number"=
+><span>3</span></span><span>) + </span><span class=3D"hljs-number"><span>0x=
+30000000</span></span><span>)</span></code></p>
+<pre><code>=E5=9C=A8<span>32</span>=E4=BD=8D=E7=8E=AF=E5=A2=83=E4=B8=8B=EF=
+=BC=8C=E9=83=BD=E6=98=AF=E5=BA=94=E7=94=A8=E5=86=85=E5=AD=98=E5=9C=B0=E5=9D=
+=80<span>/8+0x30000000=E3=80=82=E6=AF=8F=E6=AC=A1=E9=83=BD=E4=B8=80=E6=A0=
+=B7=E3=80=82</span></code></pre>
+<p>x64 64=E4=BD=8D:</p>
+<p><code><span class=3D"hljs-keyword"><span>char</span></span><span> shadow=
+_byte_value =3D *((Your_Address &gt;&gt; </span><span class=3D"hljs-number"=
+><span>3</span></span><span>) + _asan_runtime_assigned_offset)</span></code=
+></p>
+<pre><span class=3D"hljs-keyword">=E8=80=8C=E5=9C=A8<span>x86_64</span>=E4=
+=B8=8B=EF=BC=8C=E4=BB=8E</span><code><span>_asan_runtime_assigned_offset</s=
+pan>=E5=BC=80=E5=A7=8B=E3=80=82=E8=80=8C=E8=BF=99=E4=B8=AA=E5=80=BC=E6=98=
+=AF=E6=AF=8F=E6=AC=A1=E7=A8=8B=E5=BA=8F=E5=90=AF=E5=8A=A8=E5=9C=B0=E5=9D=80=
+=E9=9A=8F=E6=9C=BA=E5=8C=96=E7=9A=84=E3=80=82<br><br>=E7=8E=B0=E5=9C=A8=E5=
+=BC=80=E5=A7=8B=EF=BC=8C=E5=AF=B9=E5=BA=94=E7=94=A8=E5=86=85=E5=AD=98=E7=9A=
+=84=E8=AE=BF=E9=97=AE=EF=BC=8C=E9=83=BD=E5=8F=98=E4=B8=BA=EF=BC=9A<br><br><=
+/code></pre>
+<p><code>// =E5=A4=A7=E4=BA=8E8=E5=AD=97=E8=8A=82=E7=9A=84=E8=AE=BF=E9=97=
+=AE</code><br><code>ShadowAddr =3D (Addr &gt;&gt; 3) + Offset;</code><br><c=
+ode>if (*ShadowAddr !=3D 0) {</code><br><code>&nbsp; &nbsp; ReportAndCrash(=
+Addr);</code><br><code>}</code></p>
+<pre><br></pre>
+<p><code>// =E4=B8=8D=E8=B6=B38=E5=AD=97=E8=8A=82=E7=9A=84=E9=83=A8=E5=88=
+=86=EF=BC=8C=E8=BF=98=E9=9C=80=E8=A6=81=E6=A3=80=E6=9F=A5</code><br><code>S=
+hadowAddr =3D (Addr &gt;&gt; 3) + Offset;</code><br><code>k =3D *ShadowAddr=
+;</code><br><code>if (k !=3D 0 &amp;&amp; ((Addr &amp; 7) + AccessSize &gt;=
+ k)) {</code><br><code>&nbsp; &nbsp; ReportAndCrash(Addr);</code><br><code>=
+}</code></p>
+<p><code>=E5=AF=B9=E4=BA=8E=E5=A0=86=E6=95=B0=E6=8D=AE=EF=BC=8CASAN=E4=BB=
+=A5=E4=BB=A5=E4=B8=8B=E6=96=B9=E5=BC=8F=E4=B8=8B=E6=AF=92=EF=BC=9A</code></=
+p>
+<ul>
+<li>=E6=AD=A3=E5=B8=B8=E6=95=B0=E6=8D=AE=E4=B8=A4=E8=BE=B9=EF=BC=8C=E4=B8=
+=8B=E6=AF=92=E4=B8=BA0xfa=EF=BC=88=E5=A0=86=E5=B7=A6=E7=BA=A2=E5=8C=BA=EF=
+=BC=89</li>
+<li>=E5=B7=B2=E7=BB=8F=E8=A2=AB=E9=87=8A=E6=94=BE=E7=9A=84=E6=95=B0=E6=8D=
+=AE=EF=BC=8C=E4=B8=8B=E6=AF=92=E4=B8=BA0xfd=EF=BC=88=E5=A0=86=E5=B7=B2=E7=
+=BB=8F=E9=87=8A=E6=94=BE=EF=BC=89</li>
+</ul>
+<p>=E5=AF=B9=E4=BA=8E=E6=A0=88=E6=95=B0=E6=8D=AE=EF=BC=8CASAN=E4=BB=A5=E4=
+=BB=A5=E4=B8=8B=E6=96=B9=E5=BC=8F=E4=B8=8B=E6=AF=92=EF=BC=9A</p>
+<ul>
+<li>=E6=A0=88=E5=BC=80=E5=A7=8B=EF=BC=8C=E4=B8=8B=E6=AF=92=E4=B8=BA0xf1=EF=
+=BC=88=E6=A0=88=E5=B7=A6=E7=BA=A2=E5=8C=BA=EF=BC=89</li>
+<li>=E6=A0=88=E4=B8=AD=E9=97=B4=E5=90=84=E4=B8=AA=E5=8F=98=E9=87=8F=E4=B9=
+=8B=E9=97=B4=E7=9A=84=E9=97=B4=E9=9A=99=EF=BC=8C=E4=B8=8B=E6=AF=92=E4=B8=BA=
+0xf2=EF=BC=88=E6=A0=88=E4=B8=AD=E7=BA=A2=E5=8C=BA=EF=BC=89</li>
+<li>=E6=A0=88=E6=9C=AB=E5=B0=BE=EF=BC=8C=E4=B8=8B=E6=AF=92=E4=B8=BA0xf3=EF=
+=BC=88=E6=A0=88=E5=8F=B3=E7=BA=A2=E5=8C=BA=EF=BC=89</li>
+<li>(=E9=9C=80=E8=A6=81=E6=89=8B=E5=8A=A8=E5=BC=80=E5=90=AF=EF=BC=89=E5=87=
+=BD=E6=95=B0=E8=BF=94=E5=9B=9E=E5=90=8E=EF=BC=8C=E6=A0=88=E5=86=85=E5=AD=98=
+=E4=B8=8B=E6=AF=92=E4=B8=BA0xf5 (=E6=A0=88=E8=BF=94=E5=9B=9E=E7=BA=A2=E5=8C=
+=BA=EF=BC=89</li>
+<li>=E6=A0=88=E5=8F=98=E9=87=8F=E7=94=9F=E5=91=BD=E5=91=A8=E6=9C=9F=E7=BB=
+=93=E6=9D=9F=E5=90=8E=EF=BC=8C=E4=B8=8B=E6=AF=92=E4=B8=BA0xf8=EF=BC=88=E6=
+=A0=88=E7=94=9F=E5=91=BD=E5=91=A8=E6=9C=9F=E7=BB=93=E6=9D=9F=E7=BA=A2=E5=8C=
+=BA=EF=BC=89</li>
+</ul>
+<p>=E6=AD=A4=E5=A4=96=E8=BF=98=E6=9C=89=E5=85=B6=E4=BB=96=E7=9A=84=E4=B8=8B=
+=E6=AF=92=E7=B1=BB=E5=9E=8B=EF=BC=8C=E5=80=BC=E9=83=BD=E4=B8=BA=E8=B4=9F=E6=
+=95=B0=E3=80=82</p>
+<p><code>=E5=A6=82=E6=9E=9C=E6=9C=89=E5=8F=91=E7=94=9F=E8=BF=9D=E8=A7=84=E8=
+=AE=BF=E9=97=AE=EF=BC=8C=E9=82=A3=E4=B9=88=E8=AE=BF=E9=97=AE=E5=9C=B0=E5=9D=
+=80=E5=AF=B9=E4=BA=8E=E7=9A=84=E9=98=B4=E5=BD=B1=E5=86=85=E5=AD=98=E5=B0=86=
+=E4=BC=9A=E6=98=AF=E4=B8=8B=E6=AF=92=E5=90=8E=E7=9A=84=EF=BC=8C=E4=BB=8E=E8=
+=80=8C=E8=A2=ABASAN=E5=8F=91=E7=8E=B0=E5=B9=B6=E6=8A=A5=E5=91=8A=E9=94=99=
+=E8=AF=AF=E3=80=81=E7=BB=88=E6=AD=A2=E8=BF=90=E8=A1=8C=E3=80=82=E8=BF=99=E5=
+=B0=B1=E6=98=AFASAN=E7=9A=84=E5=B7=A5=E4=BD=9C=E5=8E=9F=E7=90=86=E3=80=82<b=
+r></code></p>
+<h2 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E6=A3=80=E6=9F=A5=E9=94=
+=99=E8=AF=AF=E8=8C=83=E4=BE=8B">=E6=A3=80=E6=9F=A5=E9=94=99=E8=AF=AF=E8=8C=
+=83=E4=BE=8B</h2>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=9F=BA=E7=A1=80=E7=BC=
+=93=E5=AD=98=E6=BA=A2=E5=87=BA">=E5=9F=BA=E7=A1=80=E7=BC=93=E5=AD=98=E6=BA=
+=A2=E5=87=BA</h4>
+<p><code>// basic-global-overflow.cpp</code></p>
+<p><code>#include &lt;stdio.h&gt;</code></p>
+<p><code>int x[100];</code></p>
+<p><code>int main() {</code></p>
+<p><code>&nbsp;&nbsp;&nbsp; printf("Hello!\n");</code></p>
+<p><code>&nbsp;&nbsp;&nbsp; x[100] =3D 5; // Boom!</code></p>
+<p><code>&nbsp;&nbsp;&nbsp; return 0;</code></p>
+<p><code>}</code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>cl base-global-overflow.cpp -fsanitize=3Daddress /Zi</span><=
+/code></p>
+<p><span>&nbsp;</span>=E8=BF=90=E8=A1=8C<span>base-global-overwrite.exe</sp=
+an>=EF=BC=8C=E5=BE=97=E5=88=B0=E4=BB=A5=E4=B8=8B=E5=87=BA=E9=94=99=E4=BF=A1=
+=E6=81=AF=EF=BC=9A</p>
+<p><code><span>C:\work\asan&gt;base-global-overflow.exe</span></code></p>
+<p><code><span>Hello!</span></code></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D21800=3D=3DERROR: AddressSanitizer: <span style=3D"col=
+or: rgb(255,0,0);">global-buffer-overflow</span> on address 0x009d2490 at p=
+c 0x009311f5 bp 0x008ffd08 sp 0x008ffcfc</span></code></p>
+<p><code><span style=3D"color: rgb(255,0,0);">WRITE of size 4</span><span> =
+at 0x009d2490 thread T0</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x9311f4 in main C:\work\asan\<span st=
+yle=3D"color: rgb(255,0,0);">base-global-overflow.cpp:5</span></span></code=
+></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x96cf53 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>0x009d2490 is located 0 bytes=
+ to the right of global variable 'x' defined in 'base-global-overflow.cpp:2=
+:4' (0x9d2300) of size 400</code></span></p>
+<p><code><span>SUMMARY: AddressSanitizer: global-buffer-overflow C:\work\as=
+an\base-global-overflow.cpp:5 in main</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x3013a440: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3013a450: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3013a460: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3013a470: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3013a480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>=3D&gt;0x3013a490: 00 00[<span style=3D"color: rgb(255,0,0);=
+">f9]</span>f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9</span></code></p>
+<p><code><span>&nbsp; 0x3013a4a0: 00 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9=
+ f9 f9</span></code></p>
+<p><code><span>&nbsp; 0x3013a4b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3013a4c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3013a4d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3013a4e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></code></p>
+<p><code><span>=3D=3D21800=3D=3DABORTING</span></code></p>
+<p><br></p>
+<ul>
+<li>=E7=B1=BB=E5=9E=8B=E4=B8=BA<span>global-buffer-overflow</span></li>
+<li><span>4</span>=E5=AD=97=E8=8A=82=E5=86=99=E5=85=A5=E5=88=B0=E4=BA=86=E7=
+=94=A8=E6=88=B7=E5=AE=9A=E4=B9=89=E5=8F=98=E9=87=8F=E4=B9=8B=E5=A4=96=E7=9A=
+=84=E5=9C=B0=E5=9D=80</li>
+<li>=E5=8F=91=E7=94=9F=E5=9C=A8<span>global-buffer-overflow.cpp</span>=EF=
+=BC=8C=E7=AC=AC<span>5</span>=E8=A1=8C</li>
+<li>=E5=8F=98=E9=87=8F<span>=E2=80=99x=E2=80=99</span>=E5=9C=A8<span>global=
+-buffer-overflow.cpp</span>=E7=AC=AC<span>2</span>=E8=A1=8C=E5=AE=9A=E4=B9=
+=89=EF=BC=8C=E5=A4=A7=E5=B0=8F<span>400</span>=E5=AD=97=E8=8A=82=EF=BC=8C=
+=E7=A6=BB=E4=BA=8B=E5=8F=91=E5=9C=B0=E5=9D=80=E6=9C=80=E8=BF=91</li>
+<li>=E9=98=B4=E5=BD=B1=E5=86=85=E5=AD=98=E7=8A=B6=E6=80=81=E4=B8=BA<span>0x=
+f9=EF=BC=8C=E5=85=A8=E5=B1=80=E5=8F=98=E9=87=8F=E7=9A=84=E7=BA=A2=E5=8C=BA=
+=EF=BC=8C=E8=AF=B4=E6=98=8E=E5=86=99=E5=88=B0=E4=BA=86=E5=85=A8=E5=B1=80=E5=
+=8F=98=E9=87=8F=E7=9A=84=E7=BA=A2=E5=8C=BA</span></li>
+<li><span>=E6=B3=A8=E6=84=8F=E9=98=B4=E5=BD=B1=E5=86=85=E5=AD=98=E5=9C=B0=
+=E5=9D=80=E5=92=8C=E6=95=85=E9=9A=9C=E5=9C=B0=E5=9D=80=E6=98=AF=E4=B8=8D=E5=
+=90=8C=E7=9A=84=EF=BC=8C=E5=89=8D=E6=96=87=E6=9C=89=E4=BB=8B=E7=BB=8D=E8=BD=
+=AC=E6=8D=A2=E6=96=B9=E6=B3=95=E3=80=82</span></li>
+</ul>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=88=86=E9=85=8D=E3=80=
+=81=E9=87=8A=E6=94=BE=E4=B8=8D=E5=8C=B9=E9=85=8D">=E5=88=86=E9=85=8D=E3=80=
+=81=E9=87=8A=E6=94=BE=E4=B8=8D=E5=8C=B9=E9=85=8D</h4>
+<p><code>// example1.cpp</code><br><code>// alloc-dealloc-mismatch error</c=
+ode><br><code>#include &lt;stdio.h&gt;</code><br><code>#include &lt;stdlib.=
+h&gt;</code></p>
+<p><code>int main(int argc, char* argv[]) {</code></p>
+<p><code>&nbsp; &nbsp; if (argc !=3D 2) return -1;</code></p>
+<p><code>&nbsp; &nbsp; switch (atoi(argv[1])) {</code></p>
+<p><code>&nbsp; &nbsp; case 1:</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; =
+delete[](new int[10]);</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; break;</=
+code><br><code>&nbsp; &nbsp; case 2:</code><br><code>&nbsp; &nbsp; &nbsp; &=
+nbsp; delete (new int[10]); &nbsp; &nbsp; &nbsp;// Boom!</code><br><code>&n=
+bsp; &nbsp; &nbsp; &nbsp; break;</code><br><code>&nbsp; &nbsp; default:</co=
+de><br><code>&nbsp; &nbsp; &nbsp; &nbsp; printf("arguments: 1: no error 2: =
+runtime error\n");</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; return -1;</=
+code><br><code>&nbsp; &nbsp; }</code></p>
+<p><code>&nbsp; &nbsp; return 0;</code><br><code>}</code></p>
+<p><span>Delete</span>=E5=8F=AA=E5=88=A0=E9=99=A4=E4=BA=86<span>new int[10]=
+</span>=E7=9A=84=E7=AC=AC=E4=B8=80=E4=B8=AA=E5=85=83=E7=B4=A0=E3=80=82</p>
+<p>=E6=AD=A4=E7=B1=BB=E9=97=AE=E9=A2=98=E7=9A=84=E6=A3=80=E6=B5=8B=E9=BB=98=
+=E8=AE=A4=E6=98=AF=E5=85=B3=E6=8E=89=E7=9A=84=E3=80=82=E5=A6=82=E6=9E=9C=E9=
+=9C=80=E8=A6=81=E6=A3=80=E6=B5=8B=EF=BC=8C=E9=9C=80=E8=A6=81=E8=AE=BE=E7=BD=
+=AE=E7=8E=AF=E5=A2=83=E5=8F=98=E9=87=8F=EF=BC=9A</p>
+<p><code><span>set ASAN_OPTIONS=3Dalloc_deallloc_mismatch=3D1</span></code>=
+</p>
+<p>=E7=84=B6=E5=90=8E=E5=86=8D=E8=BF=90=E8=A1=8C=E7=A8=8B=E5=BA=8F</p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D20928=3D=3DERROR: AddressSanitizer: alloc-dealloc-mism=
+atch (operator new [] vs operator delete) on 0x02700b90</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x6b789 in operator delete(void *, uns=
+igned int) D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\as=
+an_win_delete_scalar_size_thunk.cpp:42</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x31276 in main C:\work\asan\alloc-dea=
+lloc-mismatch.cpp:16</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x6d0f6 in _scrt_common_main_seh D:\a\=
+_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span></=
+code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>0x02700b90 is located 0 bytes inside of 40-byte region [0x02=
+700b90,0x02700bb8)</span></code></p>
+<p><code><span>allocated by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x6b820 in operator new[](unsigned int=
+) D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_ne=
+w_array_thunk.cpp:42</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x3125f in main <span style=3D"color: =
+rgb(255,0,0);">C:\work\asan\alloc-dealloc-mismatch.cpp:16</span></span></co=
+de></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x6d0f6 in _scrt_common_main_seh D:\a\=
+_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span></=
+code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: alloc-dealloc-mismatch D:\a\_work=
+\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_delete_scalar_=
+size_thunk.cpp:42 in operator delete(void *, unsigned int)</span></code></p=
+>
+<p><code><span>=3D=3D20928=3D=3DHINT: if you don't care about these errors =
+you may set ASAN_OPTIONS=3Dalloc_dealloc_mismatch=3D0</span></code></p>
+<p><code>=3D=3D20928=3D=3DABORTING</code></p>
+<p><br></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=BB=8E=E5=A0=86=E5=88=
+=86=E9=85=8D=E7=A9=BA=E9=97=B4=E8=B6=85=E5=A4=A7">=E4=BB=8E=E5=A0=86=E5=88=
+=86=E9=85=8D=E7=A9=BA=E9=97=B4=E8=B6=85=E5=A4=A7</h4>
+<p><code>// example1.cpp</code><br><code>// allocation-size-too-big error</=
+code><br><code>#include &lt;stdio.h&gt;</code><br><code>#include &lt;malloc=
+.h&gt;</code><br><code>#include &lt;memory.h&gt;</code></p>
+<p><code>int x =3D 1000;</code><br><code>int y =3D 1000;</code></p>
+<p><code>__declspec(noinline) void bad_function() {</code></p>
+<p><code>&nbsp; char* buffer =3D (char*)malloc(x * y * x * y); //Boom!</cod=
+e></p>
+<p><code>&nbsp; memcpy(buffer, buffer + 8, 8);&nbsp;</code><br><code>}</cod=
+e></p>
+<p><code>int main(int argc, char **argv) {</code><br><code>&nbsp; &nbsp; ba=
+d_function();</code><br><code>&nbsp; &nbsp; return 0;</code><br><code>}</co=
+de></p>
+<p><br></p>
+<p>=E5=88=86=E9=85=8D=E4=BA=86=E8=B6=85=E8=BF=87<span>3G</span>=E7=9A=84=E7=
+=A9=BA=E9=97=B4=E3=80=82=E8=80=8C=E9=BB=98=E8=AE=A4windows=E5=85=81=E8=AE=
+=B8=E6=9C=80=E5=A4=9A3G=E3=80=82</p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D11720=3D=3DERROR: AddressSanitizer: requested allocati=
+on size 0xd4a51000 (0xd4a52000 after adjustments for alignment, red zones e=
+tc.) exceeds maximum supported size of 0xc0000000 (thread T0)</span></code>=
+</p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x226ac7 in malloc D:\a\_work\1\s\src\=
+vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_malloc_win.cpp:124</span></=
+code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x2011c3 in bad_function(void) C:\work=
+\asan\allocation-size-too-big.cpp:12</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x2011f7 in main C:\work\asan\allocati=
+on-size-too-big.cpp:18</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x23cea3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #6 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>=3D=3D11720=3D=3DHINT: if you don't care about these errors =
+you may set allocator_may_return_null=3D1</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: allocation-size-too-big D:\a\_wor=
+k\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_malloc_win.cpp:12=
+4 in malloc</span></code></p>
+<p><code><span>=3D=3D11720=3D=3DABORTING</span></code></p>
+<p><span>&nbsp;</span></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-Calloc=E8=B0=83=E7=94=A8=
+=E6=BA=A2=E5=87=BA"><span>Calloc</span>=E8=B0=83=E7=94=A8=E6=BA=A2=E5=87=BA=
+</h4>
+<p><br></p>
+<p><br></p>
+<p><code>// example1.cpp</code><br><code>// calloc-overflow error</code><br=
+><code>#include &lt;stdio.h&gt;</code><br><code>#include &lt;stdlib.h&gt;</=
+code></p>
+<p><br></p>
+<p><code>int number =3D -1;</code><br><code>int element_size =3D 1000;</cod=
+e></p>
+<p><br></p>
+<p><code>int main() {</code></p>
+<p><br></p>
+<p><code>&nbsp; &nbsp; void *p =3D calloc(number, element_size); &nbsp; &nb=
+sp; &nbsp;// Boom!</code></p>
+<p><br></p>
+<p><code>&nbsp; &nbsp; printf("calloc returned: %zu\n", (size_t)p);</code><=
+/p>
+<p><br></p>
+<p><code>&nbsp; &nbsp; return 0;</code><br><code>}</code></p>
+<p><br></p>
+<p><code><span>=3D=3D8120=3D=3DERROR: AddressSanitizer: calloc parameters o=
+verflow: count * size (-1 * 1000) cannot be represented in type size_t (thr=
+ead T0)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x126923 in calloc D:\a\_work\1\s\src\=
+vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_malloc_win.cpp:133</span></=
+code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x1011b5 in main C:\work\asan\calloc-o=
+verflow.cpp:11</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x13ced3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>=3D=3D8120=3D=3DHINT: if you don't care about these errors y=
+ou may set allocator_may_return_null=3D1</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: calloc-overflow D:\a\_work\1\s\sr=
+c\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_malloc_win.cpp:133 in cal=
+loc</span></code></p>
+<p><code><span>=3D=3D8120=3D=3DABORTING</span></code></p>
+<p><br></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=B8=A4=E6=AC=A1free">=
+=E4=B8=A4=E6=AC=A1<span>free</span></h4>
+<p>=E5=9C=A8<span>C</span>=E8=AF=AD=E8=A8=80=E4=B8=AD=EF=BC=8C=E8=A1=A8=E7=
+=8E=B0=E4=B8=BA<span>free()</span>=E5=A4=9A=E6=AC=A1=E5=9C=B0=E5=9D=80=E3=
+=80=82=E5=9C=A8<span>c++</span>=E4=B8=AD=EF=BC=8C=E8=A1=A8=E7=8E=B0=E4=B8=
+=BA<span>delete</span>=E5=A4=9A=E6=AC=A1=E6=8C=87=E9=92=88=E3=80=82=E5=9C=
+=A8<span>windows</span>=E4=B8=AD=EF=BC=8C=E4=B9=9F=E5=8F=AF=E4=BB=A5=E6=98=
+=AF<span>HeapFree()</span>=E5=A4=9A=E6=AC=A1=E5=9C=B0=E5=9D=80=E3=80=82</p>
+<p><code>// example1.cpp</code><br><code>// double-free error</code><br><co=
+de>int main() {</code></p>
+<p><code>&nbsp; &nbsp; int *x =3D new int[42];</code><br><code>&nbsp; &nbsp=
+; delete [] x;</code></p>
+<p><code>&nbsp; &nbsp; // ... some complex body of code</code></p>
+<p><code>&nbsp; &nbsp; delete [] x;</code><br><code>&nbsp; &nbsp; return 0;=
+</code><br><code>}</code></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D13248=3D=3DERROR: AddressSanitizer: attempting double-=
+free on 0x04003970 in thread T0:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0xf3b715 in operator delete[](void *) =
+D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_dele=
+te_array_thunk.cpp:44</span></code></p>
+<p><code><span style=3D"color: rgb(255,0,0);">&nbsp;&nbsp;&nbsp; #1 0xf011f=
+c in main C:\work\asan\double-free.cpp:10</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0xf3cfd3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>0x04003970 is located 0 bytes inside of 168-byte region [0x0=
+4003970,0x04003a18)</span></code></p>
+<p><code><span>freed by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0xf3b715 in operator delete[](void *) =
+D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_dele=
+te_array_thunk.cpp:44</span></code></p>
+<p><code><span style=3D"color: rgb(255,0,0);">&nbsp;&nbsp;&nbsp; #1 0xf011e=
+a in main C:\work\asan\double-free.cpp:6</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0xf3cfd3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>previously allocated by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0xf3b670 in operator new[](unsigned in=
+t) D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_n=
+ew_array_thunk.cpp:42</span></code></p>
+<p><code><span style=3D"color: rgb(255,0,0);">&nbsp;&nbsp;&nbsp; #1 0xf011c=
+f in main C:\work\asan\double-free.cpp:5</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0xf3cfd3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: double-free D:\a\_work\1\s\src\vc=
+tools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_delete_array_thunk.cpp:44=
+ in operator delete[](void *)</span></code></p>
+<p><code><span>=3D=3D13248=3D=3DABORTING</span></code></p>
+<p><br></p>
+<p><br></p>
+<p><span>ASAN</span>=E4=BC=9A=E5=88=86=E5=88=AB=E6=98=BE=E7=A4=BA=E7=AC=AC=
+=E4=BA=8C=E6=AC=A1=E9=87=8A=E6=94=BE=E3=80=81=E7=AC=AC=E4=B8=80=E6=AC=A1=E9=
+=87=8A=E6=94=BE=E5=92=8C=E5=88=86=E9=85=8D=E6=8C=87=E9=92=88=E5=9C=B0=E5=9D=
+=80=E7=9A=84=E8=B0=83=E7=94=A8=E6=A0=88=E3=80=82</p>
+<p><br></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=8A=A8=E6=80=81=E6=A0=
+=88=E6=BA=A2=E5=87=BA">=E5=8A=A8=E6=80=81=E6=A0=88=E6=BA=A2=E5=87=BA</h4>
+<p><code>// example1.cpp</code><br><code>// dynamic-stack-buffer-overflow e=
+rror</code><br><code>#include &lt;malloc.h&gt;</code></p>
+<p><code>__declspec(noinline)</code><br><code>void foo(int index, int len) =
+{</code></p>
+<p><code>&nbsp; &nbsp; volatile char *str =3D (volatile char *)_alloca(len)=
+;</code></p>
+<p><code>&nbsp; &nbsp; // &nbsp; &nbsp;reinterpret_cast&lt;long&gt;(str) &a=
+mp; 31L;</code></p>
+<p><code>&nbsp; &nbsp; str[index] =3D '1'; // Boom !</code><br><code>}</cod=
+e></p>
+<p><code>int main(int argc, char **argv) {</code></p>
+<p><code>&nbsp; &nbsp; foo(33, 10);</code><br><code>&nbsp; &nbsp; return 0;=
+</code><br><code>}</code></p>
+<p>=E6=9C=AC=E4=BE=8B=E5=AD=90=E4=B8=AD=EF=BC=8C=E5=8F=91=E7=94=9F=E4=BA=86=
+=E4=B8=8B=E6=A0=87=E4=B8=8A=E6=BA=A2=E3=80=82</p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D25956=3D=3DERROR: AddressSanitizer: <span style=3D"col=
+or: rgb(255,0,0);">dynamic-stack-buffer-overflow</span> on address 0x00def9=
+c1 at pc 0x006d12af bp 0x00def97c sp 0x00def970</span></code></p>
+<p><code><span>WRITE of size 1 at 0x00def9c1 thread T0</span></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #0 0x6d12a=
+e in foo(int, int) C:\work\asan\dynamic-stack-buffer-overflow.cpp:12</code>=
+</span></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x6d131b in main C:\work\asan\dynamic-=
+stack-buffer-overflow.cpp:17</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x70d013 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>Address 0x00def9c1 is located in stack of thread T0</span></=
+code></p>
+<p><code><span>SUMMARY: AddressSanitizer: dynamic-stack-buffer-overflow C:\=
+work\asan\dynamic-stack-buffer-overflow.cpp:12 in foo(int, int)</span></cod=
+e></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x301bdee0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x301bdef0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x301bdf00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x301bdf10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x301bdf20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>=3D&gt;0x301bdf30: ca ca ca ca 00 02 cb cb<span style=3D"col=
+or: rgb(255,0,0);">[cb]</span>cb cb cb 00 00 00 00</span></code></p>
+<p><code><span>&nbsp; 0x301bdf40: 00 00 00 f1 f1 f3 f3 f3 f3 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x301bdf50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x301bdf60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x301bdf70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x301bdf80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp; Right alloca redzone:&=
+nbsp;&nbsp;&nbsp; cb</code></span></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cc</span></code></p>
+<p><code><span>=3D=3D25956=3D=3DABORTING</span></code></p>
+<p><span>&nbsp;</span></p>
+<p>=E5=8F=B3=E4=BE=A7<span>alloca</span>=E7=BA=A2=E5=8C=BA=E4=B8=BA<span>0x=
+cb</span>=EF=BC=8C=E8=AF=B4=E6=98=8E=E4=B8=8B=E6=A0=87=E5=8F=91=E7=94=9F=E4=
+=BA=86=E4=B8=8A=E6=BA=A2=E3=80=82</p>
+<p><code>// example2.cpp</code><br><code>// dynamic-stack-buffer-overflow e=
+rror</code><br><code>#include &lt;malloc.h&gt;</code></p>
+<p><code>__declspec(noinline)</code><br><code>void foo(int index, int len) =
+{</code></p>
+<p><code>&nbsp; &nbsp; volatile char *str =3D (volatile char *)_alloca(len)=
+;</code></p>
+<p><code>&nbsp; &nbsp; str[index] =3D '1'; &nbsp;// Boom!</code><br><code>}=
+</code></p>
+<p><code>int main(int argc, char **argv) {</code><br><code>&nbsp; &nbsp; fo=
+o(-1, 10);</code><br><code>&nbsp; &nbsp; return 0;</code><br><code>}</code>=
+</p>
+<p>=E6=AD=A4=E4=BB=A3=E7=A0=81=E5=8F=91=E7=94=9F=E4=BA=86=E4=B8=8B=E6=A0=87=
+=E4=B8=8B=E6=BA=A2</p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D6732=3D=3DERROR: AddressSanitizer: dynamic-stack-buffe=
+r-overflow on address 0x0087fd3f at pc 0x008e12af bp 0x0087fd1c sp 0x0087fd=
+10</span></code></p>
+<p><code><span>WRITE of size 1 at 0x0087fd3f thread T0</span></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #0 0x8e12a=
+e in foo(int, int) C:\work\asan\dynamic-stack-buffer-overflow-2.cpp:10</cod=
+e></span></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x8e131b in main C:\work\asan\dynamic-=
+stack-buffer-overflow-2.cpp:14</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x91d013 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp; &nbsp;&nbsp;#4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>Address 0x0087fd3f is located in stack of thread T0</span></=
+code></p>
+<p><code><span>SUMMARY: AddressSanitizer: dynamic-stack-buffer-overflow C:\=
+work\asan\dynamic-stack-buffer-overflow-2.cpp:10 in foo(int, int)</span></c=
+ode></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x3010ff50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3010ff60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3010ff70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3010ff80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3010ff90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>=3D&gt;0x3010ffa0: 00 00 00 00 ca ca ca<span style=3D"color:=
+ rgb(255,0,0);">[ca]</span>00 02 cb cb cb cb cb cb</span></code></p>
+<p><code><span>&nbsp; 0x3010ffb0: 00 00 00 00 00 00 00 f1 f1 f3 f3 f3 f3 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3010ffc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3010ffd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3010ffe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3010fff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbs=
+p;f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp; Left alloca redzone:&n=
+bsp;&nbsp;&nbsp;&nbsp; ca</code></span></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></code></p>
+<p><code><span>=3D=3D6732=3D=3DABORTING</span></code></p>
+<p>=E5=B7=A6=E4=BE=A7<span>alloca</span>=E7=BA=A2=E5=8C=BA=E4=B8=BA<span>0x=
+ca</span>=EF=BC=8C=E8=AF=B4=E6=98=8E=E4=B8=8B=E6=A0=87=E5=8F=91=E7=94=9F=E4=
+=BA=86=E4=B8=8B=E6=BA=A2=E3=80=82</p>
+<p><br></p>
+<p><code>// example3.cpp</code><br><code>// dynamic-stack-buffer-overflow e=
+rror</code><br><code>#include &lt;stdio.h&gt;</code><br><code>#include &lt;=
+stdlib.h&gt;</code><br><code>#include &lt;malloc.h&gt;</code></p>
+<p><code>#define SIZE 7</code><br><code>extern void nothing();</code><br><c=
+ode>int x=3D13,*aa,*bb,y=3D0;</code><br><code>int fail =3D 0;</code><br><co=
+de>int tmp;</code></p>
+<p><code>int main()</code><br><code>{</code><br><code>&nbsp; &nbsp; int* cc=
+;</code><br><code>&nbsp; &nbsp; int i;</code><br><code>&nbsp; &nbsp; int k =
+=3D 17;</code><br><code>&nbsp; &nbsp; __try {</code><br><code>&nbsp; &nbsp;=
+ &nbsp; &nbsp; tmp =3D k;</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; aa =
+=3D (int*)_alloca(SIZE * sizeof(int));</code><br><code>&nbsp; &nbsp; &nbsp;=
+ &nbsp; if (((int)aa) &amp; 0x3)</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; fail =3D 1;</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; for=
+ (i =3D 0; i &lt; SIZE; i++) {</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; aa[i] =3D x + 1 + i;</code><br><code>&nbsp; &nbsp; &nbsp; &nb=
+sp; }</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; bb =3D (int*)_alloca(x * =
+sizeof(int));</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; if (((int)bb) &am=
+p; 0x3)</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fail =3D =
+1;</code></p>
+<p><code>&nbsp; &nbsp; &nbsp; &nbsp; for (i =3D 0; i &lt; x; i++) {</code><=
+br><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bb[i] =3D 7;</code><br><=
+code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bb[i] =3D bb[i] + i;</code><=
+br><code>&nbsp; &nbsp; &nbsp; &nbsp; }</code><br><code>&nbsp; &nbsp; &nbsp;=
+ &nbsp; {</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int s =
+=3D 112728283;</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; in=
+t ar[8];</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for (i =
+=3D 0; i &lt; 8; i++)</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; ar[i] =3D s * 17 * i;</code><br><code>&nbsp; &nbsp; &nbs=
+p; &nbsp; }</code></p>
+<p><code>&nbsp; &nbsp; &nbsp; &nbsp; cc =3D (int*)_alloca(x);</code><br><co=
+de>&nbsp; &nbsp; &nbsp; &nbsp; if (((int)cc) &amp; 0x3)</code><br><code>&nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fail =3D 1;</code></p>
+<p><code>&nbsp; &nbsp; &nbsp; &nbsp; cc[0] =3D 0;</code><br><code>&nbsp; &n=
+bsp; &nbsp; &nbsp; cc[1] =3D 1;</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp;=
+ cc[2] =3D 2;</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; cc[3] =3D 3; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // &lt;--- Boom!</code><br><code>&nbs=
+p; &nbsp; &nbsp; &nbsp; for (i =3D 0; i &lt; x; i++)</code><br><code>&nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (bb[i] !=3D (7 + i))</code><br><code=
+>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fail =3D 1;</code>=
+<br><code>&nbsp; &nbsp; &nbsp; &nbsp; if (tmp !=3D k)</code><br><code>&nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fail =3D 1;</code><br><code>&nbsp; &nb=
+sp; &nbsp; &nbsp; if (fail) {</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; printf("fail\n");</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; exit(7);</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; }</code>=
+<br><code>&nbsp; &nbsp; &nbsp; &nbsp; printf("%d\n", (*cc) / y);</code><br>=
+<code>&nbsp; &nbsp; &nbsp; &nbsp; printf("fail\n");</code><br><code>&nbsp; =
+&nbsp; &nbsp; &nbsp; exit(7);</code><br><code>&nbsp; &nbsp; }</code><br><co=
+de>&nbsp; &nbsp; __except (1)</code><br><code>&nbsp; &nbsp; {</code><br><co=
+de>&nbsp; &nbsp; &nbsp; &nbsp; for (i =3D 0; i &lt; SIZE; i++)</code><br><c=
+ode>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (aa[i] !=3D (x + i + 1))</=
+code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fail=
+ =3D 1;</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; if (fail) {</code><br><=
+code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; printf("fail\n");</code><br>=
+<code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exit(7);</code><br><code>&n=
+bsp; &nbsp; &nbsp; &nbsp; }</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; pri=
+ntf("pass\n");</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; exit(0);</code><=
+br><code>&nbsp; &nbsp; }</code><br><code>}</code></p>
+<p><span>Cc[3] =3D 3; </span>=E5=A4=9A=E5=86=99=E4=BA=86<span>4</span>=E5=
+=AD=97=E8=8A=82</p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D5800=3D=3DERROR: AddressSanitizer: dynamic-stack-buffe=
+r-overflow on address 0x0058fb8c at pc 0x005f190a bp 0x0058fb5c sp 0x0058fb=
+50</span></code></p>
+<p><code><span>WRITE of size 4 at 0x0058fb8c thread T0</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x5f1909 in main C:\work\asan\example3=
+.cpp:48</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x62d9a3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>Address 0x0058fb8c is located in stack of thread T0</span></=
+code></p>
+<p><code><span>SUMMARY: AddressSanitizer: dynamic-stack-buffer-overflow C:\=
+work\asan\example3.cpp:48 in main</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x300b1f20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300b1f30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300b1f40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300b1f50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300b1f60: 00 00 00 00 00 00 00 00 00 00 00 00 ca ca=
+ ca ca</span></code></p>
+<p><code><span>=3D&gt;0x300b1f70: 00<span style=3D"color: rgb(255,0,0);">[0=
+5]</span>cb cb cb cb cb cb ca ca ca ca 00 00 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300b1f80: 00 00 04 cb cb cb cb cb ca ca ca ca 00 00=
+ 00 04</span></code></p>
+<p><code><span>&nbsp; 0x300b1f90: cb cb cb cb 00 00 00 00 00 00 00 00 f1 f1=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300b1fa0: 00 00 f3 f3 f3 f3 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300b1fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300b1fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa&nbsp;</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></code></p>
+<p><code><span>=3D=3D5800=3D=3DABORTING</span></code></p>
+<p><span>&nbsp;</span></p>
+<p>=E5=86=99=E5=85=A5=E7=9A=84=E9=98=B4=E5=BD=B1=E5=AD=97=E8=8A=82=E4=B8=BA=
+<span>05</span>=EF=BC=8C=E8=A1=A8=E7=A4=BA<span>8</span>=E4=B8=AA=E5=AD=97=
+=E8=8A=82=E9=87=8C=EF=BC=8C=E5=89=8D<span>5</span>=E4=B8=AA=E5=AD=97=E8=8A=
+=82=E5=8F=AF=E4=BB=A5=E8=A2=AB=E8=AE=BF=E9=97=AE=E3=80=82=E5=90=8E<span>3</=
+span>=E4=B8=AA=E5=AD=97=E8=8A=82=E4=B8=8D=E5=8F=AF=E8=AE=BF=E9=97=AE=E3=80=
+=82=E6=AD=A3=E5=A5=BD=E5=92=8C<span>13</span>=E5=AD=97=E8=8A=82<span>alloca=
+</span>=E7=9B=B8=E5=AF=B9=E5=BA=94=E3=80=82=E9=80=9A=E8=BF=87=E8=A7=82=E5=
+=AF=9F=E9=98=B4=E5=BD=B1=E5=AD=97=E8=8A=82=E5=9C=B0=E5=9B=BE=E5=8F=AF=E4=BB=
+=A5=E7=9C=8B=E5=88=B0<span>05</span>=E4=B9=8B=E5=90=8E<span>cb</span>=E4=B8=
+=BA<span>right alloca redzone</span>=EF=BC=8C=E8=AF=B4=E6=98=8E=E9=97=AE=E9=
+=A2=98=E4=B8=BA<span>alloca()</span>=E5=9C=B0=E5=9D=80=E4=B8=8B=E6=A0=87=E4=
+=B8=8A=E6=BA=A2=E3=80=82</p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=85=A8=E5=B1=80=E5=8F=
+=98=E9=87=8F=E7=BC=93=E5=AD=98=E6=BA=A2=E5=87=BA">=E5=85=A8=E5=B1=80=E5=8F=
+=98=E9=87=8F=E7=BC=93=E5=AD=98=E6=BA=A2=E5=87=BA</h4>
+<p><code>// example2.cpp</code><br><code>// global-buffer-overflow error</c=
+ode><br><code>#include &lt;string.h&gt;</code></p>
+<p><code>int&nbsp;</code><br><code>main(int argc, char **argv) {</code></p>
+<p><code>&nbsp; &nbsp; static char XXX[10];</code><br><code>&nbsp; &nbsp; s=
+tatic char YYY[10];</code><br><code>&nbsp; &nbsp; static char ZZZ[10];</cod=
+e></p>
+<p><code>&nbsp; &nbsp; memset(XXX, 0, 10); memset(YYY, 0, 10); memset(ZZZ, =
+0, 10);</code></p>
+<p><code>&nbsp; &nbsp; int res =3D YYY[argc * 10]; &nbsp;// Boom!</code></p=
+>
+<p><code>&nbsp; &nbsp; res +=3D XXX[argc] + ZZZ[argc];</code><br><code>&nbs=
+p; &nbsp; return res;</code><br><code>}</code></p>
+<p><br></p>
+<p><span>=3D=3D2052=3D=3DERROR: AddressSanitizer: global-buffer-overflow on=
+ address 0x001e238a at pc 0x00141216 bp 0x012ff8e0 sp 0x012ff8d4</span></p>
+<p>READ of size 1<span> at 0x001e238a thread T0</span></p>
+<p><span>&nbsp;&nbsp;&nbsp; #0 0x141215 in main C:\work\asan\global-buffer-=
+overflow.cpp:14</span></p>
+<p><span>&nbsp;&nbsp;&nbsp; #1 0x17cf53 in _scrt_common_main_seh D:\a\_work=
+\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span></p>
+<p><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\KERNEL=
+32.DLL+0x6b81fa28)</span></p>
+<p><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\ntdll.=
+dll+0x4b2e7a9d)</span></p>
+<p><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\ntdll.=
+dll+0x4b2e7a6d)</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>0x001e238a is located 0 bytes to the right of global variable '`ma=
+in'::`2'::YYY' defined in 'global-buffer-overflow.cpp:9:16' (0x1e2380) of s=
+ize 10</span></p>
+<p><span>SUMMARY: AddressSanitizer: global-buffer-overflow C:\work\asan\glo=
+bal-buffer-overflow.cpp:14 in main</span></p>
+<p><span>Shadow bytes around the buggy address:</span></p>
+<p><span>&nbsp; 0x3003c420: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+</span></p>
+<p><span>&nbsp; 0x3003c430: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+</span></p>
+<p><span>&nbsp; 0x3003c440: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+</span></p>
+<p><span>&nbsp; 0x3003c450: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+</span></p>
+<p><span>&nbsp; 0x3003c460: 00 02 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9=
+</span></p>
+<p><span>=3D&gt;0x3003c470: 00[02]f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9=
+</span></p>
+<p><span>&nbsp; 0x3003c480: 00 02 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9 f9=
+</span></p>
+<p><span>&nbsp; 0x3003c490: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+</span></p>
+<p><span>&nbsp; 0x3003c4a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+</span></p>
+<p><span>&nbsp; 0x3003c4b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+</span></p>
+<p><span>&nbsp; 0x3003c4c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+</span></p>
+<p><span>Shadow byte legend (one shadow byte represents 8 application bytes=
+):</span></p>
+<p><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; 00</span></p>
+<p><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></p>
+<p><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fa</=
+span></p>
+<p><span>&nbsp; Freed heap region: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fd</=
+span></p>
+<p><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1</span>=
+</p>
+<p><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f2</=
+span></p>
+<p><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span></p>
+<p><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5</span>=
+</p>
+<p><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></p>
+<p><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; f9</span></p>
+<p><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f6</=
+span></p>
+<p><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ f7</span></p>
+<p><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc</span>=
+</p>
+<p><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; ac</span></p>
+<p><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></p>
+<p><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; fe</span></p>
+<p><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span></p>
+<p><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></p>
+<p><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></p>
+<p><span>=3D=3D2052=3D=3DABORTING</span></p>
+<p><span>&nbsp;</span></p>
+<p>=E6=B3=A8=E6=84=8F=E6=98=AF=E8=AF=BB=E5=8F=96=E6=93=8D=E4=BD=9C=E5=8F=91=
+=E7=94=9F=E9=94=99=E8=AF=AF=E3=80=82</p>
+<p>=E5=87=BA=E9=94=99=E5=9C=B0=E5=9D=80=E4=B8=BA<span>0x2</span>=EF=BC=8C=
+=E8=AF=B4=E6=98=8E=E6=9C=89=E5=89=8D<span>2</span>=E5=AD=97=E8=8A=82=E8=AE=
+=BF=E9=97=AE=E3=80=82=E5=90=8E=E9=9D=A2=E6=98=AF<span>0xf9</span>=EF=BC=8C=
+=E4=B8=BA=E5=85=A8=E5=B1=80=E5=9C=B0=E5=9D=80=E7=BA=A2=E5=8C=BA=E3=80=82=E8=
+=AF=B4=E6=98=8E=E8=AF=BB=E5=88=B0=E4=BA=86=E5=85=A8=E5=B1=80=E5=8F=98=E9=87=
+=8F=E5=92=8C=E7=BA=A2=E5=8C=BA=E7=9A=84=E4=BA=A4=E7=95=8C=E4=B8=8A=E3=80=82=
+</p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=A0=86=E6=BA=A2=E5=87=
+=BA">=E5=A0=86=E6=BA=A2=E5=87=BA</h4>
+<p><code><span>// example1.cpp</span></code></p>
+<p><code><span>// heap-buffer-overflow error</span></code></p>
+<p><code><span>#include &lt;stdlib.h&gt;</span></code></p>
+<p><code><span>#include &lt;string.h&gt;</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>int main(int argc, char **argv) {</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; char *x =3D (char*)malloc(10 * sizeof(cha=
+r));</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; memset(x, 0, 10);</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; int res =3D x[argc * 10];&nbsp; // Boom!<=
+/span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; free(x);</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; return res;</span></code></p>
+<p><code><span>}</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D25956=3D=3DERROR: AddressSanitizer: heap-buffer-overfl=
+ow on address 0x0270257a at pc 0x000f11fd bp 0x007dfb1c sp 0x007dfb10</span=
+></code></p>
+<p><code><span style=3D"color: rgb(255,0,0);">READ of size 1</span> <span>a=
+t 0x0270257a thread T0</span></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #0 0xf11fc=
+ in main C:\work\asan\heap-buffer-overflow.cpp:10</code></span></p>
+<p><code><span>&nbsp; &nbsp;&nbsp;#1 0x12ceb3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>0x0270257a is located 0 bytes to the right of 10-byte region=
+ [0x02702570,0x0270257a)</span></code></p>
+<p><code><span>allocated by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x116af7 in malloc D:\a\_work\1\s\src\=
+vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_malloc_win.cpp:124</span></=
+code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #1 0xf11ac=
+ in main C:\work\asan\heap-buffer-overflow.cpp:8</code></span></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x12ceb3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: heap-buffer-overflow C:\work\asan=
+\heap-buffer-overflow.cpp:10 in main</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x304e0450: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x304e0460: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x304e0470: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x304e0480: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x304e0490: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>=3D&gt;0x304e04a0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ 00[02]</span></code></p>
+<p><code><span>&nbsp; 0x304e04b0: fa fa 00 05 fa fa 00 07 fa fa 00 04 fa fa=
+ 00 05</span></code></p>
+<p><code><span>&nbsp; 0x304e04c0: fa fa 00 06 fa fa 00 03 fa fa 00 05 fa fa=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x304e04d0: fa fa 00 00 fa fa 00 00 fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x304e04e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x304e04f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></code></p>
+<p><code><span>=3D=3D25956=3D=3DABORTING</span></code></p>
+<p><br></p>
+<p><br></p>
+<p><span>ASAN</span>=E4=BC=9A=E5=88=86=E5=88=AB=E6=89=93=E5=8D=B0=E5=87=BA=
+=E7=8E=B0=E5=BC=82=E5=B8=B8=E8=AE=BF=E9=97=AE=E6=8C=87=E9=92=88=E5=92=8C=E5=
+=88=86=E9=85=8D=E5=9C=B0=E5=9D=80=E7=9A=84=E6=A0=88=E4=BF=A1=E6=81=AF=E3=80=
+=82</p>
+<p>=E8=BF=99=E6=AC=A1=E7=9A=84=E8=BF=9D=E8=A7=84=E8=AE=BF=E9=97=AE=E4=B8=BA=
+=E8=AF=BB=E6=93=8D=E4=BD=9C=E3=80=82=E4=BB=8E=E9=98=B4=E5=BD=B1=E5=AD=97=E8=
+=8A=82=E5=9C=B0=E5=9B=BE=E4=B8=AD=E5=8F=AF=E4=BB=A5=E5=BE=97=E7=9F=A5=EF=BC=
+=8C=E5=87=BA=E9=94=99=E5=9C=B0=E5=9D=80=E4=B8=BA<span>02</span>=EF=BC=88=E6=
+=9C=89=E5=89=8D<span>2</span>=E4=B8=AA=E5=AD=97=E8=8A=82=E5=8F=AF=E4=BB=A5=
+=E8=AE=BF=E9=97=AE=EF=BC=89=EF=BC=8C=E7=B4=A7=E8=B7=9F=E7=9D=80<span>fa</sp=
+an>=E5=9C=B0=E5=9D=80=EF=BC=88=E5=A0=86=E5=B7=A6=E7=BA=A2=E5=8C=BA=E5=9C=B0=
+=E5=9D=80=EF=BC=89=E3=80=82=E8=AF=B4=E6=98=8E=E5=87=BA=E9=94=99=E5=9C=B0=E5=
+=9D=80=E4=B8=BA=E5=A0=86=E6=8C=87=E9=92=88=E6=9C=89=E6=95=88=E5=9C=B0=E5=9D=
+=80=E5=92=8C=E6=97=A0=E6=95=88=E5=9C=B0=E5=9D=80=E7=9A=84=E8=BE=B9=E7=95=8C=
+=E4=B8=8A=E3=80=82</p>
+<p><br></p>
+<p><code><span>// example2.cpp</span></code></p>
+<p><code><span>// heap-buffer-overflow error</span></code></p>
+<p><code><span>class Parent {</span></code></p>
+<p><code><span>public:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; int field;</span></code></p>
+<p><code><span>};</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>class Child : public Parent {</span></code></p>
+<p><code><span>public:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; int extra_field;</span></code></p>
+<p><code><span>};</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>int main(void) {</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; Parent *p =3D new Parent;</span></code></=
+p>
+<p><code><span>&nbsp;&nbsp;&nbsp; Child *c =3D (Child*)p;&nbsp; // Intentio=
+nal error here!</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; c-&gt;extra_field =3D 42;</span></code></=
+p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; return 0;</span></code></p>
+<p><code><span>}</span></code></p>
+<p><br></p>
+<p>=E8=BF=9D=E6=B3=95=E7=9A=84=E5=AF=B9=E8=B1=A1=E7=B1=BB=E5=9E=8B=E8=BD=AC=
+=E6=8D=A2=EF=BC=8C=E5=AF=BC=E8=87=B4=E9=9D=9E=E6=B3=95=E5=86=99=E5=85=A5=E5=
+=A0=864=E5=AD=97=E8=8A=82</p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D26052=3D=3DERROR: AddressSanitizer: heap-buffer-overfl=
+ow on address 0x02902574 at pc 0x001511f8 bp 0x00b3fe88 sp 0x00b3fe7c</span=
+></code></p>
+<p><code><span style=3D"color: rgb(255,0,0);">WRITE of size 4</span> <span>=
+at 0x02902574 thread T0</span></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #0 0x1511f=
+7 in main C:\work\asan\heap-buffer-overflow-2.cpp:16</code></span></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x18ceb3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>0x02902574 is located 0 bytes to the right of 4-byte region =
+[0x02902570,0x02902574)</span></code></p>
+<p><code><span>allocated by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x18b667 in operator new(unsigned int)=
+ D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_new=
+_scalar_thunk.cpp:41</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x1511ac in main C:\work\asan\heap-buf=
+fer-overflow-2.cpp:14</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x18ceb3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: heap-buffer-overflow C:\work\asan=
+\heap-buffer-overflow-2.cpp:16 in main</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x30520450: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30520460: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30520470: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30520480: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30520490: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>=3D&gt;0x305204a0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+[04]fa</span></code></p>
+<p><code><span>&nbsp; 0x305204b0: fa fa 00 05 fa fa 00 07 fa fa 00 04 fa fa=
+ 00 05</span></code></p>
+<p><code><span>&nbsp; 0x305204c0: fa fa 00 06 fa fa 00 03 fa fa 00 05 fa fa=
+ 00 00</span></code></p>
+<p><span><code>&nbsp; 0</code>x305204d0: fa fa 00 00 fa fa 00 00 fa fa fa f=
+a fa fa fa fa</span></p>
+<p><span>&nbsp; 0x305204e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+</span></p>
+<p><span>&nbsp; 0x305204f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+</span></p>
+<p><span>Shadow byte legend (one shadow byte represents 8 application bytes=
+):</span></p>
+<p><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; 00</span></p>
+<p><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></p>
+<p><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fa</=
+span></p>
+<p><span>&nbsp; Freed heap region: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fd</=
+span></p>
+<p><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1</span>=
+</p>
+<p><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f2</=
+span></p>
+<p><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span></p>
+<p><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5</span>=
+</p>
+<p><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></p>
+<p><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; f9</span></p>
+<p><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f6</=
+span></p>
+<p><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ f7</span></p>
+<p><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc</span>=
+</p>
+<p><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; ac</span></p>
+<p><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></p>
+<p><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; fe</span></p>
+<p><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span></p>
+<p><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></p>
+<p><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></p>
+<p><span>=3D=3D26052=3D=3DABORTING</span></p>
+<p><br></p>
+<p>=E7=94=B1=E4=BA=8E=E5=AF=B9=E8=B1=A1=E8=BF=9D=E6=B3=95=E8=BD=AC=E6=8D=A2=
+=EF=BC=8C=E5=86=99=E5=85=A5=E7=9A=84=E7=B1=BB=E6=88=90=E5=91=98=E5=9C=B0=E5=
+=9D=80=E8=B6=85=E8=BF=87=E4=BA=86=E5=AF=B9=E8=B1=A1=E7=9A=84=E6=9C=89=E6=95=
+=88=E5=8C=BA=EF=BC=8C=E6=89=80=E4=BB=A5<span>ASAN</span>=E5=8F=91=E7=8E=B0=
+=E4=BA=86=E6=AD=A4=E7=B1=BB=E9=94=99=E8=AF=AF=E3=80=82=E5=8F=AF=E4=BB=A5=E7=
+=9C=8B=E5=88=B0=E5=86=99=E5=85=A5=E5=9C=B0=E5=9D=80=E4=B8=BA<span>04</span>=
+=EF=BC=88<span>4</span>=E4=B8=AA=E6=9C=89=E6=95=88=E5=AD=97=E8=8A=82=EF=BC=
+=89=EF=BC=8C=E5=89=8D=E5=90=8E=E9=83=BD=E6=98=AF<span>0xfa</span>=EF=BC=88=
+=E5=A0=86=E5=B7=A6=E7=BA=A2=E5=8C=BA=EF=BC=89=EF=BC=8C=E8=AF=B4=E6=98=8E=E5=
+=87=BA=E9=94=99=E5=9C=B0=E5=9D=80=E4=B8=BA=E6=9C=89=E6=95=88=E5=9C=B0=E5=9D=
+=80=E5=92=8C=E5=A0=86=E7=BA=A2=E5=8C=BA=E7=9A=84=E8=BE=B9=E7=95=8C=E4=B8=8A=
+=E3=80=82</p>
+<p><br></p>
+<p><code>// example3.cpp</code><br><code>// heap-buffer-overflow error</cod=
+e><br><code>#include &lt;string.h&gt;</code><br><code>#include &lt;stdlib.h=
+&gt;</code></p>
+<p><code>int main(int argc, char **argv) {</code></p>
+<p><code>&nbsp; &nbsp; char *hello =3D (char*)malloc(6);</code><br><code>&n=
+bsp; &nbsp; strcpy(hello, "hello");</code></p>
+<p><code>&nbsp; &nbsp; char *short_buffer =3D (char*)malloc(9);</code><br><=
+code>&nbsp; &nbsp; strncpy(short_buffer, hello, 10); &nbsp;// Boom!</code><=
+/p>
+<p><code>&nbsp; &nbsp; return short_buffer[8];</code><br><code>}</code></p>
+<p><br></p>
+<p>=E8=BF=99=E4=B8=AA=E4=BE=8B=E5=AD=90=E4=B8=AD<span>strncpy</span>=E8=AF=
+=95=E5=9B=BE=E5=86=99=E5=85=A5=E7=BB=99=E4=B8=80=E4=B8=AA=E5=A4=A7=E5=B0=8F=
+=E4=B8=BA<span>9</span>=E5=AD=97=E8=8A=82=E7=9A=84=E5=9C=B0=E5=9D=80<span>1=
+0</span>=E4=B8=AA=E5=AD=97=E8=8A=82=E3=80=82=E8=99=BD=E7=84=B6=E5=A4=8D=E5=
+=88=B6=E5=AD=97=E7=AC=A6=E4=B8=B2=E5=B9=B6=E6=B2=A1=E6=9C=89<span>10</span>=
+=E4=B8=AA=E5=AD=97=E8=8A=82=EF=BC=8C=E4=BD=86=E6=98=AF<span>ASAN</span>=E4=
+=BB=8D=E8=83=BD=E5=A4=9F=E6=A3=80=E6=9F=A5=E5=88=B0=E5=BD=93=E5=AD=97=E7=AC=
+=A6=E4=B8=B2=E5=A4=9F=E9=95=BF=E6=97=B6=E5=8F=AF=E4=BB=A5=E5=87=BA=E9=94=99=
+=E3=80=82</p>
+<p><br></p>
+<p><br></p>
+<p><code><span>C:\work\asan&gt;heap-buffer-overflow-3</span></code></p>
+<p><br></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><br></p>
+<p><code><span>=3D=3D8484=3D=3DERROR: AddressSanitizer: <span style=3D"colo=
+r: rgb(255,0,0);">heap-buffer-overflow </span>on address 0x02a02559 at pc 0=
+x0022d1b8 bp 0x00aff7b0 sp 0x00aff79c</span></code></p>
+<p><br></p>
+<p><code><span style=3D"color: rgb(255,0,0);">WRITE of size 10</span><span>=
+ at 0x02a02559 thread T0</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x22d1d2 in __asan_wrap_strncpy D:\a\_=
+work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_interceptors.c=
+pp:502</span></code></p>
+<p><br></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #1 0x2011d=
+f in main C:\work\asan\heap-buffer-overflow-3.cpp:12</code></span></p>
+<p><br></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x23ceb3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><br></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><br></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>0x02a02559 is located 0 bytes=
+ to the right of 9-byte region [0x02a02550,0x02a02559)</code></span></p>
+<p><br></p>
+<p><code><span>allocated by thread T0 here:</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x226af7 in malloc D:\a\_work\1\s\src\=
+vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_malloc_win.cpp:124</span></=
+code></p>
+<p><br></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #1 0x2011c=
+a in main C:\work\asan\heap-buffer-overflow-3.cpp:11</code></span></p>
+<p><br></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x23ceb3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><br></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><br></p>
+<p><code><span>SUMMARY: AddressSanitizer: heap-buffer-overflow D:\a\_work\1=
+\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_interceptors.cpp:502=
+ in __asan_wrap_strncpy</span></code></p>
+<p><br></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30540450: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30540460: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30540470: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30540480: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30540490: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><br></p>
+<p><code><span>=3D&gt;0x305404a0: fa fa fa fa fa fa fa fa fa fa 00[01]fa fa=
+ 06 fa</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x305404b0: fa fa 00 05 fa fa 00 07 fa fa 00 04 fa fa=
+ 00 05</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x305404c0: fa fa 00 06 fa fa 00 03 fa fa 00 05 fa fa=
+ 00 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x305404d0: fa fa 00 00 fa fa 00 00 fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><br></p>
+<p><span>&nbsp; 0x305404e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+</span></p>
+<p><br></p>
+<p><span>&nbsp; 0x305404f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+</span></p>
+<p><br></p>
+<p><span>Shadow byte legend (one shadow byte represents 8 application bytes=
+):</span></p>
+<p><br></p>
+<p><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; 00</span></p>
+<p><br></p>
+<p><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></p>
+<p><br></p>
+<p><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fa</=
+span></p>
+<p><br></p>
+<p><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fd</=
+span></p>
+<p><br></p>
+<p><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1</span>=
+</p>
+<p><br></p>
+<p><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f2</=
+span></p>
+<p><br></p>
+<p><span>&nbsp;&nbsp;Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span>=
+</p>
+<p><br></p>
+<p><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5</span>=
+</p>
+<p><br></p>
+<p><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></p>
+<p><br></p>
+<p><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; f9</span></p>
+<p><br></p>
+<p><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f6</=
+span></p>
+<p><br></p>
+<p><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ f7</span></p>
+<p><br></p>
+<p><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc</span>=
+</p>
+<p><br></p>
+<p><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; ac</span></p>
+<p><br></p>
+<p><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></p>
+<p><br></p>
+<p><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; fe</span></p>
+<p><br></p>
+<p><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span></p>
+<p><br></p>
+<p><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></p>
+<p><br></p>
+<p><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></p>
+<p><br></p>
+<p><span>=3D=3D8484=3D=3DABORTING</span></p>
+<p><br></p>
+<p><span>&nbsp;</span></p>
+<p><br></p>
+<p>=E5=88=86=E6=9E=90=E9=98=B4=E5=BD=B1=E5=AD=97=E8=8A=82=E5=9C=B0=E5=9B=BE=
+=EF=BC=8C=E5=8F=AF=E4=BB=A5=E7=9C=8B=E5=88=B0=E5=87=BA=E9=94=99=E5=9C=B0=E5=
+=9D=80=E4=B8=BA<span>01</span>=EF=BC=88=E6=9C=89<span>1</span>=E4=B8=AA=E5=
+=8F=AF=E8=AE=BF=E9=97=AE=E5=AD=97=E8=8A=82=EF=BC=89=EF=BC=8C=E7=B4=A7=E8=B7=
+=9F<span>fa</span>=EF=BC=88=E5=A0=86=E5=B7=A6=E7=BA=A2=E5=8C=BA=EF=BC=89</p=
+>
+<p><br></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=AF=B9=E5=A0=86=E4=BD=
+=BF=E7=94=A8=E9=87=8A=E6=94=BE=E5=90=8E=E7=9A=84=E5=86=85=E5=AD=98">=E5=AF=
+=B9=E5=A0=86=E4=BD=BF=E7=94=A8=E9=87=8A=E6=94=BE=E5=90=8E=E7=9A=84=E5=86=85=
+=E5=AD=98</h4>
+<p>=E6=AD=A4=E7=B1=BB<span>bug</span>=E9=9A=BE=E4=BA=8E=E5=8F=91=E7=8E=B0=
+=EF=BC=8C=E7=89=B9=E5=88=AB=E6=98=AF=E8=AF=BB=E7=B1=BB=E5=9E=8B=E7=9A=84<sp=
+an>bug</span>=E3=80=82<span>ASAN</span>=E9=80=9A=E8=BF=87=E5=AF=B9=E5=B7=B2=
+=E9=87=8A=E6=94=BE=E7=9A=84=E5=9C=B0=E5=9D=80=E7=A9=BA=E9=97=B4=E4=B8=8B=E6=
+=AF=92=E6=9D=A5=E6=89=BE=E5=88=B0=E5=AE=83=E4=BB=AC=E3=80=82</p>
+<p><code>// example1.cpp</code><br><code>// heap-use-after-free error</code=
+><br><code>#include &lt;stdlib.h&gt;</code></p>
+<p><code>int main() {</code><br><code>&nbsp; char *x =3D (char*)malloc(10 *=
+ sizeof(char));</code><br><code>&nbsp; free(x);</code></p>
+<p><code>&nbsp; // ...</code></p>
+<p><code>&nbsp; return x[5]; &nbsp; // Boom!</code><br><code>}</code></p>
+<p>=E9=87=8A=E6=94=BE=E5=90=8E=E8=AE=BF=E9=97=AE=E7=AC=AC<span>5</span>=E4=
+=B8=AA=E5=85=83=E7=B4=A0=E3=80=82</p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D5836=3D=3DERROR: AddressSanitizer:<span style=3D"color=
+: rgb(255,0,0);"> heap-use-after-free</span> on address 0x02c02575 at pc 0x=
+005911fe bp 0x00f3fec8 sp 0x00f3febc</span></code></p>
+<p><code><span style=3D"color: rgb(255,0,0);">READ of size 1</span><span> a=
+t 0x02c02575 thread T0</span></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #0 0x5911f=
+d in main C:\work\asan\heap-use-after-free.cpp:11</code></span></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x5cceb3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>0x02c02575 is located 5 bytes=
+ inside of 10-byte region [0x02c02570,0x02c0257a)</code></span></p>
+<p><code><span>freed by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x5b69f3 in free D:\a\_work\1\s\src\vc=
+tools\crt\asan\llvm\compiler-rt\lib\asan\asan_malloc_win.cpp:115</span></co=
+de></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #1 0x5911b=
+b in main C:\work\asan\heap-use-after-free.cpp:7</code></span></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x5cceb3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>previously allocated by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x5b6af7 in malloc D:\a\_work\1\s\src\=
+vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_malloc_win.cpp:124</span></=
+code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #1 0x5911a=
+c in main C:\work\asan\heap-use-after-free.cpp:6</code></span></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x5cceb3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: heap-use-after-free C:\work\asan\=
+heap-use-after-free.cpp:11 in main</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x30580450: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30580460: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30580470: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30580480: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30580490: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>=3D&gt;0x305804a0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+[fd]fd</span></code></p>
+<p><code><span>&nbsp; 0x305804b0: fa fa 00 05 fa fa 00 07 fa fa 00 04 fa fa=
+ 00 05</span></code></p>
+<p><code><span>&nbsp; 0x305804c0: fa fa 00 06 fa fa 00 03 fa fa 00 05 fa fa=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x305804d0: fa fa 00 00 fa fa 00 00 fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x305804e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x305804f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cc</span></code></p>
+<p><code><span>=3D=3D5836=3D=3DABORTING</span></code></p>
+<p><br></p>
+<p><span>ASAN</span>=E5=88=86=E5=88=AB=E6=89=93=E5=8D=B0=E4=BA=86=E6=97=A0=
+=E6=95=88=E5=9C=B0=E5=9D=80=E8=AE=BF=E9=97=AE=E3=80=81=E6=9C=80=E8=BF=91=E5=
+=9C=B0=E5=9D=80=E9=87=8A=E6=94=BE=E3=80=81=E6=9C=80=E8=BF=91=E5=9C=B0=E5=9D=
+=80=E5=88=86=E9=85=8D=E7=9A=84=E5=A0=86=E6=A0=88=E4=BF=A1=E6=81=AF=E3=80=82=
+=E9=98=B4=E5=BD=B1=E5=86=85=E5=AD=98=E5=9C=B0=E5=9B=BE=E8=A1=A8=E6=98=8E=E5=
+=87=BA=E9=94=99=E5=9C=B0=E5=9D=80=E4=B8=BA<span>fd</span>=EF=BC=88=E5=A0=86=
+=E6=A0=88=E5=B7=B2=E9=87=8A=E6=94=BE=E5=8C=BA=E5=9F=9F=EF=BC=89=E3=80=82=E8=
+=BF=99=E8=A1=A8=E6=98=8E=E5=87=BA=E9=94=99=E5=9C=B0=E5=9D=80=E4=B8=BA=E5=B7=
+=B2=E9=87=8A=E6=94=BE=E5=9C=B0=E5=9D=80=E3=80=82</p>
+<p><code>// example2.cpp</code><br><code>// heap-use-after-free error</code=
+><br><code>#include &lt;windows.h&gt;</code></p>
+<p><code>int main() {</code><br><code>&nbsp; char *buffer =3D new char[42];=
+</code><br><code>&nbsp; delete [] buffer;</code></p>
+<p><code>&nbsp; // ...</code></p>
+<p><code>&nbsp; buffer[0] =3D 42; &nbsp;// Boom!</code><br><code>&nbsp; ret=
+urn 0;</code><br><code>}</code></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D</span></code></p>
+<p><code><span>=3D=3D23156=3D=3DERROR: AddressSanitizer: heap-use-after-fre=
+e on address 0x02800bd0 at pc 0x00501229 bp 0x010ffb74 sp 0x010ffb68</span>=
+</code></p>
+<p><code>WRITE of size 1<span> at 0x02800bd0 thread T0</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x501228 in main C:\work\asan\heap-use=
+-after-free-2.cpp:11</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x53cff3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>0x02800bd0 is located 0 bytes inside of 42-byte region [0x02=
+800bd0,0x02800bfa)</span></code></p>
+<p><code><span>freed by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x53b735 in operator delete[](void *) =
+D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_dele=
+te_array_thunk.cpp:44</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x5011e7 in main C:\work\asan\heap-use=
+-after-free-2.cpp:7</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x53cff3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>previously allocated by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x53b690 in operator new[](unsigned in=
+t) D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_n=
+ew_array_thunk.cpp:42</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x5011cc in main C:\work\asan\heap-use=
+-after-free-2.cpp:6</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x53cff3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: heap-use-after-free C:\work\asan\=
+heap-use-after-free-2.cpp:11 in main</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x30500120: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30500130: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30500140: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30500150: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30500160: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>=3D&gt;0x30500170: fa fa fa fa fa fa fa fa fa fa[fd]fd fd fd=
+ fd fd</span></code></p>
+<p><code><span>&nbsp; 0x30500180: fa fa 00 00 00 00 03 fa fa fa 00 00 00 00=
+ 00 02</span></code></p>
+<p><code><span>&nbsp; 0x30500190: fa fa 00 00 00 00 04 fa fa fa 00 00 00 00=
+ 05 fa</span></code></p>
+<p><code><span>&nbsp; 0x305001a0: fa fa 00 00 00 00 00 01 fa fa 00 00 00 00=
+ 04 fa</span></code></p>
+<p><code><span>&nbsp; 0x305001b0: fa fa 00 00 00 00 00 fa fa fa 00 00 00 00=
+ 00 fa</span></code></p>
+<p><code><span>&nbsp; 0x305001c0: fa fa 00 00 00 00 04 fa fa fa 00 00 00 00=
+ 00 04</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></code></p>
+<p><code><span>=3D=3D23156=3D=3DABORTING</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><span>ASAN</span>=E5=88=86=E5=88=AB=E6=89=93=E5=8D=B0=E4=BA=86=E6=97=A0=
+=E6=95=88=E5=9C=B0=E5=9D=80=E8=AE=BF=E9=97=AE=E3=80=81=E6=9C=80=E8=BF=91=E5=
+=9C=B0=E5=9D=80=E9=87=8A=E6=94=BE=E3=80=81=E6=9C=80=E8=BF=91=E5=9C=B0=E5=9D=
+=80=E5=88=86=E9=85=8D=E7=9A=84=E5=A0=86=E6=A0=88=E4=BF=A1=E6=81=AF=E3=80=82=
+=E9=98=B4=E5=BD=B1=E5=86=85=E5=AD=98=E5=9C=B0=E5=9B=BE=E8=A1=A8=E6=98=8E=E5=
+=87=BA=E9=94=99=E5=9C=B0=E5=9D=80=E4=B8=BA<span>fd</span>=EF=BC=88=E5=A0=86=
+=E5=B7=B2=E9=87=8A=E6=94=BE=E5=8C=BA=E5=9F=9F=EF=BC=89=E3=80=82=E8=BF=99=E8=
+=A1=A8=E6=98=8E=E5=87=BA=E9=94=99=E5=9C=B0=E5=9D=80=E4=B8=BA=E5=B7=B2=E9=87=
+=8A=E6=94=BE=E5=9C=B0=E5=9D=80=E3=80=82</p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E6=97=A0=E6=95=88=E7=9A=
+=84=E5=88=86=E9=85=8D=E5=AF=B9=E9=BD=90">=E6=97=A0=E6=95=88=E7=9A=84=E5=88=
+=86=E9=85=8D=E5=AF=B9=E9=BD=90</h4>
+<p><code>// example1.cpp</code><br><code>// invalid-allocation-alignment er=
+ror</code><br><code>#include &lt;Windows.h&gt;</code></p>
+<p><code>int ExternalAlign =3D 5;</code></p>
+<p><code>int main(){</code></p>
+<p><code>&nbsp; &nbsp; // this externally calculated alignment of 5 isn't v=
+alid.</code></p>
+<p><code>&nbsp; &nbsp; void* ptr =3D _aligned_malloc(8,ExternalAlign);&nbsp=
+;</code><br><code>&nbsp; &nbsp; return (ptr =3D=3D nullptr &amp;&amp; errno=
+ =3D=3D EINVAL) ? 0 : -1;</code><br><code>}</code></p>
+<p>_aligned_malloc=E8=A6=81=E6=B1=82<span>ExternalAlign</span>=E4=B8=BA<spa=
+n>2</span>=E7=9A=84=E5=B9=82=E6=AC=A1=EF=BC=8C=E4=BD=86=E6=98=AF=E6=9C=AC=
+=E4=BB=A3=E7=A0=81=E7=BB=99=E4=BA=86<span>5.</span></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D9864=3D=3DERROR: AddressSanitizer: invalid allocation =
+alignment: 5, alignment must be a power of two (thread T0)</span></code></p=
+>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x936473 in _aligned_malloc D:\a\_work=
+\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_malloc_win.cpp:192=
+</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x9111b2 in main C:\work\asan\invalid-=
+allocation-alignment.cpp:11</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x94ceb3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>=3D=3D9864=3D=3DHINT: if you don't care about these errors y=
+ou may set allocator_may_return_null=3D1</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: invalid-allocation-alignment D:\a=
+\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_malloc_win.c=
+pp:192 in _aligned_malloc</span></code></p>
+<p><code><span>=3D=3D9864=3D=3DABORTING</span></code></p>
+<p><br></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-Memcpy=E5=8F=82=E6=95=B0=
+=E9=87=8D=E5=8F=A0"><span>&nbsp;</span><span>Memcpy</span>=E5=8F=82=E6=95=
+=B0=E9=87=8D=E5=8F=A0</h4>
+<p><code>// example1.cpp</code><br><code>// memcpy-param-overlap error</cod=
+e><br><code>#include &lt;string.h&gt;</code></p>
+<p><code>__declspec(noinline) void bad_function() {</code><br><code>&nbsp; =
+&nbsp; char buffer[] =3D "hello";</code></p>
+<p><code>&nbsp; &nbsp; memcpy(buffer, buffer + 1, 5); // BOOM!</code><br><c=
+ode>}</code></p>
+<p><code>int main(int argc, char **argv) {</code><br><code>&nbsp; &nbsp; ba=
+d_function();</code><br><code>&nbsp; &nbsp; return 0;</code><br><code>}</co=
+de></p>
+<p>=E5=9C=A8<span>vs2019 16.11.18</span>=E4=B8=AD=E4=B8=8D=E4=BC=9A=E5=87=
+=BA=E9=94=99=EF=BC=8C=E5=8F=AF=E8=83=BD=E6=98=AF<span>bug</span></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-New/delete=E7=B1=BB=E5=
+=9E=8B=E4=B8=8D=E5=8C=B9=E9=85=8D"><span>New/delete</span>=E7=B1=BB=E5=9E=
+=8B=E4=B8=8D=E5=8C=B9=E9=85=8D</h4>
+<p><code>// example1.cpp</code><br><code>// new-delete-type-mismatch error<=
+/code><br><code>#include &lt;memory&gt;</code><br><code>#include &lt;vector=
+&gt;</code></p>
+<p><code>struct T {</code><br><code>&nbsp; &nbsp; T() : v(100) {}</code><br=
+><code>&nbsp; &nbsp; std::vector&lt;int&gt; v;</code><br><code>};</code></p=
+>
+<p><code>struct Base {};</code></p>
+<p><code>struct Derived : public Base {</code><br><code>&nbsp; &nbsp; T t;<=
+/code><br><code>};</code></p>
+<p><code>int main() {</code><br><code>&nbsp; &nbsp; Base *b =3D new Derived=
+;</code></p>
+<p><code>&nbsp; &nbsp; delete b; &nbsp;// Boom!&nbsp;</code></p>
+<p><code>&nbsp; &nbsp; std::unique_ptr&lt;Base&gt; b1 =3D std::make_unique&=
+lt;Derived&gt;();</code></p>
+<p><code>&nbsp; &nbsp; return 0;</code><br><code>}</code></p>
+<p>=E7=94=B1=E4=BA=8E<span>Base</span>=E7=9A=84=E6=9E=90=E6=9E=84=E5=87=BD=
+=E6=95=B0=E4=B8=8D=E6=98=AF=E8=99=9A=E5=87=BD=E6=95=B0=EF=BC=8C=E5=AF=BC=E8=
+=87=B4<span>b</span>=E9=87=8A=E6=94=BE=E6=97=B6=E6=B2=A1=E6=9C=89=E8=B0=83=
+=E7=94=A8<span>Derived</span>=E7=9A=84=E6=9E=90=E6=9E=84=E5=87=BD=E6=95=B0=
+=E3=80=82</p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D26900=3D=3DERROR: AddressSanitizer: new-delete-type-mi=
+smatch on 0x1290560a06a0 in thread T0:</span></code></p>
+<p><code>&nbsp; object passed to delete has wrong type:</code></p>
+<p><code>&nbsp; size of the allocated type:&nbsp;&nbsp; 24 bytes;</code></p=
+>
+<p><code>&nbsp; size of the deallocated type: 1 bytes.</code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x7ff7ab64f0dd in operator delete(void=
+ *, unsigned __int64) D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\=
+lib\asan\asan_win_delete_scalar_size_thunk.cpp:42</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x7ff7ab6012b8 in main C:\work\asan\ne=
+w-delete-type-mismatch.cpp:20</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x7ff7ab651113 in __scrt_common_main_s=
+eh D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288<=
+/span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x7ff931d77033&nbsp; (C:\WINDOWS\Syste=
+m32\KERNEL32.DLL+0x180017033)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x7ff9338c2650&nbsp; (C:\WINDOWS\SYSTE=
+M32\ntdll.dll+0x180052650)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>0x1290560a06a0 is located 0 bytes inside of 24-byte region [=
+0x1290560a06a0,0x1290560a06b8)</span></code></p>
+<p><code><span>allocated by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x7ff7ab64f06a in operator new(unsigne=
+d __int64) D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\as=
+an_win_new_scalar_thunk.cpp:41</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x7ff7ab60123b in main C:\work\asan\ne=
+w-delete-type-mismatch.cpp:18</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x7ff7ab651113 in __scrt_common_main_s=
+eh D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288<=
+/span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x7ff931d77033&nbsp; (C:\WINDOWS\Syste=
+m32\KERNEL32.DLL+0x180017033)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x7ff9338c2650&nbsp; (C:\WINDOWS\SYSTE=
+M32\ntdll.dll+0x180052650)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: new-delete-type-mismatch D:\a\_wo=
+rk\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_delete_scala=
+r_size_thunk.cpp:42 in operator delete(void *, unsigned __int64)</span></co=
+de></p>
+<p><code><span>=3D=3D26900=3D=3DHINT: if you don't care about these errors =
+you may set ASAN_OPTIONS=3Dnew_delete_type_mismatch=3D0</span></code></p>
+<p><code><span>=3D=3D26900=3D=3DABORTING</span></code></p>
+<p><span>&nbsp;</span></p>
+<p>=E5=88=86=E5=88=AB=E6=98=BE=E7=A4=BA=E5=AF=B9=E8=B1=A1=E9=87=8A=E6=94=BE=
+=E3=80=81=E5=88=86=E9=85=8D=E7=9A=84=E5=A0=86=E6=A0=88=E4=BF=A1=E6=81=AF=E3=
+=80=82=E5=B9=B6=E6=98=BE=E7=A4=BA=E4=BA=86=E5=88=86=E9=85=8D=E7=9A=84=E5=A0=
+=86=E5=A4=A7=E5=B0=8F=E5=92=8C=E9=87=8A=E6=94=BE=E7=9A=84=E5=A0=86=E5=A4=A7=
+=E5=B0=8F=EF=BC=88<span>24 vs 1</span>=EF=BC=89=E3=80=82</p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E6=A0=88=E6=BA=A2=E5=87=
+=BA">=E6=A0=88=E6=BA=A2=E5=87=BA</h4>
+<p>=E7=B1=BB=E4=BC=BC=E4=BA=8E=E5=A0=86=E6=BA=A2=E5=87=BA=EF=BC=8C=E4=BD=86=
+=E6=98=AF=E6=98=AF=E5=9C=A8=E6=A0=88=E4=B8=8A=E5=88=86=E9=85=8D=E7=9A=84=E7=
+=A9=BA=E9=97=B4=E3=80=82</p>
+<p><code>#include &lt;string.h&gt;</code></p>
+<p><code>int main(int argc, char **argv) {</code><br><code>&nbsp; &nbsp; ch=
+ar x[10];</code><br><code>&nbsp; &nbsp; memset(x, 0, 10);</code><br><code>&=
+nbsp; &nbsp; int res =3D x[argc * 10]; &nbsp;// Boom! Classic stack buffer =
+overflow</code></p>
+<p><code>&nbsp; &nbsp; return res;</code><br><code>}</code></p>
+<p><br></p>
+<p><code>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</code></p>
+<p><br></p>
+<p><code>=3D=3D15768=3D=3DERROR: AddressSanitizer:<span style=3D"color: rgb=
+(255,0,0);"> stack-buffer-overflow</span> on address 0x001cfa92 at pc 0x00c=
+01251 bp 0x001cfa5c sp 0x001cfa50</code></p>
+<p><br></p>
+<p><code>READ of size 1 at 0x001cfa92 thread T0</code></p>
+<p><br></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #0 0xc0125=
+0 in main C:\work\asan\stack-buffer-overflow.cpp:6</code></span></p>
+<p><br></p>
+<p><code>&nbsp;&nbsp;&nbsp; #1 0xc3cf63 in _scrt_common_main_seh D:\a\_work=
+\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</code></p>
+<p><br></p>
+<p><code>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\KERNEL=
+32.DLL+0x6b81fa28)</code></p>
+<p><br></p>
+<p><code>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\ntdll.=
+dll+0x4b2e7a9d)</code></p>
+<p><br></p>
+<p><code>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\ntdll.=
+dll+0x4b2e7a6d)</code></p>
+<p><br></p>
+<p><code>&nbsp;</code></p>
+<p><br></p>
+<p><code>Address 0x001cfa92 is located in stack of thread T0 at offset 26 i=
+n frame</code></p>
+<p><br></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #0 0xc011a=
+f in main C:\work\asan\stack-buffer-overflow.cpp:3</code></span></p>
+<p><br></p>
+<p><code>&nbsp;</code></p>
+<p><br></p>
+<p><code>&nbsp; This frame has 1 object(s):</code></p>
+<p><br></p>
+<p><code>&nbsp;&nbsp;&nbsp; [16, 26) 'x' &lt;=3D=3D Memory access at offset=
+ 26 overflows this variable</code></p>
+<p><br></p>
+<p><code>HINT: this may be a false positive if your program uses some custo=
+m stack unwind mechanism, swapcontext or vfork</code></p>
+<p><br></p>
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (longjmp, SEH and C++ exceptions *a=
+re* supported)</code></p>
+<p><br></p>
+<p><code><span>SUMMARY: AddressSanitizer: stack-buffer-overflow C:\work\asa=
+n\stack-buffer-overflow.cpp:6 in main</span></code></p>
+<p><br></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30039f00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30039f10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30039f20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30039f30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30039f40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 f1</span></code></p>
+<p><br></p>
+<p><code><span>=3D&gt;0x30039f50: <span style=3D"color: rgb(255,0,0);">f1 0=
+0[02]f3 f3 f3 f3</span> 00 00 00 00 00 00 00 00 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30039f60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30039f70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30039f80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30039f90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; 0x30039fa0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><br></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><br></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><br></p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><br></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><br></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><br></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></code></p>
+<p><br></p>
+<p><code><span>=3D=3D15768=3D=3DABORTING</span></code></p>
+<p><br></p>
+<p>=E5=87=BA=E9=94=99=E5=9C=B0=E5=9D=80=E5=90=8E=E9=9D=A2=E7=B4=A7=E8=B7=9F=
+<span>f3(</span>=E5=A0=86=E6=A0=88=E5=8F=B3=E7=BA=A2=E5=8C=BA<span>)</span>=
+=EF=BC=8C=E8=AF=B4=E6=98=8E=E5=8F=91=E7=94=9F=E4=BA=86=E4=B8=8B=E6=A0=87=E8=
+=B6=8A=E7=95=8C=E8=AE=BF=E9=97=AE=E3=80=82</p>
+<p><br></p>
+<p><code>// example2.cpp</code><br><code>// stack-buffer-overflow error</co=
+de><br><code>#include &lt;string.h&gt;</code><br><code>#include &lt;stdio.h=
+&gt;</code><br><code>#include &lt;stdlib.h&gt;</code><br><code>#include &lt=
+;assert.h&gt;</code></p>
+<p><code>int main(int argc, char **argv) {</code><br><code>&nbsp; &nbsp; as=
+sert(argc &gt;=3D 2);</code><br><code>&nbsp; &nbsp; int idx =3D atoi(argv[1=
+]);</code><br><code>&nbsp; &nbsp; char AAA[10], BBB[10], CCC[10];</code><br=
+><code>&nbsp; &nbsp; memset(AAA, 0, sizeof(AAA));</code><br><code>&nbsp; &n=
+bsp; memset(BBB, 0, sizeof(BBB));</code><br><code>&nbsp; &nbsp; memset(CCC,=
+ 0, sizeof(CCC));</code><br><code>&nbsp; &nbsp; int res =3D 0;</code><br><c=
+ode>&nbsp; &nbsp; char *p =3D AAA + idx;</code><br><code>&nbsp; &nbsp; prin=
+tf("AAA: %p\ny: %p\nz: %p\np: %p\n", AAA, BBB, CCC, p);</code></p>
+<p><code>&nbsp; &nbsp; return *(short*)(p) + BBB[argc % 2] + CCC[argc % 2];=
+ &nbsp;// Boom! ... when argument is 9</code><br><code>}</code></p>
+<p><br></p>
+<p><code><span>C:\work\asan&gt;stack-buffer-overflow-2 9</span></code></p>
+<p><code><span>AAA: 001FFC00</span></code></p>
+<p><code><span>y: 001FFC30</span></code></p>
+<p><code><span>z: 001FFC60</span></code></p>
+<p><code><span>p: 001FFC09</span></code></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D21596=3D=3DERROR: AddressSanitizer: stack-buffer-overf=
+low on address 0x001ffc09 at pc 0x0082134c bp 0x001ffbdc sp 0x001ffbd0</spa=
+n></code></p>
+<p><code><strong><span>READ of size 2</span></strong><span> at 0x001ffc09 t=
+hread T0</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x82134b in main C:\work\asan\stack-bu=
+ffer-overflow-2.cpp:19</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x85d193 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code>Address 0x001ffc09 is located in stack of thread T0 at offset 25 i=
+n frame</code></p>
+<p><code>&nbsp;&nbsp;&nbsp; #0 0x8211af in main C:\work\asan\stack-buffer-o=
+verflow-2.cpp:8</code></p>
+<p><code>&nbsp;</code></p>
+<p><code>&nbsp; This frame has 3 object(s):</code></p>
+<p><code>&nbsp;&nbsp;&nbsp; [16, 26) 'AAA' &lt;=3D=3D Memory access at offs=
+et 25 partially overflows this variable</code></p>
+<p><code>&nbsp;&nbsp;&nbsp; [32, 42) 'BBB'</code></p>
+<p><code>&nbsp;&nbsp;&nbsp; [48, 58) 'CCC'</code></p>
+<p><code>HINT: this may be a false positive if your program uses some custo=
+m stack unwind mechanism, swapcontext or vfork</code></p>
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (longjmp, SEH and C++ exceptions *a=
+re* supported)</code></p>
+<p><code>SUMMARY: AddressSanitizer: stack-buffer-overflow C:\work\asan\stac=
+k-buffer-overflow-2.cpp:19 in main</code></p>
+<p><code>Shadow bytes around the buggy address:</code></p>
+<p><code>&nbsp; 0x3003ff30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+</code></p>
+<p><code>&nbsp; 0x3003ff40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+</code></p>
+<p><code><span>&nbsp; 0x3003ff50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3003ff60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3003ff70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ f1 f1</span></code></p>
+<p><code><span>=3D&gt;0x3003ff80: 00[02]f2 f2 f2 f2 00 02 f2 f2 f2 f2 00 02=
+ f3 f3</span></code></p>
+<p><code><span>&nbsp; 0x3003ff90: f3 f3 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3003ffa0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3003ffb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3003ffc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3003ffd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></code></p>
+<p><code><span>=3D=3D21596=3D=3DABORTING</span></code></p>
+<p><span>F2</span>=E4=B8=BA=E5=A0=86=E6=A0=88=E4=B8=AD=E7=BA=A2=E5=8C=BA=EF=
+=BC=8C=E4=B8=BA=E5=A0=86=E6=A0=88=E4=B8=AD=E5=8F=98=E9=87=8F=E4=B9=8B=E9=97=
+=B4=E7=9A=84=E7=BA=A2=E5=8C=BA=E3=80=82=E8=AF=B4=E6=98=8E=E5=8F=91=E7=94=9F=
+=E4=BA=86=E8=B6=8A=E7=95=8C=E8=AE=BF=E9=97=AE=E3=80=82</p>
+<p>=E8=BF=99=E5=92=8C<span>(short*)AAA[9]</span>=E7=9B=B8=E5=90=BB=E5=90=88=
+=E3=80=82</p>
+<p>=E6=B3=A8=E6=84=8F=E5=A6=82=E6=9E=9C<span>AAA</span>=E8=B6=8A=E7=95=8C=
+=E6=AD=A3=E5=A5=BD=E8=B6=8A=E5=88=B0<span>BBB</span>=E7=9A=84=E5=9C=B0=E5=
+=9D=80=EF=BC=8C=E9=82=A3=E4=B9=88<span>ASAN</span>=E5=B0=86=E6=A3=80=E6=B5=
+=8B=E4=B8=8D=E5=88=B0=E6=AD=A4=E7=B1=BB=E8=B6=8A=E7=95=8C=E6=93=8D=E4=BD=9C=
+=E3=80=82<strong>=E8=BF=99=E6=98=AFASAN=E7=9A=84=E4=B8=80=E4=B8=AA=E6=8A=80=
+=E6=9C=AF=E7=BC=BA=E9=99=B7=E3=80=82</strong></p>
+<p><code><span>C:\work\asan&gt;stack-buffer-overflow-2 49</span></code></p>
+<p><code><span>AAA: 0113F9C0</span></code></p>
+<p><code><span>y: 0113F9F0</span></code></p>
+<p><code><span>z: 0113FA20</span></code></p>
+<p><code><span>p: 0113F9F1</span></code></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=B8=8B=E6=A0=87=E4=B8=
+=8B=E6=BA=A2">=E4=B8=8B=E6=A0=87=E4=B8=8B=E6=BA=A2</h4>
+<p><code>// example1.cpp</code><br><code>// stack-buffer-underflow error</c=
+ode><br><code>#include &lt;stdio.h&gt;</code></p>
+<p><code>int main() {</code></p>
+<p><code>&nbsp; &nbsp; int subscript =3D -1;</code><br><code>&nbsp; &nbsp; =
+char buffer[42];</code><br><code>&nbsp; &nbsp; buffer[subscript] =3D 42; //=
+ Boom!</code><br><code>&nbsp; &nbsp;</code><br><code>&nbsp; &nbsp; return 0=
+;</code><br><code>}</code></p>
+<p><code><span>C:\work\asan&gt;stack-buffer-underflow</span></code></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D12932=3D=3DERROR: AddressSanitizer: stack-buffer-under=
+flow on address 0x010ffc1f at pc 0x0053127e bp 0x010ffbfc sp 0x010ffbf0</sp=
+an></code></p>
+<p><code>WRITE of size 1<span> at 0x010ffc1f thread T0</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x53127d in main C:\work\asan\stack-bu=
+ffer-underflow.cpp:9</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x56cf63 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>Address 0x010ffc1f is located in stack of thread T0 at offse=
+t 15 in frame</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x5311af in main C:\work\asan\stack-bu=
+ffer-underflow.cpp:5</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>&nbsp; This frame has 1 object(s):</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; [16, 58) 'buffer' &lt;=3D=3D Memory acces=
+s at offset 15 underflows this variable</span></code></p>
+<p><code><span>HINT: this may be a false positive if your program uses some=
+ custom stack unwind mechanism, swapcontext or vfork</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (longjmp, SEH and C++ excepti=
+ons *are* supported)</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: stack-buffer-underflow C:\work\as=
+an\stack-buffer-underflow.cpp:9 in main</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x3021ff30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3021ff40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3021ff50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3021ff60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3021ff70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>=3D&gt;0x3021ff80: 00 00 f1[f1]00 00 00 00 00 02 f3 f3 f3 f3=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3021ff90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3021ffa0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3021ffb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3021ffc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3021ffd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cc</span></code></p>
+<p><code><span>=3D=3D12932=3D=3DABORTING</span></code></p>
+<p><span>&nbsp;</span></p>
+<p>=E5=8F=AF=E4=BB=A5=E7=9C=8B=E5=88=B0=E5=87=BA=E9=94=99=E7=9A=84=E9=98=B4=
+=E5=BD=B1=E5=9C=B0=E5=9D=80=E4=B8=BA<span>f1</span>=EF=BC=8C=E8=A1=A8=E7=A4=
+=BA=E5=A0=86=E6=A0=88=E5=B7=A6=E7=BA=A2=E5=8C=BA=EF=BC=8C=E8=AF=B4=E6=98=8E=
+=E5=8F=91=E7=94=9F=E4=BA=86=E4=B8=8B=E6=A0=87=E4=B8=8B=E6=BA=A2=E5=87=BA=E9=
+=94=99=E3=80=82</p>
+<p>=E5=B9=B6=E4=B8=94=E6=98=BE=E7=A4=BA<span>frame</span>=E4=B8=8A<span>buf=
+fer</span>=E5=9C=B0=E5=9D=80=E5=81=8F=E7=A7=BB=E4=B8=BA<span>[16, 58),</spa=
+n>=E8=80=8C=E5=87=BA=E9=94=99=E5=9C=B0=E5=9D=80=E4=B8=BA<span>15</span>=E3=
+=80=82=E8=AF=B4=E6=98=8E=E4=B8=8B=E6=A0=87=E4=B8=BA<span>-1</span></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=BD=BF=E7=94=A8=E5=B7=
+=B2=E7=BB=8F=E8=BF=94=E5=9B=9E=E7=9A=84=E5=A0=86=E6=A0=88=E5=86=85=E5=AD=98=
+">=E4=BD=BF=E7=94=A8=E5=B7=B2=E7=BB=8F=E8=BF=94=E5=9B=9E=E7=9A=84=E5=A0=86=
+=E6=A0=88=E5=86=85=E5=AD=98</h4>
+<p><code>// example1.cpp</code><br><code>// stack-use-after-return error</c=
+ode><br><code>char* x;</code></p>
+<p><code>void foo() {</code><br><code>&nbsp; &nbsp; char stack_buffer[42];<=
+/code><br><code>&nbsp; &nbsp; x =3D &amp;stack_buffer[13];</code><br><code>=
+}</code></p>
+<p><code>int main() {</code></p>
+<p><code>&nbsp; &nbsp; foo();</code><br><code>&nbsp; &nbsp; *x =3D 42; // B=
+oom!</code></p>
+<p><code>&nbsp; &nbsp; return 0;</code><br><code>}</code></p>
+<p>=E6=A3=80=E6=9F=A5=E6=AD=A4=E7=B1=BB<span>bug</span>=E9=9C=80=E8=A6=81=
+=E5=BE=88=E5=A4=A7=E7=9A=84=E5=BC=80=E9=94=80=EF=BC=8C=E6=89=80=E4=BB=A5=E9=
+=9C=80=E8=A6=81=E5=8D=95=E7=8B=AC=E6=8C=87=E5=AE=9A=E7=BC=96=E8=AF=91=E9=80=
+=89=E9=A1=B9=E5=92=8C=E7=8E=AF=E5=A2=83=E5=8F=98=E9=87=8F=EF=BC=9A</p>
+<pre><code><span>cl example1.cpp /fsanitize=3Daddress /fsanitize-address-us=
+e-after-return /Zi</span></code></pre>
+<pre><span class=3D"hljs-builtin"><span>set</span></span><code><span> ASAN_=
+OPTIONS=3Ddetect_stack_use_after_return=3D</span></code><span class=3D"hljs=
+-number"><span>1<br><br></span></span></pre>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code></p>
+<p><code><span>=3D=3D20304=3D=3DERROR: AddressSanitizer: stack-use-after-re=
+turn on address 0x023e900d at pc 0x000c1332 bp 0x00d5fd24 sp 0x00d5fd18</sp=
+an></code></p>
+<p><code><span>WRITE of size 1 at 0x023e900d thread T0</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0xc1331 in main C:\work\asan\stack-use=
+-after-free.cpp:13</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0xfcff3 in _scrt_common_main_seh D:\a\=
+_work\1\s\sr</span><span style=3D"letter-spacing: 0.0px;">=3D</span><span s=
+tyle=3D"letter-spacing: 0.0px;">c\vctools\crt\vcstartup\src\startup\exe_com=
+mon.inl:288</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>Address 0x023e900d is located in stack of thread T0 at offse=
+t 13 in frame</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0xc11af in foo(void) C:\work\asan\stac=
+k-use-after-free.cpp:5</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>&nbsp; This frame has 1 object(s):</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; [16, 58) 'stack_buffer' &lt;=3D=3D Memory=
+ access at offset 13 underflows this variable</span></code></p>
+<p><code><span>HINT: this may be a false positive if your program uses some=
+ custom stack unwind mechanism, swapcontext or vfork</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (longjmp, SEH and C++ excepti=
+ons *are* supported)</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: stack-use-after-return C:\work\as=
+an\stack-use-after-free.cpp:13 in main</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x3047d1b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3047d1c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3047d1d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3047d1e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3047d1f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>=3D&gt;0x3047d200: f5[f5]f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3047d210: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3047d220: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3047d230: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3047d240: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x3047d250: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></code></p>
+<p><code><span>=3D=3D20304=3D=3DABORTING</span></code></p>
+<p>=E9=98=B4=E5=BD=B1=E5=86=85=E5=AD=98=E5=9C=B0=E5=9B=BE=E6=98=BE=E7=A4=BA=
+=E5=87=BA=E9=94=99=E5=9C=B0=E5=9D=80=E4=B8=BA<span>f5</span>=EF=BC=8C=E5=8D=
+=B3=E5=B7=B2=E7=BB=8F=E8=BF=94=E5=9B=9E=E5=B9=B6=E9=87=8A=E6=94=BE=E7=9A=84=
+=E5=A0=86=E6=A0=88=E5=9C=B0=E5=9D=80=E3=80=82</p>
+<p><br></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=BD=BF=E7=94=A8=E5=A0=
+=86=E6=A0=88=E4=B8=8A=E8=B6=85=E5=87=BA=E7=94=9F=E5=91=BD=E5=91=A8=E6=9C=9F=
+=E7=9A=84=E5=9C=B0=E5=9D=80">=E4=BD=BF=E7=94=A8=E5=A0=86=E6=A0=88=E4=B8=8A=
+=E8=B6=85=E5=87=BA=E7=94=9F=E5=91=BD=E5=91=A8=E6=9C=9F=E7=9A=84=E5=9C=B0=E5=
+=9D=80</h4>
+<p><code>// example1.cpp</code><br><code>// stack-use-after-scope error</co=
+de><br><code>int *gp;</code></p>
+<p><code>bool b =3D true;</code></p>
+<p><code>int main() {</code><br><code>&nbsp; &nbsp; if (b) {</code><br><cod=
+e>&nbsp; &nbsp; &nbsp; &nbsp; int x[5];</code><br><code>&nbsp; &nbsp; &nbsp=
+; &nbsp; gp =3D x+1;</code><br><code>&nbsp; &nbsp; }</code><br><code>&nbsp;=
+ &nbsp; return *gp; &nbsp;// Boom!</code><br><code>}</code></p>
+<pre><code>=E4=BD=BF=E7=94=A8=E4=BA=86=E5=B7=B2=E7=BB=8F=E8=B6=85=E5=87=BA=
+=E7=94=9F=E5=91=BD</code></pre>
+<pre><code>=E8=BF=99=E4=B8=AA=E5=92=8C=E5=B7=B2=E7=BB=8F=E8=BF=94=E5=9B=9E=
+=E5=A0=86=E6=A0=88=E4=B8=8D=E5=90=8C=EF=BC=8C=E4=B8=8D=E9=9C=80=E8=A6=81=E6=
+=9B=B4=E5=A4=9A=E7=8E=AF=E5=A2=83=E5=8F=98=E9=87=8F=E5=92=8C=E7=BC=96=E8=AF=
+=91=E5=8F=82=E6=95=B0=E8=AE=BE=E7=BD=AE=E3=80=82</code></pre>
+<p><code><span>C:\work\asan&gt;stack-use-after-scope</span></code></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D18664=3D=3DERROR: AddressSanitizer: stack-use-after-sc=
+ope on address 0x006ffb44 at pc 0x00a112a5 bp 0x006ffb1c sp 0x006ffb10</spa=
+n></code></p>
+<p><code><span>READ of size 4 at 0x006ffb44 thread T0</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0xa112a4 in main C:\work\asan\stack-us=
+e-after-scope.cpp:12</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0xa4cfe3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>Address 0x006ffb44 is located in stack of thread T0 at offse=
+t 20 in frame</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0xa111af in main C:\work\asan\stack-us=
+e-after-scope.cpp:7</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>&nbsp; This frame has 1 object(s):</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; [16, 36) 'x' &lt;=3D=3D Memory access at =
+offset 20 is inside this variable</span></code></p>
+<p><code><span>HINT: this may be a false positive if your program uses some=
+ custom stack unwind mechanism, swapcontext or vfork</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (longjmp, SEH and C++ excepti=
+ons *are* supported)</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: stack-use-after-scope C:\work\asa=
+n\stack-use-after-scope.cpp:12 in main</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x300dff10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300dff20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300dff30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300dff40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300dff50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>=3D&gt;0x300dff60: 00 00 00 00 00 00 f1 f1[f8]f8 f8 f3 f3 f3=
+ f3 00</span></code></p>
+<p><code><span>&nbsp; 0x300dff70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300dff80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300dff90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300dffa0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x300dffb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cc</span></code></p>
+<p><code><span>=3D=3D18664=3D=3DABORTING</span></code></p>
+<p><br></p>
+<p>=E9=98=B4=E5=BD=B1=E5=86=85=E5=AD=98=E5=9C=B0=E5=9B=BE=E6=98=BE=E7=A4=BA=
+=E4=B8=BA<span>f8</span>=EF=BC=8C=E8=A1=A8=E7=A4=BA=E6=98=AF=E5=A0=86=E6=A0=
+=88=E7=94=9F=E5=91=BD=E5=91=A8=E6=9C=9F=E5=B7=B2=E7=BB=8F=E8=B6=85=E5=87=BA=
+=E3=80=82</p>
+<p>=E4=B9=9F=E8=83=BD=E6=8D=95=E6=8D=89=E4=BD=BF=E7=94=A8=E4=BA=86=E5=B1=80=
+=E9=83=A8=E5=8F=98=E9=87=8F=E7=9A=84<span>lambda:</span></p>
+<p><code>// example2.cpp</code><br><code>// stack-use-after-scope error</co=
+de><br><code>#include &lt;functional&gt;</code></p>
+<p><code>int main() {</code><br><code>&nbsp; &nbsp; std::function&lt;int()&=
+gt; f;</code><br><code>&nbsp; &nbsp; {</code><br><code>&nbsp; &nbsp; &nbsp;=
+ &nbsp; int x =3D 0;</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; f =3D [&am=
+p;x]() {</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return x=
+; &nbsp;// Boom!</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; };</code><br><=
+code>&nbsp; &nbsp; }</code><br><code>&nbsp; &nbsp; return f(); &nbsp;// Boo=
+m!</code><br><code>}</code></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D2028=3D=3DERROR: AddressSanitizer: stack-use-after-sco=
+pe on address 0x016ffe20 at pc 0x00e513ce bp 0x016ffd5c sp 0x016ffd50</span=
+></code></p>
+<p><code><span>READ of size 4 at 0x016ffe20 thread T0</span></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; #0 0xe513c=
+d in &lt;lambda_93c52fc683a3f251be0f0999ef9b83e6&gt;::operator() C:\work\as=
+an\stack-use-after-scope-2.cpp:10</code></span></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0xe5194a in std::invoke&lt;&lt;lambda_=
+93c52fc683a3f251be0f0999ef9b83e6&gt; &amp;&gt; C:\Program Files (x86)\Micro=
+soft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\type=
+_traits:1524</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0xe5185b in std::_Invoker_ret&lt;int,0=
+&gt;::_Call&lt;&lt;lambda_93c52fc683a3f251be0f0999ef9b83e6&gt; &amp;&gt; C:=
+\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSV=
+C\14.29.30133\include\functional:660</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0xe514c2 in std::_Func_impl_no_alloc&l=
+t;&lt;lambda_93c52fc683a3f251be0f0999ef9b83e6&gt;,int&gt;::_Do_call C:\Prog=
+ram Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.=
+29.30133\include\functional:822</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0xe51a7f in std::_Func_class&lt;int&gt=
+;::operator()(void) const C:\Program Files (x86)\Microsoft Visual Studio\20=
+19\Professional\VC\Tools\MSVC\14.29.30133\include\functional:869</span></co=
+de></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0xe512f3 in main C:\work\asan\stack-us=
+e-after-scope-2.cpp:13</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #6 0xe8e2f9 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #7 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #8 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #9 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>Address 0x016ffe20 is located in stack of thread T0 at offse=
+t 88 in frame</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0xe511af in main C:\work\asan\stack-us=
+e-after-scope-2.cpp:5</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp; This frame has 3 objec=
+t(s):</code></span></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; [16, 56) '=
+f'</code></span></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; [32, 36) '=
+x'</code></span></p>
+<p><span style=3D"color: rgb(255,0,0);"><code>&nbsp;&nbsp;&nbsp; [48, 52) '=
+compiler temporary' &lt;=3D=3D Memory access at offset 88 overflows this va=
+riable</code></span></p>
+<p><code><span>HINT: this may be a false positive if your program uses some=
+ custom stack unwind mechanism, swapcontext or vfork</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (longjmp, SEH and C++ excepti=
+ons *are* supported)</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: stack-use-after-scope C:\work\asa=
+n\stack-use-after-scope-2.cpp:10 in &lt;lambda_93c52fc683a3f251be0f0999ef9b=
+83e6&gt;::operator()</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x302dff70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x302dff80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x302dff90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x302dffa0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x302dffb0: 00 00 00 00 00 00 00 00 00 f1 f1 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>=3D&gt;0x302dffc0: f2 f2 f2 f2[f8]f2 f8 f3 f3 f3 f3 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x302dffd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x302dffe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x302dfff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x302e0000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x302e0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbs=
+p;f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></code></p>
+<p><code><span>=3D=3D2028=3D=3DABORTING</span></code></p>
+<p><br></p>
+<p><br></p>
+<p>=E4=B9=9F=E5=8F=AF=E4=BB=A5=E5=8F=91=E7=8E=B0=E7=B1=BB=E6=9E=90=E6=9E=84=
+=E5=87=BD=E6=95=B0=E7=9A=84=E9=A1=BA=E5=BA=8F=E9=97=AE=E9=A2=98</p>
+<p><code>// example3.cpp</code><br><code>// stack-use-after-scope error</co=
+de><br><code>#include &lt;stdio.h&gt;</code></p>
+<p><code>struct IntHolder {</code><br><code>&nbsp; &nbsp; explicit IntHolde=
+r(int* val =3D 0) : val_(val) { }</code><br><code>&nbsp; &nbsp; ~IntHolder(=
+) {</code><br><code>&nbsp; &nbsp; &nbsp; &nbsp; printf("Value: %d\n", *val_=
+); &nbsp;// Bom!</code><br><code>&nbsp; &nbsp; }</code><br><code>&nbsp; &nb=
+sp; void set(int* val) { val_ =3D val; }</code><br><code>&nbsp; &nbsp; int*=
+ get() { return val_; }</code></p>
+<p><code>&nbsp; &nbsp; int* val_;</code><br><code>};</code></p>
+<p><code>int main(int argc, char* argv[]) {</code><br><code>&nbsp; &nbsp; /=
+/ It's incorrect to use "x" inside the IntHolder destructor,</code><br><cod=
+e>&nbsp; &nbsp; // because the lifetime of "x" ends earlier. Per the C++ st=
+andard,</code><br><code>&nbsp; &nbsp; // local lifetimes end in reverse ord=
+er of declaration.</code><br><code>&nbsp; &nbsp; IntHolder holder;</code><b=
+r><code>&nbsp; &nbsp; int x =3D argc;</code><br><code>&nbsp; &nbsp; holder.=
+set(&amp;x);</code><br><code>&nbsp; &nbsp; return 0;</code><br><code>}</cod=
+e></p>
+<p><code>cl stack-use-after-scope-3.cpp /fsanitize=3Daddress /Zi /O1</code>=
+</p>
+<p>=E6=B3=A8=E6=84=8F=E4=BC=98=E5=8C=96=E9=A1=BA=E5=BA=8F=E5=8F=AF=E8=83=BD=
+=E5=BD=B1=E5=93=8D=E8=BF=99=E4=B8=AA<span>bug</span>=E7=9A=84=E5=A4=8D=E7=
+=8E=B0=E3=80=82=E4=B8=8D=E5=8A=A0<span>/O1 ASAN</span>=E6=89=BE=E4=B8=8D=E5=
+=87=BA=E8=BF=99=E4=B8=AA<span>bug</span>=E3=80=82</p>
+<p><code><span>C:\work\asan&gt;stack-use-after-scope-3.exe</span></code></p=
+>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D8188=3D=3DERROR: AddressSanitizer: stack-use-after-sco=
+pe on address 0x013af958 at pc 0x00cc1213 bp 0x013af914 sp 0x013af908</span=
+></code></p>
+<p><code><span>READ of size 4 at 0x013af958 thread T0</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0xcc1212 in IntHolder::~IntHolder(void=
+) C:\work\asan\stack-use-after-scope-3.cpp:8</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0xcfcfd3 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>Address 0x013af958 is located in stack of thread T0 at offse=
+t 32 in frame</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0xcc1289 in main C:\work\asan\stack-us=
+e-after-scope-3.cpp:16</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>&nbsp; This frame has 2 object(s):</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; [16, 20) 'holder'</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; [32, 36) 'x' &lt;=3D=3D Memory access at =
+offset 32 is inside this variable</span></code></p>
+<p><code><span>HINT: this may be a false positive if your program uses some=
+ custom stack unwind mechanism, swapcontext or vfork</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (longjmp, SEH and C++ excepti=
+ons *are* supported)</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: stack-use-after-scope C:\work\asa=
+n\stack-use-after-scope-3.cpp:8 in IntHolder::~IntHolder(void)</span></code=
+></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x30275ed0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x30275ee0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x30275ef0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x30275f00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x30275f10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>=3D&gt;0x30275f20: 00 00 00 00 00 00 00 f1 f1 04 f2[f8]f3 f3=
+ f3 f3</span></code></p>
+<p><code><span>&nbsp; 0x30275f30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x30275f40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x30275f50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x30275f60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x30275f70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00=
+ 00 00</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><code><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fa</span></code></p>
+<p><code><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; fd</span></code></p>
+<p><code><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1<=
+/span></code></p>
+<p><code><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f2</span></code></p>
+<p><code><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span=
+></code></p>
+<p><code><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5<=
+/span></code></p>
+<p><code><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></code></=
+p>
+<p><code><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; f9</span></code></p>
+<p><code><span>&nbsp; Global init order:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; f6</span></code></p>
+<p><code><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; f7</span></code></p>
+<p><code><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc<=
+/span></code></p>
+<p><code><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; ac</span></code></p>
+<p><code><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></co=
+de></p>
+<p><code><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; fe</span></code></p>
+<p><code><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span=
+></code></p>
+<p><code><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></co=
+de></p>
+<p><code><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></code></p>
+<p><code><span>=3D=3D8188=3D=3DABORTING</span></code></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-Strncat=E5=8F=82=E6=95=
+=B0=E9=87=8D=E5=8F=A0"><span>Strncat</span>=E5=8F=82=E6=95=B0=E9=87=8D=E5=
+=8F=A0</h4>
+<p><code>// example1.cpp</code><br><code>// strncat-param-overlap error</co=
+de><br><code>#include &lt;string.h&gt;</code></p>
+<p><code>void bad_function() {</code><br><code>&nbsp; &nbsp; char buffer[] =
+=3D "hello\0XXX";</code><br><code>&nbsp; &nbsp; strncat(buffer, buffer + 1,=
+ 3); // BOOM</code><br><code>&nbsp; &nbsp; return;</code><br><code>}</code>=
+</p>
+<p><code>int main(int argc, char **argv) {</code><br><code>&nbsp; &nbsp; ba=
+d_function();</code><br><code>&nbsp; &nbsp; return 0;</code><br><code>}</co=
+de></p>
+<p><br><code>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</code><br><cod=
+e>=3D=3D2460=3D=3DERROR: AddressSanitizer: strncat-param-overlap: memory ra=
+nges [0x00f1f7a0,0x00f1f7a9) and [0x00f1f7a1, 0x00f1f7a4) overlap</code><br=
+><code>&nbsp; &nbsp; #0 0x8ec5bb in __asan_wrap_strncat D:\a\_work\1\s\src\=
+vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_interceptors.cpp:414</code>=
+<br><code>&nbsp; &nbsp; #1 0x8c1224 in bad_function(void) C:\work\asan\strn=
+cat-param-overlap.cpp:7</code><br><code>&nbsp; &nbsp; #2 0x8c1267 in main C=
+:\work\asan\strncat-param-overlap.cpp:12</code><br><code>&nbsp; &nbsp; #3 0=
+x8fcf63 in _scrt_common_main_seh D:\a\_work\1\s\src\vctools\crt\vcstartup\s=
+rc\startup\exe_common.inl:288</code><br><code>&nbsp; &nbsp; #4 0x75a5fa28 &=
+nbsp;(C:\WINDOWS\System32\KERNEL32.DLL+0x6b81fa28)</code><br><code>&nbsp; &=
+nbsp; #5 0x778f7a9d &nbsp;(C:\WINDOWS\SYSTEM32\ntdll.dll+0x4b2e7a9d)</code>=
+<br><code>&nbsp; &nbsp; #6 0x778f7a6d &nbsp;(C:\WINDOWS\SYSTEM32\ntdll.dll+=
+0x4b2e7a6d)</code></p>
+<p><code>Address 0x00f1f7a0 is located in stack of thread T0 at offset 16 i=
+n frame</code><br><code>&nbsp; &nbsp; #0 0x8c11af in bad_function(void) C:\=
+work\asan\strncat-param-overlap.cpp:5</code></p>
+<p><code>&nbsp; This frame has 1 object(s):</code><br><code>&nbsp; &nbsp; [=
+16, 26) 'buffer' &lt;=3D=3D Memory access at offset 16 is inside this varia=
+ble</code><br><code>HINT: this may be a false positive if your program uses=
+ some custom stack unwind mechanism, swapcontext or vfork</code><br><code>&=
+nbsp; &nbsp; &nbsp; (longjmp, SEH and C++ exceptions *are* supported)</code=
+><br><code>Address 0x00f1f7a1 is located in stack of thread T0 at offset 17=
+ in frame</code><br><code>&nbsp; &nbsp; #0 0x8c11af in bad_function(void) C=
+:\work\asan\strncat-param-overlap.cpp:5</code></p>
+<p><code>&nbsp; This frame has 1 object(s):</code><br><code>&nbsp; &nbsp; [=
+16, 26) 'buffer' &lt;=3D=3D Memory access at offset 17 is inside this varia=
+ble</code><br><code>HINT: this may be a false positive if your program uses=
+ some custom stack unwind mechanism, swapcontext or vfork</code><br><code>&=
+nbsp; &nbsp; &nbsp; (longjmp, SEH and C++ exceptions *are* supported)</code=
+><br><code>SUMMARY: AddressSanitizer: strncat-param-overlap D:\a\_work\1\s\=
+src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_interceptors.cpp:414 in=
+ __asan_wrap_strncat</code><br><code>=3D=3D2460=3D=3DABORTING</code></p>
+<h4 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E7=94=A8=E6=88=B7=E8=87=
+=AA=E8=A1=8C=E4=B8=8B=E6=AF=92">=E7=94=A8=E6=88=B7=E8=87=AA=E8=A1=8C=E4=B8=
+=8B=E6=AF=92</h4>
+<p><code>// example1.cpp</code><br><code>// use-after-poison error</code><b=
+r><code>#include &lt;stdlib.h&gt;</code></p>
+<p><code>extern "C" void __asan_poison_memory_region(void *, size_t);</code=
+></p>
+<p><code>int main(int argc, char **argv) {</code><br><code>&nbsp; &nbsp; ch=
+ar *x =3D new char[16];</code><br><code>&nbsp; &nbsp; x[10] =3D 0;</code><b=
+r><code>&nbsp; &nbsp; __asan_poison_memory_region(x, 16);</code></p>
+<p><code>&nbsp; &nbsp; int res =3D x[argc * 10]; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp;// Boom!</code><br><code>&nbsp;</code><br><code>&nbsp=
+; &nbsp; delete [] x;</code><br><code>&nbsp; &nbsp; return res;</code><br><=
+code>}</code></p>
+<p><code><span>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></code><=
+/p>
+<p><code><span>=3D=3D13864=3D=3DERROR: AddressSanitizer: use-after-poison o=
+n address 0x0340257a at pc 0x003e126a bp 0x00cffa34 sp 0x00cffa28</span></c=
+ode></p>
+<p><code>READ of size 1<span> at 0x0340257a thread T0</span></code></p>
+<p><code><span>&nbsp; &nbsp;&nbsp;#0 0x3e1269 in main C:\work\asan\use-afte=
+r-poison.cpp:12</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x41d073 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>0x0340257a is located 10 bytes inside of 16-byte region [0x0=
+3402570,0x03402580)</span></code></p>
+<p><code><span>allocated by thread T0 here:</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #0 0x41b710 in operator new[](unsigned in=
+t) D:\a\_work\1\s\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_n=
+ew_array_thunk.cpp:42</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #1 0x3e11cc in main C:\work\asan\use-afte=
+r-poison.cpp:8</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #2 0x41d073 in _scrt_common_main_seh D:\a=
+\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288</span><=
+/code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #3 0x75a5fa28&nbsp; (C:\WINDOWS\System32\=
+KERNEL32.DLL+0x6b81fa28)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #4 0x778f7a9d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a9d)</span></code></p>
+<p><code><span>&nbsp;&nbsp;&nbsp; #5 0x778f7a6d&nbsp; (C:\WINDOWS\SYSTEM32\=
+ntdll.dll+0x4b2e7a6d)</span></code></p>
+<p><code><span>&nbsp;</span></code></p>
+<p><code><span>SUMMARY: AddressSanitizer: use-after-poison C:\work\asan\use=
+-after-poison.cpp:12 in main</span></code></p>
+<p><code><span>Shadow bytes around the buggy address:</span></code></p>
+<p><code><span>&nbsp; 0x30680450: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30680460: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30680470: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30680480: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x30680490: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>=3D&gt;0x306804a0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ f7[f7]</span></code></p>
+<p><code><span>&nbsp; 0x306804b0: fa fa 00 05 fa fa 00 07 fa fa 00 04 fa fa=
+ 00 05</span></code></p>
+<p><code><span>&nbsp; 0x306804c0: fa fa 00 06 fa fa 00 03 fa fa 00 05 fa fa=
+ 00 00</span></code></p>
+<p><code><span>&nbsp; 0x306804d0: fa fa 00 00 fa fa 00 00 fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x306804e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>&nbsp; 0x306804f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</span></code></p>
+<p><code><span>Shadow byte legend (one shadow byte represents 8 application=
+ bytes):</span></code></p>
+<p><code><span>&nbsp; Addressable:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; 00</span></code></p>
+<p><code><span>&nbsp; Partially addressable: 01 02 03 04 05 06 07</span></c=
+ode></p>
+<p><span>&nbsp; Heap left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fa</=
+span></p>
+<p><span>&nbsp; Freed heap region:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fd</=
+span></p>
+<p><span>&nbsp; Stack left redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1</span>=
+</p>
+<p><span>&nbsp; Stack mid redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f2</=
+span></p>
+<p><span>&nbsp; Stack right redzone:&nbsp;&nbsp;&nbsp;&nbsp; f3</span></p>
+<p><span>&nbsp; Stack after return:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f5</span>=
+</p>
+<p><span>&nbsp; Stack use after scope:&nbsp;&nbsp; f8</span></p>
+<p><span>&nbsp; Global redzone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; f9</span></p>
+<p><span>&nbsp; Global init order:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;f6</=
+span></p>
+<p><span>&nbsp; Poisoned by user:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ f7</span></p>
+<p><span>&nbsp; Container overflow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fc</span>=
+</p>
+<p><span>&nbsp; Array cookie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; ac</span></p>
+<p><span>&nbsp; Intra object redzone:&nbsp;&nbsp;&nbsp; bb</span></p>
+<p><span>&nbsp; ASan internal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; fe</span></p>
+<p><span>&nbsp; Left alloca redzone:&nbsp;&nbsp;&nbsp;&nbsp; ca</span></p>
+<p><span>&nbsp; Right alloca redzone:&nbsp;&nbsp;&nbsp; cb</span></p>
+<p><span>&nbsp; Shadow gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cc</span></p>
+<p><span>=3D=3D13864=3D=3DABORTING</span></p>
+<p>=E9=98=B4=E5=BD=B1=E5=86=85=E5=AD=98=E6=98=BE=E7=A4=BA=E5=87=BA=E9=94=99=
+=E5=9C=B0=E5=9D=80=E4=B8=BA<span>f7</span>=EF=BC=8C=E7=94=A8=E6=88=B7=E8=87=
+=AA=E8=A1=8C=E4=B8=8B=E6=AF=92=E3=80=82</p>
+<p><br></p>
+<p>=E7=94=A8=E6=88=B7=E8=87=AA=E8=A1=8C=E4=B8=8B=E6=AF=92=E9=80=82=E5=90=88=
+=E6=8D=95=E6=8D=89=E8=AE=BF=E9=97=AE=E5=A0=86=E4=B8=8A=E6=9C=AA=E5=88=9D=E5=
+=A7=8B=E5=8C=96=E7=9A=84=E5=86=85=E5=AD=98<span>bug</span>=EF=BC=8C=E6=88=
+=96=E8=80=85=E6=8D=95=E6=8D=89=E8=AE=BF=E9=97=AE=E5=B7=B2=E7=BB=8F=E6=A0=87=
+=E8=AE=B0=E4=B8=BA=E6=97=A0=E6=95=88=E7=9A=84=E6=95=B0=E6=8D=AE=E3=80=82ASA=
+N=E4=B8=8D=E4=BC=9A=E6=8A=8A=E5=AE=83=E4=BB=AC=E4=B8=8B=E6=AF=92=EF=BC=8C=
+=E6=89=80=E4=BB=A5=E9=9C=80=E8=A6=81=E7=94=A8=E6=88=B7=E8=87=AA=E5=B7=B1=E6=
+=B7=BB=E5=8A=A0=E3=80=82</p>
+<h3 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E4=BD=BF=E7=94=A8=E6=8A=
+=80=E5=B7=A7">=E4=BD=BF=E7=94=A8=E6=8A=80=E5=B7=A7</h3>
+<ul>
+<li>=E5=8F=AF=E4=BB=A5=E4=BD=BF=E7=94=A8__asan_unpoison_memory_region=E8=A7=
+=A3=E9=99=A4=E4=B8=8B=E6=AF=92=E3=80=82</li>
+<li>=E5=8F=AF=E4=BB=A5=E4=BD=BF=E7=94=A8=E5=AE=8F<span>#ifdef __SANITIZE_AD=
+DRESS__</span>=E6=9D=A5=E4=BD=BF=E4=BB=A3=E7=A0=81=E6=97=A0=E8=AE=BA=E6=9C=
+=89=E6=97=A0<span>ASAN</span>=E5=9D=87=E5=8F=AF=E7=BC=96=E8=AF=91=E3=80=82<=
+/li>
+<li>=E5=8F=AF=E4=BB=A5=E4=BD=BF=E7=94=A8<span>__declspec(no_sanitize_addres=
+s)</span>=E4=B8=B4=E6=97=B6=E5=B1=8F=E8=94=BD=E5=87=BD=E6=95=B0=E3=80=81=E5=
+=8F=98=E9=87=8F=E7=9A=84<span>ASAN</span>=E6=A3=80=E6=9F=A5</li>
+<li>=E5=8F=AF=E4=BB=A5=E4=BD=BF=E7=94=A8<span>ASAN_WIN_CONTINUE_ON_INTERCEP=
+TION_FAILURE</span>=E7=8E=AF=E5=A2=83=E5=8F=98=E9=87=8F=E6=9D=A5=E9=81=BF=
+=E5=85=8D<span>ASAN</span>=E5=87=BA=E9=94=99=E5=90=8E=E5=81=9C=E6=AD=A2=E7=
+=A8=8B=E5=BA=8F=E6=89=A7=E8=A1=8C=EF=BC=8C=E4=BD=86=E6=AD=A4=E9=80=89=E9=A1=
+=B9=E5=8F=AF=E8=83=BD=E5=AF=BC=E8=87=B4=E5=90=8E=E9=9D=A2=E7=BB=93=E6=9E=9C=
+=E4=B8=8D=E6=AD=A3=E7=A1=AE=E3=80=82</li>
+<li>=E5=A6=82=E6=9E=9C=E7=94=A8=E5=88=B0=E4=BA=86<span>GlobalAlloc/GlobalFr=
+ee=EF=BC=8C</span>=E8=BF=98=E9=9C=80=E8=A6=81=E8=AE=BE=E7=BD=AE<span>ASAN_O=
+PTIONS=3Dwindows_hook_legacy_allocators=3Dtruec</span>=EF=BC=8C=E6=89=8D=E8=
+=83=BD=E6=A3=80=E6=9F=A5=E4=BB=A5=E4=B8=8A=E5=87=BD=E6=95=B0=E3=80=82</li>
+<li>=EF=BC=88VS 2019 16.9=E4=B9=8B=E5=90=8E=EF=BC=89=E5=8F=AF=E4=BB=A5=E8=
+=AE=BE=E7=BD=AE<span>ASAN_SAVE_DUMPS=3DMyFilename.dmp</span>=EF=BC=8C=E6=9D=
+=A5=E8=BD=AC=E5=AD=98=E9=94=99=E8=AF=AF=E5=88=B0=E6=96=87=E4=BB=B6=E3=80=82=
+=E7=94=A8=E4=BA=8E=E8=BF=9C=E7=A8=8B=E8=B0=83=E6=9F=A5=E8=B0=83=E8=AF=95</l=
+i>
+</ul>
+<h3 id=3D"ASAN=E5=86=85=E5=AD=98=E6=B6=88=E6=AF=92-=E5=85=BC=E5=AE=B9=E6=80=
+=A7">=E5=85=BC=E5=AE=B9=E6=80=A7</h3>
+<ul>
+<li>=E4=B8=8D=E6=94=AF=E6=8C=81<span>/RTC</span></li>
+<li>=E4=B8=8D=E6=94=AF=E6=8C=81=E5=A2=9E=E9=87=8F=E9=93=BE=E6=8E=A5</li>
+<li>=E4=B8=8D=E6=94=AF=E6=8C=81<span>Edit-And-Contine</span></li>
+<li>=E4=B8=8D=E6=94=AF=E6=8C=81<span>Coroutines</span></li>
+<li>=E4=B8=8D=E6=94=AF=E6=8C=81<span>OpenMP</span></li>
+<li>=E4=B8=8D=E6=94=AF=E6=8C=81=E6=89=98=E7=AE=A1<span>C++</span></li>
+<li>=E4=B8=8D=E6=94=AF=E6=8C=81<span>C++ AMP</span></li>
+<li>=E4=B8=8D=E6=94=AF=E6=8C=81<span>UWP</span></li>
+<li>=E4=B8=8D=E6=94=AF=E6=8C=81<span>Special case list</span></li>
+<li>=E5=AF=B9<span>STL</span>=E7=9A=84=E8=BF=9D=E8=A7=84=E8=AE=BF=E9=97=AE=
+=EF=BC=8C=E6=98=BE=E7=A4=BA=E9=94=99=E8=AF=AF=E4=B8=8D=E5=A4=AA=E5=87=86=E7=
+=A1=AE</li>
+</ul>
+<p>=E5=AF=B9=E4=BB=A5=E4=B8=8B=E7=A8=8B=E5=BA=8F=EF=BC=8C=E5=8F=AA=E6=9C=89=
+VS 2022(17.2)=E4=B9=8B=E5=90=8E=E6=89=8D=E8=83=BD=E6=8D=95=E6=8D=89=E5=88=
+=B0=E7=AC=AC=E4=B8=80=E4=B8=AA=E9=94=99=E8=AF=AF=EF=BC=9A</p>
+<p><code>// Compile with: cl /fsanitize=3Daddress /Zi</code><br><code>#incl=
+ude &lt;vector&gt;</code></p>
+<p><code>int main() { &nbsp;&nbsp;</code><br><code>&nbsp; &nbsp; // Create =
+a vector of size 10, but with a capacity of 20. &nbsp; &nbsp;</code><br><co=
+de>&nbsp; &nbsp; std::vector&lt;int&gt; v(10);</code><br><code>&nbsp; &nbsp=
+; v.reserve(20);</code></p>
+<p><code>&nbsp; &nbsp; // In versions prior to 17.2, MSVC ASan does NOT rai=
+se an exception here.</code><br><code>&nbsp; &nbsp; // While this is an out=
+-of-bounds write to 'v', MSVC ASan</code><br><code>&nbsp; &nbsp; // ensures=
+ the write is within the heap allocation size (20).</code><br><code>&nbsp; =
+&nbsp; // With 17.2 and later, MSVC ASan will raise a 'container-overflow' =
+exception:</code><br><code>&nbsp; &nbsp; // =3D=3D18364=3D=3DERROR: Address=
+Sanitizer: container-overflow on address 0x1263cb8a0048 at pc 0x7ff6466411a=
+b bp 0x005cf81ef7b0 sp 0x005cf81ef7b8</code><br><code>&nbsp; &nbsp; v[10] =
+=3D 1;</code></p>
+<p><code>&nbsp; &nbsp; // Regardless of version, MSVC ASan DOES raise an ex=
+ception here, as this write</code><br><code>&nbsp; &nbsp; // is out of boun=
+ds from the heap allocation.</code><br><code>&nbsp; &nbsp; v[20] =3D 1;</co=
+de><br><code>}</code></p>
+<p><code>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</code><br><code>=3D=3D2=
+3812=3D=3DERROR: AddressSanitizer: heap-buffer-overflow on address 0x038019=
+60 at pc 0x008912dd bp 0x0117fc5c sp 0x0117fc50</code><br><code>WRITE of si=
+ze 4 at 0x03801960 thread T0</code><br><code>&nbsp; &nbsp; #0 0x8912dc in m=
+ain C:\work\asan\stl.cpp:18</code><br><code>&nbsp; &nbsp; #1 0x8cf709 in _s=
+crt_common_main_seh D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\ex=
+e_common.inl:288</code><br><code>&nbsp; &nbsp; #2 0x75a5fa28 &nbsp;(C:\WIND=
+OWS\System32\KERNEL32.DLL+0x6b81fa28)</code><br><code>&nbsp; &nbsp; #3 0x77=
+8f7a9d &nbsp;(C:\WINDOWS\SYSTEM32\ntdll.dll+0x4b2e7a9d)</code><br><code>&nb=
+sp; &nbsp; #4 0x778f7a6d &nbsp;(C:\WINDOWS\SYSTEM32\ntdll.dll+0x4b2e7a6d)</=
+code></p>
+<p><code>0x03801960 is located 0 bytes to the right of 80-byte region [0x03=
+801910,0x03801960)</code><br><code>allocated by thread T0 here:</code><br><=
+code>&nbsp; &nbsp; #0 0x8cd8c7 in operator new(unsigned int) D:\a\_work\1\s=
+\src\vctools\crt\asan\llvm\compiler-rt\lib\asan\asan_win_new_scalar_thunk.c=
+pp:41</code><br><code>&nbsp; &nbsp; #1 0x89287b in std::_Default_allocate_t=
+raits::_Allocate(unsigned int) C:\Program Files (x86)\Microsoft Visual Stud=
+io\2019\Professional\VC\Tools\MSVC\14.29.30133\include\xmemory:79</code><br=
+><code>&nbsp; &nbsp; #2 0x891388 in std::_Allocate&lt;8, struct std::_Defau=
+lt_allocate_traits, 0&gt;(unsigned int) C:\Program Files (x86)\Microsoft Vi=
+sual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\xmemory:235=
+</code><br><code>&nbsp; &nbsp; #3 0x8932e8 in std::allocator&lt;int&gt;::al=
+locate(unsigned int) C:\Program Files (x86)\Microsoft Visual Studio\2019\Pr=
+ofessional\VC\Tools\MSVC\14.29.30133\include\xmemory:801</code><br><code>&n=
+bsp; &nbsp; #4 0x892d6c in std::vector&lt;int, class std::allocator&lt;int&=
+gt;&gt;::_Reallocate_exactly(unsigned int) C:\Program Files (x86)\Microsoft=
+ Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\vector:1=
+294</code><br><code>&nbsp; &nbsp; #5 0x893591 in std::vector&lt;int, class =
+std::allocator&lt;int&gt;&gt;::reserve(unsigned int) C:\Program Files (x86)=
+\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\includ=
+e\vector:1363</code><br><code>&nbsp; &nbsp; #6 0x891252 in main C:\work\asa=
+n\stl.cpp:7</code><br><code>&nbsp; &nbsp; #7 0x8cf709 in _scrt_common_main_=
+seh D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288=
+</code><br><code>&nbsp; &nbsp; #8 0x75a5fa28 &nbsp;(C:\WINDOWS\System32\KER=
+NEL32.DLL+0x6b81fa28)</code><br><code>&nbsp; &nbsp; #9 0x778f7a9d &nbsp;(C:=
+\WINDOWS\SYSTEM32\ntdll.dll+0x4b2e7a9d)</code><br><code>&nbsp; &nbsp; #10 0=
+x778f7a6d &nbsp;(C:\WINDOWS\SYSTEM32\ntdll.dll+0x4b2e7a6d)</code></p>
+<p><code>SUMMARY: AddressSanitizer: heap-buffer-overflow C:\work\asan\stl.c=
+pp:18 in main</code><br><code>Shadow bytes around the buggy address:</code>=
+<br><code>&nbsp; 0x307002d0: fd fd fd fd fd fd fd fa fa fa fa fa fd fd fd f=
+d</code><br><code>&nbsp; 0x307002e0: fd fd fd fd fd fd fa fa fa fa fd fd fd=
+ fd fd fd</code><br><code>&nbsp; 0x307002f0: fd fd fd fa fa fa fa fa fd fd =
+fd fd fd fd fd fd</code><br><code>&nbsp; 0x30700300: fd fd fa fa fa fa fd f=
+d fd fd fd fd fd fd fd fa</code><br><code>&nbsp; 0x30700310: fa fa fa fa fd=
+ fd fd fd fd fd fd fd fd fa fa fa</code><br><code>=3D&gt;0x30700320: fa fa =
+00 00 00 00 00 00 00 00 00 00[fa]fa fa fa</code><br><code>&nbsp; 0x30700330=
+: 00 00 00 00 00 00 00 00 00 06 fa fa fa fa 00 00</code><br><code>&nbsp; 0x=
+30700340: 00 00 00 00 00 00 00 07 fa fa fa fa 00 00 00 00</code><br><code>&=
+nbsp; 0x30700350: 00 00 00 00 00 fa fa fa fa fa fd fd fd fd fd fd</code><br=
+><code>&nbsp; 0x30700360: fd fd fd fd fa fa fa fa fa fa fa fa fa fa fa fa</=
+code><br><code>&nbsp; 0x30700370: fa fa fa fa fa fa fa fa fa fa fa fa fa fa=
+ fa fa</code><br><code>Shadow byte legend (one shadow byte represents 8 app=
+lication bytes):</code><br><code>&nbsp; Addressable: &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; 00</code><br><code>&nbsp; Partially addressable: 01 02 03 04 0=
+5 06 07</code><br><code>&nbsp; Heap left redzone: &nbsp; &nbsp; &nbsp; fa</=
+code><br><code>&nbsp; Freed heap region: &nbsp; &nbsp; &nbsp; fd</code><br>=
+<code>&nbsp; Stack left redzone: &nbsp; &nbsp; &nbsp;f1</code><br><code>&nb=
+sp; Stack mid redzone: &nbsp; &nbsp; &nbsp; f2</code><br><code>&nbsp; Stack=
+ right redzone: &nbsp; &nbsp; f3</code><br><code>&nbsp; Stack after return:=
+ &nbsp; &nbsp; &nbsp;f5</code><br><code>&nbsp; Stack use after scope: &nbsp=
+; f8</code><br><code>&nbsp; Global redzone: &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp;f9</code><br><code>&nbsp; Global init order: &nbsp; &nbsp; &nbsp; f6</co=
+de><br><code>&nbsp; Poisoned by user: &nbsp; &nbsp; &nbsp; &nbsp;f7</code><=
+br><code>&nbsp; Container overflow: &nbsp; &nbsp; &nbsp;fc</code><br><code>=
+&nbsp; Array cookie: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ac</code><br>=
+<code>&nbsp; Intra object redzone: &nbsp; &nbsp;bb</code><br><code>&nbsp; A=
+San internal: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fe</code><br><code>&nbsp; =
+Left alloca redzone: &nbsp; &nbsp; ca</code><br><code>&nbsp; Right alloca r=
+edzone: &nbsp; &nbsp;cb</code><br><code>&nbsp; Shadow gap: &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp;cc</code><br><code>=3D=3D23812=3D=3DABORTIN=
+G</code></p>
+<p><br></p>
+<p><br></p>
+<pre><span class=3D"hljs-number"><span><br></span></span></pre>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_385_1748790634.1693294065371--
