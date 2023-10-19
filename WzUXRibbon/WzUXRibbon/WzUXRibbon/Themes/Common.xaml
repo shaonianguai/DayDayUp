@@ -1,0 +1,120 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WzUXRibbon.Controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonTabItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/Spinner.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/TwoLineLabel.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/KeyTip.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/ScreenTip.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/GalleryGroupContainer.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/SeparatorTabItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/BackstageTabControl.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/BackstageTabItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/Backstage.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/Button.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/CheckBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/DropDownButton.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/SplitButton.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/ToggleButton.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/Gallery.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/GalleryItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonContextualTabGroup.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonTabItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonGroupBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonToolBar.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonToolBarControlGroup.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/Ribbon.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/Menu.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/MenuItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/MenuSeparator.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonTitleBar.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonTabControl.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/QuickAccessToolBar.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonScrollViewer.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/ResizeableContentControl.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/ScreenTip.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!-- Set default values -->
+    <Thickness x:Key="Fluent.Ribbon.Values.RibbonTabControl.Content.BorderThickness">0</Thickness>
+
+    <!-- Set default styles -->
+    <Style TargetType="{x:Type controls:Spinner}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.Spinner}" />
+    <Style TargetType="{x:Type controls:TwoLineLabel}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.TwoLineLabel}" />
+    <Style TargetType="{x:Type controls:KeyTip}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.KeyTip}" />
+    <Style TargetType="{x:Type controls:ScreenTip}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.ScreenTip}" />
+    <Style TargetType="{x:Type ToolTip}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.ToolTip}" />
+    <Style TargetType="{x:Type controls:GalleryGroupContainer}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.GalleryGroupContainer}" />
+    <Style TargetType="{x:Type controls:SeparatorTabItem}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.SeparatorTabItem}" />
+
+    <Style TargetType="{x:Type controls:Backstage}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonBackstage}" />
+    <Style TargetType="{x:Type controls:BackstageTabControl}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.BackstageTabControl}" />
+    <Style TargetType="{x:Type controls:BackstageTabItem}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.BackstageTabItem}" />
+
+    <Style TargetType="{x:Type controls:StartScreen}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonStartScreen}" />
+    <!--<Style TargetType="{x:Type controls:StartScreenTabControl}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.StartScreenTabControl}" />-->
+
+    <Style TargetType="{x:Type controls:Button}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.Button}" />
+    <Style TargetType="{x:Type controls:CheckBox}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonCheckBox}" />
+    <Style TargetType="{x:Type controls:DropDownButton}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonDropDownButton}" />
+    <Style TargetType="{x:Type controls:SplitButton}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonSplitButton}" />
+    <Style TargetType="{x:Type controls:ToggleButton}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonToggleButton}" />
+    <Style TargetType="{x:Type controls:Gallery}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.Gallery}" />
+    <Style TargetType="{x:Type controls:GalleryItem}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.GalleryItem}" />
+    <Style TargetType="{x:Type controls:RibbonContextualTabGroup}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonContextualTabGroup}" />
+    <Style TargetType="{x:Type controls:RibbonTabItem}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonTabItem}" />
+    <Style TargetType="{x:Type controls:RibbonGroupBox}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonGroupBox}" />
+    <Style TargetType="{x:Type controls:RibbonToolBar}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonToolBar}" />
+    <Style TargetType="{x:Type controls:RibbonToolBarControlGroup}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonToolBarControlGroup}" />
+    <Style TargetType="{x:Type controls:Ribbon}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.Ribbon}" />
+    <!--<Style TargetType="{x:Type controls:RibbonWindow}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonWindow}" />-->
+
+    <Style TargetType="{x:Type controls:ContextMenu}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.ContextMenu}" />
+    <Style TargetType="{x:Type controls:MenuItem}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuItem}" />
+    <!--<Style TargetType="{x:Type controls:StatusBarItem}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonStatusBarItem}" />-->
+    <Style TargetType="{x:Type controls:GroupSeparatorMenuItem}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuGroupSeparator}" />
+    <Style TargetType="{x:Type controls:RibbonTitleBar}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonTitleBar}" />
+    <Style TargetType="{x:Type controls:RibbonTabControl}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonTabControl}" />
+    <Style TargetType="{x:Type controls:QuickAccessToolBar}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.QuickAccessToolbar}" />
+
+    <Style TargetType="{x:Type controls:RibbonGroupsContainerScrollViewer}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonGroupsContainerScrollViewer}" />
+
+    <Style TargetType="{x:Type controls:ResizeableContentControl}"
+           BasedOn="{StaticResource Fluent.Ribbon.Styles.ResizeableContentControl}" />
+</ResourceDictionary>

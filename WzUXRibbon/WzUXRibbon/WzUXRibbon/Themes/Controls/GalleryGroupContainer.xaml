@@ -1,0 +1,60 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:wzUXRibbonHelpers="clr-namespace:WzUXRibbon.Helpers"
+                    xmlns:converters="clr-namespace:WzUXRibbon.Converters"
+                    xmlns:controls="clr-namespace:WzUXRibbon.Controls"
+                    xmlns:effects="clr-namespace:WzUXRibbon.Effects"
+                    xmlns:attachedProperties="clr-namespace:WzUXRibbon.AttachedProperties"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:styleSelectors="clr-namespace:WzUXRibbon.StyleSelectors"
+                    mc:Ignorable="d">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
+    <ControlTemplate x:Key="Fluent.Ribbon.Templates.GalleryGroupContainer"
+                     TargetType="{x:Type controls:GalleryGroupContainer}">
+        <DockPanel LastChildFill="True">
+            <Grid x:Name="headerGrid"
+                  Height="21"
+                  VerticalAlignment="Top"
+                  Background="{DynamicResource Fluent.Ribbon.Brushes.GalleryGroupContainer.Header.Background}"
+                  DockPanel.Dock="Top">
+                <TextBlock Margin="7 0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           FontWeight="Bold"
+                           Text="{Binding Header, RelativeSource={RelativeSource TemplatedParent}}"
+                           TextTrimming="CharacterEllipsis"
+                           TextWrapping="NoWrap" />
+            </Grid>
+
+            <controls:UniformGridWithItemSize HorizontalAlignment="Left"
+                                            IsItemsHost="True"
+                                            ItemHeight="{TemplateBinding ItemHeight}"
+                                            ItemWidth="{TemplateBinding ItemWidth}"
+                                            MaxColumns="{TemplateBinding MaxItemsInRow}"
+                                            MinColumns="{TemplateBinding MinItemsInRow}"
+                                            Orientation="{TemplateBinding Orientation}" />
+        </DockPanel>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsHeadered" Value="False">
+                <Setter TargetName="headerGrid" Property="Visibility" Value="Collapsed" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <Style x:Key="Fluent.Ribbon.Styles.GalleryGroupContainer"
+           TargetType="{x:Type controls:GalleryGroupContainer}">
+        <Setter Property="Focusable" Value="False" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.GalleryGroupContainer}" />
+        <Style.Triggers>
+            <Trigger Property="IsHeadered" Value="False">
+                <Setter Property="HorizontalAlignment" Value="Left" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,37 @@
+﻿using System.Windows.Automation.Peers;
+using System.Windows.Automation.Provider;
+using WzUXRibbon.Controls;
+
+namespace WzUXRibbon.Automation.Peers
+{
+
+    public class RibbonBackstageTabControlAutomationPeer : SelectorAutomationPeer, ISelectionProvider
+    {
+        /// <summary>
+        ///     Creates a new instance.
+        /// </summary>
+        public RibbonBackstageTabControlAutomationPeer(BackstageTabControl owner)
+            : base(owner)
+        {
+            this.OwningBackstageTabControl = owner;
+        }
+
+        private BackstageTabControl OwningBackstageTabControl { get; }
+
+        /// <inheritdoc />
+        protected override AutomationControlType GetAutomationControlTypeCore()
+        {
+            return AutomationControlType.Tab;
+        }
+
+        /// <inheritdoc />
+        protected override ItemAutomationPeer CreateItemAutomationPeer(object item)
+        {
+            return new RibbonControlDataAutomationPeer(item, this);
+        }
+
+        bool ISelectionProvider.IsSelectionRequired => true;
+
+        bool ISelectionProvider.CanSelectMultiple => false;
+    }
+}

@@ -1,0 +1,153 @@
+﻿<Page x:Class="WzUXRibbonTest.RibbonPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WzUXRibbonTest"
+      xmlns:wzRibbon="wzUR:WzUXRibbon"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RibbonPage">
+    
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Common.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            
+            <local:GroupNameConverter x:Key="groupNameConverter"/>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid>
+        <wzRibbon:Ribbon IsMinimized="False"
+                         Loaded="Ribbon_Loaded">
+            <wzRibbon:RibbonTabItem Header="Manage">
+                <wzRibbon:RibbonGroupBox x:Name="TestGroup11"
+                                         Header="Organize"
+                                         IsLauncherEnabled="False"
+                                         IsSeparatorVisible="True">
+                    <wzRibbon:RibbonToolBar>
+                        <wzRibbon:Button Header="Search"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/search.png"
+                                         Margin="0,5,0,0"/>
+                        <wzRibbon:Button Header="Copy To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/copy.png"
+                                         Margin="10,5,0,0"/>
+                        <wzRibbon:Button Header="Move To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/move.png"
+                                         Margin="10,5,0,0"/>
+                        <wzRibbon:Button Header="Move To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/notification.png"
+                                         Margin="10,5,0,0"/>
+                    </wzRibbon:RibbonToolBar>
+                </wzRibbon:RibbonGroupBox>
+
+                <wzRibbon:RibbonGroupBox x:Name="TestGroup22"
+                                         Header="Clipboard"
+                                         IsLauncherEnabled="False"
+                                         IsSeparatorVisible="True">
+                    <wzRibbon:RibbonToolBar>
+                        <wzRibbon:Button Header="Paste Shortcut"
+                                         Icon="pack://application:,,,/WzUXRibbonTest;component/Images/paste.png"
+                                         SizeDefinition="Middle,Middle,Small"
+                                         Margin="0,5,0,0"/>
+                        <wzRibbon:Button Header="Select All"
+                                         Icon="pack://application:,,,/WzUXRibbonTest;component/Images/select-all.png"
+                                         SizeDefinition="Middle,Middle,Small"/>
+                        <wzRibbon:Button Header="Edit"
+                                         Icon="pack://application:,,,/WzUXRibbonTest;component/Images/edit.png"
+                                         SizeDefinition="Middle,Middle,Small"/>
+                    </wzRibbon:RibbonToolBar>
+                </wzRibbon:RibbonGroupBox>
+
+                <wzRibbon:RibbonGroupBox x:Name="TestGroup33"
+                                         Header="UnZip to"
+                                         IsLauncherEnabled="False"
+                                         IsSeparatorVisible="True">
+                    <wzRibbon:RibbonToolBar>
+                        <wzRibbon:SplitButton Header="Documents"
+                                              LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/documents.png"
+                                              SizeDefinition="Large">
+                            <wzRibbon:MenuItem Header="Set folders from this button"
+                                               Icon="pack://application:,,,/WzUXRibbonTest;component/Images/docs.png" />
+                            <wzRibbon:MenuItem Header="Docs"/>
+                        </wzRibbon:SplitButton>
+
+                        <wzRibbon:DropDownButton Header="Unzip Setting"
+                                                 ClosePopupOnMouseDownDelay="250"
+                                                 LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/settings.png"
+                                                 ResizeMode="None">
+                            <wzRibbon:MenuItem Header="Convert from PDFs"
+                                               IsCheckable="True"
+                                               IsChecked="True"/>
+                            <wzRibbon:MenuItem Header="Convert to PDF"
+                                               IsCheckable="True"
+                                               IsChecked="True"/>
+                            <wzRibbon:MenuItem Header="Watermark"
+                                               IsCheckable="True"
+                                               IsChecked="True"/>
+                            <wzRibbon:MenuItem Header="Combine files into a PDF"
+                                               IsCheckable="True"
+                                               IsChecked="True"/>
+                        </wzRibbon:DropDownButton>
+
+                        <wzRibbon:SplitButton Header="Zip Method"
+                                              Icon="pack://application:,,,/WzUXRibbonTest;component/Images/zip.png"
+                                              SizeDefinition="Middle"
+                                              Margin="10,0,0,0">
+                            <wzRibbon:MenuItem Header="Zip Method"
+                                               IsCheckable="True"/>
+                            <wzRibbon:MenuItem Header="Zipx Method"
+                                               IsCheckable="True"/>
+                            <wzRibbon:MenuItem Header="LZMA Method"
+                                               IsCheckable="True"/>
+                            <wzRibbon:MenuItem Header="BZip Method"
+                                               IsCheckable="True"/>
+
+                        </wzRibbon:SplitButton>
+                        
+                    </wzRibbon:RibbonToolBar>
+                </wzRibbon:RibbonGroupBox>
+            </wzRibbon:RibbonTabItem>
+            <wzRibbon:RibbonTabItem Header="Tools">
+                <wzRibbon:RibbonGroupBox x:Name="TestGroup666"
+                                         Header="File Utilities"
+                                         IsLauncherEnabled="False"
+                                         IsSeparatorVisible="True">
+                    <wzRibbon:RibbonToolBar>
+                        <wzRibbon:Button Header="Snap"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/snap.png"
+                                         Margin="0,5,0,0"/>
+                        <wzRibbon:Button Header="Scan"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/scan.png"
+                                         Margin="10,5,0,0"/>
+                        <wzRibbon:Button Header="PDF Files"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/pdfFiles.png"
+                                         Margin="10,5,0,0"/>
+                        <wzRibbon:Button Header="Image"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/image.png"
+                                         Margin="10,5,0,0"/>
+                    </wzRibbon:RibbonToolBar>
+                </wzRibbon:RibbonGroupBox>
+
+                <wzRibbon:RibbonGroupBox x:Name="TestGroup777"
+                                         Header="Selected Files"
+                                         IsLauncherEnabled="False"
+                                         IsSeparatorVisible="True">
+                    <wzRibbon:RibbonToolBar>
+                        <wzRibbon:Button Header="New Zip From"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/NewZip.png"
+                                         Margin="0,5,0,0"/>
+                        <wzRibbon:Button Header="Encrypt"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/encryption.png"
+                                         Margin="10,5,0,0"/>
+                        <wzRibbon:Button Header="Convert"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/Converters.png"
+                                         Margin="10,5,0,0"/>
+                    </wzRibbon:RibbonToolBar>
+                </wzRibbon:RibbonGroupBox>
+            </wzRibbon:RibbonTabItem>
+        </wzRibbon:Ribbon>
+    </Grid>
+</Page>

@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17317D1D-D68E-4D60-8897-068A92703E3F}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>WzUXRibbon</RootNamespace>
+    <AssemblyName>WzUXRibbon</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>lib\JetBrains.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adorners\KeyTipAdorner.cs" />
+    <Compile Include="AttachedProperties\InputControlProperties.cs" />
+    <Compile Include="AttachedProperties\RibbonProperties.cs" />
+    <Compile Include="Collections\CollectionSyncHelper.cs" />
+    <Compile Include="Collections\ItemCollectionWithLogicalTreeSupport.cs" />
+    <Compile Include="Controls\ApplicationMenu.cs" />
+    <Compile Include="Controls\Backstage.cs" />
+    <Compile Include="Controls\BackstageAdorner.cs" />
+    <Compile Include="Controls\BackstageTabControl.cs" />
+    <Compile Include="Controls\BackstageTabItem.cs" />
+    <Compile Include="Controls\Button.cs" />
+    <Compile Include="Controls\CheckBox.cs" />
+    <Compile Include="Controls\ColorGallery.cs" />
+    <Compile Include="Controls\ComboBox.cs" />
+    <Compile Include="Controls\ContextMenu.cs" />
+    <Compile Include="Controls\DropDownButton.cs" />
+    <Compile Include="Controls\Gallery.cs" />
+    <Compile Include="Controls\GalleryGroupContainer.cs" />
+    <Compile Include="Controls\GalleryGroupFilter.cs" />
+    <Compile Include="Controls\GalleryItem.cs" />
+    <Compile Include="Controls\GalleryItemPlaceholder.cs" />
+    <Compile Include="Controls\GalleryPanel.cs" />
+    <Compile Include="Controls\GroupSeparatorMenuItem.cs" />
+    <Compile Include="Controls\IconPresenter.cs" />
+    <Compile Include="Controls\InRibbonGallery.cs" />
+    <Compile Include="Controls\KeyTip.cs" />
+    <Compile Include="Controls\MenuItem.cs" />
+    <Compile Include="Controls\QuickAccessMenuItem.cs" />
+    <Compile Include="Controls\QuickAccessToolBar.cs" />
+    <Compile Include="Controls\RadioButton.cs" />
+    <Compile Include="Controls\ResizeableContentControl.cs" />
+    <Compile Include="Controls\Ribbon.cs" />
+    <Compile Include="Controls\RibbonContextualGroupsContainer.cs" />
+    <Compile Include="Controls\RibbonContextualTabGroup.cs" />
+    <Compile Include="Controls\RibbonGroupBoxWrapPanel.cs" />
+    <Compile Include="Controls\RibbonGroupsContainer.cs" />
+    <Compile Include="Controls\RibbonGroupsContainerScrollViewer.cs" />
+    <Compile Include="Controls\RibbonMenu.cs" />
+    <Compile Include="Controls\RibbonScrollViewer.cs" />
+    <Compile Include="Controls\RibbonTabsContainer.cs" />
+    <Compile Include="Controls\RibbonTitleBar.cs" />
+    <Compile Include="Controls\RibbonToolBar.cs" />
+    <Compile Include="Controls\RibbonToolBarControlDefinition.cs" />
+    <Compile Include="Controls\RibbonToolBarControlGroup.cs" />
+    <Compile Include="Controls\RibbonToolBarControlGroupDefinition.cs" />
+    <Compile Include="Controls\RibbonToolBarLayoutDefinition.cs" />
+    <Compile Include="Controls\RibbonToolBarRow.cs" />
+    <Compile Include="Controls\ScreenTip.cs" />
+    <Compile Include="Controls\SeparatorTabItem.cs" />
+    <Compile Include="Controls\Spinner.cs" />
+    <Compile Include="Controls\SplitButton.cs" />
+    <Compile Include="Controls\StartScreen.cs" />
+    <Compile Include="Controls\TextBox.cs" />
+    <Compile Include="Controls\ToggleButton.cs" />
+    <Compile Include="Controls\TwoLineLabel.cs" />
+    <Compile Include="Controls\UniformGridWithItemSize.cs" />
+    <Compile Include="Controls\WindowSteeringHelperControl.cs" />
+    <Compile Include="Converters\ApplicationMenuRightScrollViewerExtractorConverter.cs" />
+    <Compile Include="Converters\ColorToSolidColorBrushConverter.cs" />
+    <Compile Include="Converters\EqualsToVisibilityConverter.cs" />
+    <Compile Include="Converters\InverseBoolConverter.cs" />
+    <Compile Include="Converters\InvertNumericConverter.cs" />
+    <Compile Include="Converters\IsNullConverter.cs" />
+    <Compile Include="Converters\ObjectToImageConverter.cs" />
+    <Compile Include="Converters\SpinnerTextToValueConverter.cs" />
+    <Compile Include="Converters\StaticConverters.cs" />
+    <Compile Include="Data\KeyTipInformation.cs" />
+    <Compile Include="Data\RibbonStateStorage.cs" />
+    <Compile Include="Effects\GrayscaleEffect.cs" />
+    <Compile Include="Extensibility\IKeyTipInformationProvider.cs" />
+    <Compile Include="Extensions\AutomationPeerExtensions.cs" />
+    <Compile Include="Extensions\DispatcherExtensions.cs" />
+    <Compile Include="Extensions\FrameworkElementExtensions.cs" />
+    <Compile Include="Extensions\IListExtensions.cs" />
+    <Compile Include="Extensions\SelectorAutomationPeerExtensions.cs" />
+    <Compile Include="Helpers\FrameworkHelper.cs" />
+    <Compile Include="Helpers\ItemsControlHelper.cs" />
+    <Compile Include="Helpers\PoupHelper.cs" />
+    <Compile Include="Helpers\ToggleButtonHelper.cs" />
+    <Compile Include="Helpers\WindowSteeringHelper.cs" />
+    <Compile Include="Internal\AccessTextHelper.cs" />
+    <Compile Include="Internal\DoubleUtil.cs" />
+    <Compile Include="Internal\FocusWrapper.cs" />
+    <Compile Include="Internal\KeyEventUtility.cs" />
+    <Compile Include="Internal\KnownBoxes\IntBoxes.cs" />
+    <Compile Include="Internal\KnownBoxes\StringBoxes.cs" />
+    <Compile Include="Internal\KnownBoxes\VisibilityBoxes.cs" />
+    <Compile Include="Internal\SizeConstants.cs" />
+    <Compile Include="Internal\TypeHelper.cs" />
+    <Compile Include="IToggleButton.cs" />
+    <Compile Include="Languages\English.cs" />
+    <Compile Include="Localization\RibbonLocalization.cs" />
+    <Compile Include="Localization\RibbonLocalizationAttribute.cs" />
+    <Compile Include="Localization\RibbonLocalizationBase.cs" />
+    <Compile Include="Peers\GalleryItemAutomationPeer.cs" />
+    <Compile Include="Peers\GalleryItemWrapperAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonBackstageAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonBackstageTabControlAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonBackstageTabItemAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonButtonAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonCheckBoxAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonComboBoxAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonControlAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonControlDataAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonDropDownButtonAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonGroupBoxAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonGroupHeaderAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonHeaderedControlAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonInRibbonGalleryAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonQuickAccessToolBarAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonRadioButtonAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonScreenTipAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonSplitButtonAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonTabControlAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonTabItemAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonTabItemDataAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonTextBoxAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonTitleBarAutomationPeer.cs" />
+    <Compile Include="Peers\RibbonToggleButtonAutomationPeer.cs" />
+    <Compile Include="Peers\TwoLineLabelAutomationPeer.cs" />
+    <Compile Include="RibbonCommands.cs" />
+    <Compile Include="RibbonGroupBoxHeaderTemplateSelector.cs" />
+    <Compile Include="Services\ContextMenuService.cs" />
+    <Compile Include="Services\KeyTipService.cs" />
+    <Compile Include="Services\PopupService.cs" />
+    <Compile Include="Services\ToolTipService.cs" />
+    <Compile Include="StyleSelectors\ApplicationMenuItemContainerStyleSelector.cs" />
+    <Compile Include="StyleSelectors\BackstageTabControlItemContainerStyleSelector.cs" />
+    <Compile Include="StyleSelectors\HeaderApplicationMenuItemItemContainerStyleSelector.cs" />
+    <Compile Include="StyleSelectors\SplitedApplicationMenuItemItemContainerStyleSelector.cs" />
+    <Compile Include="Utils\NativeMethods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\RibbonControl.cs" />
+    <Compile Include="Controls\RibbonGroupBox.cs" />
+    <Compile Include="Controls\RibbonTabControl.cs" />
+    <Compile Include="Controls\RibbonTabItem.cs" />
+    <Compile Include="Converters\RibbonGroupBoxStateDefinitionConverter.cs" />
+    <Compile Include="Converters\SizeDefinitionConverter.cs" />
+    <Compile Include="Data\KeyTipPressedResult.cs" />
+    <Compile Include="Data\RibbonControlSizeDefinition.cs" />
+    <Compile Include="Data\RibbonGroupBoxStateDefinition.cs" />
+    <Compile Include="Enumerations\IconSize.cs" />
+    <Compile Include="Enumerations\RibbonControlSize.cs" />
+    <Compile Include="Enumerations\RibbonGroupBoxState.cs" />
+    <Compile Include="Extensibility\IRibbonSizeChangedSink.cs" />
+    <Compile Include="Extensions\ICommandSourceExtensions.cs" />
+    <Compile Include="Extensions\ItemContainerGeneratorExtensions.cs" />
+    <Compile Include="Helpers\LogicalChildSupportHelper.cs" />
+    <Compile Include="IDropDownControl.cs" />
+    <Compile Include="IHeaderedControl.cs" />
+    <Compile Include="IKeyTipedControl.cs" />
+    <Compile Include="ILargeIconProvider.cs" />
+    <Compile Include="ILogicalChildSupport.cs" />
+    <Compile Include="IMediumIconProvider.cs" />
+    <Compile Include="Internal\CommandHelper.cs" />
+    <Compile Include="Internal\ItemContainerGeneratorAction.cs" />
+    <Compile Include="Internal\KnownBoxes\BooleanBoxes.cs" />
+    <Compile Include="Internal\KnownBoxes\DoubleBoxes.cs" />
+    <Compile Include="Internal\KnownBoxes\IconSizeBoxes.cs" />
+    <Compile Include="Internal\ScopeGuard.cs" />
+    <Compile Include="Internal\UIHelper.cs" />
+    <Compile Include="IRibbonControl.cs" />
+    <Compile Include="IRibbonStateStorage.cs" />
+    <Compile Include="IScalableRibbonControl.cs" />
+    <Compile Include="ISimplifiedRibbonControl.cs" />
+    <Compile Include="ISimplifiedStateControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Themes\Effects\Grayscale.ps" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="Themes\ColorThemes\ColorTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Common.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\ApplicationMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\ApplicationMenuItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\Backstage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\BackstageControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\BackstageTabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\BackstageTabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\CheckBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\ColorGallery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\ComboBoxItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\DropDownButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\FocusStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\Gallery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\GalleryGroupContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\GalleryItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\InRibbonGallery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\KeyTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\MenuItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\MenuSeparator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\QuickAccessToolbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RadioButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\ResizeableContentControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\Ribbon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonContextualTabGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonGroupBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonScrollViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonSeparator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonTabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonTabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonTitleBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonToolBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\RibbonToolBarControlGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\ScreenTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\ScrollBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\SeparatorTabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\Slider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\Spinner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\SplitButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\ToggleButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\TwoLineLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Images.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Utils\Converters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Themes\Effects\Grayscale.fx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
