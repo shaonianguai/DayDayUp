@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WzUXRibbonTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1000">
+        Title="MainWindow" Height="600" Width="1300">
     <Grid>
 
-        <Frame Width="800"
+        <Frame Width="1200"
                Height="400"
                BorderThickness="2"
                BorderBrush="DarkGray"

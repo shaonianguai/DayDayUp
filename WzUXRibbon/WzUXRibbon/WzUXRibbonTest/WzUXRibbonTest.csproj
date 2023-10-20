@@ -145,5 +145,77 @@
   <ItemGroup>
     <Resource Include="Images\NewZip.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ImportFiles_32_32_32.png" />
+    <Resource Include="Images\Last Folder_32_32_32.png" />
+    <Resource Include="Images\MyPCorCloud_32_32_32.png" />
+    <Resource Include="Images\Open_32_32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UnzipAndInstall_32_32_32.png" />
+    <Resource Include="Images\UnzipAndTry_32_32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Comments_32_32_32.png" />
+    <Resource Include="Images\Diagnostics_32_32_32.png" />
+    <Resource Include="Images\LastOutput_32_32_32.png" />
+    <Resource Include="Images\Properties_32_32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DetailedDiagnostics_16_16_32.png" />
+    <Resource Include="Images\Diagnostics_16_16_32.png" />
+    <Resource Include="Images\FileProperties_16_16_32.png" />
+    <Resource Include="Images\Properties_16_16_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UnzipSettings_32_32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AdvancedBackup_32_32_32.png" />
+    <Resource Include="Images\Backup Folder_32_32_32.png" />
+    <Resource Include="Images\EnterRegistration_32_32_32.png" />
+    <Resource Include="Images\Notifications_32_32_32.png" />
+    <Resource Include="Images\Old Files_32_32_32.png" />
+    <Resource Include="Images\PhotoOrganizer_32_32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DuplicateCleaner_32_32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ConvertSelectedFiles_32_32_32.png" />
+    <Resource Include="Images\Image_32_32_32.png" />
+    <Resource Include="Images\ImportCamera_32_32_32.png" />
+    <Resource Include="Images\ImportScanner_32_32_32.png" />
+    <Resource Include="Images\LockPDF_32_32_32.png" />
+    <Resource Include="Images\SaveAsZip_32_32_32.png" />
+    <Resource Include="Images\SelfExtractingExe_32_32_32.png" />
+    <Resource Include="Images\SplitSize_32_32_32.png" />
+    <Resource Include="Images\SplitZipFile_32_32_32.png" />
+    <Resource Include="Images\UUEncodedFile_32_32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CopyASharingLink_16_16_32.png" />
+    <Resource Include="Images\CopyPath_16_16_32.png" />
+    <Resource Include="Images\PasteShortcut_16_16_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\delete.png" />
+    <Resource Include="Images\rename.png" />
+    <Resource Include="Images\swipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\selectAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Propertites.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\file-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\drive.png" />
+    <Resource Include="Images\network.png" />
+    <Resource Include="Images\newfolder.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

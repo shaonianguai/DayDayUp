@@ -58,5 +58,6 @@ using System.Windows.Markup;
 [assembly: XmlnsPrefix("wzUR:WzUXRibbon", "WzUXRibbon")]
 [assembly: XmlnsDefinition("wzUR:WzUXRibbon", "WzUXRibbon")]
 [assembly: XmlnsDefinition("wzUR:WzUXRibbon", "WzUXRibbon.Controls")]
+[assembly: XmlnsDefinition("wzUR:WzUXRibbon", "WzUXRibbon.Helpers")]
 
 [assembly: InternalsVisibleTo("WzUXRibbonTest")]
