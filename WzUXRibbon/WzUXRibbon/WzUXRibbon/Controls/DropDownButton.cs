@@ -228,7 +228,9 @@ namespace WzUXRibbon.Controls
         public bool IsDropDownOpen
         {
             get { return (bool)this.GetValue(IsDropDownOpenProperty); }
-            set { this.SetValue(IsDropDownOpenProperty, BooleanBoxes.Box(value)); }
+            set {
+                this.SetValue(IsDropDownOpenProperty, BooleanBoxes.Box(value));
+            }
         }
 
         /// <summary>Identifies the <see cref="IsDropDownOpen"/> dependency property.</summary>

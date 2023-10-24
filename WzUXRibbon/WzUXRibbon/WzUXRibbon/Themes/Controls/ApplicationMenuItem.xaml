@@ -12,6 +12,7 @@
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonScrollViewer.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
     <converters:ApplicationMenuRightScrollViewerExtractorConverter x:Key="Fluent.Ribbon.Converters.ApplicationMenuRightScrollViewerExtractorConverter" />
@@ -932,10 +933,6 @@
                             <Grid Margin="1"
                                   HorizontalAlignment="Stretch"
                                   VerticalAlignment="Stretch">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
                                 <ScrollViewer x:Name="PART_ScrollViewer"
                                               Margin="1"
                                               HorizontalScrollBarVisibility="Disabled"

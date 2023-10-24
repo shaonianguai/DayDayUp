@@ -217,5 +217,27 @@
     <Resource Include="Images\network.png" />
     <Resource Include="Images\newfolder.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close.png" />
+    <Resource Include="Images\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Zipx_16_16_32.png" />
+    <Resource Include="Images\Zip_16_16_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ActionsPane_32_32_32.png" />
+    <Resource Include="Images\FilesPane_32_32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ColumnsView_32_32_32.png" />
+    <Resource Include="Images\SortBy_32_32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\help-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\avatar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

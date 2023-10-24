@@ -13,9 +13,22 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Common.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/ApplicationMenuItem.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/MenuItem.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            
-            <local:GroupNameConverter x:Key="groupNameConverter"/>
+
+            <local:ToggleButtonGroupNameConverter x:Key="toggleButtonGroupNameConverter"/>
+            <DrawingImage x:Key="Fluent.Ribbon.Images.Help" x:Shared="False">
+                <DrawingImage.Drawing>
+                    <DrawingGroup>
+                        <DrawingGroup.Children>
+                            <GeometryDrawing Brush="#00FFFFFF" Geometry="F1 M 0,85.3333L 85.3333,85.3333L 85.3333,0L 0,0L 0,85.3333 Z " />
+                            <GeometryDrawing Brush="#FF497DB1" Geometry="F1 M 85.3333,42.6667C 85.3333,66.2307 66.2307,85.3333 42.6667,85.3333C 19.1027,85.3333 0,66.2307 0,42.6667C 0,19.1027 19.1027,0 42.6667,0C 66.2307,0 85.3333,19.1027 85.3333,42.6667 Z " />
+                            <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M 36.8092,57.4479C 36.8092,53.7604 37.2675,50.8229 38.1842,48.6145C 39.1009,46.427 40.9134,44.0104 43.6217,41.3854C 46.33,38.7604 48.0384,36.9062 48.7675,35.7812C 49.8717,34.0937 50.4342,32.2604 50.4342,30.2812C 50.4342,27.677 49.7884,25.677 48.4967,24.302C 47.205,22.927 45.3092,22.2395 42.8092,22.2395C 40.4134,22.2395 38.4967,22.927 37.0384,24.2604C 35.58,25.6145 34.8509,27.4479 34.8509,29.7395L 24.7259,29.7395C 24.7675,24.8229 26.455,20.9479 29.7467,18.0729C 33.0384,15.2187 37.3925,13.7812 42.8092,13.7812C 48.3925,13.7812 52.7467,15.1979 55.8717,18.0312C 58.9967,20.8645 60.5592,24.8229 60.5592,29.9062C 60.5592,34.4479 58.4342,38.9062 54.2259,43.2812L 49.1009,48.3229C 47.2675,50.4062 46.3092,53.4479 46.2675,57.4479L 36.8092,57.4479 Z M 36.1009,70.4062C 36.1009,68.7812 36.6009,67.4479 37.6425,66.427C 38.6634,65.427 40.0592,64.9062 41.8092,64.9062C 43.58,64.9062 44.9759,65.427 46.0175,66.4687C 47.0384,67.5104 47.5592,68.8229 47.5592,70.4062C 47.5592,71.9479 47.0592,73.2187 46.0592,74.2395C 45.0592,75.2812 43.6425,75.7812 41.8092,75.7812C 39.9759,75.7812 38.5592,75.2812 37.58,74.2395C 36.58,73.2187 36.1009,71.9479 36.1009,70.4062 Z " />
+                        </DrawingGroup.Children>
+                    </DrawingGroup>
+                </DrawingImage.Drawing>
+            </DrawingImage>
         </ResourceDictionary>
     </Page.Resources>
 
@@ -29,11 +42,113 @@
                 <Grid>
                     <wzRibbon:ApplicationMenu x:Name="ApplicationMenu"
                                               Visibility="Visible">
-                        
+
+                        <wzRibbon:ApplicationMenu.RightPaneContent>
+                            <StackPanel HorizontalAlignment="Stretch"
+                                        VerticalAlignment="Stretch"
+                                        Orientation="Vertical">
+
+                                <Border HorizontalAlignment="Stretch"
+                                        BorderBrush="#64647F"
+                                        BorderThickness="0 0 0 0">
+
+                                    <TextBlock Padding="12 4 4 4"
+                                               Background="#F6F7F8"
+                                               FontSize="12"
+                                               FontWeight="SemiBold"
+                                               Foreground="#64647F"
+                                               Text="Recent files"
+                                               TextAlignment="Left" />
+                                </Border>
+
+                                <StackPanel Height="2"
+                                            HorizontalAlignment="Stretch">
+
+                                    <Border Height="1"
+                                            HorizontalAlignment="Stretch"
+                                            BorderBrush="#DCDDDE"
+                                            BorderThickness="1" />
+
+                                    <Border Height="1"
+                                            HorizontalAlignment="Stretch"
+                                            BorderBrush="#FEFEFF"
+                                            BorderThickness="1" />
+
+                                </StackPanel>
+
+                                <ItemsControl ItemsSource="{Binding GalleryViewModel.Items}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <wzRibbon:MenuItem Header="{Binding Text}"
+                                                             Description="{Binding Group}"
+                                                             Icon="pack://application:,,,/WzUXRibbonTest;component/Images/BlueLarge.png"
+                                                             IsDefinitive="True"
+                                                             ToolTip="{Binding Text}" />
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </StackPanel>
+                        </wzRibbon:ApplicationMenu.RightPaneContent>
+
+                        <wzRibbon:MenuItem Header="New"
+                                           Icon="pack://application:,,,/WzUXRibbonTest;component/Images/newfolder.png"
+                                           Style="{StaticResource Fluent.Ribbon.Styles.ApplicationMenu.MenuItem }">
+                            <wzRibbon:MenuItem Header="Text document"
+                                               Icon="pack://application:,,,/WzUXRibbonTest;component/Images/newfolder.png"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.ApplicationMenu.MenuItem }"/>
+
+                            <wzRibbon:MenuItem Header="Spreadsheet"
+                                               Icon="pack://application:,,,/WzUXRibbonTest;component/Images/newfolder.png"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.ApplicationMenu.MenuItem }"/>
+                        </wzRibbon:MenuItem>
+
+                        <wzRibbon:MenuItem Header="Open"
+                                           Icon="pack://application:,,,/WzUXRibbonTest;component/Images/Open_32_32_32.png"
+                                           Style="{StaticResource Fluent.Ribbon.Styles.ApplicationMenu.MenuItem }">
+                            <wzRibbon:MenuItem Header="Text document"
+                                               Icon="pack://application:,,,/WzUXRibbonTest;component/Images/newfolder.png"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.ApplicationMenu.MenuItem }"/>
+
+                            <wzRibbon:MenuItem Header="Spreadsheet"
+                                               Icon="pack://application:,,,/WzUXRibbonTest;component/Images/newfolder.png"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.ApplicationMenu.MenuItem }"/>
+                        </wzRibbon:MenuItem>
+
+                        <Separator />
+
+                        <wzRibbon:MenuItem Header="Close"
+                                           Icon="pack://application:,,,/WzUXRibbonTest;component/Images/close.png"
+                                           Style="{StaticResource Fluent.Ribbon.Styles.ApplicationMenu.MenuItem }"/>
+
+                        <Separator />
+
+                        <wzRibbon:MenuItem Header="Exit"
+                                           Icon="pack://application:,,,/WzUXRibbonTest;component/Images/exit.png"
+                                           Style="{StaticResource Fluent.Ribbon.Styles.ApplicationMenu.MenuItem }"/>
+
                     </wzRibbon:ApplicationMenu>
                 </Grid>
             </wzRibbon:Ribbon.Menu>
-            
+
+            <wzRibbon:Ribbon.ToolBarItems>
+                <wzRibbon:Button Click="Avatar_Button_Click"
+                                 Size="Middle"
+                                 Icon="pack://application:,,,/WzUXRibbonTest;component/Images/avatar.png"
+                                 Margin="0,0,20,0">
+                </wzRibbon:Button>
+                <wzRibbon:Button Click="Help_Button_Click"
+                                 Size="Small"
+                                 Icon="{DynamicResource Fluent.Ribbon.Images.Help}">
+                    <wzRibbon:Button.ToolTip>
+                        <wzRibbon:ScreenTip Title="Help"
+                                            Width="200"
+                                            Text="See information about WinZip and your system; access WinZip's help topics; check for updates; visit WinZip's web site.">
+                            
+                        </wzRibbon:ScreenTip>
+                    </wzRibbon:Button.ToolTip>
+                </wzRibbon:Button>
+            </wzRibbon:Ribbon.ToolBarItems>
+
             <wzRibbon:RibbonTabItem Header="UnZip">
                 <wzRibbon:RibbonGroupBox x:Name="UnzipToGroup"
                                          Header="Organize"
@@ -48,8 +163,10 @@
                                               SizeDefinition="Large"
                                               Margin="5,5,0,0">
                             <wzRibbon:MenuItem Header="Set folders from this button"
-                                               Icon="pack://application:,,,/WzUXRibbonTest;component/Images/docs.png" />
-                            <wzRibbon:MenuItem Header="Docs"/>
+                                               Icon="pack://application:,,,/WzUXRibbonTest;component/Images/docs.png"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
+                            <wzRibbon:MenuItem Header="Docs"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                         </wzRibbon:SplitButton>
                         <wzRibbon:Button Header="Last Folder Used to Unzip"
                                          LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/Last Folder_32_32_32.png"
@@ -110,8 +227,10 @@
                                               SizeDefinition="Large"
                                               Margin="5,5,0,0">
                             <wzRibbon:MenuItem Header="Properties"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
                                                Icon="pack://application:,,,/WzUXRibbonTest;component/Images/Properties_16_16_32.png" />
                             <wzRibbon:MenuItem Header="Selected File"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
                                                Icon="pack://application:,,,/WzUXRibbonTest;component/Images/FileProperties_16_16_32.png"/>
                         </wzRibbon:SplitButton>
 
@@ -120,8 +239,10 @@
                                               SizeDefinition="Large"
                                               Margin="5,5,0,0">
                             <wzRibbon:MenuItem Header="Diagnostics"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
                                                Icon="pack://application:,,,/WzUXRibbonTest;component/Images/Diagnostics_16_16_32.png" />
                             <wzRibbon:MenuItem Header="Detailed"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
                                                Icon="pack://application:,,,/WzUXRibbonTest;component/Images/DetailedDiagnostics_16_16_32.png" />
                         </wzRibbon:SplitButton>
                     </wzRibbon:RibbonToolBar>
@@ -135,18 +256,99 @@
                                                  Margin="0,5,0,0">
                             <wzRibbon:MenuItem Header="Prompt Before Replacing Files"
                                                IsCheckable="True"
-                                               IsChecked="True"/>
+                                               IsChecked="True"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                             <wzRibbon:MenuItem Header="Don't Replace Newer Files with Older Versions"
                                                IsCheckable="True"
-                                               IsChecked="False"/>
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                             <wzRibbon:MenuItem Header="Use Folder Names"
                                                IsCheckable="True"
-                                               IsChecked="True"/>
+                                               IsChecked="True"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                             <wzRibbon:MenuItem Header="Show Unzipped Files"
                                                IsCheckable="True"
-                                               IsChecked="True"/>
+                                               IsChecked="True"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                         </wzRibbon:DropDownButton>
                     </wzRibbon:RibbonToolBar>
+                </wzRibbon:RibbonGroupBox>
+            </wzRibbon:RibbonTabItem>
+
+            <wzRibbon:RibbonTabItem Header="Zip">
+                <wzRibbon:RibbonGroupBox Header="Select WinZip File Type">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <wzRibbon:RibbonToolBar Grid.Column="0">
+                            <wzRibbon:ToggleButton Header="Zip File"
+                                               Margin="0,10,0,5"
+                                               SizeDefinition="Middle"
+                                               Icon="pack://application:,,,/WzUXRibbonTest;component/Images/Zip_16_16_32.png"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipFileType}"/>
+                            <wzRibbon:ToggleButton Header="Zipx File"
+                                               SizeDefinition="Middle"
+                                               Icon="pack://application:,,,/WzUXRibbonTest;component/Images/Zipx_16_16_32.png"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipFileType}"/>
+
+                        </wzRibbon:RibbonToolBar>
+
+                        <wzRibbon:RibbonToolBar Grid.Column="1">
+                            <wzRibbon:DropDownButton Header="Zip Method"
+                                                     Margin="0,10,0,5"
+                                                     Icon="pack://application:,,,/WzUXRibbonTest;component/Images/Zip_16_16_32.png"
+                                                     SizeDefinition="Middle,Middle,Small">
+                                <wzRibbon:MenuItem Header="Maximum"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipMethodGroup}"/>
+                                <wzRibbon:MenuItem Header="Super fast"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipMethodGroup}"/>
+                                <wzRibbon:MenuItem Header="No compression"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipMethodGroup}"/>
+
+                            </wzRibbon:DropDownButton>
+                            <wzRibbon:DropDownButton Header="Zipx Method"
+                                                     Icon="pack://application:,,,/WzUXRibbonTest;component/Images/Zipx_16_16_32.png"
+                                                     SizeDefinition="Middle,Middle,Small">
+                                <wzRibbon:MenuItem Header="BZip"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
+                                <wzRibbon:MenuItem Header="LZMA"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
+                                <wzRibbon:MenuItem Header="Zstd"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
+                                <wzRibbon:MenuItem Header="XZ"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
+                            </wzRibbon:DropDownButton>
+                        </wzRibbon:RibbonToolBar>
+                    </Grid>
+                </wzRibbon:RibbonGroupBox>
+                <wzRibbon:RibbonGroupBox Header="Encryption">
+                    <wzRibbon:ToggleButton Header="Encrypt"
+                                           Margin="10,5,10,0"
+                                           LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/encryption.png"
+                                           GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=EncryptGroup}"/>
                 </wzRibbon:RibbonGroupBox>
             </wzRibbon:RibbonTabItem>
 
@@ -194,8 +396,10 @@
                                           SizeDefinition="Middle,Middle,Small"
                                           Margin="5,5,0,0">
                         <wzRibbon:MenuItem Header="Map as Drive"
-                                           Icon="pack://application:,,,/WzUXRibbonTest;component/Images/drive.png"/>
-                        <wzRibbon:MenuItem Header="Unmap as Drive"/>
+                                           Icon="pack://application:,,,/WzUXRibbonTest;component/Images/drive.png"
+                                           Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
+                        <wzRibbon:MenuItem Header="Unmap as Drive"
+                                           Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                     </wzRibbon:SplitButton>
                     <wzRibbon:Button Header="Add a network location"
                                      Icon="pack://application:,,,/WzUXRibbonTest;component/Images/network.png"
@@ -211,8 +415,10 @@
                                           Icon="pack://application:,,,/WzUXRibbonTest;component/Images/file-open.png"
                                           SizeDefinition="Middle,Middle,Small"
                                           Margin="5,5,0,0">
-                        <wzRibbon:MenuItem Header="Paint"/>
-                        <wzRibbon:MenuItem Header="Choose Program..."/>
+                        <wzRibbon:MenuItem Header="Paint"
+                                           Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
+                        <wzRibbon:MenuItem Header="Choose Program..."
+                                           Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                     </wzRibbon:SplitButton>
                     <wzRibbon:Button Header="Edit"
                                      Icon="pack://application:,,,/WzUXRibbonTest;component/Images/edit.png"
@@ -318,16 +524,20 @@
                                                  Margin="10,5,0,0">
                             <wzRibbon:MenuItem Header="1.2MB"
                                                IsCheckable="True"
-                                               IsChecked="True"/>
+                                               IsChecked="True"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                             <wzRibbon:MenuItem Header="1.44MB"
                                                IsCheckable="True"
-                                               IsChecked="True"/>
+                                               IsChecked="True"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                             <wzRibbon:MenuItem Header="2.88MB"
                                                IsCheckable="True"
-                                               IsChecked="True"/>
+                                               IsChecked="True"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                             <wzRibbon:MenuItem Header="3MB"
                                                IsCheckable="True"
-                                               IsChecked="True"/>
+                                               IsChecked="True"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"/>
                         </wzRibbon:DropDownButton>
                         <wzRibbon:Button Header="Self-Extracting EXE"
                                          LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/SelfExtractingExe_32_32_32.png"
@@ -336,6 +546,70 @@
                                          LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/UUEncodedFile_32_32_32.png"
                                          Margin="10,5,0,0"/>
 
+                    </wzRibbon:RibbonToolBar>
+                </wzRibbon:RibbonGroupBox>
+            </wzRibbon:RibbonTabItem>
+
+            <wzRibbon:RibbonTabItem Header="View">
+                <wzRibbon:RibbonGroupBox Header="Panes">
+                    <wzRibbon:ToggleButton Header="Files"
+                                           Margin="5,5,5,0"
+                                           LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/FilesPane_32_32_32.png"
+                                           GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=PanesShowGroup}"/>
+                    <wzRibbon:ToggleButton Header="Actions"
+                                           Margin="0,5,5,0"
+                                           LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/ActionsPane_32_32_32.png"
+                                           GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=PanesShowGroup}"/>
+                </wzRibbon:RibbonGroupBox>
+                <wzRibbon:RibbonGroupBox Header="Current View">
+                    <wzRibbon:RibbonToolBar>
+                        <wzRibbon:DropDownButton Header="Sort by"
+                                                 ClosePopupOnMouseDownDelay="250"
+                                                 LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/SortBy_32_32_32.png"
+                                                 ResizeMode="None"
+                                                 Margin="5,5,0,0">
+                            <wzRibbon:MenuItem Header="Name"
+                                               IsCheckable="True"
+                                               IsChecked="True"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
+                            <wzRibbon:MenuItem Header="Type"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
+                            <wzRibbon:MenuItem Header="Date Modified"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
+                            <wzRibbon:MenuItem Header="Size"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
+                            <wzRibbon:MenuItem Header="Path"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
+                        </wzRibbon:DropDownButton>
+                        <wzRibbon:DropDownButton Header="Columns"
+                                                 ClosePopupOnMouseDownDelay="250"
+                                                 LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/ColumnsView_32_32_32.png"
+                                                 ResizeMode="None"
+                                                 Margin="5,5,0,0">
+                           <wzRibbon:MenuItem Header="Single folder"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ColumnsGroup}"/>
+                            <wzRibbon:MenuItem Header="All files in Zip"
+                                               IsCheckable="True"
+                                               IsChecked="False"
+                                               Style="{StaticResource Fluent.Ribbon.Styles.MenuItem}"
+                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ColumnsGroup}"/>
+                        </wzRibbon:DropDownButton>
                     </wzRibbon:RibbonToolBar>
                 </wzRibbon:RibbonGroupBox>
             </wzRibbon:RibbonTabItem>

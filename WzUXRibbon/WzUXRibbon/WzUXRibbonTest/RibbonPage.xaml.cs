@@ -32,8 +32,18 @@ namespace WzUXRibbonTest
 
         private void Ribbon_Loaded(object sender, RoutedEventArgs e)
         {
-            var ribbon = sender as WzUXRibbon.Controls.Ribbon;
-            ribbon.IsMinimized = false;
+            //var ribbon = sender as WzUXRibbon.Controls.Ribbon;
+            //ribbon.IsMinimized = false;
+        }
+
+        private void Help_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Avatar_Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

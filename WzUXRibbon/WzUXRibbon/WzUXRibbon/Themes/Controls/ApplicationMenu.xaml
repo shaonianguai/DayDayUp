@@ -11,6 +11,8 @@
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/FocusStyles.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Images.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <ControlTemplate x:Key="Fluent.Ribbon.Templates.ApplicationMenuButton"
@@ -129,11 +131,11 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style TargetType="{x:Type controls:ApplicationMenu}">
+    <Style x:Key="Fluent.Ribbon.Styles.ApplicationMenu" TargetType="{x:Type controls:ApplicationMenu}">
         <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.AccentBase}" />
         <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
         <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.IdealForeground}" />
-        <Setter Property="Header" Value="{converters:ObjectToImageConverter {DynamicResource Fluent.Ribbon.Images.ApplicationMenu}, '40,16', {Binding RelativeSource={RelativeSource Self}}}" />
+        <Setter Property="Header" Value="File" />
         <Setter Property="ItemContainerStyleSelector" Value="{x:Static styleSelectors:ApplicationMenuItemContainerStyleSelector.Instance}" />
         <Setter Property="KeyboardNavigation.TabIndex" Value="1" />
         <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.ApplicationMenuButton}" />

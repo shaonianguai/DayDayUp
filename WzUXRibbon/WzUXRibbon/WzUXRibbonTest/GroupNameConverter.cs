@@ -5,7 +5,7 @@ using System.Windows.Data;
 namespace WzUXRibbonTest
 {
     [ValueConversion(typeof(object), typeof(string))]
-    public class GroupNameConverter : IValueConverter
+    public class ToggleButtonGroupNameConverter : IValueConverter
     {
         /// <inheritdoc />
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
