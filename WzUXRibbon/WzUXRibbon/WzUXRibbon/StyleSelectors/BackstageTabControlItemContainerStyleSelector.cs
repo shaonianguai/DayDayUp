@@ -17,10 +17,10 @@ namespace WzUXRibbon.StyleSelectors
             switch (item)
             {
                 case WzUXRibbon.Controls.Button _:
-                    return (container as FrameworkElement)?.TryFindResource("Fluent.Ribbon.Styles.BackstageTabControl.Button") as Style;
+                    return (container as FrameworkElement)?.TryFindResource("Ribbon.Styles.BackstageTabControl.Button") as Style;
 
                 case SeparatorTabItem _:
-                    return (container as FrameworkElement)?.TryFindResource("Fluent.Ribbon.Styles.BackstageTabControl.SeparatorTabItem") as Style;
+                    return (container as FrameworkElement)?.TryFindResource("Ribbon.Styles.BackstageTabControl.SeparatorTabItem") as Style;
             }
 
             return base.SelectStyle(item, container);

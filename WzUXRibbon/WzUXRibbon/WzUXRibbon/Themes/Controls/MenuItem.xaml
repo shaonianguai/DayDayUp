@@ -16,7 +16,7 @@
     </ResourceDictionary.MergedDictionaries>
     
     <!-- Menu Item Template -->
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.MenuItem"
+    <ControlTemplate x:Key="Ribbon.Templates.MenuItem"
                      TargetType="{x:Type MenuItem}">
         <Grid Background="{TemplateBinding Background}">
             <Grid.ColumnDefinitions>
@@ -30,8 +30,8 @@
                     Width="Auto"
                     Margin="0"
                     HorizontalAlignment="Stretch"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                    Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                     BorderThickness="1"
                     Visibility="Collapsed" />
             <ContentPresenter x:Name="textBlock"
@@ -60,7 +60,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    SnapsToDevicePixels="True"
-                   Source="{DynamicResource Fluent.Ribbon.Images.Checked}"
+                   Source="{DynamicResource Ribbon.Images.Checked}"
                    Stretch="Uniform"
                    Visibility="Collapsed" />
             <TextBlock x:Name="gestureTextBlock"
@@ -79,8 +79,8 @@
                 <Setter TargetName="gestureTextBlock" Property="Visibility" Value="Collapsed" />
             </Trigger>
             <Trigger Property="IsChecked" Value="True">
-                <Setter TargetName="iconImageBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Background}" />
-                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Border}" />
+                <Setter TargetName="iconImageBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Background}" />
+                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -110,7 +110,7 @@
     </ControlTemplate>
 
     <!-- Header Menu Item Template -->
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.HeaderMenuItem"
+    <ControlTemplate x:Key="Ribbon.Templates.HeaderMenuItem"
                      TargetType="{x:Type MenuItem}">
         <Grid Background="{TemplateBinding Background}">
             <Grid.ColumnDefinitions>
@@ -124,8 +124,8 @@
                     Width="Auto"
                     Margin="0"
                     HorizontalAlignment="Stretch"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                    Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                     BorderThickness="1"
                     Visibility="Collapsed" />
             <ContentPresenter x:Name="textBlock"
@@ -154,7 +154,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    SnapsToDevicePixels="True"
-                   Source="{DynamicResource Fluent.Ribbon.Images.Checked}"
+                   Source="{DynamicResource Ribbon.Images.Checked}"
                    Stretch="Uniform"
                    Visibility="Collapsed" />
             <Path x:Name="path"
@@ -164,7 +164,7 @@
                   Margin="1 0 9 0"
                   HorizontalAlignment="Right"
                   Data="M0,0L1,1 0,2z"
-                  Fill="{DynamicResource Fluent.Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
+                  Fill="{DynamicResource Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
                   Stretch="Fill"
                   Stroke="{x:Null}" />
             <Popup x:Name="PART_Popup"
@@ -180,7 +180,7 @@
                                                  MinWidth="{TemplateBinding ActualWidth}"
                                                  MinHeight="{TemplateBinding ActualHeight}">
                     <ScrollViewer x:Name="PART_ScrollViewer"
-                                  Style="{DynamicResource Fluent.Ribbon.Styles.MenuScrollViewer}"
+                                  Style="{DynamicResource Ribbon.Styles.MenuScrollViewer}"
                                   Margin="1"
                                   SnapsToDevicePixels="True">
                         <StackPanel x:Name="PART_MenuPanel"
@@ -193,8 +193,8 @@
         </Grid>
         <ControlTemplate.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter TargetName="iconImageBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Background}" />
-                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Border}" />
+                <Setter TargetName="iconImageBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Background}" />
+                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -223,7 +223,7 @@
     </ControlTemplate>
 
     <!-- Splited Menu Item Template -->
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.SplitedMenuItem"
+    <ControlTemplate x:Key="Ribbon.Templates.SplitedMenuItem"
                      TargetType="{x:Type MenuItem}">
         <Grid Background="{TemplateBinding Background}">
             <Grid.ColumnDefinitions>
@@ -236,7 +236,7 @@
                        Width="1"
                        Margin="0 4 23 4"
                        HorizontalAlignment="Right"
-                       Stroke="{DynamicResource Fluent.Ribbon.Brushes.Separator.Border}" />
+                       Stroke="{DynamicResource Ribbon.Brushes.Separator.Border}" />
 
             <Grid Grid.Column="0"
                   Grid.ColumnSpan="3"
@@ -250,8 +250,8 @@
                 </Grid.ColumnDefinitions>
                 <Border x:Name="PART_ButtonBorder"
                         Margin="0 0 -1 0"
-                        Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                        Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                        BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                         BorderThickness="1"
                         Visibility="Collapsed" />
                 <Border x:Name="Submenu_Border"
@@ -259,8 +259,8 @@
                         Width="Auto"
                         Margin="0"
                         HorizontalAlignment="Stretch"
-                        Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                        Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                        BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                         BorderThickness="1"
                         Visibility="Collapsed" />
             </Grid>
@@ -290,7 +290,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    SnapsToDevicePixels="True"
-                   Source="{DynamicResource Fluent.Ribbon.Images.Checked}"
+                   Source="{DynamicResource Ribbon.Images.Checked}"
                    Stretch="Uniform"
                    Visibility="Collapsed" />
             <Path x:Name="path"
@@ -300,7 +300,7 @@
                   Margin="1 0 9 0"
                   HorizontalAlignment="Right"
                   Data="M0,0L1,1 0,2z"
-                  Fill="{DynamicResource Fluent.Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
+                  Fill="{DynamicResource Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
                   Stretch="Fill"
                   Stroke="{x:Null}" />
             <Popup x:Name="PART_Popup"
@@ -316,7 +316,7 @@
                                                  MinWidth="{TemplateBinding ActualWidth}"
                                                  MinHeight="{TemplateBinding ActualHeight}">
                     <ScrollViewer x:Name="PART_ScrollViewer"
-                                  Style="{DynamicResource Fluent.Ribbon.Styles.MenuScrollViewer}"
+                                  Style="{DynamicResource Ribbon.Styles.MenuScrollViewer}"
                                   Margin="1"
                                   SnapsToDevicePixels="True">
                         <StackPanel x:Name="PART_MenuPanel"
@@ -329,8 +329,8 @@
         </Grid>
         <ControlTemplate.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter TargetName="iconImageBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Background}" />
-                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Border}" />
+                <Setter TargetName="iconImageBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Background}" />
+                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -348,7 +348,7 @@
                 <Setter TargetName="Submenu_Border" Property="Visibility" Value="Visible" />
             </MultiTrigger>
             <Trigger Property="IsSubmenuOpen" Value="True">
-                <Setter TargetName="Submenu_Border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="Submenu_Border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="checkedImage" Property="Effect">
@@ -363,7 +363,7 @@
     </ControlTemplate>
 
     <!-- Menu Item with Description Template -->
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.MenuItemWithDescription"
+    <ControlTemplate x:Key="Ribbon.Templates.MenuItemWithDescription"
                      TargetType="{x:Type controls:MenuItem}">
         <Grid Background="{TemplateBinding Background}">
             <Grid.RowDefinitions>
@@ -382,8 +382,8 @@
                     Width="Auto"
                     Margin="0"
                     HorizontalAlignment="Stretch"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                    Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                     BorderThickness="1"
                     Visibility="Collapsed" />
             <ContentControl x:Name="textBlock"
@@ -422,7 +422,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    SnapsToDevicePixels="True"
-                   Source="{DynamicResource Fluent.Ribbon.Images.Checked}"
+                   Source="{DynamicResource Ribbon.Images.Checked}"
                    Stretch="Uniform"
                    Visibility="Collapsed" />
             <TextBlock x:Name="gestureTextBlock"
@@ -441,8 +441,8 @@
                 <Setter TargetName="gestureTextBlock" Property="Visibility" Value="Collapsed" />
             </Trigger>
             <Trigger Property="IsChecked" Value="True">
-                <Setter TargetName="iconImageBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Background}" />
-                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Border}" />
+                <Setter TargetName="iconImageBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Background}" />
+                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -471,31 +471,31 @@
     </ControlTemplate>
 
     <!-- Menu Item Style -->
-    <Style x:Key="Fluent.Ribbon.Styles.MenuItem"
+    <Style x:Key="Ribbon.Styles.MenuItem"
            TargetType="{x:Type controls:MenuItem}">
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.MenuItem.Background}" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.MenuItem.Background}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.MenuItem}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.MenuItem}" />
         <Style.Triggers>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="controls:MenuItem.IsSplited" Value="True" />
                     <Condition Property="HasItems" Value="True" />
                 </MultiTrigger.Conditions>
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.SplitedMenuItem}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.SplitedMenuItem}" />
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="controls:MenuItem.IsSplited" Value="False" />
                     <Condition Property="HasItems" Value="True" />
                 </MultiTrigger.Conditions>
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.HeaderMenuItem}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.HeaderMenuItem}" />
             </MultiTrigger>
             <DataTrigger Binding="{Binding Description, RelativeSource={RelativeSource Self}, Converter={x:Static converters:IsNullConverter.Instance}}" Value="False">
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.MenuItemWithDescription}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.MenuItemWithDescription}" />
             </DataTrigger>
         </Style.Triggers>
     </Style>

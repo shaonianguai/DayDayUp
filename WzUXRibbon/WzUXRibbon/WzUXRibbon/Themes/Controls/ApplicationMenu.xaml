@@ -15,7 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Images.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.ApplicationMenuButton"
+    <ControlTemplate x:Key="Ribbon.Templates.ApplicationMenuButton"
                      TargetType="{x:Type controls:ApplicationMenu}">
         <Grid Margin="0">
             <ContentControl x:Name="buttonContent"
@@ -55,8 +55,8 @@
                             MinWidth="{TemplateBinding ActualWidth}"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Top"
-                            Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Border}"
+                            Background="{DynamicResource Ribbon.Brushes.DropDown.Background}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Border}"
                             BorderThickness="1"
                             SnapsToDevicePixels="True">
                         <Grid Width="Auto"
@@ -76,7 +76,7 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
 
-                                <ScrollViewer Style="{DynamicResource Fluent.Ribbon.Styles.MenuScrollViewer}"
+                                <ScrollViewer Style="{DynamicResource Ribbon.Styles.MenuScrollViewer}"
                                               Grid.Row="0"
                                               Grid.Column="0"
                                               IsTabStop="False"
@@ -91,10 +91,10 @@
                                 <Border Grid.Row="0"
                                         Grid.Column="1"
                                         Width="{TemplateBinding RightPaneWidth}"
-                                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Separator.Border}"
+                                        BorderBrush="{DynamicResource Ribbon.Brushes.Separator.Border}"
                                         BorderThickness="1 0 0 0">
                                     <ScrollViewer x:Name="PART_ScrollViewer"
-                                                  Style="{DynamicResource Fluent.Ribbon.Styles.MenuScrollViewer}"
+                                                  Style="{DynamicResource Ribbon.Styles.MenuScrollViewer}"
                                                   Margin="1"
                                                   IsTabStop="False"
                                                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
@@ -107,8 +107,8 @@
                                 <Border Grid.Row="1"
                                         Grid.ColumnSpan="2"
                                         Margin="0"
-                                        Background="{DynamicResource Fluent.Ribbon.Brushes.Ribbon.Background}"
-                                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Separator.Border}"
+                                        Background="{DynamicResource Ribbon.Brushes.Ribbon.Background}"
+                                        BorderBrush="{DynamicResource Ribbon.Brushes.Separator.Border}"
                                         BorderThickness="0 1 0 0">
                                     <ContentPresenter ContentSource="FooterPaneContent" />
                                 </Border>
@@ -131,13 +131,13 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.ApplicationMenu" TargetType="{x:Type controls:ApplicationMenu}">
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.AccentBase}" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.IdealForeground}" />
+    <Style x:Key="Ribbon.Styles.ApplicationMenu" TargetType="{x:Type controls:ApplicationMenu}">
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.AccentBase}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.IdealForeground}" />
         <Setter Property="Header" Value="File" />
         <Setter Property="ItemContainerStyleSelector" Value="{x:Static styleSelectors:ApplicationMenuItemContainerStyleSelector.Instance}" />
         <Setter Property="KeyboardNavigation.TabIndex" Value="1" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.ApplicationMenuButton}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.ApplicationMenuButton}" />
     </Style>
 </ResourceDictionary>

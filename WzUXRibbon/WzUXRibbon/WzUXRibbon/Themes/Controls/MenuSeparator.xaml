@@ -15,12 +15,12 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="Fluent.Ribbon.Styles.MenuSeparator"
+    <Style x:Key="Ribbon.Styles.MenuSeparator"
            TargetType="{x:Type Separator}">
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.MenuSeparator}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.MenuSeparator}" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.MenuSeparator"
+    <ControlTemplate x:Key="Ribbon.Templates.MenuSeparator"
                      TargetType="{x:Type Separator}">
         <Grid Height="Auto">
             <Path Height="1"
@@ -29,20 +29,20 @@
                   Data="M0,0L1,0"
                   Fill="{x:Null}"
                   Stretch="Fill"
-                  Stroke="{DynamicResource Fluent.Ribbon.Brushes.Separator.Border}"
+                  Stroke="{DynamicResource Ribbon.Brushes.Separator.Border}"
                   StrokeDashArray="2 2" />
         </Grid>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.MenuGroupSeparator"
+    <Style x:Key="Ribbon.Styles.MenuGroupSeparator"
            TargetType="{x:Type controls:GroupSeparatorMenuItem}">
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.MenuGroupSeparator}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.MenuGroupSeparator}" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.MenuGroupSeparator"
+    <ControlTemplate x:Key="Ribbon.Templates.MenuGroupSeparator"
                      TargetType="{x:Type controls:GroupSeparatorMenuItem}">
         <Grid Height="Auto"
-              Background="{DynamicResource Fluent.Ribbon.Brushes.GroupSeparator.Background}">
+              Background="{DynamicResource Ribbon.Brushes.GroupSeparator.Background}">
             <TextBlock Margin="7 0"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center"

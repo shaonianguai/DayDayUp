@@ -14,7 +14,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.FocusVisual.Empty"
+    <ControlTemplate x:Key="Ribbon.Templates.FocusVisual.Empty"
                      TargetType="{x:Type Control}">
         <Rectangle Stroke="Transparent">
             <Rectangle.Fill>
@@ -23,27 +23,27 @@
         </Rectangle>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.FocusVisual.Rectangle"
+    <Style x:Key="Ribbon.Styles.FocusVisual.Rectangle"
            TargetType="{x:Type Rectangle}">
         <Setter Property="Margin" Value="-1" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
-        <Setter Property="Stroke" Value="{DynamicResource Fluent.Ribbon.Brushes.Black}" />
+        <Setter Property="Stroke" Value="{DynamicResource Ribbon.Brushes.Black}" />
         <Setter Property="StrokeThickness" Value="2" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.FocusVisual"
+    <ControlTemplate x:Key="Ribbon.Templates.FocusVisual"
                      TargetType="{x:Type Control}">
-        <Rectangle Style="{DynamicResource Fluent.Ribbon.Styles.FocusVisual.Rectangle}" />
+        <Rectangle Style="{DynamicResource Ribbon.Styles.FocusVisual.Rectangle}" />
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.FocusVisual.Empty"
+    <Style x:Key="Ribbon.Styles.FocusVisual.Empty"
            TargetType="{x:Type Control}">
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.FocusVisual.Empty}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.FocusVisual.Empty}" />
     </Style>
 
-    <Style x:Key="Fluent.Ribbon.Styles.FocusVisual"
+    <Style x:Key="Ribbon.Styles.FocusVisual"
            TargetType="{x:Type Control}">
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.FocusVisual}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.FocusVisual}" />
     </Style>
     
 </ResourceDictionary>

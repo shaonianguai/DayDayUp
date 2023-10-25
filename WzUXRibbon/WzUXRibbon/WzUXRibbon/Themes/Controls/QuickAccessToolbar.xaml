@@ -16,15 +16,15 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/MenuSeparator.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="Fluent.Ribbon.Styles.ToolbarDropDownButton"
+    <Style x:Key="Ribbon.Styles.ToolbarDropDownButton"
            TargetType="{x:Type controls:DropDownButton}">
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
         <Setter Property="Height" Value="22" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.ToolbarDropDownButton}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.ToolbarDropDownButton}" />
         <Setter Property="Width" Value="14" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.ToolbarDropDownButton"
+    <ControlTemplate x:Key="Ribbon.Templates.ToolbarDropDownButton"
                      TargetType="{x:Type controls:DropDownButton}">
         <Grid>
             <Border x:Name="PART_ButtonBorder"
@@ -57,8 +57,8 @@
                             MinWidth="{TemplateBinding ActualWidth}"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Top"
-                            Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Border}"
+                            Background="{DynamicResource Ribbon.Brushes.DropDown.Background}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Border}"
                             BorderThickness="1"
                             SnapsToDevicePixels="True">
                         <Grid Width="Auto"
@@ -68,7 +68,7 @@
                             <Border Width="Auto"
                                     Height="Auto"
                                     VerticalAlignment="Top"
-                                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
+                                    BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Background}"
                                     BorderThickness="1" />
                             <Grid HorizontalAlignment="Stretch"
                                   VerticalAlignment="Top">
@@ -91,8 +91,8 @@
                                         Height="11"
                                         HorizontalAlignment="Stretch"
                                         VerticalAlignment="Top"
-                                        Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Resize.Background}"
-                                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Resize.Border}"
+                                        Background="{DynamicResource Ribbon.Brushes.DropDown.Resize.Background}"
+                                        BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Resize.Border}"
                                         BorderThickness="0 1 0 0">
                                     <Grid>
                                         <Thumb x:Name="PART_ResizeVerticalThumb"
@@ -102,7 +102,7 @@
                                                HorizontalAlignment="Stretch"
                                                VerticalAlignment="Top"
                                                Cursor="SizeNS"
-                                               Template="{DynamicResource Fluent.Ribbon.Templates.ResizeVerticalThumb}" />
+                                               Template="{DynamicResource Ribbon.Templates.ResizeVerticalThumb}" />
                                         <Thumb x:Name="PART_ResizeBothThumb"
                                                Width="10"
                                                Height="10"
@@ -110,7 +110,7 @@
                                                HorizontalAlignment="Right"
                                                VerticalAlignment="Top"
                                                Cursor="SizeNWSE"
-                                               Template="{DynamicResource Fluent.Ribbon.Templates.ResizeBothThumb}" />
+                                               Template="{DynamicResource Ribbon.Templates.ResizeBothThumb}" />
                                     </Grid>
                                 </Border>
                             </Grid>
@@ -137,27 +137,27 @@
                 <Setter TargetName="iconImage" Property="Opacity" Value="0.25" />
             </Trigger>
             <Trigger Property="IsDropDownOpen" Value="True">
-                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="IsMouseOver" Value="True" />
                     <Condition Property="IsDropDownOpen" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.QuickAccessToolbar"
+    <Style x:Key="Ribbon.Styles.QuickAccessToolbar"
            TargetType="{x:Type controls:QuickAccessToolBar}">
         <Setter Property="Background" Value="{Binding Background, RelativeSource={RelativeSource AncestorType=Window}}" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.QuickAccessToolbar}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.QuickAccessToolbar}" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.QuickAccessToolbar"
+    <ControlTemplate x:Key="Ribbon.Templates.QuickAccessToolbar"
                      TargetType="{x:Type controls:QuickAccessToolBar}">
         <DockPanel x:Name="PART_RootPanel"
                    KeyboardNavigation.TabNavigation="Local">
@@ -166,22 +166,22 @@
                             DockPanel.Dock="Right"
                             Focusable="False">
                 <controls:DropDownButton x:Name="PART_MenuDownButton"
-                                       Style="{DynamicResource Fluent.Ribbon.Styles.ToolbarDropDownButton}"
+                                       Style="{DynamicResource Ribbon.Styles.ToolbarDropDownButton}"
                                        HorizontalAlignment="Right"
                                        VerticalAlignment="Stretch"
                                        CanAddToQuickAccessToolBar="False"
                                        DockPanel.Dock="Right"
-                                       Icon="{DynamicResource Fluent.Ribbon.Images.QuickAccessToolbarDropDown}"
+                                       Icon="{DynamicResource Ribbon.Images.QuickAccessToolbarDropDown}"
                                        IsEnabled="{TemplateBinding IsEnabled}"
                                        KeyboardNavigation.TabIndex="3"
                                        Size="Small"
                                        ToolTip="DropDownButton ToolTip Text test"
-                                       Visibility="{Binding IsMenuDropDownVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}">
+                                       Visibility="{Binding IsMenuDropDownVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}">
                     <controls:GroupSeparatorMenuItem Header="GroupSeparatorMenuItem Header Text test"
-                                                   Style="{DynamicResource Fluent.Ribbon.Styles.MenuGroupSeparator}" />
+                                                   Style="{DynamicResource Ribbon.Styles.MenuGroupSeparator}" />
                     <StackPanel x:Name="PART_MenuPanel" />
                     <Separator x:Name="menuSeparator"
-                               Style="{DynamicResource Fluent.Ribbon.Styles.MenuSeparator}" />
+                               Style="{DynamicResource Ribbon.Styles.MenuSeparator}" />
                     <controls:MenuItem x:Name="PART_ShowBelow"
                                      Header="PART_ShowBelow Header Text test"
                                      CanAddToQuickAccessToolBar="False" />
@@ -193,12 +193,12 @@
             </ContentControl>
 
             <controls:DropDownButton x:Name="PART_ToolbarDownButton"
-                                     Style="{DynamicResource Fluent.Ribbon.Styles.ToolbarDropDownButton}"
+                                     Style="{DynamicResource Ribbon.Styles.ToolbarDropDownButton}"
                                      HorizontalAlignment="Right"
                                      VerticalAlignment="Stretch"
                                      controls:KeyTip.Keys="00"
                                      DockPanel.Dock="Right"
-                                     Icon="{DynamicResource Fluent.Ribbon.Images.QuickAccessToolbarExtender}"
+                                     Icon="{DynamicResource Ribbon.Images.QuickAccessToolbarExtender}"
                                      IsEnabled="{TemplateBinding IsEnabled}"
                                      KeyboardNavigation.TabIndex="2"
                                      KeyboardNavigation.TabNavigation="Local"
@@ -246,10 +246,10 @@
                 <Setter TargetName="menuSeparator" Property="Visibility" Value="Collapsed" />
             </Trigger>
             <Trigger Property="ShowAboveRibbon" Value="False">
-                <Setter TargetName="PART_MenuDownButton" Property="Icon" Value="{DynamicResource Fluent.Ribbon.Images.QuickAccessToolbarDropDown.BelowRibbon}" />
+                <Setter TargetName="PART_MenuDownButton" Property="Icon" Value="{DynamicResource Ribbon.Images.QuickAccessToolbarDropDown.BelowRibbon}" />
                 <Setter TargetName="PART_ShowAbove" Property="Visibility" Value="Visible" />
                 <Setter TargetName="PART_ShowBelow" Property="Visibility" Value="Collapsed" />
-                <Setter TargetName="PART_ToolbarDownButton" Property="Icon" Value="{DynamicResource Fluent.Ribbon.Images.QuickAccessToolbarExtender.BelowRibbon}" />
+                <Setter TargetName="PART_ToolbarDownButton" Property="Icon" Value="{DynamicResource Ribbon.Images.QuickAccessToolbarExtender.BelowRibbon}" />
             </Trigger>
             <Trigger Property="HasOverflowItems" Value="True">
                 <Setter TargetName="PART_ToolbarDownButton" Property="Visibility" Value="Visible" />

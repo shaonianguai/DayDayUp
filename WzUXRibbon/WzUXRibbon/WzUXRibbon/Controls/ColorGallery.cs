@@ -88,15 +88,15 @@ namespace WzUXRibbon.Controls
             var index = listBox.Items.IndexOf(item);
             if (index < colorGallery.Columns)
             {
-                return listBox.TryFindResource("Fluent.Ribbon.DataTemplates.GradientColorTopData") as DataTemplate;
+                return listBox.TryFindResource("Ribbon.DataTemplates.GradientColorTopData") as DataTemplate;
             }
 
             if (index >= listBox.Items.Count - colorGallery.Columns)
             {
-                return listBox.TryFindResource("Fluent.Ribbon.DataTemplates.GradientColorBottomData") as DataTemplate;
+                return listBox.TryFindResource("Ribbon.DataTemplates.GradientColorBottomData") as DataTemplate;
             }
 
-            return listBox.TryFindResource("Fluent.Ribbon.DataTemplates.GradientColorCenterData") as DataTemplate;
+            return listBox.TryFindResource("Ribbon.DataTemplates.GradientColorCenterData") as DataTemplate;
         }
     }
 

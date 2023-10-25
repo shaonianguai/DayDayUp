@@ -14,9 +14,10 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Utils/Converters.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Images.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonTabControl.DisplayOptionsButton"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonTabControl.DisplayOptionsButton"
                      TargetType="{x:Type controls:DropDownButton}">
         <Border x:Name="PART_ButtonBorder"
                 Width="22"
@@ -48,8 +49,8 @@
                                 MinWidth="{TemplateBinding ActualWidth}"
                                 HorizontalAlignment="Stretch"
                                 VerticalAlignment="Top"
-                                Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
-                                BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Border}"
+                                Background="{DynamicResource Ribbon.Brushes.DropDown.Background}"
+                                BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Border}"
                                 BorderThickness="1"
                                 SnapsToDevicePixels="True">
                             <Grid Width="Auto"
@@ -59,7 +60,7 @@
                                 <Border Width="Auto"
                                         Height="Auto"
                                         VerticalAlignment="Top"
-                                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
+                                        BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Background}"
                                         BorderThickness="1" />
                                 <Grid Margin="1"
                                       HorizontalAlignment="Stretch"
@@ -68,7 +69,7 @@
                                         <RowDefinition Height="*" />
                                     </Grid.RowDefinitions>
                                     <ScrollViewer x:Name="PART_ScrollViewer"
-                                                  Style="{DynamicResource Fluent.Ribbon.Styles.MenuScrollViewer}"
+                                                  Style="{DynamicResource Ribbon.Styles.MenuScrollViewer}"
                                                   MaxHeight="{TemplateBinding MaxDropDownHeight}"
                                                   Margin="1"
                                                   HorizontalScrollBarVisibility="Disabled"
@@ -86,33 +87,33 @@
         </Border>
         <ControlTemplate.Triggers>
             <Trigger Property="IsDropDownOpen" Value="True">
-                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="IsMouseOver" Value="True" />
                     <Condition Property="IsDropDownOpen" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonTabControl.DisplayOptionsButton"
+    <Style x:Key="Ribbon.Styles.RibbonTabControl.DisplayOptionsButton"
            TargetType="{x:Type controls:DropDownButton}">
         <Setter Property="AutomationProperties.Name" Value="{Binding Uid, RelativeSource={RelativeSource Self}}" />
         <Setter Property="CanAddToQuickAccessToolBar" Value="False" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
         <Setter Property="Height" Value="22" />
         <Setter Property="ResizeMode" Value="None" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonTabControl.DisplayOptionsButton}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonTabControl.DisplayOptionsButton}" />
         <!--<Setter Property="Uid" Value="{Binding Source={x:Static Fluent:RibbonLocalization.Current}, Path=Localization.DisplayOptionsButtonScreenTipTitle, Mode=OneWay}" />-->
         <Setter Property="Width" Value="22" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.MenuItem.HeaderOnly"
+    <ControlTemplate x:Key="Ribbon.Templates.MenuItem.HeaderOnly"
                      TargetType="controls:MenuItem">
         <Grid Background="{TemplateBinding Background}">
             <ContentPresenter x:Name="textBlock"
@@ -127,26 +128,26 @@
         </Grid>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonTabControl"
+    <Style x:Key="Ribbon.Styles.RibbonTabControl"
            TargetType="{x:Type controls:RibbonTabControl}">
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabControl.Background}" />
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.RibbonTabControl.Background}" />
         <Setter Property="CanMinimize" Value="{Binding CanMinimize, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:Ribbon}}, Mode=TwoWay}" />
         <Setter Property="CanUseSimplified" Value="{Binding CanUseSimplified, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:Ribbon}}, Mode=TwoWay}" />
         <Setter Property="ContentGapHeight" Value="{Binding ContentGapHeight, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:Ribbon}}}" />
         <Setter Property="Focusable" Value="False" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabControl.Foreground}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.RibbonTabControl.Foreground}" />
         <Setter Property="IsMinimized" Value="{Binding IsMinimized, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:Ribbon}}, Mode=TwoWay}" />
         <Setter Property="IsSimplified" Value="{Binding IsSimplified, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:Ribbon}}, Mode=TwoWay}" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonTabControl}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonTabControl}" />
         <Setter Property="VerticalAlignment" Value="Top" />
     </Style>
 
-    <controls:ScreenTip x:Key="Fluent.Ribbon.ScreenTips.Resources.RibbonTabControl.DisplayOptionsScreenTip"
+    <controls:ScreenTip x:Key="Ribbon.ScreenTips.Resources.RibbonTabControl.DisplayOptionsScreenTip"
                       Title="Title Text test"
                       x:Shared="False"
                       Text="Text test" />
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonTabControl"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonTabControl"
                      TargetType="{x:Type controls:RibbonTabControl}">
         <ControlTemplate.Resources>
             <Style TargetType="{x:Type ScrollViewer}">
@@ -165,7 +166,7 @@
                                                         Content="{TemplateBinding Content}"
                                                         ContentTemplate="{TemplateBinding ContentTemplate}"
                                                         IsHitTestVisible="True" />
-                                <RepeatButton Style="{DynamicResource Fluent.Ribbon.Styles.ScrollButton}"
+                                <RepeatButton Style="{DynamicResource Ribbon.Styles.ScrollButton}"
                                               Width="13"
                                               Height="Auto"
                                               HorizontalAlignment="Left"
@@ -174,7 +175,7 @@
                                               CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
                                               Focusable="false">
                                     <RepeatButton.Visibility>
-                                        <MultiBinding Converter="{StaticResource Fluent.Ribbon.Converters.MenuScrollingVisibilityConverter}"
+                                        <MultiBinding Converter="{StaticResource Ribbon.Converters.MenuScrollingVisibilityConverter}"
                                                       ConverterParameter="0"
                                                       FallbackValue="Visibility.Collapsed">
                                             <Binding Path="ComputedHorizontalScrollBarVisibility"
@@ -193,12 +194,12 @@
                                           HorizontalAlignment="Center"
                                           VerticalAlignment="Center"
                                           Data="M0,0L1,1 1,-1z"
-                                          Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                                          Fill="{DynamicResource Ribbon.Brushes.Black}"
                                           Stretch="Fill"
                                           Stroke="{x:Null}"
                                           StrokeThickness="0" />
                                 </RepeatButton>
-                                <RepeatButton Style="{DynamicResource Fluent.Ribbon.Styles.ScrollButton}"
+                                <RepeatButton Style="{DynamicResource Ribbon.Styles.ScrollButton}"
                                               Width="13"
                                               Height="Auto"
                                               HorizontalAlignment="Right"
@@ -207,7 +208,7 @@
                                               CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
                                               Focusable="false">
                                     <RepeatButton.Visibility>
-                                        <MultiBinding Converter="{StaticResource Fluent.Ribbon.Converters.MenuScrollingVisibilityConverter}"
+                                        <MultiBinding Converter="{StaticResource Ribbon.Converters.MenuScrollingVisibilityConverter}"
                                                       ConverterParameter="100"
                                                       FallbackValue="Visibility.Collapsed">
                                             <Binding Path="ComputedHorizontalScrollBarVisibility"
@@ -226,7 +227,7 @@
                                           HorizontalAlignment="Center"
                                           VerticalAlignment="Center"
                                           Data="M1,0L0,1 0,-1z"
-                                          Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                                          Fill="{DynamicResource Ribbon.Brushes.Black}"
                                           Stretch="Fill"
                                           Stroke="{x:Null}"
                                           StrokeThickness="0" />
@@ -264,13 +265,13 @@
             <Border Grid.Row="1"
                     Grid.RowSpan="1"
                     HorizontalAlignment="Stretch"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabControl.Content.Background}"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabControl.Content.Border}"
-                    BorderThickness="{DynamicResource Fluent.Ribbon.Values.RibbonTabControl.Content.BorderThickness}"
+                    Background="{DynamicResource Ribbon.Brushes.RibbonTabControl.Content.Background}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.RibbonTabControl.Content.Border}"
+                    BorderThickness="{DynamicResource Ribbon.Values.RibbonTabControl.Content.BorderThickness}"
                     KeyboardNavigation.DirectionalNavigation="Contained"
                     KeyboardNavigation.TabIndex="2"
                     KeyboardNavigation.TabNavigation="Local"
-                    TextElement.Foreground="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabControl.Content.Foreground}">
+                    TextElement.Foreground="{DynamicResource Ribbon.Brushes.RibbonTabControl.Content.Foreground}">
                 <ContentControl x:Name="mainContentControl"
                                 Margin="0"
                                 Focusable="False">
@@ -291,9 +292,9 @@
                   Width="Auto"
                   Margin="0"
                   HorizontalAlignment="Stretch"
-                  Background="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabControl.TabsGrid.Background}"
+                  Background="{DynamicResource Ribbon.Brushes.RibbonTabControl.TabsGrid.Background}"
                   KeyboardNavigation.TabIndex="1"
-                  TextElement.Foreground="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabControl.TabsGrid.Foreground}">
+                  TextElement.Foreground="{DynamicResource Ribbon.Brushes.RibbonTabControl.TabsGrid.Foreground}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
@@ -309,7 +310,7 @@
                                   VerticalAlignment="Stretch"
                                   ContentSource="Menu" />
 
-                <controls:RibbonScrollViewer Style="{DynamicResource Fluent.Ribbon.Styles.RibbonTabScrollViewer}"
+                <controls:RibbonScrollViewer Style="{DynamicResource Ribbon.Styles.RibbonTabScrollViewer}"
                                            Grid.Column="1"
                                            Width="Auto"
                                            Margin="0"
@@ -318,7 +319,7 @@
                                            IsHitTestVisible="True"
                                            IsTabStop="False"
                                            VerticalScrollBarVisibility="Disabled"
-                                           Visibility="{Binding AreTabHeadersVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}">
+                                           Visibility="{Binding AreTabHeadersVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}">
                     <controls:RibbonTabsContainer x:Name="PART_TabsContainer"
                                                 Height="Auto"
                                                 Margin="0"
@@ -333,51 +334,33 @@
                             Orientation="Horizontal">
                     <StackPanel x:Name="PART_ToolbarPanel"
                                 Orientation="Horizontal"
-                                Visibility="{Binding IsToolBarVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}" />
+                                Visibility="{Binding IsToolBarVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}" />
 
-                    <controls:DropDownButton x:Name="PART_DisplayOptionsButton"
-                                           Style="{DynamicResource Fluent.Ribbon.Styles.RibbonTabControl.DisplayOptionsButton}"
+                    <!--<controls:DropDownButton x:Name="PART_DisplayOptionsButton"
+                                           Style="{DynamicResource Ribbon.Styles.RibbonTabControl.DisplayOptionsButton}"
                                            Width="22"
                                            Height="22"
                                            Margin="0"
-                                           Icon="{DynamicResource Fluent.Ribbon.Images.RibbonDisplayOptions}"
+                                           Icon="{DynamicResource Ribbon.Images.RibbonDisplayOptions}"
                                            Size="Small"
-                                           ToolTip="{DynamicResource Fluent.Ribbon.ScreenTips.Resources.RibbonTabControl.DisplayOptionsScreenTip}"
-                                           Visibility="{Binding IsDisplayOptionsButtonVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}">
-                        <controls:MenuItem Header="MenuItem Header Text test"
+                                           ToolTip="{DynamicResource Ribbon.ScreenTips.Resources.RibbonTabControl.DisplayOptionsScreenTip}"
+                                           Visibility="{Binding IsDisplayOptionsButtonVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}">
+                        <controls:MenuItem Header="Show Ribbon"
                                          FontWeight="Bold"
-                                         Foreground="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                                         Foreground="{DynamicResource Ribbon.Brushes.Black}"
                                          IsEnabled="False"
-                                         Template="{DynamicResource Fluent.Ribbon.Templates.MenuItem.HeaderOnly}"
-                                         Visibility="{Binding CanMinimize, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}"
+                                         Template="{DynamicResource Ribbon.Templates.MenuItem.HeaderOnly}"
+                                         Visibility="{Binding CanMinimize, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}"
                                          Opacity="1" />
-                        <controls:MenuItem Header="MenuItem Header Text test"
+                        <controls:MenuItem Header="Expand the Ribbon"
                                          IsCheckable="True"
                                          IsChecked="{Binding IsMinimized, RelativeSource={RelativeSource TemplatedParent}, Converter={x:Static converters:StaticConverters.InverseBoolConverter}}"
-                                         Visibility="{Binding CanMinimize, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}" />
-                        <controls:MenuItem Header="MenuItem Header Text test"
+                                         Visibility="{Binding CanMinimize, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}" />
+                        <controls:MenuItem Header="Minimize the Ribbon"
                                          IsCheckable="True"
                                          IsChecked="{Binding IsMinimized, RelativeSource={RelativeSource TemplatedParent}}"
-                                         Visibility="{Binding CanMinimize, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}" />
-                        <Separator x:Name="DisplayOptionsButtonMenuSeparator"
-                                   Style="{x:Null}"
-                                   Visibility="Collapsed" />
-                        <controls:MenuItem Header="MenuItem Header Text test"
-                                         FontWeight="Bold"
-                                         Foreground="{DynamicResource Fluent.Ribbon.Brushes.Black}"
-                                         IsEnabled="False"
-                                         Template="{DynamicResource Fluent.Ribbon.Templates.MenuItem.HeaderOnly}"
-                                         Visibility="{Binding CanUseSimplified, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}"
-                                         Opacity="1" />
-                        <controls:MenuItem Header="MenuItem Header Text test"
-                                         IsCheckable="True"
-                                         IsChecked="{Binding IsSimplified, RelativeSource={RelativeSource TemplatedParent}, Converter={x:Static converters:StaticConverters.InverseBoolConverter}}"
-                                         Visibility="{Binding CanUseSimplified, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}" />
-                        <controls:MenuItem Header="MenuItem Header Text test"
-                                         IsCheckable="True"
-                                         IsChecked="{Binding IsSimplified, RelativeSource={RelativeSource TemplatedParent}}"
-                                         Visibility="{Binding CanUseSimplified, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}" />
-                    </controls:DropDownButton>
+                                         Visibility="{Binding CanMinimize, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}" />
+                        </controls:DropDownButton>-->
                 </StackPanel>
             </Grid>
 
@@ -399,12 +382,12 @@
                     </Grid.RowDefinitions>
                     <Border Grid.Row="1"
                             Margin="1 0"
-                            Background="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabControl.Content.Background}"
+                            Background="{DynamicResource Ribbon.Brushes.RibbonTabControl.Content.Background}"
                             BorderBrush="{Binding Path=SelectedTabItem.BorderBrush, RelativeSource={RelativeSource TemplatedParent}, FallbackValue=Transparent}"
                             BorderThickness="0 0 0 1"
                             KeyboardNavigation.DirectionalNavigation="Contained"
                             KeyboardNavigation.TabNavigation="Local"
-                            TextElement.Foreground="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabControl.Content.Foreground}">
+                            TextElement.Foreground="{DynamicResource Ribbon.Brushes.RibbonTabControl.Content.Foreground}">
                         <ContentControl x:Name="popupContentControl"
                                         Margin="0"
                                         Focusable="False" />
@@ -421,20 +404,12 @@
                 <Setter TargetName="rowDefinition1" Property="MinHeight" Value="0" />
                 <!-- Switch content to popup END -->
             </Trigger>
-            <MultiTrigger>
+            <!--<MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="CanMinimize" Value="False" />
-                    <Condition Property="CanUseSimplified" Value="False" />
                 </MultiTrigger.Conditions>
                 <Setter TargetName="PART_DisplayOptionsButton" Property="Visibility" Value="Collapsed" />
-            </MultiTrigger>
-            <MultiTrigger>
-                <MultiTrigger.Conditions>
-                    <Condition Property="CanMinimize" Value="True" />
-                    <Condition Property="CanUseSimplified" Value="True" />
-                </MultiTrigger.Conditions>
-                <Setter TargetName="DisplayOptionsButtonMenuSeparator" Property="Visibility" Value="Visible" />
-            </MultiTrigger>
+            </MultiTrigger>-->
         </ControlTemplate.Triggers>
     </ControlTemplate>
     

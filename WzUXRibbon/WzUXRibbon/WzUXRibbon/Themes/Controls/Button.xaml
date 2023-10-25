@@ -15,7 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.WindowCommands.CaptionButton"
+    <ControlTemplate x:Key="Ribbon.Templates.WindowCommands.CaptionButton"
                      TargetType="{x:Type Button}">
         <Grid Background="{TemplateBinding Background}">
             <ContentPresenter x:Name="contentPresenter"
@@ -33,38 +33,38 @@
                 <Setter TargetName="contentPresenter" Property="Opacity" Value="0.75" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
-                <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.White}" />
+                <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.White}" />
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <!--<Style x:Key="Fluent.Ribbon.Styles.WindowCommands.CaptionButton"
+    <!--<Style x:Key="Ribbon.Styles.WindowCommands.CaptionButton"
            TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.Background}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.Foreground}" />
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.WindowCommands.CaptionButton.Background}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.WindowCommands.CaptionButton.Foreground}" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="Padding" Value="1" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.WindowCommands.CaptionButton}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.WindowCommands.CaptionButton}" />
         <Setter Property="VerticalAlignment" Value="Stretch" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Width" Value="46" />
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.MouseOver.Background}" />
+                <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.WindowCommands.CaptionButton.MouseOver.Background}" />
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.Pressed.Background}" />
+                <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.WindowCommands.CaptionButton.Pressed.Background}" />
             </Trigger>
             <Trigger Property="controlzex:NonClientControlProperties.IsNCMouseOver" Value="true">
-                <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.MouseOver.Background}" />
+                <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.WindowCommands.CaptionButton.MouseOver.Background}" />
             </Trigger>
             <Trigger Property="controlzex:NonClientControlProperties.IsNCPressed" Value="true">
-                <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.Pressed.Background}" />
+                <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.WindowCommands.CaptionButton.Pressed.Background}" />
             </Trigger>
         </Style.Triggers>
     </Style>-->
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.Button"
+    <ControlTemplate x:Key="Ribbon.Templates.Button"
                      TargetType="{x:Type controls:Button}">
         <Border x:Name="border"
                 Height="Auto"
@@ -110,8 +110,8 @@
             </Trigger>
 
             <Trigger Property="IsPressed" Value="True">
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="PART_HeaderContentHost" Property="Opacity" Value="0.5" />
@@ -122,13 +122,13 @@
                     <Condition Property="IsPressed" Value="False" />
                     <Condition Property="IsEnabled" Value="True" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.Button.Simplified"
+    <ControlTemplate x:Key="Ribbon.Templates.Button.Simplified"
                      TargetType="{x:Type controls:Button}">
         <Border x:Name="border"
                 Height="Auto"
@@ -155,7 +155,7 @@
                     <Border x:Name="iconImageBorder"
                             Width="{Binding ActualWidth, ElementName=iconImage}"
                             Height="{Binding ActualHeight, ElementName=iconImage}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Control.Border}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.Control.Border}"
                             BorderThickness="1"
                             Visibility="Collapsed" />
                 </Grid>
@@ -201,12 +201,12 @@
             </Trigger>
 
             <Trigger Property="IsPressed" Value="True">
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="PART_HeaderContentHost" Property="Opacity" Value="0.5" />
-                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Control.Disabled.Border}" />
+                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Control.Disabled.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -214,13 +214,13 @@
                     <Condition Property="IsPressed" Value="False" />
                     <Condition Property="IsEnabled" Value="True" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <DataTemplate x:Key="Fluent.Ribbon.DataTemplates.Button.Header">
+    <DataTemplate x:Key="Ribbon.DataTemplates.Button.Header">
         <controls:TwoLineLabel HorizontalAlignment="Stretch"
                              VerticalAlignment="Center"
                              Text="{Binding}">
@@ -244,7 +244,7 @@
         </controls:TwoLineLabel>
     </DataTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.Button"
+    <Style x:Key="Ribbon.Styles.Button"
            TargetType="{x:Type controls:Button}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="BorderBrush" Value="Transparent" />
@@ -253,12 +253,12 @@
         <Setter Property="ContentTemplate" Value="{Binding Path=HeaderTemplate, RelativeSource={RelativeSource Self}, Mode=TwoWay}" />
         <Setter Property="ContentTemplateSelector" Value="{Binding Path=HeaderTemplateSelector, RelativeSource={RelativeSource Self}, Mode=TwoWay}" />
         <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Large" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
-        <Setter Property="HeaderTemplate" Value="{DynamicResource Fluent.Ribbon.DataTemplates.Button.Header}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
+        <Setter Property="HeaderTemplate" Value="{DynamicResource Ribbon.DataTemplates.Button.Header}" />
         <Setter Property="Height" Value="68" />
         <Setter Property="SnapsToDevicePixels" Value="False" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.Button}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.Button}" />
         <Setter Property="Width" Value="Auto" />
         <Style.Triggers>
             <Trigger Property="Size" Value="Large">
@@ -281,7 +281,7 @@
                 <Setter Property="HorizontalAlignment" Value="Stretch" />
                 <Setter Property="MinHeight" Value="30" />
                 <Setter Property="Padding" Value="6 2" />
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.Button.Simplified}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.Button.Simplified}" />
                 <Setter Property="VerticalAlignment" Value="Stretch" />
                 <Setter Property="Width" Value="Auto" />
             </Trigger>

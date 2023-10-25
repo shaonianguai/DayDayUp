@@ -15,7 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <DataTemplate x:Key="Fluent.Ribbon.DataTemplates.InRibbonGallery.ToggleButton.Header">
+    <DataTemplate x:Key="Ribbon.DataTemplates.InRibbonGallery.ToggleButton.Header">
         <controls:TwoLineLabel HorizontalAlignment="Center"
                              VerticalAlignment="Stretch"
                              HasGlyph="True"
@@ -40,7 +40,7 @@
         </controls:TwoLineLabel>
     </DataTemplate>
 
-    <DataTemplate x:Key="Fluent.Ribbon.DataTemplates.InRibbonGallery.ToggleButton.Header.Simplified">
+    <DataTemplate x:Key="Ribbon.DataTemplates.InRibbonGallery.ToggleButton.Header.Simplified">
         <controls:TwoLineLabel HorizontalAlignment="Stretch"
                              VerticalAlignment="Center"
                              HasGlyph="False"
@@ -48,13 +48,13 @@
                              Text="{Binding}" />
     </DataTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.InRibbonGalleryToggleButton"
+    <Style x:Key="Ribbon.Styles.InRibbonGalleryToggleButton"
            TargetType="{x:Type controls:ToggleButton}">
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
-        <Setter Property="HeaderTemplate" Value="{DynamicResource Fluent.Ribbon.DataTemplates.InRibbonGallery.ToggleButton.Header}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
+        <Setter Property="HeaderTemplate" Value="{DynamicResource Ribbon.DataTemplates.InRibbonGallery.ToggleButton.Header}" />
         <Setter Property="Height" Value="68" />
         <Setter Property="HorizontalAlignment" Value="Left" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.InRibbonGalleryToggleButton}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.InRibbonGalleryToggleButton}" />
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="Width" Value="Auto" />
         <Style.Triggers>
@@ -73,12 +73,12 @@
             </Trigger>
             <Trigger Property="IsSimplified" Value="True">
                 <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Medium" />
-                <Setter Property="HeaderTemplate" Value="{DynamicResource Fluent.Ribbon.DataTemplates.InRibbonGallery.ToggleButton.Header.Simplified}" />
+                <Setter Property="HeaderTemplate" Value="{DynamicResource Ribbon.DataTemplates.InRibbonGallery.ToggleButton.Header.Simplified}" />
                 <Setter Property="Height" Value="Auto" />
                 <Setter Property="HorizontalAlignment" Value="Stretch" />
                 <Setter Property="MinHeight" Value="30" />
                 <Setter Property="Padding" Value="6 2 2 2" />
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.InRibbonGallery.ToggleButton.Simplified}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.InRibbonGallery.ToggleButton.Simplified}" />
                 <Setter Property="VerticalAlignment" Value="Stretch" />
                 <Setter Property="Width" Value="Auto" />
             </Trigger>
@@ -92,7 +92,7 @@
         </Style.Triggers>
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.InRibbonGalleryToggleButton"
+    <ControlTemplate x:Key="Ribbon.Templates.InRibbonGalleryToggleButton"
                      TargetType="{x:Type controls:ToggleButton}">
         <Border x:Name="border"
                 Height="Auto"
@@ -142,8 +142,8 @@
             </Trigger>
 
             <Trigger Property="IsChecked" Value="True">
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="PART_HeaderContentHost" Property="Opacity" Value="0.5" />
@@ -153,13 +153,13 @@
                     <Condition Property="IsMouseOver" Value="True" />
                     <Condition Property="IsChecked" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.InRibbonGallery.ToggleButton.Simplified"
+    <ControlTemplate x:Key="Ribbon.Templates.InRibbonGallery.ToggleButton.Simplified"
                      TargetType="{x:Type controls:ToggleButton}">
         <Border x:Name="border"
                 Height="Auto"
@@ -192,7 +192,7 @@
                     <Border x:Name="iconImageBorder"
                             Width="{Binding ActualWidth, ElementName=iconImage}"
                             Height="{Binding ActualHeight, ElementName=iconImage}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Control.Border}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.Control.Border}"
                             BorderThickness="1"
                             Visibility="Collapsed" />
                 </Grid>
@@ -250,33 +250,33 @@
             </Trigger>
 
             <Trigger Property="IsChecked" Value="True">
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="PART_HeaderContentHost" Property="Opacity" Value="0.5" />
                 <Setter TargetName="controlLabel2" Property="Opacity" Value="0.5" />
-                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Control.Disabled.Border}" />
+                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Control.Disabled.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="IsMouseOver" Value="True" />
                     <Condition Property="IsChecked" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.InRibbonGalleryButton"
+    <Style x:Key="Ribbon.Styles.InRibbonGalleryButton"
            TargetType="{x:Type controls:ToggleButton}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type controls:ToggleButton}">
                     <Border x:Name="border"
-                            Background="{DynamicResource Fluent.Ribbon.Brushes.White}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Control.Border}"
+                            Background="{DynamicResource Ribbon.Brushes.White}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.Control.Border}"
                             BorderThickness="1 1 1 1">
                         <Grid x:Name="grid">
                             <Path Width="7"
@@ -285,18 +285,18 @@
                                   HorizontalAlignment="Center"
                                   VerticalAlignment="Top"
                                   Data="M0,0L1,0"
-                                  Fill="{DynamicResource Fluent.Ribbon.Brushes.White}"
+                                  Fill="{DynamicResource Ribbon.Brushes.White}"
                                   Stretch="Fill"
-                                  Stroke="{DynamicResource Fluent.Ribbon.Brushes.Black}" />
+                                  Stroke="{DynamicResource Ribbon.Brushes.Black}" />
                             <Path Width="5"
                                   Height="3"
                                   Margin="0 8 0 0"
                                   HorizontalAlignment="Center"
                                   VerticalAlignment="Top"
                                   Data="M0,0L1,1 2,0z"
-                                  Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                                  Fill="{DynamicResource Ribbon.Brushes.Black}"
                                   Stretch="Fill"
-                                  Stroke="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                                  Stroke="{DynamicResource Ribbon.Brushes.Black}"
                                   StrokeThickness="0" />
                         </Grid>
                     </Border>
@@ -309,10 +309,10 @@
                                 <Condition Property="IsMouseOver" Value="True" />
                                 <Condition Property="IsPressed" Value="False" />
                             </MultiTrigger.Conditions>
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
                         </MultiTrigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -320,14 +320,14 @@
         </Setter>
     </Style>
 
-    <Style x:Key="Fluent.Ribbon.Styles.InRibbonGalleryRepeatButton"
+    <Style x:Key="Ribbon.Styles.InRibbonGalleryRepeatButton"
            TargetType="{x:Type RepeatButton}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RepeatButton}">
                     <Border x:Name="border"
-                            Background="{DynamicResource Fluent.Ribbon.Brushes.White}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Control.Border}"
+                            Background="{DynamicResource Ribbon.Brushes.White}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.Control.Border}"
                             BorderThickness="1">
                         <ContentPresenter x:Name="contentPresenter" />
                     </Border>
@@ -340,10 +340,10 @@
                                 <Condition Property="IsMouseOver" Value="True" />
                                 <Condition Property="IsPressed" Value="False" />
                             </MultiTrigger.Conditions>
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
                         </MultiTrigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -351,7 +351,7 @@
         </Setter>
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.InRibbonGallery"
+    <ControlTemplate x:Key="Ribbon.Templates.InRibbonGallery"
                      TargetType="{x:Type controls:InRibbonGallery}">
         <Grid x:Name="PART_LayoutRoot"
               Width="Auto"
@@ -364,7 +364,7 @@
                     Margin="0 0 0 0"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Control.Border}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.Control.Border}"
                     BorderThickness="1 1 1 1"
                     ClipToBounds="True">
                 <Grid Width="Auto"
@@ -386,7 +386,7 @@
                                                             Margin="0 -1 -1 0"
                                                             HorizontalAlignment="Right">
                                                     <RepeatButton x:Name="upButton"
-                                                                  Style="{DynamicResource Fluent.Ribbon.Styles.InRibbonGalleryRepeatButton}"
+                                                                  Style="{DynamicResource Ribbon.Styles.InRibbonGalleryRepeatButton}"
                                                                   Width="15"
                                                                   Height="21"
                                                                   Margin="0 0 0 0"
@@ -394,12 +394,12 @@
                                                         <Path Width="5"
                                                               Height="3"
                                                               Data="M0,0 L1,-1 2,0z"
-                                                              Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                                                              Fill="{DynamicResource Ribbon.Brushes.Black}"
                                                               RenderOptions.EdgeMode="Aliased"
                                                               Stretch="Fill" />
                                                     </RepeatButton>
                                                     <RepeatButton x:Name="downButton"
-                                                                  Style="{DynamicResource Fluent.Ribbon.Styles.InRibbonGalleryRepeatButton}"
+                                                                  Style="{DynamicResource Ribbon.Styles.InRibbonGalleryRepeatButton}"
                                                                   Width="15"
                                                                   Height="21"
                                                                   Margin="0 -1 0 0"
@@ -407,7 +407,7 @@
                                                         <Path Width="5"
                                                               Height="3"
                                                               Data="M0,0 L1,1 2,0z"
-                                                              Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                                                              Fill="{DynamicResource Ribbon.Brushes.Black}"
                                                               RenderOptions.EdgeMode="Aliased"
                                                               Stretch="Fill" />
                                                     </RepeatButton>
@@ -421,7 +421,7 @@
                                                         <RowDefinition Height="*" />
                                                     </Grid.RowDefinitions>
                                                     <RepeatButton x:Name="upButtonSimplified"
-                                                                  Style="{DynamicResource Fluent.Ribbon.Styles.InRibbonGalleryRepeatButton}"
+                                                                  Style="{DynamicResource Ribbon.Styles.InRibbonGalleryRepeatButton}"
                                                                   Grid.Row="0"
                                                                   Width="15"
                                                                   Height="Auto"
@@ -430,12 +430,12 @@
                                                         <Path Width="5"
                                                               Height="3"
                                                               Data="M0,0 L1,-1 2,0z"
-                                                              Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                                                              Fill="{DynamicResource Ribbon.Brushes.Black}"
                                                               RenderOptions.EdgeMode="Aliased"
                                                               Stretch="Fill" />
                                                     </RepeatButton>
                                                     <RepeatButton x:Name="downButtonSimplified"
-                                                                  Style="{DynamicResource Fluent.Ribbon.Styles.InRibbonGalleryRepeatButton}"
+                                                                  Style="{DynamicResource Ribbon.Styles.InRibbonGalleryRepeatButton}"
                                                                   Grid.Row="1"
                                                                   Width="15"
                                                                   Height="Auto"
@@ -444,7 +444,7 @@
                                                         <Path Width="5"
                                                               Height="3"
                                                               Data="M0,0 L1,1 2,0z"
-                                                              Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                                                              Fill="{DynamicResource Ribbon.Brushes.Black}"
                                                               RenderOptions.EdgeMode="Aliased"
                                                               Stretch="Fill" />
                                                     </RepeatButton>
@@ -469,7 +469,7 @@
                         <ContentControl x:Name="PART_ContentPresenter"
                                         Focusable="False">
                             <controls:GalleryPanel x:Name="PART_GalleryPanel"
-                                                 Background="{DynamicResource Fluent.Ribbon.Brushes.White}"
+                                                 Background="{DynamicResource Ribbon.Brushes.White}"
                                                  Filter="{TemplateBinding SelectedFilterGroups}"
                                                  GroupBy="{TemplateBinding GroupBy}"
                                                  GroupByAdvanced="{TemplateBinding GroupByAdvanced}"
@@ -483,7 +483,7 @@
                     </ScrollViewer>
 
                     <controls:ToggleButton x:Name="PART_ExpandButton"
-                                         Style="{DynamicResource Fluent.Ribbon.Styles.InRibbonGalleryButton}"
+                                         Style="{DynamicResource Ribbon.Styles.InRibbonGalleryButton}"
                                          Width="15"
                                          Height="20"
                                          Margin="0 0 -1 -1"
@@ -508,7 +508,7 @@
                             <ResourceDictionary>
                                 <Style x:Key="{x:Type ScrollBar}"
                                        TargetType="{x:Type ScrollBar}"
-                                       BasedOn="{StaticResource Fluent.Ribbon.Styles.ScrollBarWhite}" />
+                                       BasedOn="{StaticResource Ribbon.Styles.ScrollBarWhite}" />
                             </ResourceDictionary>
                         </Popup.Resources>
                         <controls:ResizeableContentControl x:Name="PART_PopupContentControl"
@@ -522,7 +522,7 @@
                                     <RowDefinition Height="*" />
                                     <RowDefinition Height="Auto" />
                                 </Grid.RowDefinitions>
-                                <Border BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Control.Border}"
+                                <Border BorderBrush="{DynamicResource Ribbon.Brushes.Control.Border}"
                                         BorderThickness="{TemplateBinding BorderThickness}">
                                     <Grid Width="Auto">
                                         <Grid.RowDefinitions>
@@ -532,12 +532,12 @@
                                         <Border x:Name="border_"
                                                 Grid.Row="0"
                                                 Height="13"
-                                                Background="{DynamicResource Fluent.Ribbon.Brushes.Gallery.Header.Background}"
+                                                Background="{DynamicResource Ribbon.Brushes.Gallery.Header.Background}"
                                                 BorderBrush="{x:Null}"
                                                 BorderThickness="0">
                                             <controls:DropDownButton x:Name="PART_FilterDropDownButton"
                                                                    Header="{TemplateBinding SelectedFilterTitle}"
-                                                                   Style="{DynamicResource Fluent.Ribbon.Styles.GalleryDropDownButton}"
+                                                                   Style="{DynamicResource Ribbon.Styles.GalleryDropDownButton}"
                                                                    Height="Auto"
                                                                    HorizontalAlignment="Left"
                                                                    VerticalAlignment="Top" />
@@ -545,7 +545,7 @@
                                         <ScrollViewer x:Name="PART_ScrollViewer"
                                                       Grid.Row="1"
                                                       Margin="1"
-                                                      BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Control.Border}"
+                                                      BorderBrush="{DynamicResource Ribbon.Brushes.Control.Border}"
                                                       BorderThickness="0 0 0 1">
                                             <ContentControl x:Name="PART_PopupContentPresenter"
                                                             Content="{x:Null}"
@@ -567,7 +567,7 @@
 
             <controls:ToggleButton x:Name="PART_DropDownButton"
                                  Header="{Binding Path=Header, RelativeSource={RelativeSource TemplatedParent}}"
-                                 Style="{DynamicResource Fluent.Ribbon.Styles.InRibbonGalleryToggleButton}"
+                                 Style="{DynamicResource Ribbon.Styles.InRibbonGalleryToggleButton}"
                                  Margin="0 0 0 0"
                                  CanAddToQuickAccessToolBar="False"
                                  ClickMode="Press"
@@ -616,12 +616,12 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <DataTemplate x:Key="Fluent.Ribbon.DataTemplates.InRibbonGallery.Header" />
+    <DataTemplate x:Key="Ribbon.DataTemplates.InRibbonGallery.Header" />
 
     <Style x:Key="{x:Type controls:InRibbonGallery}"
            TargetType="{x:Type controls:InRibbonGallery}">
         <Setter Property="Focusable" Value="False" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.InRibbonGallery}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.InRibbonGallery}" />
         <Style.Triggers>
             <Trigger Property="Size" Value="Large">
                 <Setter Property="Margin" Value="2 3 3 0" />

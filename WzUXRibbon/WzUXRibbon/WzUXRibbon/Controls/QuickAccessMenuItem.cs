@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Markup;
 using System.Windows.Media;
@@ -233,7 +232,7 @@ namespace WzUXRibbon.Controls
                 RibbonControl.Bind(element, result, nameof(UIElement.IsEnabled), UIElement.IsEnabledProperty, BindingMode.OneWay);
             }
 
-            if (result.TryFindResource("Fluent.Ribbon.Styles.FocusVisual") is Style tightFocusVisual)
+            if (result.TryFindResource("Ribbon.Styles.FocusVisual") is Style tightFocusVisual)
             {
                 result.FocusVisualStyle = tightFocusVisual;
             }

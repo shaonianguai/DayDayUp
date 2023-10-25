@@ -23,7 +23,7 @@
                 <ControlTemplate TargetType="{x:Type controls:RibbonMenu}">
                     <ControlTemplate.Resources>
                         <Style TargetType="{x:Type Separator}"
-                               BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuSeparator}" />
+                               BasedOn="{StaticResource Ribbon.Styles.MenuSeparator}" />
                     </ControlTemplate.Resources>
                     <Grid>
                         <Rectangle Grid.RowSpan="2"
@@ -33,7 +33,7 @@
                                    HorizontalAlignment="Left"
                                    Fill="{x:Null}"
                                    Stretch="Fill"
-                                   Stroke="{DynamicResource Fluent.Ribbon.Brushes.Separator.Border}"
+                                   Stroke="{DynamicResource Ribbon.Brushes.Separator.Border}"
                                    Visibility="Visible" />
                         <StackPanel x:Name="menuPanel"
                                     IsItemsHost="True"

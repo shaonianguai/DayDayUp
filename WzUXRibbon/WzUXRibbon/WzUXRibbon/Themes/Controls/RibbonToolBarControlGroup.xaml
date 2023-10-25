@@ -16,22 +16,22 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonSeparator.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonToolBarControlGroup"
+    <Style x:Key="Ribbon.Styles.RibbonToolBarControlGroup"
            TargetType="{x:Type controls:RibbonToolBarControlGroup}">
         <Setter Property="Focusable" Value="False" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonToolBarControlGroup}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonToolBarControlGroup}" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonToolBarControlGroup"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonToolBarControlGroup"
                      TargetType="{x:Type controls:RibbonToolBarControlGroup}">
         <StackPanel Orientation="Horizontal">
             <Separator x:Name="separatorLeft"
-                       Style="{DynamicResource Fluent.Ribbon.Styles.RibbonSeparator}"
+                       Style="{DynamicResource Ribbon.Styles.RibbonSeparator}"
                        Visibility="Collapsed" />
             <StackPanel IsItemsHost="true"
                         Orientation="Horizontal" />
             <Separator x:Name="separatorRight"
-                       Style="{DynamicResource Fluent.Ribbon.Styles.RibbonSeparator}"
+                       Style="{DynamicResource Ribbon.Styles.RibbonSeparator}"
                        Visibility="Collapsed" />
         </StackPanel>
         <ControlTemplate.Triggers>

@@ -15,7 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonTabItem"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonTabItem"
                      TargetType="{x:Type controls:RibbonTabItem}">
         <Grid x:Name="grid"
               Height="Auto">
@@ -23,7 +23,7 @@
                     Margin="0 0 0 1"
                     Background="{Binding Group.Background, RelativeSource={RelativeSource TemplatedParent}, FallbackValue=Transparent}"
                     BorderThickness="0"
-                    OpacityMask="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Contextual.Background.OpacityMask}" />
+                    OpacityMask="{DynamicResource Ribbon.Brushes.RibbonTabItem.Contextual.Background.OpacityMask}" />
             <Border x:Name="selectedBorder"
                     VerticalAlignment="Stretch"
                     Background="{TemplateBinding ActiveTabBackground}"
@@ -84,7 +84,7 @@
                     <Condition Property="Selector.IsSelected" Value="True" />
                     <Condition Property="Group" Value="{x:Null}" />
                 </MultiTrigger.Conditions>
-                <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Selected.Foreground}" />
+                <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.Selected.Foreground}" />
             </MultiTrigger>
             <!-- Background and foreground for MouseOver, with group -->
             <MultiTrigger>
@@ -114,15 +114,15 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonTabItem"
+    <Style x:Key="Ribbon.Styles.RibbonTabItem"
            TargetType="{x:Type controls:RibbonTabItem}">
-        <Setter Property="ActiveTabBackground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Active.Background}" />
-        <Setter Property="ActiveTabBorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Border}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Border}" />
-        <Setter Property="attachedProperties:RibbonProperties.MouseOverBackground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.MouseOver.Background}" />
-        <Setter Property="attachedProperties:RibbonProperties.MouseOverForeground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.MouseOver.Foreground}" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual.Empty}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Foreground}" />
+        <Setter Property="ActiveTabBackground" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.Active.Background}" />
+        <Setter Property="ActiveTabBorderBrush" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.Border}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.Border}" />
+        <Setter Property="attachedProperties:RibbonProperties.MouseOverBackground" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.MouseOver.Background}" />
+        <Setter Property="attachedProperties:RibbonProperties.MouseOverForeground" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.MouseOver.Foreground}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual.Empty}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.Foreground}" />
         <Setter Property="HeaderTemplate">
             <Setter.Value>
                 <DataTemplate>
@@ -137,17 +137,17 @@
         <Setter Property="Height" Value="Auto" />
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="Margin" Value="0" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonTabItem}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonTabItem}" />
         <Setter Property="VerticalAlignment" Value="Stretch" />
         <Style.Triggers>
             <Trigger Property="Group" Value="{x:Null}">
-                <Setter Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Border}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.Border}" />
             </Trigger>
             <Trigger Property="IsSelected" Value="True">
-                <Setter Property="attachedProperties:RibbonProperties.MouseOverForeground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Selected.MouseOver.Foreground}" />
+                <Setter Property="attachedProperties:RibbonProperties.MouseOverForeground" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.Selected.MouseOver.Foreground}" />
             </Trigger>
             <Trigger Property="IsKeyboardFocused" Value="True">
-                <Setter Property="ActiveTabBorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Black}" />
+                <Setter Property="ActiveTabBorderBrush" Value="{DynamicResource Ribbon.Brushes.Black}" />
             </Trigger>
             <MultiDataTrigger>
                 <MultiDataTrigger.Conditions>

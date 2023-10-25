@@ -14,13 +14,13 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.GalleryGroupContainer"
+    <ControlTemplate x:Key="Ribbon.Templates.GalleryGroupContainer"
                      TargetType="{x:Type controls:GalleryGroupContainer}">
         <DockPanel LastChildFill="True">
             <Grid x:Name="headerGrid"
                   Height="21"
                   VerticalAlignment="Top"
-                  Background="{DynamicResource Fluent.Ribbon.Brushes.GalleryGroupContainer.Header.Background}"
+                  Background="{DynamicResource Ribbon.Brushes.GalleryGroupContainer.Header.Background}"
                   DockPanel.Dock="Top">
                 <TextBlock Margin="7 0"
                            HorizontalAlignment="Left"
@@ -46,11 +46,11 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.GalleryGroupContainer"
+    <Style x:Key="Ribbon.Styles.GalleryGroupContainer"
            TargetType="{x:Type controls:GalleryGroupContainer}">
         <Setter Property="Focusable" Value="False" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.GalleryGroupContainer}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.GalleryGroupContainer}" />
         <Style.Triggers>
             <Trigger Property="IsHeadered" Value="False">
                 <Setter Property="HorizontalAlignment" Value="Left" />

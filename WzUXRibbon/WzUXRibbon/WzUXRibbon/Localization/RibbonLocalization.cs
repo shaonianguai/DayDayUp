@@ -87,7 +87,7 @@ namespace WzUXRibbon.Localization
         public RibbonLocalization()
 #pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
-            var localizationClasses = GetTypesInNamespace(Assembly.GetExecutingAssembly(), "Fluent.Localization.Languages");
+            var localizationClasses = GetTypesInNamespace(Assembly.GetExecutingAssembly(), "Localization.Languages");
 
             this.LocalizationMap = localizationClasses.ToDictionary(x => x.GetCustomAttribute<RibbonLocalizationAttribute>().CultureName, x => x);
 

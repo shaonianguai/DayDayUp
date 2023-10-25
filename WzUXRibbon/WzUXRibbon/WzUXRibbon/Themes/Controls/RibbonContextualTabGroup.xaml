@@ -15,19 +15,19 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonContextualTabGroup"
+    <Style x:Key="Ribbon.Styles.RibbonContextualTabGroup"
            TargetType="{x:Type controls:RibbonContextualTabGroup}">
         <Setter Property="Focusable" Value="False" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Foreground}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.Foreground}" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="TabItemMouseOverForeground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonContextualTabGroup.TabItemMouseOverForeground}" />
-        <Setter Property="TabItemSelectedForeground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonContextualTabGroup.TabItemSelectedForeground}" />
-        <Setter Property="TabItemSelectedMouseOverForeground" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonContextualTabGroup.TabItemSelectedMouseOverForeground}" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonContextualTabGroup}" />
+        <Setter Property="TabItemMouseOverForeground" Value="{DynamicResource Ribbon.Brushes.RibbonContextualTabGroup.TabItemMouseOverForeground}" />
+        <Setter Property="TabItemSelectedForeground" Value="{DynamicResource Ribbon.Brushes.RibbonContextualTabGroup.TabItemSelectedForeground}" />
+        <Setter Property="TabItemSelectedMouseOverForeground" Value="{DynamicResource Ribbon.Brushes.RibbonContextualTabGroup.TabItemSelectedMouseOverForeground}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonContextualTabGroup}" />
         <Setter Property="Width" Value="Auto" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonContextualTabGroup"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonContextualTabGroup"
                      TargetType="{x:Type controls:RibbonContextualTabGroup}">
         <Border x:Name="rootBorder"
                 Width="Auto"
@@ -47,7 +47,7 @@
                                HorizontalAlignment="Stretch"
                                VerticalAlignment="Stretch"
                                Fill="{TemplateBinding Background}"
-                               OpacityMask="{DynamicResource Fluent.Ribbon.Brushes.RibbonContextualTabGroup.Background.OpacityMask}" />
+                               OpacityMask="{DynamicResource Ribbon.Brushes.RibbonContextualTabGroup.Background.OpacityMask}" />
                     <Rectangle Width="Auto"
                                Height="4"
                                HorizontalAlignment="Stretch"

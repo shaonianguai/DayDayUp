@@ -10,7 +10,6 @@ using System.Windows.Automation.Peers;
 using System.Windows.Controls.Primitives;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Threading;
 using System.Windows;
 using WzUXRibbon.Internal.KnownBoxes;
@@ -24,7 +23,7 @@ namespace WzUXRibbon.Controls
     [StyleTypedProperty(Property = nameof(ItemContainerStyle), StyleTargetType = typeof(RibbonTabItem))]
     [TemplatePart(Name = "PART_Popup", Type = typeof(Popup))]
     [TemplatePart(Name = "PART_TabsContainer", Type = typeof(Panel))]
-    [TemplatePart(Name = "PART_DisplayOptionsButton", Type = typeof(Control))]
+    //[TemplatePart(Name = "PART_DisplayOptionsButton", Type = typeof(Control))]
     [TemplatePart(Name = "PART_ToolbarPanel", Type = typeof(Panel))]
     [TemplatePart(Name = "PART_SelectedContentPresenter", Type = typeof(ContentPresenter))]
     public class RibbonTabControl : Selector, IDropDownControl, ILogicalChildSupport
@@ -471,7 +470,7 @@ namespace WzUXRibbon.Controls
         {
             this.TabsContainer = this.GetTemplateChild("PART_TabsContainer") as Panel;
 
-            this.DisplayOptionsControl = this.GetTemplateChild("PART_DisplayOptionsButton") as Control;
+            //this.DisplayOptionsControl = this.GetTemplateChild("PART_DisplayOptionsButton") as Control;
 
             this.SelectedContentPresenter = this.Template.FindName("PART_SelectedContentPresenter", this) as ContentPresenter;
 

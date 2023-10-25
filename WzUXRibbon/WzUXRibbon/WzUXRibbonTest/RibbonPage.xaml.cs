@@ -45,5 +45,17 @@ namespace WzUXRibbonTest
         {
 
         }
+
+        private void ExpandOrMinmizedRibbonButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (RibbonControl.IsMinimized)
+            {
+                RibbonControl.IsMinimized = false;
+            }
+            else
+            {
+                RibbonControl.IsMinimized = true;
+            }
+        }
     }
 }

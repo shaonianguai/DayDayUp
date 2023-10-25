@@ -15,7 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.BackstageTabControl.Button"
+    <ControlTemplate x:Key="Ribbon.Templates.BackstageTabControl.Button"
                      TargetType="{x:Type controls:Button}">
         <Grid Background="Transparent">
             <Border x:Name="border"
@@ -66,18 +66,18 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.BackstageTabControl.Button"
+    <Style x:Key="Ribbon.Styles.BackstageTabControl.Button"
            TargetType="{x:Type controls:Button}">
         <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Small" />
-        <Setter Property="attachedProperties:RibbonProperties.MouseOverBackground" Value="{DynamicResource Fluent.Ribbon.Brushes.BackstageTabItem.MouseOver.Background}" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.IdealForeground}" />
+        <Setter Property="attachedProperties:RibbonProperties.MouseOverBackground" Value="{DynamicResource Ribbon.Brushes.BackstageTabItem.MouseOver.Background}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.IdealForeground}" />
         <Setter Property="Height" Value="38" />
         <Setter Property="Margin" Value="0" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.BackstageTabControl.Button}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.BackstageTabControl.Button}" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.BackstageBackButton"
+    <ControlTemplate x:Key="Ribbon.Templates.BackstageBackButton"
                      TargetType="Button">
         <Grid x:Name="ContentGrid"
               wzUXRibbonHelpers:FrameworkHelper.UseLayoutRounding="False"
@@ -123,17 +123,17 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.BackstageBackButton"
+    <Style x:Key="Ribbon.Styles.BackstageBackButton"
            TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Backstage.BackButton.Background}" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.Backstage.BackButton.Foreground}" />
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.Backstage.BackButton.Background}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.Backstage.BackButton.Foreground}" />
         <Setter Property="Height" Value="48" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.BackstageBackButton}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.BackstageBackButton}" />
     </Style>
 
-    <Style x:Key="Fluent.Ribbon.Styles.BackstageTabControl.SeparatorTabItem"
+    <Style x:Key="Ribbon.Styles.BackstageTabControl.SeparatorTabItem"
            TargetType="{x:Type controls:SeparatorTabItem}">
         <Setter Property="Focusable" Value="False" />
         <Setter Property="Margin" Value="25 10 20 10" />
@@ -146,14 +146,14 @@
                                    VerticalAlignment="Center"
                                    FontSize="14"
                                    FontWeight="SemiBold"
-                                   Foreground="{DynamicResource Fluent.Ribbon.Brushes.IdealForeground}"
+                                   Foreground="{DynamicResource Ribbon.Brushes.IdealForeground}"
                                    Text="{Binding Header, RelativeSource={RelativeSource TemplatedParent}}"
                                    TextWrapping="Wrap"
                                    Visibility="Visible" />
                         <Line Height="1"
                               MinWidth="75"
                               Stretch="Uniform"
-                              Stroke="{DynamicResource Fluent.Ribbon.Brushes.HighTransparentWhite}"
+                              Stroke="{DynamicResource Ribbon.Brushes.HighTransparentWhite}"
                               X2="1" />
                     </StackPanel>
                     <ControlTemplate.Triggers>
@@ -166,26 +166,26 @@
         </Setter>
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.BackstageTabControl"
+    <ControlTemplate x:Key="Ribbon.Templates.BackstageTabControl"
                      TargetType="{x:Type controls:BackstageTabControl}">
         <ControlTemplate.Resources>
             <ResourceDictionary>
                 <Style x:Key="{x:Type ScrollBar}"
                        TargetType="{x:Type ScrollBar}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.ScrollBarWhite}" />
+                       BasedOn="{StaticResource Ribbon.Styles.ScrollBarWhite}" />
 
                 <Style x:Key="{x:Type controls:Button}"
                        TargetType="{x:Type controls:Button}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.Backstage.Button}" />
+                       BasedOn="{StaticResource Ribbon.Styles.Backstage.Button}" />
                 <Style x:Key="{x:Type controls:ToggleButton}"
                        TargetType="{x:Type controls:ToggleButton}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.Backstage.ToggleButton}" />
+                       BasedOn="{StaticResource Ribbon.Styles.Backstage.ToggleButton}" />
                 <Style x:Key="{x:Type controls:DropDownButton}"
                        TargetType="{x:Type controls:DropDownButton}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.Backstage.DropDownButton}" />
+                       BasedOn="{StaticResource Ribbon.Styles.Backstage.DropDownButton}" />
                 <Style x:Key="{x:Type controls:ComboBox}"
                        TargetType="{x:Type controls:ComboBox}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.Backstage.ComboBox}" />
+                       BasedOn="{StaticResource Ribbon.Styles.Backstage.ComboBox}" />
             </ResourceDictionary>
         </ControlTemplate.Resources>
         <Grid>
@@ -197,7 +197,7 @@
 
             <Grid x:Name="PART_ItemsPanelContainer"
                   VerticalAlignment="Stretch"
-                  Background="{DynamicResource Fluent.Ribbon.Brushes.White}">
+                  Background="{DynamicResource Ribbon.Brushes.White}">
                 <Grid Background="{TemplateBinding ItemsPanelBackground}"
                       KeyboardNavigation.DirectionalNavigation="Cycle">
                     <Grid.RowDefinitions>
@@ -211,12 +211,12 @@
 
                     <!--Uid="{TemplateBinding BackButtonUid}"-->
                     <Button x:Name="backbutton"
-                            Style="{DynamicResource Fluent.Ribbon.Styles.BackstageBackButton}"
+                            Style="{DynamicResource Ribbon.Styles.BackstageBackButton}"
                             Grid.Row="0"
                             Padding="22 7 0 7"
                             VerticalAlignment="Top"
                             Command="{x:Static wzUXRibbon:RibbonCommands.OpenBackstage}"
-                            Visibility="{Binding Path=IsBackButtonVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}">
+                            Visibility="{Binding Path=IsBackButtonVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}">
                         <Button.Margin>
                             <MultiBinding Converter="{x:Static converters:StaticConverters.ThicknessConverter}">
                                 <Binding Source="0" />
@@ -238,7 +238,7 @@
                   Grid.Column="1"
                   Height="Auto"
                   Margin="{TemplateBinding SelectedContentMargin}"
-                  Background="{DynamicResource Fluent.Ribbon.Brushes.White}">
+                  Background="{DynamicResource Ribbon.Brushes.White}">
                 <Border Background="{TemplateBinding Background}">
                     <ContentPresenter x:Name="PART_SelectedContentHost"
                                       Height="Auto"
@@ -250,12 +250,12 @@
         </Grid>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.BackstageTabControl"
+    <Style x:Key="Ribbon.Styles.BackstageTabControl"
            TargetType="{x:Type controls:BackstageTabControl}">
         <!--<Setter Property="BackButtonUid" Value="{Binding Source={x:Static Fluent:RibbonLocalization.Current}, Path=Localization.BackstageBackButtonUid, Mode=OneWay}" />-->
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.White}" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual.Empty}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.White}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual.Empty}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
         <Setter Property="ItemContainerStyleSelector" Value="{x:Static styleSelectors:BackstageTabControlItemContainerStyleSelector.Instance}" />
         <Setter Property="ItemsPanel">
             <Setter.Value>
@@ -264,7 +264,7 @@
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="ItemsPanelBackground" Value="{DynamicResource Fluent.Ribbon.Brushes.BackstageTabControl.ItemsPanelBackground}" />
+        <Setter Property="ItemsPanelBackground" Value="{DynamicResource Ribbon.Brushes.BackstageTabControl.ItemsPanelBackground}" />
         <Setter Property="SelectedContentMargin">
             <Setter.Value>
                 <MultiBinding Converter="{x:Static converters:StaticConverters.ThicknessConverter}">
@@ -277,6 +277,6 @@
                 </MultiBinding>
             </Setter.Value>
         </Setter>
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.BackstageTabControl}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.BackstageTabControl}" />
     </Style>
 </ResourceDictionary>

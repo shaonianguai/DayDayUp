@@ -15,7 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonToggleButton"
+    <Style x:Key="Ribbon.Styles.RibbonToggleButton"
            TargetType="{x:Type controls:ToggleButton}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="BorderBrush" Value="Transparent" />
@@ -23,11 +23,11 @@
         <Setter Property="Content" Value="{Binding Path=Header, RelativeSource={RelativeSource Self}, Mode=TwoWay}" />
         <Setter Property="ContentTemplate" Value="{Binding Path=HeaderTemplate, RelativeSource={RelativeSource Self}, Mode=TwoWay}" />
         <Setter Property="ContentTemplateSelector" Value="{Binding Path=HeaderTemplateSelector, RelativeSource={RelativeSource Self}, Mode=TwoWay}" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
-        <Setter Property="HeaderTemplate" Value="{DynamicResource Fluent.Ribbon.DataTemplates.Button.Header}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
+        <Setter Property="HeaderTemplate" Value="{DynamicResource Ribbon.DataTemplates.Button.Header}" />
         <Setter Property="Height" Value="68" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonToggleButton}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonToggleButton}" />
         <Setter Property="Width" Value="Auto" />
         <Style.Triggers>
             <Trigger Property="Size" Value="Large">
@@ -51,7 +51,7 @@
                 <Setter Property="HorizontalAlignment" Value="Stretch" />
                 <Setter Property="MinHeight" Value="30" />
                 <Setter Property="Padding" Value="6 2" />
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.ToggleButton.Simplified}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.ToggleButton.Simplified}" />
                 <Setter Property="VerticalAlignment" Value="Stretch" />
                 <Setter Property="Width" Value="Auto" />
             </Trigger>
@@ -65,7 +65,7 @@
         </Style.Triggers>
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonToggleButton"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonToggleButton"
                      TargetType="{x:Type controls:ToggleButton}">
         <Border x:Name="border"
                 Height="Auto"
@@ -110,8 +110,8 @@
             </Trigger>
 
             <Trigger Property="IsChecked" Value="True">
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Border}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="PART_HeaderContentHost" Property="Opacity" Value="0.5" />
@@ -122,8 +122,8 @@
                     <Condition Property="IsPressed" Value="False" />
                     <Condition Property="IsChecked" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -131,17 +131,17 @@
                     <Condition Property="IsPressed" Value="False" />
                     <Condition Property="IsChecked" Value="True" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.ToggleButton.CheckedMouseOver.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ToggleButton.CheckedMouseOver.Border}" />
             </MultiTrigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.ToggleButton.Simplified"
+    <ControlTemplate x:Key="Ribbon.Templates.ToggleButton.Simplified"
                      TargetType="{x:Type controls:ToggleButton}">
         <Border x:Name="border"
                 Height="Auto"
@@ -169,7 +169,7 @@
                     <Border x:Name="iconImageBorder"
                             Width="{Binding ActualWidth, ElementName=iconImage}"
                             Height="{Binding ActualHeight, ElementName=iconImage}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Control.Border}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.Control.Border}"
                             BorderThickness="1"
                             Visibility="Collapsed" />
                 </Grid>
@@ -214,12 +214,12 @@
             </Trigger>
 
             <Trigger Property="IsChecked" Value="True">
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ToggleButton.Checked.Border}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="PART_HeaderContentHost" Property="Opacity" Value="0.5" />
-                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Control.Disabled.Border}" />
+                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Control.Disabled.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -227,8 +227,8 @@
                     <Condition Property="IsPressed" Value="False" />
                     <Condition Property="IsChecked" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -236,12 +236,12 @@
                     <Condition Property="IsPressed" Value="False" />
                     <Condition Property="IsChecked" Value="True" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.ToggleButton.CheckedMouseOver.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ToggleButton.CheckedMouseOver.Border}" />
             </MultiTrigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>

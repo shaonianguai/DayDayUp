@@ -15,7 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.TextBox"
+    <ControlTemplate x:Key="Ribbon.Templates.TextBox"
                      TargetType="{x:Type controls:TextBox}">
         <Grid Width="Auto"
               Background="Transparent">
@@ -53,8 +53,8 @@
                     Height="{Binding Path=(attachedProperties:InputControlProperties.InputHeight), RelativeSource={RelativeSource AncestorType=controls:TextBox}}"
                     MinWidth="{Binding Path=(attachedProperties:InputControlProperties.InputMinWidth), RelativeSource={RelativeSource AncestorType=controls:TextBox}}"
                     HorizontalAlignment="Right"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Background}"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Border}"
+                    Background="{DynamicResource Ribbon.Brushes.TextBox.Background}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.TextBox.Border}"
                     BorderThickness="1">
                 <ScrollViewer x:Name="PART_ContentHost"
                               Margin="0"
@@ -79,25 +79,25 @@
             </Trigger>
 
             <Trigger Property="IsEnabled" Value="False">
-                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Disabled.Background}" />
-                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Disabled.Border}" />
-                <Setter TargetName="PART_ContentHost" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Disabled.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.TextBox.Disabled.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.TextBox.Disabled.Border}" />
+                <Setter TargetName="PART_ContentHost" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.TextBox.Disabled.Background}" />
                 <Setter TargetName="PART_HeaderContentHost" Property="Opacity" Value="0.5" />
             </Trigger>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.MouseOver.Background}" />
-                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.MouseOver.Border}" />
-                <Setter TargetName="PART_ContentHost" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.MouseOver.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.TextBox.MouseOver.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.TextBox.MouseOver.Border}" />
+                <Setter TargetName="PART_ContentHost" Property="Background" Value="{DynamicResource Ribbon.Brushes.TextBox.MouseOver.Background}" />
             </Trigger>
             <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Focus.Background}" />
-                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Focus.Border}" />
-                <Setter TargetName="PART_ContentHost" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Focus.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.TextBox.Focus.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.TextBox.Focus.Border}" />
+                <Setter TargetName="PART_ContentHost" Property="Background" Value="{DynamicResource Ribbon.Brushes.TextBox.Focus.Background}" />
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.TextBox.Simplified"
+    <ControlTemplate x:Key="Ribbon.Templates.TextBox.Simplified"
                      TargetType="{x:Type controls:TextBox}">
         <Border x:Name="border"
                 Padding="{TemplateBinding Padding}"
@@ -136,8 +136,8 @@
                         MinWidth="{Binding Path=(attachedProperties:InputControlProperties.InputMinWidth), RelativeSource={RelativeSource AncestorType=controls:TextBox}}"
                         HorizontalAlignment="Right"
                         VerticalAlignment="Center"
-                        Background="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Background}"
-                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Border}"
+                        Background="{DynamicResource Ribbon.Brushes.TextBox.Background}"
+                        BorderBrush="{DynamicResource Ribbon.Brushes.TextBox.Border}"
                         BorderThickness="1">
                     <Grid>
                         <ScrollViewer x:Name="PART_ContentHost"
@@ -200,27 +200,27 @@
             </Trigger>
 
             <Trigger Property="IsEnabled" Value="False">
-                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Disabled.Background}" />
-                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Disabled.Border}" />
-                <Setter TargetName="PART_ContentHost" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Disabled.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.TextBox.Disabled.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.TextBox.Disabled.Border}" />
+                <Setter TargetName="PART_ContentHost" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.TextBox.Disabled.Background}" />
                 <Setter TargetName="PART_HeaderContentHost" Property="Opacity" Value="0.5" />
             </Trigger>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.MouseOver.Background}" />
-                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.MouseOver.Border}" />
-                <Setter TargetName="PART_ContentHost" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.MouseOver.Background}" />
-                <Setter TargetName="border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.TextBox.MouseOver.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.TextBox.MouseOver.Border}" />
+                <Setter TargetName="PART_ContentHost" Property="Background" Value="{DynamicResource Ribbon.Brushes.TextBox.MouseOver.Background}" />
+                <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </Trigger>
             <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.MouseOver.Background}" />
-                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.MouseOver.Border}" />
-                <Setter TargetName="PART_ContentHost" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.MouseOver.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.TextBox.MouseOver.Background}" />
+                <Setter TargetName="PART_ContentBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.TextBox.MouseOver.Border}" />
+                <Setter TargetName="PART_ContentHost" Property="Background" Value="{DynamicResource Ribbon.Brushes.TextBox.MouseOver.Background}" />
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <DataTemplate x:Key="Fluent.Ribbon.DataTemplates.TextBox.Header">
+    <DataTemplate x:Key="Ribbon.DataTemplates.TextBox.Header">
         <TextBlock Margin="5 0 0 0"
                    VerticalAlignment="Center"
                    Text="{Binding}"
@@ -229,21 +229,21 @@
 
     <Style TargetType="{x:Type controls:TextBox}"
            BasedOn="{StaticResource {x:Type TextBoxBase}}">
-        <Setter Property="CaretBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Caret}" />
+        <Setter Property="CaretBrush" Value="{DynamicResource Ribbon.Brushes.TextBox.Caret}" />
         <Setter Property="attachedProperties:InputControlProperties.InputMinWidth" Value="30" />
         <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Small" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual.Empty}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
-        <Setter Property="HeaderTemplate" Value="{DynamicResource Fluent.Ribbon.DataTemplates.TextBox.Header}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual.Empty}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
+        <Setter Property="HeaderTemplate" Value="{DynamicResource Ribbon.DataTemplates.TextBox.Header}" />
         <Setter Property="MinHeight" Value="22" />
-        <Setter Property="SelectionBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.TextBox.Selection}" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.TextBox}" />
+        <Setter Property="SelectionBrush" Value="{DynamicResource Ribbon.Brushes.TextBox.Selection}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.TextBox}" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Style.Triggers>
             <Trigger Property="IsSimplified" Value="True">
                 <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Medium" />
                 <Setter Property="MinHeight" Value="30" />
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.TextBox.Simplified}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.TextBox.Simplified}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>

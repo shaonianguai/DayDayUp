@@ -15,11 +15,11 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="Fluent.Ribbon.Styles.ToolTip"
+    <Style x:Key="Ribbon.Styles.ToolTip"
            TargetType="{x:Type ToolTip}">
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.ScreenTip.Background}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.ScreenTip.Border}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.ScreenTip.Background}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ScreenTip.Border}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToolTip}">
@@ -44,7 +44,7 @@
         </Setter>
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.ScreenTip"
+    <ControlTemplate x:Key="Ribbon.Templates.ScreenTip"
                      TargetType="{x:Type controls:ScreenTip}">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -88,7 +88,7 @@
                                 Height="2"
                                 Margin="5"
                                 HorizontalAlignment="Stretch"
-                                Background="{DynamicResource Fluent.Ribbon.Brushes.Gray6}"
+                                Background="{DynamicResource Ribbon.Brushes.Gray6}"
                                 BorderThickness="0 0 0 1"
                                 IsEnabled="{Binding Path=IsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Control, AncestorLevel=2}}"
                                 Visibility="{Binding ElementName=disableReasonSection, Path=Visibility}" />
@@ -98,7 +98,7 @@
                                    Margin="5 0 0 0"
                                    HorizontalAlignment="Left"
                                    VerticalAlignment="Top"
-                                   Source="{DynamicResource Fluent.Ribbon.Images.Warning}"
+                                   Source="{DynamicResource Ribbon.Images.Warning}"
                                    Stretch="Uniform" />
                             <Grid>
                                 <Grid.RowDefinitions>
@@ -134,7 +134,7 @@
                                 Height="2"
                                 Margin="5"
                                 HorizontalAlignment="Stretch"
-                                Background="{DynamicResource Fluent.Ribbon.Brushes.Gray6}"
+                                Background="{DynamicResource Ribbon.Brushes.Gray6}"
                                 BorderThickness="0 0 0 1"
                                 Visibility="{TemplateBinding Property=HelpLabelVisibility}" />
                         <Grid x:Name="helpSection"
@@ -144,7 +144,7 @@
                                    Margin="5 0 0 0"
                                    HorizontalAlignment="Left"
                                    VerticalAlignment="Top"
-                                   Source="{DynamicResource Fluent.Ribbon.Images.Help}"
+                                   Source="{DynamicResource Ribbon.Images.Help}"
                                    Stretch="Uniform" />
                             <TextBlock x:Name="textBlock"
                                        x:Uid="HelpText"
@@ -199,12 +199,12 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.ScreenTip"
+    <Style x:Key="Ribbon.Styles.ScreenTip"
            TargetType="{x:Type controls:ScreenTip}">
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.ScreenTip.Background}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.ScreenTip.Border}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.ScreenTip}" />
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.ScreenTip.Background}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ScreenTip.Border}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.ScreenTip}" />
         <Setter Property="Width" Value="205" />
     </Style>
 </ResourceDictionary>

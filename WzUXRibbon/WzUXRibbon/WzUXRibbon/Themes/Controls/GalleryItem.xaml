@@ -14,24 +14,24 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.GalleryItem"
+    <ControlTemplate x:Key="Ribbon.Templates.GalleryItem"
                      TargetType="{x:Type controls:GalleryItem}">
         <Grid Background="Transparent">
             <Border x:Name="keyboardFocusBorder"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.GalleryItem.Pressed}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.GalleryItem.Pressed}"
                     BorderThickness="1"
                     Visibility="Collapsed" />
 
             <Border x:Name="hoverBorder"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.GalleryItem.MouseOver}"
+                    Background="{DynamicResource Ribbon.Brushes.GalleryItem.MouseOver}"
                     Visibility="Collapsed" />
 
             <Border x:Name="selectedBorder"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.GalleryItem.Selected}"
+                    Background="{DynamicResource Ribbon.Brushes.GalleryItem.Selected}"
                     Visibility="Collapsed" />
 
             <Border x:Name="pressedBorder"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.GalleryItem.Pressed}"
+                    Background="{DynamicResource Ribbon.Brushes.GalleryItem.Pressed}"
                     Visibility="Collapsed" />
 
             <ContentPresenter x:Name="contentPresenter"
@@ -57,9 +57,9 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.GalleryItem"
+    <Style x:Key="Ribbon.Styles.GalleryItem"
            TargetType="{x:Type controls:GalleryItem}">
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.GalleryItem}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.GalleryItem}" />
     </Style>
 </ResourceDictionary>

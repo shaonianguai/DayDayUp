@@ -15,7 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.BackstageTabItem"
+    <ControlTemplate x:Key="Ribbon.Templates.BackstageTabItem"
                      TargetType="{x:Type controls:BackstageTabItem}">
         <Grid x:Name="rootGrid"
               Background="Transparent"
@@ -46,7 +46,7 @@
                                 ContentTemplate="{TemplateBinding HeaderTemplate}"
                                 ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}"
                                 Focusable="False"
-                                Foreground="{DynamicResource Fluent.Ribbon.Brushes.BackstageTabItem.Header.Foreground}">
+                                Foreground="{DynamicResource Ribbon.Brushes.BackstageTabItem.Header.Foreground}">
                     <ContentControl.Resources>
                         <Style TargetType="TextBlock">
                             <Setter Property="TextTrimming" Value="CharacterEllipsis" />
@@ -73,16 +73,16 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.BackstageTabItem"
+    <Style x:Key="Ribbon.Styles.BackstageTabItem"
            TargetType="{x:Type controls:BackstageTabItem}">
         <Setter Property="Background" Value="{Binding Background, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:BackstageTabControl}}}" />
-        <Setter Property="attachedProperties:RibbonProperties.IsSelectedBackground" Value="{DynamicResource Fluent.Ribbon.Brushes.BackstageTabItem.Selected.Background}" />
-        <Setter Property="attachedProperties:RibbonProperties.MouseOverBackground" Value="{DynamicResource Fluent.Ribbon.Brushes.BackstageTabItem.MouseOver.Background}" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.Black}" />
+        <Setter Property="attachedProperties:RibbonProperties.IsSelectedBackground" Value="{DynamicResource Ribbon.Brushes.BackstageTabItem.Selected.Background}" />
+        <Setter Property="attachedProperties:RibbonProperties.MouseOverBackground" Value="{DynamicResource Ribbon.Brushes.BackstageTabItem.MouseOver.Background}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.Black}" />
         <Setter Property="Height" Value="38" />
         <Setter Property="Margin" Value="0" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.BackstageTabItem}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.BackstageTabItem}" />
         <Setter Property="ToolTipService.IsEnabled" Value="False" />
     </Style>
 

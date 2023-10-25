@@ -84,7 +84,7 @@ namespace WzUXRibbon.Data
                     stringForHash += "." + this.ribbon.Name;
                 }
 
-                this.isolatedStorageFileName = "Fluent.Ribbon.State." + BitConverter.ToInt32(md5Hasher.ComputeHash(Encoding.Default.GetBytes(stringForHash)), 0).ToString("X");
+                this.isolatedStorageFileName = "Ribbon.State." + BitConverter.ToInt32(md5Hasher.ComputeHash(Encoding.Default.GetBytes(stringForHash)), 0).ToString("X");
                 return this.isolatedStorageFileName;
             }
         }

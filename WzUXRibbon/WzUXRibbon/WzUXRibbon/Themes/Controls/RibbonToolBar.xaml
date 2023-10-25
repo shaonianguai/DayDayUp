@@ -16,13 +16,13 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonSeparator.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonToolBar"
+    <Style x:Key="Ribbon.Styles.RibbonToolBar"
            TargetType="{x:Type controls:RibbonToolBar}">
         <Setter Property="Focusable" Value="False" />
         <Setter Property="SeparatorStyle">
             <Setter.Value>
                 <Style TargetType="{x:Type Separator}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.RibbonSeparator}">
+                       BasedOn="{StaticResource Ribbon.Styles.RibbonSeparator}">
                     <Setter Property="Margin" Value="4" />
                 </Style>
             </Setter.Value>

@@ -15,18 +15,18 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RibbonScrollViewer.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <converters:ApplicationMenuRightScrollViewerExtractorConverter x:Key="Fluent.Ribbon.Converters.ApplicationMenuRightScrollViewerExtractorConverter" />
+    <converters:ApplicationMenuRightScrollViewerExtractorConverter x:Key="Ribbon.Converters.ApplicationMenuRightScrollViewerExtractorConverter" />
 
     <!-- Second level -->
 
     <!-- Menu Item Template -->
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.ApplicationMenuSecondLevelItem"
+    <ControlTemplate x:Key="Ribbon.Templates.ApplicationMenuSecondLevelItem"
                      TargetType="{x:Type controls:MenuItem}">
         <ControlTemplate.Resources>
             <ResourceDictionary>
                 <Style x:Key="{x:Type ScrollViewer}"
                        TargetType="{x:Type ScrollViewer}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuScrollViewer}" />
+                       BasedOn="{StaticResource Ribbon.Styles.MenuScrollViewer}" />
             </ResourceDictionary>
         </ControlTemplate.Resources>
         <Grid Width="Auto"
@@ -44,8 +44,8 @@
                     Width="Auto"
                     Margin="0"
                     HorizontalAlignment="Stretch"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                    Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                     BorderThickness="1"
                     CornerRadius="2"
                     Visibility="Collapsed" />
@@ -75,10 +75,10 @@
                        Height="40"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
+                       Fill="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
                        RadiusX="1"
                        RadiusY="1"
-                       Stroke="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
+                       Stroke="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
                        Visibility="Collapsed" />
             <Image x:Name="image"
                    Width="32"
@@ -87,7 +87,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
                    SnapsToDevicePixels="True"
-                   Source="{DynamicResource Fluent.Ribbon.Images.Checked}"
+                   Source="{DynamicResource Ribbon.Images.Checked}"
                    Stretch="Uniform"
                    Visibility="Collapsed" />
             <controls:IconPresenter x:Name="iconImage"
@@ -128,13 +128,13 @@
     </ControlTemplate>
 
     <!-- Header Menu Item Template -->
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.HeaderApplicationMenuSecondLevelItem"
+    <ControlTemplate x:Key="Ribbon.Templates.HeaderApplicationMenuSecondLevelItem"
                      TargetType="{x:Type controls:MenuItem}">
         <ControlTemplate.Resources>
             <ResourceDictionary>
                 <Style x:Key="{x:Type ScrollViewer}"
                        TargetType="{x:Type ScrollViewer}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuScrollViewer}" />
+                       BasedOn="{StaticResource Ribbon.Styles.MenuScrollViewer}" />
             </ResourceDictionary>
         </ControlTemplate.Resources>
         <Grid Width="Auto"
@@ -152,8 +152,8 @@
                     Width="Auto"
                     Margin="0"
                     HorizontalAlignment="Stretch"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                    Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                     BorderThickness="1"
                     CornerRadius="2"
                     Visibility="Collapsed" />
@@ -183,10 +183,10 @@
                        Height="40"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
+                       Fill="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
                        RadiusX="1"
                        RadiusY="1"
-                       Stroke="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
+                       Stroke="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
                        Visibility="Collapsed" />
             <Image x:Name="image"
                    Width="32"
@@ -195,7 +195,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
                    SnapsToDevicePixels="True"
-                   Source="{DynamicResource Fluent.Ribbon.Images.Checked}"
+                   Source="{DynamicResource Ribbon.Images.Checked}"
                    Stretch="Uniform"
                    Visibility="Collapsed" />
             <controls:IconPresenter x:Name="iconImage"
@@ -211,7 +211,7 @@
                   Margin="1 0 9 0"
                   HorizontalAlignment="Right"
                   Data="M0,0L1,1 0,2z"
-                  Fill="{DynamicResource Fluent.Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
+                  Fill="{DynamicResource Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
                   Stretch="Fill"
                   Stroke="{x:Null}" />
             <Popup x:Name="PART_Popup"
@@ -314,8 +314,8 @@
                             Grid.ColumnSpan="1"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch"
-                            Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Border}"
+                            Background="{DynamicResource Ribbon.Brushes.DropDown.Background}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Border}"
                             BorderThickness="1"
                             CornerRadius="2,2,1,1"
                             SnapsToDevicePixels="True">
@@ -326,7 +326,7 @@
                             <Border Width="Auto"
                                     Height="Auto"
                                     VerticalAlignment="Stretch"
-                                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
+                                    BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Background}"
                                     BorderThickness="1"
                                     CornerRadius="1" />
                             <Grid Margin="1"
@@ -344,7 +344,7 @@
                                       Data="M0,0L0,1"
                                       Fill="{x:Null}"
                                       Stretch="Fill"
-                                      Stroke="{DynamicResource Fluent.Ribbon.Brushes.Separator.Border}"
+                                      Stroke="{DynamicResource Ribbon.Brushes.Separator.Border}"
                                       Visibility="Visible" />
                                 <ScrollViewer x:Name="PART_ScrollViewer"
                                               Margin="1"
@@ -393,13 +393,13 @@
     </ControlTemplate>
 
     <!-- Splited Menu Item Template -->
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.SplitedApplicationMenuSecondLevelItem"
+    <ControlTemplate x:Key="Ribbon.Templates.SplitedApplicationMenuSecondLevelItem"
                      TargetType="{x:Type controls:MenuItem}">
         <ControlTemplate.Resources>
             <ResourceDictionary>
                 <Style x:Key="{x:Type ScrollViewer}"
                        TargetType="{x:Type ScrollViewer}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuScrollViewer}" />
+                       BasedOn="{StaticResource Ribbon.Styles.MenuScrollViewer}" />
             </ResourceDictionary>
         </ControlTemplate.Resources>
         <Grid Width="Auto"
@@ -416,7 +416,7 @@
                        Width="1"
                        Margin="0 4 23 4"
                        HorizontalAlignment="Right"
-                       Stroke="{DynamicResource Fluent.Ribbon.Brushes.Separator.Border}" />
+                       Stroke="{DynamicResource Ribbon.Brushes.Separator.Border}" />
 
             <Grid Grid.Column="0"
                   Grid.ColumnSpan="3"
@@ -430,8 +430,8 @@
                 </Grid.ColumnDefinitions>
                 <Border x:Name="PART_ButtonBorder"
                         Margin="0 0 -1 0"
-                        Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                        Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                        BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                         BorderThickness="1"
                         CornerRadius="2"
                         Visibility="Collapsed" />
@@ -440,8 +440,8 @@
                         Width="Auto"
                         Margin="0"
                         HorizontalAlignment="Stretch"
-                        Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                        Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                        BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                         BorderThickness="1"
                         CornerRadius="2"
                         Visibility="Collapsed" />
@@ -472,10 +472,10 @@
                        Height="40"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
+                       Fill="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
                        RadiusX="1"
                        RadiusY="1"
-                       Stroke="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
+                       Stroke="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
                        Visibility="Collapsed" />
             <Image x:Name="image"
                    Width="32"
@@ -484,7 +484,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
                    SnapsToDevicePixels="True"
-                   Source="{DynamicResource Fluent.Ribbon.Images.Checked}"
+                   Source="{DynamicResource Ribbon.Images.Checked}"
                    Stretch="Uniform"
                    Visibility="Collapsed" />
             <controls:IconPresenter x:Name="iconImage"
@@ -500,7 +500,7 @@
                   Margin="1 0 9 0"
                   HorizontalAlignment="Right"
                   Data="M0,0L1,1 0,2z"
-                  Fill="{DynamicResource Fluent.Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
+                  Fill="{DynamicResource Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
                   Stretch="Fill"
                   Stroke="{x:Null}" />
             <Popup x:Name="PART_Popup"
@@ -519,8 +519,8 @@
                     <Border x:Name="DropDownBorder"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch"
-                            Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Border}"
+                            Background="{DynamicResource Ribbon.Brushes.DropDown.Background}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Border}"
                             BorderThickness="1"
                             CornerRadius="1"
                             SnapsToDevicePixels="True">
@@ -531,7 +531,7 @@
                             <Border Width="Auto"
                                     Height="Auto"
                                     VerticalAlignment="Stretch"
-                                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
+                                    BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Background}"
                                     BorderThickness="1"
                                     CornerRadius="1" />
                             <Grid Margin="1"
@@ -549,10 +549,10 @@
                                       Data="M0,0L0,1"
                                       Fill="{x:Null}"
                                       Stretch="Fill"
-                                      Stroke="{DynamicResource Fluent.Ribbon.Brushes.Separator.Border}"
+                                      Stroke="{DynamicResource Ribbon.Brushes.Separator.Border}"
                                       Visibility="Visible" />
                                 <ScrollViewer x:Name="PART_ScrollViewer"
-                                              Style="{DynamicResource Fluent.Ribbon.Styles.MenuScrollViewer}"
+                                              Style="{DynamicResource Ribbon.Styles.MenuScrollViewer}"
                                               Margin="1"
                                               SnapsToDevicePixels="True">
                                     <StackPanel x:Name="PART_MenuPanel"
@@ -587,7 +587,7 @@
                 <Setter TargetName="Submenu_Border" Property="Visibility" Value="Visible" />
             </MultiTrigger>
             <Trigger Property="IsSubmenuOpen" Value="True">
-                <Setter TargetName="Submenu_Border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="Submenu_Border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="image" Property="Effect">
@@ -602,43 +602,43 @@
     </ControlTemplate>
 
     <!-- Menu Item Style -->
-    <Style x:Key="Fluent.Ribbon.Styles.ApplicationMenu.MenuItemSecondLevel"
+    <Style x:Key="Ribbon.Styles.ApplicationMenu.MenuItemSecondLevel"
            TargetType="{x:Type controls:MenuItem}">
         <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Large" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="ResizeMode" Value="None" />
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.ApplicationMenuSecondLevelItem}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.ApplicationMenuSecondLevelItem}" />
         <Style.Triggers>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="controls:MenuItem.IsSplited" Value="True" />
                     <Condition Property="HasItems" Value="True" />
                 </MultiTrigger.Conditions>
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.SplitedApplicationMenuSecondLevelItem}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.SplitedApplicationMenuSecondLevelItem}" />
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="controls:MenuItem.IsSplited" Value="False" />
                     <Condition Property="HasItems" Value="True" />
                 </MultiTrigger.Conditions>
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.HeaderApplicationMenuSecondLevelItem}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.HeaderApplicationMenuSecondLevelItem}" />
             </MultiTrigger>
         </Style.Triggers>
     </Style>
 
     <!-- First Level -->
     <!-- Menu Item Template -->
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.ApplicationMenuItem"
+    <ControlTemplate x:Key="Ribbon.Templates.ApplicationMenuItem"
                      TargetType="{x:Type controls:MenuItem}">
         <ControlTemplate.Resources>
             <ResourceDictionary>
                 <Style x:Key="{x:Type ScrollViewer}"
                        TargetType="{x:Type ScrollViewer}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuScrollViewer}" />
+                       BasedOn="{StaticResource Ribbon.Styles.MenuScrollViewer}" />
             </ResourceDictionary>
         </ControlTemplate.Resources>
         <Grid Width="Auto"
@@ -655,8 +655,8 @@
                     Width="Auto"
                     Margin="0"
                     HorizontalAlignment="Stretch"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                    Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                     BorderThickness="1"
                     CornerRadius="2"
                     Visibility="Collapsed" />
@@ -685,10 +685,10 @@
                        Height="40"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
+                       Fill="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
                        RadiusX="1"
                        RadiusY="1"
-                       Stroke="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
+                       Stroke="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
                        Visibility="Collapsed" />
             <Image x:Name="image"
                    Width="32"
@@ -696,7 +696,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    SnapsToDevicePixels="True"
-                   Source="{DynamicResource Fluent.Ribbon.Images.Checked}"
+                   Source="{DynamicResource Ribbon.Images.Checked}"
                    Stretch="Uniform"
                    Visibility="Collapsed" />
             <controls:IconPresenter x:Name="iconImage"
@@ -738,13 +738,13 @@
     </ControlTemplate>
 
     <!-- Header Menu Item Template -->
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.HeaderApplicationMenuItem"
+    <ControlTemplate x:Key="Ribbon.Templates.HeaderApplicationMenuItem"
                      TargetType="{x:Type controls:MenuItem}">
         <ControlTemplate.Resources>
             <ResourceDictionary>
                 <Style x:Key="{x:Type ScrollViewer}"
                        TargetType="{x:Type ScrollViewer}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuScrollViewer}" />
+                       BasedOn="{StaticResource Ribbon.Styles.MenuScrollViewer}" />
             </ResourceDictionary>
         </ControlTemplate.Resources>
         <Grid Width="Auto"
@@ -761,8 +761,8 @@
                     Width="Auto"
                     Margin="0"
                     HorizontalAlignment="Stretch"
-                    Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                    Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                    BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                     BorderThickness="1"
                     CornerRadius="2"
                     Visibility="Collapsed" />
@@ -781,10 +781,10 @@
                        Height="40"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
+                       Fill="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
                        RadiusX="1"
                        RadiusY="1"
-                       Stroke="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
+                       Stroke="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
                        Visibility="Collapsed" />
             <Image x:Name="image"
                    Width="32"
@@ -792,7 +792,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    SnapsToDevicePixels="True"
-                   Source="{DynamicResource Fluent.Ribbon.Images.Checked}"
+                   Source="{DynamicResource Ribbon.Images.Checked}"
                    Stretch="Uniform"
                    Visibility="Collapsed" />
             <controls:IconPresenter x:Name="iconImage"
@@ -808,7 +808,7 @@
                   Margin="1 0 9 0"
                   HorizontalAlignment="Right"
                   Data="M0,0L1,1 0,2z"
-                  Fill="{DynamicResource Fluent.Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
+                  Fill="{DynamicResource Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
                   Stretch="Fill"
                   Stroke="{x:Null}" />
             <Popup x:Name="PART_Popup"
@@ -822,7 +822,7 @@
                    Focusable="False"
                    IsOpen="{TemplateBinding IsSubmenuOpen}"
                    Placement="Custom"
-                   PlacementTarget="{Binding Converter={StaticResource Fluent.Ribbon.Converters.ApplicationMenuRightScrollViewerExtractorConverter}, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:ApplicationMenu}}}"
+                   PlacementTarget="{Binding Converter={StaticResource Ribbon.Converters.ApplicationMenuRightScrollViewerExtractorConverter}, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:ApplicationMenu}}}"
                    PopupAnimation="{DynamicResource {x:Static SystemParameters.MenuPopupAnimationKey}}">
                 <Grid Name="DropDown"
                       Margin="0"
@@ -915,8 +915,8 @@
                             Grid.ColumnSpan="1"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch"
-                            Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Border}"
+                            Background="{DynamicResource Ribbon.Brushes.DropDown.Background}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Border}"
                             BorderThickness="1"
                             CornerRadius="2,2,1,1"
                             SnapsToDevicePixels="True">
@@ -927,7 +927,7 @@
                             <Border Width="Auto"
                                     Height="Auto"
                                     VerticalAlignment="Stretch"
-                                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
+                                    BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Background}"
                                     BorderThickness="1"
                                     CornerRadius="1" />
                             <Grid Margin="1"
@@ -981,13 +981,13 @@
     </ControlTemplate>
 
     <!-- Splited Menu Item Template -->
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.SplitedApplicationMenuItem"
+    <ControlTemplate x:Key="Ribbon.Templates.SplitedApplicationMenuItem"
                      TargetType="{x:Type controls:MenuItem}">
         <ControlTemplate.Resources>
             <ResourceDictionary>
                 <Style x:Key="{x:Type ScrollViewer}"
                        TargetType="{x:Type ScrollViewer}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuScrollViewer}" />
+                       BasedOn="{StaticResource Ribbon.Styles.MenuScrollViewer}" />
             </ResourceDictionary>
         </ControlTemplate.Resources>
         <Grid Width="Auto"
@@ -1003,7 +1003,7 @@
                        Width="1"
                        Margin="0 4 23 4"
                        HorizontalAlignment="Right"
-                       Stroke="{DynamicResource Fluent.Ribbon.Brushes.Separator.Border}" />
+                       Stroke="{DynamicResource Ribbon.Brushes.Separator.Border}" />
 
             <Grid Grid.Column="0"
                   Grid.ColumnSpan="3"
@@ -1017,8 +1017,8 @@
                 </Grid.ColumnDefinitions>
                 <Border x:Name="PART_ButtonBorder"
                         Margin="0 0 -1 0"
-                        Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                        Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                        BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                         BorderThickness="1"
                         CornerRadius="2"
                         Visibility="Collapsed" />
@@ -1027,8 +1027,8 @@
                         Width="Auto"
                         Margin="0"
                         HorizontalAlignment="Stretch"
-                        Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}"
-                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}"
+                        Background="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}"
+                        BorderBrush="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}"
                         BorderThickness="1"
                         CornerRadius="2"
                         Visibility="Collapsed" />
@@ -1048,10 +1048,10 @@
                        Height="40"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
+                       Fill="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Background}"
                        RadiusX="1"
                        RadiusY="1"
-                       Stroke="{DynamicResource Fluent.Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
+                       Stroke="{DynamicResource Ribbon.Brushes.ApplicationMenuItem.CheckBox.Border}"
                        Visibility="Collapsed" />
             <Image x:Name="image"
                    Width="32"
@@ -1059,7 +1059,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    SnapsToDevicePixels="True"
-                   Source="{DynamicResource Fluent.Ribbon.Images.Checked}"
+                   Source="{DynamicResource Ribbon.Images.Checked}"
                    Stretch="Uniform"
                    Visibility="Collapsed" />
             <controls:IconPresenter x:Name="iconImage"
@@ -1075,7 +1075,7 @@
                   Margin="1 0 9 0"
                   HorizontalAlignment="Right"
                   Data="M0,0L1,1 0,2z"
-                  Fill="{DynamicResource Fluent.Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
+                  Fill="{DynamicResource Ribbon.Brushes.MenuItem.SubMenu.Arrow.Fill}"
                   Stretch="Fill"
                   Stroke="{x:Null}" />
             <Popup x:Name="PART_Popup"
@@ -1089,7 +1089,7 @@
                    Focusable="False"
                    IsOpen="{TemplateBinding IsSubmenuOpen}"
                    Placement="Custom"
-                   PlacementTarget="{Binding Converter={StaticResource Fluent.Ribbon.Converters.ApplicationMenuRightScrollViewerExtractorConverter}, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:ApplicationMenu}}}"
+                   PlacementTarget="{Binding Converter={StaticResource Ribbon.Converters.ApplicationMenuRightScrollViewerExtractorConverter}, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:ApplicationMenu}}}"
                    PopupAnimation="{DynamicResource {x:Static SystemParameters.MenuPopupAnimationKey}}">
                 <Grid x:Name="DropDown"
                       Margin="0"
@@ -1182,8 +1182,8 @@
                             Grid.ColumnSpan="1"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch"
-                            Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Border}"
+                            Background="{DynamicResource Ribbon.Brushes.DropDown.Background}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Border}"
                             BorderThickness="1"
                             CornerRadius="1"
                             SnapsToDevicePixels="True">
@@ -1194,7 +1194,7 @@
                             <Border Width="Auto"
                                     Height="Auto"
                                     VerticalAlignment="Stretch"
-                                    BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
+                                    BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Background}"
                                     BorderThickness="1"
                                     CornerRadius="1" />
                             <Grid Margin="1"
@@ -1205,7 +1205,7 @@
                                     <RowDefinition Height="Auto" />
                                 </Grid.RowDefinitions>
                                 <ScrollViewer x:Name="PART_ScrollViewer"
-                                              Style="{DynamicResource Fluent.Ribbon.Styles.MenuScrollViewer}"
+                                              Style="{DynamicResource Ribbon.Styles.MenuScrollViewer}"
                                               Margin="1"
                                               SnapsToDevicePixels="True">
                                     <StackPanel x:Name="PART_MenuPanel"
@@ -1241,7 +1241,7 @@
                 <Setter TargetName="Submenu_Border" Property="Visibility" Value="Visible" />
             </MultiTrigger>
             <Trigger Property="IsSubmenuOpen" Value="True">
-                <Setter TargetName="Submenu_Border" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="Submenu_Border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="image" Property="Effect">
@@ -1256,16 +1256,16 @@
     </ControlTemplate>
 
     <!-- Menu Item Style -->
-    <Style x:Key="Fluent.Ribbon.Styles.ApplicationMenu.MenuItem"
+    <Style x:Key="Ribbon.Styles.ApplicationMenu.MenuItem"
            TargetType="{x:Type controls:MenuItem}">
         <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Large" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="ResizeMode" Value="None" />
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.ApplicationMenuItem}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.ApplicationMenuItem}" />
         <Style.Triggers>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -1273,7 +1273,7 @@
                     <Condition Property="HasItems" Value="True" />
                 </MultiTrigger.Conditions>
                 <Setter Property="ItemContainerStyleSelector" Value="{x:Static styleSelectors:SplitedApplicationMenuItemItemContainerStyleSelector.Instance}" />
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.SplitedApplicationMenuItem}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.SplitedApplicationMenuItem}" />
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -1281,7 +1281,7 @@
                     <Condition Property="HasItems" Value="True" />
                 </MultiTrigger.Conditions>
                 <Setter Property="ItemContainerStyleSelector" Value="{x:Static styleSelectors:HeaderApplicationMenuItemItemContainerStyleSelector.Instance}" />
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.HeaderApplicationMenuItem}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.HeaderApplicationMenuItem}" />
             </MultiTrigger>
         </Style.Triggers>
     </Style>

@@ -14,7 +14,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Storyboard x:Key="Fluent.Ribbon.Storyboards.Backstage.IsOpenTrueStoryboard">
+    <Storyboard x:Key="Ribbon.Storyboards.Backstage.IsOpenTrueStoryboard">
         <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)">
             <EasingThicknessKeyFrame KeyTime="0"
                                      Value="-125,0,0,0" />
@@ -27,7 +27,7 @@
         </ThicknessAnimationUsingKeyFrames>
     </Storyboard>
 
-    <Storyboard x:Key="Fluent.Ribbon.Storyboards.Backstage.IsOpenFalseStoryboard">
+    <Storyboard x:Key="Ribbon.Storyboards.Backstage.IsOpenFalseStoryboard">
         <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)">
             <EasingThicknessKeyFrame KeyTime="0"
                                      Value="0" />
@@ -40,7 +40,7 @@
         </ThicknessAnimationUsingKeyFrames>
     </Storyboard>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.BackstageToggleButton"
+    <ControlTemplate x:Key="Ribbon.Templates.BackstageToggleButton"
                      TargetType="{x:Type controls:Backstage}">
         <Border x:Name="border2"
                 Height="Auto"
@@ -61,7 +61,7 @@
         </Border>
         <ControlTemplate.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter TargetName="rectangle" Property="Fill" Value="{DynamicResource Fluent.Ribbon.Brushes.HighTransparentWhite}" />
+                <Setter TargetName="rectangle" Property="Fill" Value="{DynamicResource Ribbon.Brushes.HighTransparentWhite}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="border2" Property="Opacity" Value="0.5" />
@@ -84,18 +84,18 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonBackstage"
+    <Style x:Key="Ribbon.Styles.RibbonBackstage"
            TargetType="{x:Type controls:Backstage}">
         <Setter Property="AreAnimationsEnabled" Value="{DynamicResource {x:Static SystemParameters.ClientAreaAnimationKey}}" />
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Backstage.Background}" />
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.Backstage.Background}" />
         <Setter Property="wzUXRibbonHelpers:FrameworkHelper.UseLayoutRounding" Value="True" />
         <Setter Property="controls:KeyTip.Keys" Value="Key tips text test" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.Backstage.Foreground}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.Backstage.Foreground}" />
         <Setter Property="Header" Value="Header text test" />
         <Setter Property="KeyboardNavigation.TabIndex" Value="1" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.BackstageToggleButton}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.BackstageToggleButton}" />
         <Setter Property="ToolTipService.IsEnabled" Value="False" />
     </Style>
     

@@ -15,7 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="Fluent.Ribbon.Styles.SliderButton"
+    <Style x:Key="Ribbon.Styles.SliderButton"
            TargetType="{x:Type RepeatButton}">
         <Setter Property="Focusable" Value="false" />
         <Setter Property="IsTabStop" Value="false" />
@@ -30,16 +30,16 @@
         </Setter>
     </Style>
 
-    <Style x:Key="Fluent.Ribbon.Styles.SliderThumb"
+    <Style x:Key="Ribbon.Styles.SliderThumb"
            TargetType="{x:Type Thumb}">
         <Setter Property="Height" Value="14" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="SnapsToDevicePixels" Value="true" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.SliderThumb}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.SliderThumb}" />
         <Setter Property="Width" Value="14" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.SliderThumb"
+    <ControlTemplate x:Key="Ribbon.Templates.SliderThumb"
                      TargetType="{x:Type Thumb}">
         <Grid Margin="2.5 0.5">
             <Border Name="path"
@@ -51,23 +51,23 @@
         </Grid>
         <ControlTemplate.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter TargetName="hoverborder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="hoverborder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
             </Trigger>
             <Trigger Property="IsDragging" Value="True">
-                <Setter TargetName="hoverborder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="hoverborder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.SliderRepeatButton"
+    <Style x:Key="Ribbon.Styles.SliderRepeatButton"
            TargetType="{x:Type RepeatButton}">
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.White}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.White}" />
         <Setter Property="Height" Value="16" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.SliderRepeatButton}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.SliderRepeatButton}" />
         <Setter Property="Width" Value="16" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.SliderRepeatButton"
+    <ControlTemplate x:Key="Ribbon.Templates.SliderRepeatButton"
                      TargetType="{x:Type RepeatButton}">
         <Grid>
             <ContentPresenter Width="14"
@@ -78,7 +78,7 @@
         </Grid>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.ZoomSlider"
+    <Style x:Key="Ribbon.Styles.ZoomSlider"
            TargetType="{x:Type Slider}">
         <Setter Property="Height" Value="16" />
         <Setter Property="KeyboardNavigation.TabNavigation" Value="None" />
@@ -86,12 +86,12 @@
         <Setter Property="Maximum" Value="500" />
         <Setter Property="Minimum" Value="10" />
         <Setter Property="SmallChange" Value="1" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.ZoomSlider}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.ZoomSlider}" />
         <Setter Property="Value" Value="100" />
         <Setter Property="Width" Value="133" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.ZoomSlider"
+    <ControlTemplate x:Key="Ribbon.Templates.ZoomSlider"
                      TargetType="{x:Type Slider}">
         <Grid Width="133"
               Height="16">
@@ -135,21 +135,21 @@
                    Height="16">
                 <Track.DecreaseRepeatButton>
                     <RepeatButton x:Name="leftButton"
-                                  Style="{DynamicResource Fluent.Ribbon.Styles.SliderButton}"
+                                  Style="{DynamicResource Ribbon.Styles.SliderButton}"
                                   Command="Slider.DecreaseLarge" />
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
                     <Thumb x:Name="thumb"
-                           Style="{DynamicResource Fluent.Ribbon.Styles.SliderThumb}" />
+                           Style="{DynamicResource Ribbon.Styles.SliderThumb}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
                     <RepeatButton x:Name="rightButton"
-                                  Style="{DynamicResource Fluent.Ribbon.Styles.SliderButton}"
+                                  Style="{DynamicResource Ribbon.Styles.SliderButton}"
                                   Command="Slider.IncreaseLarge" />
                 </Track.IncreaseRepeatButton>
             </Track>
             <RepeatButton x:Name="repeatButton"
-                          Style="{DynamicResource Fluent.Ribbon.Styles.SliderRepeatButton}"
+                          Style="{DynamicResource Ribbon.Styles.SliderRepeatButton}"
                           Command="Slider.DecreaseLarge">
                 <Grid Margin="0"
                       Background="Transparent"
@@ -167,7 +167,7 @@
                 </Grid>
             </RepeatButton>
             <RepeatButton x:Name="repeatButton_Copy"
-                          Style="{DynamicResource Fluent.Ribbon.Styles.SliderRepeatButton}"
+                          Style="{DynamicResource Ribbon.Styles.SliderRepeatButton}"
                           Grid.Column="2"
                           Command="Slider.IncreaseLarge">
                 <Grid Margin="0"

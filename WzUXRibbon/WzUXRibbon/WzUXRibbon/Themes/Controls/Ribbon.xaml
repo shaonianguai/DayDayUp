@@ -16,11 +16,11 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/MenuSeparator.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.Ribbon"
+    <ControlTemplate x:Key="Ribbon.Templates.Ribbon"
                      TargetType="{x:Type controls:Ribbon}">
         <ControlTemplate.Resources>
             <Style TargetType="{x:Type Separator}"
-                   BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuSeparator}" />
+                   BasedOn="{StaticResource Ribbon.Styles.MenuSeparator}" />
         </ControlTemplate.Resources>
 
         <Border Background="{TemplateBinding Background}"
@@ -79,15 +79,15 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.Ribbon"
+    <Style x:Key="Ribbon.Styles.Ribbon"
            TargetType="{x:Type controls:Ribbon}">
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Ribbon.Background}" />
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.Ribbon.Background}" />
         <Setter Property="wzUXRibbonHelpers:FrameworkHelper.UseLayoutRounding" Value="True" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual.Empty}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual.Empty}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
         <Setter Property="IsTabStop" Value="False" />
         <!--<Setter Property="QuickAccessToolBarHeight" Value="{Binding TitleBar.ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type wzUXRibbon:IRibbonWindow}}, FallbackValue=23}" />-->
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.Ribbon}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.Ribbon}" />
         <!--<Setter Property="TitleBar" Value="{Binding TitleBar, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type wzUXRibbon:IRibbonWindow}}, FallbackValue={x:Null}}" />-->
         <Setter Property="VerticalAlignment" Value="Top" />
     </Style>

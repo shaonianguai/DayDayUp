@@ -15,18 +15,18 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="Fluent.Ribbon.Styles.ResizeableContentControl"
+    <Style x:Key="Ribbon.Styles.ResizeableContentControl"
            TargetType="{x:Type controls:ResizeableContentControl}">
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.ResizeableContentControl}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.ResizeableContentControl}" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.ResizeableContentControl"
+    <ControlTemplate x:Key="Ribbon.Templates.ResizeableContentControl"
                      TargetType="{x:Type controls:ResizeableContentControl}">
         <Border x:Name="PART_DropDownBorder"
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch"
-                Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}"
-                BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Border}"
+                Background="{DynamicResource Ribbon.Brushes.DropDown.Background}"
+                BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Border}"
                 BorderThickness="1"
                 SnapsToDevicePixels="True">
 
@@ -45,8 +45,8 @@
                         Height="11"
                         HorizontalAlignment="Stretch"
                         VerticalAlignment="Top"
-                        Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Resize.Background}"
-                        BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Resize.Border}"
+                        Background="{DynamicResource Ribbon.Brushes.DropDown.Resize.Background}"
+                        BorderBrush="{DynamicResource Ribbon.Brushes.DropDown.Resize.Border}"
                         BorderThickness="0 1 0 0">
                     <Grid>
                         <Thumb x:Name="PART_ResizeVerticalThumb"
@@ -56,7 +56,7 @@
                                HorizontalAlignment="Stretch"
                                VerticalAlignment="Top"
                                Cursor="SizeNS"
-                               Template="{DynamicResource Fluent.Ribbon.Templates.ResizeVerticalThumb}" />
+                               Template="{DynamicResource Ribbon.Templates.ResizeVerticalThumb}" />
                         <Thumb x:Name="PART_ResizeBothThumb"
                                Width="10"
                                Height="10"
@@ -64,7 +64,7 @@
                                HorizontalAlignment="Right"
                                VerticalAlignment="Top"
                                Cursor="SizeNWSE"
-                               Template="{DynamicResource Fluent.Ribbon.Templates.ResizeBothThumb}" />
+                               Template="{DynamicResource Ribbon.Templates.ResizeBothThumb}" />
                     </Grid>
                 </Border>
             </Grid>
@@ -86,7 +86,7 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.ResizeBothThumb"
+    <ControlTemplate x:Key="Ribbon.Templates.ResizeBothThumb"
                      TargetType="{x:Type Thumb}">
         <Grid Background="Transparent">
             <Rectangle Width="2"
@@ -94,47 +94,47 @@
                        Margin="0 0 2 1"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Bottom"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.White}"
+                       Fill="{DynamicResource Ribbon.Brushes.White}"
                        StrokeThickness="0" />
             <Rectangle Width="2"
                        Height="2"
                        Margin="0 0 2 5"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Bottom"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.White}"
+                       Fill="{DynamicResource Ribbon.Brushes.White}"
                        StrokeThickness="0" />
             <Rectangle Width="2"
                        Height="2"
                        Margin="0 0 6 1"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Bottom"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.White}"
+                       Fill="{DynamicResource Ribbon.Brushes.White}"
                        StrokeThickness="0" />
             <Rectangle Width="2"
                        Height="2"
                        Margin="0 0 3 2"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Bottom"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                       Fill="{DynamicResource Ribbon.Brushes.Black}"
                        StrokeThickness="0" />
             <Rectangle Width="2"
                        Height="2"
                        Margin="0 0 3 6"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Bottom"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                       Fill="{DynamicResource Ribbon.Brushes.Black}"
                        StrokeThickness="0" />
             <Rectangle Width="2"
                        Height="2"
                        Margin="0 0 7 2"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Bottom"
-                       Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                       Fill="{DynamicResource Ribbon.Brushes.Black}"
                        StrokeThickness="0" />
         </Grid>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.ResizeVerticalThumb"
+    <ControlTemplate x:Key="Ribbon.Templates.ResizeVerticalThumb"
                      TargetType="{x:Type Thumb}">
         <Grid Background="Transparent">
             <StackPanel Margin="0 1 0 0"
@@ -151,14 +151,14 @@
                                Margin="0"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
-                               Fill="{DynamicResource Fluent.Ribbon.Brushes.White}"
+                               Fill="{DynamicResource Ribbon.Brushes.White}"
                                StrokeThickness="0" />
                     <Rectangle Width="2"
                                Height="2"
                                Margin="0 0 1 1"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
-                               Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                               Fill="{DynamicResource Ribbon.Brushes.Black}"
                                StrokeThickness="0" />
                 </Grid>
                 <Grid Width="Auto"
@@ -170,14 +170,14 @@
                                Margin="0"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
-                               Fill="{DynamicResource Fluent.Ribbon.Brushes.White}"
+                               Fill="{DynamicResource Ribbon.Brushes.White}"
                                StrokeThickness="0" />
                     <Rectangle Width="2"
                                Height="2"
                                Margin="0 0 1 1"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
-                               Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                               Fill="{DynamicResource Ribbon.Brushes.Black}"
                                StrokeThickness="0" />
                 </Grid>
                 <Grid Width="Auto"
@@ -189,14 +189,14 @@
                                Margin="0"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
-                               Fill="{DynamicResource Fluent.Ribbon.Brushes.White}"
+                               Fill="{DynamicResource Ribbon.Brushes.White}"
                                StrokeThickness="0" />
                     <Rectangle Width="2"
                                Height="2"
                                Margin="0 0 1 1"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
-                               Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                               Fill="{DynamicResource Ribbon.Brushes.Black}"
                                StrokeThickness="0" />
                 </Grid>
                 <Grid Width="Auto"
@@ -208,14 +208,14 @@
                                Margin="0"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
-                               Fill="{DynamicResource Fluent.Ribbon.Brushes.White}"
+                               Fill="{DynamicResource Ribbon.Brushes.White}"
                                StrokeThickness="0" />
                     <Rectangle Width="2"
                                Height="2"
                                Margin="0 0 1 1"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
-                               Fill="{DynamicResource Fluent.Ribbon.Brushes.Black}"
+                               Fill="{DynamicResource Ribbon.Brushes.Black}"
                                StrokeThickness="0" />
                 </Grid>
             </StackPanel>

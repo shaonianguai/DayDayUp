@@ -10,7 +10,6 @@ using System.Windows.Automation.Peers;
 using System.Windows.Controls;
 using System.Windows.Markup;
 using System.Windows;
-using System.Xml.Linq;
 using WzUXRibbon.Internal.KnownBoxes;
 using WzUXRibbon.Internal;
 using WzUXRibbon.Collections;

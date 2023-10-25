@@ -11,12 +11,12 @@
                     xmlns:styleSelectors="clr-namespace:WzUXRibbon.StyleSelectors"
                     mc:Ignorable="d">
 
-    <Style x:Key="Fluent.Ribbon.Styles.TwoLineLabel"
+    <Style x:Key="Ribbon.Styles.TwoLineLabel"
            TargetType="{x:Type controls:TwoLineLabel}">
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.TwoLineLabel}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.TwoLineLabel}" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.TwoLineLabel"
+    <ControlTemplate x:Key="Ribbon.Templates.TwoLineLabel"
                      TargetType="{x:Type controls:TwoLineLabel}">
         <StackPanel x:Name="stackPanel"
                     HorizontalAlignment="Center"

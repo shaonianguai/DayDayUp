@@ -15,7 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonTitleBar"
+    <Style x:Key="Ribbon.Styles.RibbonTitleBar"
            TargetType="{x:Type controls:RibbonTitleBar}">
         <Setter Property="Focusable" Value="False" />
         <Setter Property="HeaderTemplate">
@@ -30,11 +30,11 @@
             </Setter.Value>
         </Setter>
         <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonTitleBar}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonTitleBar}" />
         <Setter Property="VerticalAlignment" Value="Top" />
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonTitleBar"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonTitleBar"
                      TargetType="{x:Type controls:RibbonTitleBar}">
         <Grid>
             <ContentPresenter x:Name="PART_QuickAccessToolbarHolder"

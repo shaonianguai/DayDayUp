@@ -12,7 +12,7 @@
                     mc:Ignorable="d">
 
 
-    <Style x:Key="Fluent.Ribbon.Styles.SeparatorTabItem"
+    <Style x:Key="Ribbon.Styles.SeparatorTabItem"
            TargetType="controls:SeparatorTabItem">
         <Setter Property="Template">
             <Setter.Value>

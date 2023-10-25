@@ -17,9 +17,9 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/ColorThemes/ColorTheme.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <Style x:Key="Fluent.Ribbon.Styles.GroupBoxSeparator"
+    <Style x:Key="Ribbon.Styles.GroupBoxSeparator"
            TargetType="Separator">
-        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Separator.Background}" />
+        <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.Separator.Background}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Separator">
@@ -40,7 +40,7 @@
         </Setter>
     </Style>
 
-    <DataTemplate x:Key="Fluent.Ribbon.DataTemplates.RibbonGroupBox.OneLineHeader">
+    <DataTemplate x:Key="Ribbon.DataTemplates.RibbonGroupBox.OneLineHeader">
         <TextBlock HorizontalAlignment="Stretch"
                    VerticalAlignment="Center"
                    Text="{Binding}"
@@ -49,14 +49,14 @@
                    TextWrapping="NoWrap" />
     </DataTemplate>
 
-    <DataTemplate x:Key="Fluent.Ribbon.DataTemplates.RibbonGroupBox.TwoLineHeader">
+    <DataTemplate x:Key="Ribbon.DataTemplates.RibbonGroupBox.TwoLineHeader">
         <controls:TwoLineLabel HorizontalAlignment="Center"
                              VerticalAlignment="Center"
                              HasGlyph="True"
                              Text="{Binding}" />
     </DataTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonGroupBox.TwoLineHeaderContentControl"
+    <Style x:Key="Ribbon.Styles.RibbonGroupBox.TwoLineHeaderContentControl"
            TargetType="{x:Type ContentControl}">
         <Setter Property="Template">
             <Setter.Value>
@@ -67,37 +67,37 @@
         </Setter>
     </Style>
 
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonGroupBox"
+    <Style x:Key="Ribbon.Styles.RibbonGroupBox"
            TargetType="{x:Type controls:RibbonGroupBox}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="BorderBrush" Value="Transparent" />
         <Setter Property="controls:KeyTip.Margin" Value="0,15,0,0" />
         <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Small" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
         <Setter Property="HeaderTemplateSelector" Value="{Binding Source={x:Static wzUXRibbon:RibbonGroupBoxHeaderTemplateSelector.Instance}}" />
         <Setter Property="Height" Value="Auto" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonGroupBox}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonGroupBox}" />
         <Setter Property="Width" Value="Auto" />
         <Style.Triggers>
             <Trigger Property="IsSimplified" Value="True">
                 <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Medium" />
                 <Setter Property="Padding" Value="6 0" />
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonGroupBox.Simplified}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonGroupBox.Simplified}" />
             </Trigger>
             <Trigger Property="State" Value="QuickAccess">
                 <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Small" />
                 <Setter Property="Focusable" Value="False" />
                 <Setter Property="Height" Value="22" />
                 <Setter Property="SnapsToDevicePixels" Value="False" />
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonGroupBoxDropDownButton}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonGroupBoxDropDownButton}" />
                 <Setter Property="Width" Value="22" />
             </Trigger>
         </Style.Triggers>
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonGroupBoxDropDownButton"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonGroupBoxDropDownButton"
                      TargetType="{x:Type controls:RibbonGroupBox}">
         <Grid Width="22">
             <Border x:Name="PART_ButtonBorder"
@@ -128,8 +128,8 @@
                       Margin="0 20">
                     <Border x:Name="border"
                             Height="Auto"
-                            Background="{DynamicResource Fluent.Ribbon.Brushes.Ribbon.Background}"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Border}"
+                            Background="{DynamicResource Ribbon.Brushes.Ribbon.Background}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.RibbonTabItem.Border}"
                             BorderThickness="1"
                             d:LayoutOverrides="Width">
                         <Grid x:Name="PART_ParentPanel"
@@ -178,7 +178,7 @@
                                                 ContentStringFormat="{TemplateBinding HeaderStringFormat}"
                                                 ContentTemplate="{TemplateBinding HeaderTemplate}"
                                                 ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}"
-                                                Foreground="{DynamicResource Fluent.Ribbon.Brushes.RibbonGroupBox.Header.Foreground}"
+                                                Foreground="{DynamicResource Ribbon.Brushes.RibbonGroupBox.Header.Foreground}"
                                                 KeyboardNavigation.IsTabStop="False" />
 
                                 <controls:Button x:Name="PART_DialogLauncherButton"
@@ -199,7 +199,7 @@
                                                Icon="{TemplateBinding LauncherIcon}"
                                                IsEnabled="{Binding IsLauncherEnabled, RelativeSource={RelativeSource TemplatedParent}}"
                                                IsTabStop="False"
-                                               Template="{DynamicResource Fluent.Ribbon.Templates.DialogLauncherButton}"
+                                               Template="{DynamicResource Ribbon.Templates.DialogLauncherButton}"
                                                ToolTip="{Binding LauncherToolTip, RelativeSource={RelativeSource TemplatedParent}}"
                                                Visibility="Collapsed" />
                             </Grid>
@@ -221,7 +221,7 @@
                                            Icon="{TemplateBinding LauncherIcon}"
                                            IsEnabled="{Binding IsLauncherEnabled, RelativeSource={RelativeSource TemplatedParent}}"
                                            IsTabStop="False"
-                                           Template="{DynamicResource Fluent.Ribbon.Templates.DialogLauncherButton}"
+                                           Template="{DynamicResource Ribbon.Templates.DialogLauncherButton}"
                                            ToolTip="{Binding LauncherToolTip, RelativeSource={RelativeSource TemplatedParent}}"
                                            Visibility="Collapsed" />
                         </Grid>
@@ -240,16 +240,16 @@
             </Trigger>
 
             <Trigger Property="IsDropDownOpen" Value="True">
-                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="IsMouseOver" Value="True" />
                     <Condition Property="IsDropDownOpen" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
 
             <MultiTrigger>
@@ -274,18 +274,18 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonGroupBox"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonGroupBox"
                      TargetType="{x:Type controls:RibbonGroupBox}">
         <ControlTemplate.Resources>
             <ResourceDictionary>
                 <Style TargetType="Separator"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.GroupBoxSeparator}" />
+                       BasedOn="{StaticResource Ribbon.Styles.GroupBoxSeparator}" />
                 <Style x:Key="{x:Type ScrollBar}"
                        TargetType="{x:Type ScrollBar}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.ScrollBarWhite}" />
+                       BasedOn="{StaticResource Ribbon.Styles.ScrollBarWhite}" />
                 <Style x:Key="{x:Type ScrollViewer}"
                        TargetType="{x:Type ScrollViewer}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.ScrollViewer}" />
+                       BasedOn="{StaticResource Ribbon.Styles.ScrollViewer}" />
             </ResourceDictionary>
         </ControlTemplate.Resources>
 
@@ -332,7 +332,7 @@
                                             ContentStringFormat="{TemplateBinding HeaderStringFormat}"
                                             ContentTemplate="{TemplateBinding HeaderTemplate}"
                                             ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}"
-                                            Foreground="{DynamicResource Fluent.Ribbon.Brushes.RibbonGroupBox.Header.Foreground}"
+                                            Foreground="{DynamicResource Ribbon.Brushes.RibbonGroupBox.Header.Foreground}"
                                             KeyboardNavigation.IsTabStop="False" />
 
                             <controls:Button x:Name="PART_DialogLauncherButton"
@@ -351,7 +351,7 @@
                                            CommandTarget="{Binding LauncherCommandTarget, RelativeSource={RelativeSource TemplatedParent}}"
                                            Icon="{TemplateBinding LauncherIcon}"
                                            IsEnabled="{Binding IsLauncherEnabled, RelativeSource={RelativeSource TemplatedParent}}"
-                                           Template="{DynamicResource Fluent.Ribbon.Templates.DialogLauncherButton}"
+                                           Template="{DynamicResource Ribbon.Templates.DialogLauncherButton}"
                                            ToolTip="{Binding LauncherToolTip, RelativeSource={RelativeSource TemplatedParent}}"
                                            Visibility="Visible" />
                         </Grid>
@@ -374,7 +374,7 @@
                             Padding="4"
                             HorizontalAlignment="Center"
                             VerticalAlignment="Top"
-                            BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.RibbonGroupBox.Collapsed.Border}"
+                            BorderBrush="{DynamicResource Ribbon.Brushes.RibbonGroupBox.Collapsed.Border}"
                             BorderThickness="1">
                         <controls:IconPresenter x:Name="iconImage"
                                               IconSize="{Binding Path=(attachedProperties:RibbonProperties.IconSize), RelativeSource={RelativeSource TemplatedParent}}"
@@ -383,7 +383,7 @@
                     </Border>
 
                     <ContentControl x:Name="PART_CollapsedHeaderContentControl"
-                                    Style="{DynamicResource Fluent.Ribbon.Styles.RibbonGroupBox.TwoLineHeaderContentControl}"
+                                    Style="{DynamicResource Ribbon.Styles.RibbonGroupBox.TwoLineHeaderContentControl}"
                                     Grid.Row="1"
                                     Margin="5 0 5 0"
                                     HorizontalAlignment="Center"
@@ -393,7 +393,7 @@
                                     ContentStringFormat="{TemplateBinding HeaderStringFormat}"
                                     ContentTemplate="{TemplateBinding HeaderTemplate}"
                                     ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}"
-                                    Foreground="{DynamicResource Fluent.Ribbon.Brushes.RibbonGroupBox.Header.Foreground}"
+                                    Foreground="{DynamicResource Ribbon.Brushes.RibbonGroupBox.Header.Foreground}"
                                     KeyboardNavigation.IsTabStop="False" />
 
                     <Popup x:Name="PART_Popup"
@@ -404,8 +404,8 @@
                            PlacementTarget="{Binding ElementName=collapsedStateGrid, Mode=OneWay}">
                         <Border x:Name="border"
                                 Height="Auto"
-                                Background="{DynamicResource Fluent.Ribbon.Brushes.Ribbon.Background}"
-                                BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Border}"
+                                Background="{DynamicResource Ribbon.Brushes.Ribbon.Background}"
+                                BorderBrush="{DynamicResource Ribbon.Brushes.RibbonTabItem.Border}"
                                 BorderThickness="1"
                                 d:LayoutOverrides="Width">
                             <ContentControl x:Name="popupContent"
@@ -421,8 +421,8 @@
                            Margin="0 4"
                            HorizontalAlignment="Right"
                            VerticalAlignment="Stretch"
-                           Fill="{DynamicResource Fluent.Ribbon.Brushes.GroupSeparator.Background}"
-                           Visibility="{Binding IsSeparatorVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}" />
+                           Fill="{DynamicResource Ribbon.Brushes.GroupSeparator.Background}"
+                           Visibility="{Binding IsSeparatorVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}" />
             </Grid>
 
             <Image x:Name="PART_SnappedImage"
@@ -443,10 +443,10 @@
                     <Condition Property="State" Value="Collapsed" />
                     <Condition Property="IsMouseOver" Value="True" />
                 </MultiTrigger.Conditions>
-                <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonGroupBox.Collapsed.MouseOver.Background}" />
+                <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.RibbonGroupBox.Collapsed.MouseOver.Background}" />
             </MultiTrigger>
             <Trigger Property="IsDropDownOpen" Value="True">
-                <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonGroupBox.DropDownOpen.Background}" />
+                <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.RibbonGroupBox.DropDownOpen.Background}" />
             </Trigger>
 
             <Trigger Property="IsLauncherVisible" Value="False">
@@ -458,18 +458,18 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonGroupBox.Simplified"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonGroupBox.Simplified"
                      TargetType="{x:Type controls:RibbonGroupBox}">
         <ControlTemplate.Resources>
             <ResourceDictionary>
                 <Style TargetType="Separator"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.GroupBoxSeparator}" />
+                       BasedOn="{StaticResource Ribbon.Styles.GroupBoxSeparator}" />
                 <Style x:Key="{x:Type ScrollBar}"
                        TargetType="{x:Type ScrollBar}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.ScrollBarWhite}" />
+                       BasedOn="{StaticResource Ribbon.Styles.ScrollBarWhite}" />
                 <Style x:Key="{x:Type ScrollViewer}"
                        TargetType="{x:Type ScrollViewer}"
-                       BasedOn="{StaticResource Fluent.Ribbon.Styles.ScrollViewer}" />
+                       BasedOn="{StaticResource Ribbon.Styles.ScrollViewer}" />
             </ResourceDictionary>
         </ControlTemplate.Resources>
 
@@ -516,7 +516,7 @@
                                        Icon="{TemplateBinding LauncherIcon}"
                                        IsEnabled="{Binding IsLauncherEnabled, RelativeSource={RelativeSource TemplatedParent}}"
                                        IsTabStop="False"
-                                       Template="{DynamicResource Fluent.Ribbon.Templates.DialogLauncherButton}"
+                                       Template="{DynamicResource Ribbon.Templates.DialogLauncherButton}"
                                        ToolTip="{Binding LauncherToolTip, RelativeSource={RelativeSource TemplatedParent}}"
                                        Visibility="Visible" />
                     </Grid>
@@ -544,12 +544,12 @@
                                               MediumIcon="{Binding MediumIcon, RelativeSource={RelativeSource TemplatedParent}}"
                                               SmallIcon="{Binding Icon, RelativeSource={RelativeSource TemplatedParent}}" />
                         <Border Margin="0"
-                                BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.RibbonGroupBox.Collapsed.Border}"
+                                BorderBrush="{DynamicResource Ribbon.Brushes.RibbonGroupBox.Collapsed.Border}"
                                 BorderThickness="1" />
                     </Grid>
 
                     <ContentControl x:Name="PART_CollapsedHeaderContentControl"
-                                    Style="{DynamicResource Fluent.Ribbon.Styles.RibbonGroupBox.TwoLineHeaderContentControl}"
+                                    Style="{DynamicResource Ribbon.Styles.RibbonGroupBox.TwoLineHeaderContentControl}"
                                     Grid.Column="1"
                                     Margin="2 0 0 0"
                                     HorizontalAlignment="Stretch"
@@ -559,7 +559,7 @@
                                     ContentStringFormat="{TemplateBinding HeaderStringFormat}"
                                     ContentTemplate="{TemplateBinding HeaderTemplate}"
                                     ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}"
-                                    Foreground="{DynamicResource Fluent.Ribbon.Brushes.RibbonGroupBox.Header.Foreground}"
+                                    Foreground="{DynamicResource Ribbon.Brushes.RibbonGroupBox.Header.Foreground}"
                                     KeyboardNavigation.IsTabStop="False" />
 
                     <Popup x:Name="PART_Popup"
@@ -570,8 +570,8 @@
                            PlacementTarget="{Binding ElementName=collapsedStateGrid, Mode=OneWay}">
                         <Border x:Name="border"
                                 Height="Auto"
-                                Background="{DynamicResource Fluent.Ribbon.Brushes.Ribbon.Background}"
-                                BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.RibbonTabItem.Border}"
+                                Background="{DynamicResource Ribbon.Brushes.Ribbon.Background}"
+                                BorderBrush="{DynamicResource Ribbon.Brushes.RibbonTabItem.Border}"
                                 BorderThickness="1"
                                 d:LayoutOverrides="Width">
                             <ContentControl x:Name="popupContent" />
@@ -586,8 +586,8 @@
                            Margin="0 4"
                            HorizontalAlignment="Right"
                            VerticalAlignment="Stretch"
-                           Fill="{DynamicResource Fluent.Ribbon.Brushes.GroupSeparator.Background}"
-                           Visibility="{Binding IsSeparatorVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Fluent.Ribbon.Converters.BoolToVisibilityConverter}}" />
+                           Fill="{DynamicResource Ribbon.Brushes.GroupSeparator.Background}"
+                           Visibility="{Binding IsSeparatorVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}" />
             </Grid>
 
             <Image x:Name="PART_SnappedImage"
@@ -609,10 +609,10 @@
                     <Condition Property="State" Value="Collapsed" />
                     <Condition Property="IsMouseOver" Value="True" />
                 </MultiTrigger.Conditions>
-                <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonGroupBox.Collapsed.MouseOver.Background}" />
+                <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.RibbonGroupBox.Collapsed.MouseOver.Background}" />
             </MultiTrigger>
             <Trigger Property="IsDropDownOpen" Value="True">
-                <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.RibbonGroupBox.DropDownOpen.Background}" />
+                <Setter Property="Background" Value="{DynamicResource Ribbon.Brushes.RibbonGroupBox.DropDownOpen.Background}" />
             </Trigger>
 
             <Trigger Property="IsLauncherVisible" Value="False">
@@ -624,7 +624,7 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.DialogLauncherButton"
+    <ControlTemplate x:Key="Ribbon.Templates.DialogLauncherButton"
                      TargetType="{x:Type controls:Button}">
         <Border x:Name="outerBorder"
                 Background="{TemplateBinding Background}"
@@ -643,7 +643,7 @@
                     <Condition Property="Icon" Value="{x:Null}" />
                     <Condition Property="LargeIcon" Value="{x:Null}" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="iconImage" Property="SmallIcon" Value="{DynamicResource Fluent.Ribbon.Images.DialogLauncher}" />
+                <Setter TargetName="iconImage" Property="SmallIcon" Value="{DynamicResource Ribbon.Images.DialogLauncher}" />
             </MultiTrigger>
 
             <Trigger Property="FlowDirection" Value="RightToLeft">
@@ -654,16 +654,16 @@
                 </Setter>
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter TargetName="outerBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="outerBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="outerBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="outerBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="IsMouseOver" Value="True" />
                     <Condition Property="IsPressed" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="outerBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="outerBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="outerBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="outerBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>

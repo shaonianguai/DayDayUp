@@ -432,7 +432,7 @@ namespace WzUXRibbon.Controls
             }
 
             if (this.AreAnimationsEnabled
-                && this.TryFindResource("Fluent.Ribbon.Storyboards.Backstage.IsOpenTrueStoryboard") is Storyboard storyboard)
+                && this.TryFindResource("Ribbon.Storyboards.Backstage.IsOpenTrueStoryboard") is Storyboard storyboard)
             {
                 storyboard = storyboard.Clone();
 
@@ -473,7 +473,7 @@ namespace WzUXRibbon.Controls
             }
 
             if (this.AreAnimationsEnabled
-                && this.TryFindResource("Fluent.Ribbon.Storyboards.Backstage.IsOpenFalseStoryboard") is Storyboard storyboard)
+                && this.TryFindResource("Ribbon.Storyboards.Backstage.IsOpenFalseStoryboard") is Storyboard storyboard)
             {
                 storyboard = storyboard.Clone();
 

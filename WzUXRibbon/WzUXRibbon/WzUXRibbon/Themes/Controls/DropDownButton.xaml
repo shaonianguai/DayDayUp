@@ -16,7 +16,7 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/MenuSeparator.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <DataTemplate x:Key="Fluent.Ribbon.DataTemplates.DropDownButton.Header">
+    <DataTemplate x:Key="Ribbon.DataTemplates.DropDownButton.Header">
         <controls:TwoLineLabel HorizontalAlignment="Stretch"
                              VerticalAlignment="Center"
                              Text="{Binding}">
@@ -41,7 +41,7 @@
         </controls:TwoLineLabel>
     </DataTemplate>
 
-    <DataTemplate x:Key="Fluent.Ribbon.DataTemplates.DropDownButton.Header.Simplified">
+    <DataTemplate x:Key="Ribbon.DataTemplates.DropDownButton.Header.Simplified">
         <controls:TwoLineLabel HorizontalAlignment="Stretch"
                              VerticalAlignment="Center"
                              HasGlyph="False"
@@ -49,14 +49,14 @@
                              Text="{Binding}" />
     </DataTemplate>
 
-    <Style x:Key="Fluent.Ribbon.Styles.RibbonDropDownButton"
+    <Style x:Key="Ribbon.Styles.RibbonDropDownButton"
            TargetType="{x:Type controls:DropDownButton}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="BorderBrush" Value="Transparent" />
         <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Fluent.Ribbon.Styles.FocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
-        <Setter Property="HeaderTemplate" Value="{DynamicResource Fluent.Ribbon.DataTemplates.DropDownButton.Header}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
+        <Setter Property="HeaderTemplate" Value="{DynamicResource Ribbon.DataTemplates.DropDownButton.Header}" />
         <Setter Property="Height" Value="68" />
         <Setter Property="ItemsPanel">
             <Setter.Value>
@@ -66,7 +66,7 @@
             </Setter.Value>
         </Setter>
         <Setter Property="SnapsToDevicePixels" Value="False" />
-        <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonDropDownButton}" />
+        <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.RibbonDropDownButton}" />
         <Setter Property="Width" Value="Auto" />
         <Style.Triggers>
             <Trigger Property="Size" Value="Large">
@@ -86,12 +86,12 @@
             </Trigger>
             <Trigger Property="IsSimplified" Value="True">
                 <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Medium" />
-                <Setter Property="HeaderTemplate" Value="{DynamicResource Fluent.Ribbon.DataTemplates.DropDownButton.Header.Simplified}" />
+                <Setter Property="HeaderTemplate" Value="{DynamicResource Ribbon.DataTemplates.DropDownButton.Header.Simplified}" />
                 <Setter Property="Height" Value="Auto" />
                 <Setter Property="HorizontalAlignment" Value="Stretch" />
                 <Setter Property="MinHeight" Value="30" />
                 <Setter Property="Padding" Value="6 2 2 2" />
-                <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.DropDownButton.Simplified}" />
+                <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.DropDownButton.Simplified}" />
                 <Setter Property="VerticalAlignment" Value="Stretch" />
                 <Setter Property="Width" Value="Auto" />
             </Trigger>
@@ -105,11 +105,11 @@
         </Style.Triggers>
     </Style>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonDropDownButton"
+    <ControlTemplate x:Key="Ribbon.Templates.RibbonDropDownButton"
                      TargetType="{x:Type controls:DropDownButton}">
         <ControlTemplate.Resources>
             <Style TargetType="{x:Type Separator}"
-                   BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuSeparator}" />
+                   BasedOn="{StaticResource Ribbon.Styles.MenuSeparator}" />
         </ControlTemplate.Resources>
         <Grid>
             <Border x:Name="PART_ButtonBorder"
@@ -154,7 +154,7 @@
                                                  MaxHeight="{TemplateBinding MaxDropDownHeight}"
                                                  IsEnabled="{TemplateBinding IsEnabled}"
                                                  ResizeMode="{TemplateBinding ResizeMode}">
-                    <ScrollViewer Style="{DynamicResource Fluent.Ribbon.Styles.MenuScrollViewer}"
+                    <ScrollViewer Style="{DynamicResource Ribbon.Styles.MenuScrollViewer}"
                                   Margin="1"
                                   HorizontalScrollBarVisibility="Disabled"
                                   IsTabStop="False"
@@ -185,8 +185,8 @@
             </Trigger>
 
             <Trigger Property="IsDropDownOpen" Value="True">
-                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="PART_HeaderContentHost" Property="Opacity" Value="0.5" />
@@ -196,17 +196,17 @@
                     <Condition Property="IsMouseOver" Value="True" />
                     <Condition Property="IsDropDownOpen" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="Fluent.Ribbon.Templates.DropDownButton.Simplified"
+    <ControlTemplate x:Key="Ribbon.Templates.DropDownButton.Simplified"
                      TargetType="{x:Type controls:DropDownButton}">
         <ControlTemplate.Resources>
             <Style TargetType="{x:Type Separator}"
-                   BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuSeparator}" />
+                   BasedOn="{StaticResource Ribbon.Styles.MenuSeparator}" />
         </ControlTemplate.Resources>
         <Grid>
             <Border x:Name="PART_ButtonBorder"
@@ -240,7 +240,7 @@
                         <Border x:Name="iconImageBorder"
                                 Width="{Binding ActualWidth, ElementName=iconImage}"
                                 Height="{Binding ActualHeight, ElementName=iconImage}"
-                                BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Control.Border}"
+                                BorderBrush="{DynamicResource Ribbon.Brushes.Control.Border}"
                                 BorderThickness="1"
                                 Visibility="Collapsed" />
                     </Grid>
@@ -278,7 +278,7 @@
                                                  IsEnabled="{TemplateBinding IsEnabled}"
                                                  ResizeMode="{TemplateBinding ResizeMode}">
                     <ScrollViewer x:Name="PART_ScrollViewer"
-                                  Style="{DynamicResource Fluent.Ribbon.Styles.MenuScrollViewer}"
+                                  Style="{DynamicResource Ribbon.Styles.MenuScrollViewer}"
                                   MaxHeight="{TemplateBinding MaxDropDownHeight}"
                                   Margin="1"
                                   HorizontalScrollBarVisibility="Disabled"
@@ -325,21 +325,21 @@
             </Trigger>
 
             <Trigger Property="IsDropDownOpen" Value="True">
-                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
-                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
+                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="PART_HeaderContentHost" Property="Opacity" Value="0.5" />
                 <Setter TargetName="controlLabel2" Property="Opacity" Value="0.5" />
-                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Control.Disabled.Border}" />
+                <Setter TargetName="iconImageBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Control.Disabled.Border}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="IsMouseOver" Value="True" />
                     <Condition Property="IsDropDownOpen" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
-                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+                <Setter TargetName="PART_ButtonBorder" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Background}" />
+                <Setter TargetName="PART_ButtonBorder" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.MouseOver.Border}" />
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>

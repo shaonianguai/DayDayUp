@@ -18,10 +18,10 @@ namespace WzUXRibbon
 
             if (RibbonGroupBox.GetIsCollapsedHeaderContentPresenter(element))
             {
-                return (DataTemplate)element.FindResource("Fluent.Ribbon.DataTemplates.RibbonGroupBox.TwoLineHeader");
+                return (DataTemplate)element.FindResource("Ribbon.DataTemplates.RibbonGroupBox.TwoLineHeader");
             }
 
-            return (DataTemplate)element.FindResource("Fluent.Ribbon.DataTemplates.RibbonGroupBox.OneLineHeader");
+            return (DataTemplate)element.FindResource("Ribbon.DataTemplates.RibbonGroupBox.OneLineHeader");
         }
     }
 }

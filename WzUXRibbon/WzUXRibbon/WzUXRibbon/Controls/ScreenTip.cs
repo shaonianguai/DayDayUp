@@ -12,7 +12,6 @@ using WzUXRibbon.Internal.KnownBoxes;
 
 namespace WzUXRibbon.Controls
 {
-
     public class ScreenTip : ToolTip, ILogicalChildSupport
     {
         #region Initialization

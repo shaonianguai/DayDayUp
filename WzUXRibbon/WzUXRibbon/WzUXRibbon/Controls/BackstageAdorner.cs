@@ -60,7 +60,7 @@ namespace WzUXRibbon.Controls
             }
             else
             {
-                this.background.SetResourceReference(Shape.FillProperty, "Fluent.Ribbon.Brushes.White");
+                this.background.SetResourceReference(Shape.FillProperty, "Ribbon.Brushes.White");
             }
 
             this.visualChildren = new VisualCollection(this)
@@ -71,7 +71,7 @@ namespace WzUXRibbon.Controls
         }
 
         /// <summary>
-        /// Gets the <see cref="Fluent.Backstage"/>.
+        /// Gets the <see cref="Backstage"/>.
         /// </summary>
         public Backstage Backstage { get; }
 

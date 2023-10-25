@@ -224,7 +224,7 @@ namespace WzUXRibbon.Controls
             set { this.SetValue(KeyTipProperty, value); }
         }
 
-        /// <inheritdoc cref="Fluent.KeyTip.KeysProperty"/>
+        /// <inheritdoc cref="KeyTip.KeysProperty"/>
         public static readonly DependencyProperty KeyTipProperty = WzUXRibbon.Controls.KeyTip.KeysProperty.AddOwner(typeof(TextBox));
 
         #endregion

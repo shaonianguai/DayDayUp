@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.ApplicationMenu"
+    <DrawingImage x:Key="Ribbon.Images.ApplicationMenu"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -27,7 +27,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.Checked"
+    <DrawingImage x:Key="Ribbon.Images.Checked"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -36,7 +36,7 @@
                                      Geometry="F1 M 0,85.3333L 85.3333,85.3333L 85.3333,0L 0,0L 0,85.3333 Z " />
                     <GeometryDrawing Geometry="F1 M 65.1237,26.8028L 38.0797,58.5308L 20.2091,43.5268">
                         <GeometryDrawing.Pen>
-                            <Pen Brush="{DynamicResource Fluent.Ribbon.Brushes.Black}" MiterLimit="2.75" Thickness="6.66667" />
+                            <Pen Brush="{DynamicResource Ribbon.Brushes.Black}" MiterLimit="2.75" Thickness="6.66667" />
                         </GeometryDrawing.Pen>
                     </GeometryDrawing>
                 </DrawingGroup.Children>
@@ -44,7 +44,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.Copy"
+    <DrawingImage x:Key="Ribbon.Images.Copy"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -77,7 +77,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.Cut"
+    <DrawingImage x:Key="Ribbon.Images.Cut"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -96,7 +96,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.DefaultPlaceholder"
+    <DrawingImage x:Key="Ribbon.Images.DefaultPlaceholder"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -142,7 +142,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.DialogLauncher"
+    <DrawingImage x:Key="Ribbon.Images.DialogLauncher"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -156,7 +156,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.Help"
+    <DrawingImage x:Key="Ribbon.Images.Help"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -172,7 +172,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.MoreColors"
+    <DrawingImage x:Key="Ribbon.Images.MoreColors"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -194,7 +194,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.Paste"
+    <DrawingImage x:Key="Ribbon.Images.Paste"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -217,63 +217,63 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.QuickAccessToolbarDropDown"
+    <DrawingImage x:Key="Ribbon.Images.QuickAccessToolbarDropDown"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
                 <DrawingGroup.Children>
                     <GeometryDrawing Brush="#00FFFFFF"
                                      Geometry="F1 M 0,85.3333L 85.3333,85.3333L 85.3333,0L 0,0L 0,85.3333 Z " />
-                    <GeometryDrawing Brush="{DynamicResource Fluent.Ribbon.Brushes.Images.QuickAccessToolbarDropDown}"
+                    <GeometryDrawing Brush="{DynamicResource Ribbon.Brushes.Images.QuickAccessToolbarDropDown}"
                                      Geometry="F1 M 5.33333,13.3333L 80.0013,13.3333L 80.0013,0L 5.33333,0M 12.6667,28L 42.6667,64L 72.6667,28L 12.6667,28 Z " />
                 </DrawingGroup.Children>
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.QuickAccessToolbarDropDown.BelowRibbon"
+    <DrawingImage x:Key="Ribbon.Images.QuickAccessToolbarDropDown.BelowRibbon"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
                 <DrawingGroup.Children>
                     <GeometryDrawing Brush="#00FFFFFF"
                                      Geometry="F1 M 0,85.3333L 85.3333,85.3333L 85.3333,0L 0,0L 0,85.3333 Z " />
-                    <GeometryDrawing Brush="{DynamicResource Fluent.Ribbon.Brushes.Images.QuickAccessToolbarDropDown.BelowRibbon}"
+                    <GeometryDrawing Brush="{DynamicResource Ribbon.Brushes.Images.QuickAccessToolbarDropDown.BelowRibbon}"
                                      Geometry="F1 M 5.33333,13.3333L 80.0013,13.3333L 80.0013,0L 5.33333,0M 12.6667,28L 42.6667,64L 72.6667,28L 12.6667,28 Z " />
                 </DrawingGroup.Children>
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.QuickAccessToolbarExtender"
+    <DrawingImage x:Key="Ribbon.Images.QuickAccessToolbarExtender"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
                 <DrawingGroup.Children>
                     <GeometryDrawing Brush="#00FFFFFF"
                                      Geometry="F1 M 0,85.3333L 85.3333,85.3333L 85.3333,0L 0,0L 0,85.3333 Z " />
-                    <GeometryDrawing Brush="{DynamicResource Fluent.Ribbon.Brushes.Images.QuickAccessToolbarExtender}"
+                    <GeometryDrawing Brush="{DynamicResource Ribbon.Brushes.Images.QuickAccessToolbarExtender}"
                                      Geometry="F1 M 48,14L 48,71.3333L 80,42.6667M 5.33333,14L 37.3333,42.6667L 5.33333,71.3333L 5.33333,14 Z " />
                 </DrawingGroup.Children>
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.QuickAccessToolbarExtender.BelowRibbon"
+    <DrawingImage x:Key="Ribbon.Images.QuickAccessToolbarExtender.BelowRibbon"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
                 <DrawingGroup.Children>
                     <GeometryDrawing Brush="#00FFFFFF"
                                      Geometry="F1 M 0,85.3333L 85.3333,85.3333L 85.3333,0L 0,0L 0,85.3333 Z " />
-                    <GeometryDrawing Brush="{DynamicResource Fluent.Ribbon.Brushes.Images.QuickAccessToolbarExtender.BelowRibbon}"
+                    <GeometryDrawing Brush="{DynamicResource Ribbon.Brushes.Images.QuickAccessToolbarExtender.BelowRibbon}"
                                      Geometry="F1 M 48,14L 48,71.3333L 80,42.6667M 5.33333,14L 37.3333,42.6667L 5.33333,71.3333L 5.33333,14 Z " />
                 </DrawingGroup.Children>
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.RibbonDisplayOptions"
+    <DrawingImage x:Key="Ribbon.Images.RibbonDisplayOptions"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -282,7 +282,7 @@
                                      Geometry="F1 M 6.50001,85.3333L 91.8333,85.3333L 91.8333,0L 6.50001,0L 6.50001,85.3333 Z " />
                     <GeometryDrawing Geometry="F1 M 76.9987,28.7507L 49.1667,56.584L 21.3333,28.7507">
                         <GeometryDrawing.Pen>
-                            <Pen Brush="{DynamicResource Fluent.Ribbon.Brushes.Images.RibbonDisplayOptions}" MiterLimit="2.75" Thickness="10.6667" />
+                            <Pen Brush="{DynamicResource Ribbon.Brushes.Images.RibbonDisplayOptions}" MiterLimit="2.75" Thickness="10.6667" />
                         </GeometryDrawing.Pen>
                     </GeometryDrawing>
                 </DrawingGroup.Children>
@@ -290,7 +290,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="Fluent.Ribbon.Images.Warning"
+    <DrawingImage x:Key="Ribbon.Images.Warning"
                   x:Shared="False">
         <DrawingImage.Drawing>
             <DrawingGroup>

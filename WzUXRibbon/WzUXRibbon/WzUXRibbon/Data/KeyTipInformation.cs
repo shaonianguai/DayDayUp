@@ -49,7 +49,7 @@ namespace WzUXRibbon.Data
         }
 
         /// <summary>
-        /// Gets <see cref="Fluent.KeyTip.KeysProperty"/>
+        /// Gets <see cref="KeyTip.KeysProperty"/>
         /// </summary>
         public string Keys { get; }
 
@@ -69,7 +69,7 @@ namespace WzUXRibbon.Data
         public Visibility DefaultVisibility { get; }
 
         /// <summary>
-        /// Gets the <see cref="Fluent.KeyTip"/> for <see cref="AssociatedElement"/>.
+        /// Gets the <see cref="KeyTip"/> for <see cref="AssociatedElement"/>.
         /// </summary>
         public KeyTip KeyTip { get; }
 
