@@ -172,7 +172,7 @@ namespace WzUXRibbon.Automation.Peers
             var automationPeer = CreatePeerForElement(this.OwningRibbon.Menu);
             if (automationPeer is null)
             {
-                var menu = (UIElement)UIHelper.FindImmediateVisualChild<Backstage>(this.OwningRibbon.Menu, x => x.Visibility == Visibility.Visible) ?? UIHelper.FindImmediateVisualChild<ApplicationMenu>(this.OwningRibbon.Menu, x => x.Visibility == Visibility.Visible);
+                var menu = UIHelper.FindImmediateVisualChild<ApplicationMenu>(this.OwningRibbon.Menu, x => x.Visibility == Visibility.Visible);
 
                 if (menu != null)
                 {

@@ -112,7 +112,7 @@
                                            Margin="28 0 5 2"
                                            HorizontalAlignment="Stretch"
                                            FontWeight="Bold"
-                                           Text="disableReasonHeader Text test"
+                                           Text="This command is currently disabled."
                                            TextWrapping="Wrap" />
                                 <TextBlock x:Name="disableReasonText"
                                            Grid.Row="1"
@@ -151,7 +151,7 @@
                                        Margin="28 0 6 6"
                                        HorizontalAlignment="Stretch"
                                        FontWeight="Bold"
-                                       Text="textBlock Text test"
+                                       Text="Press F1 for help"
                                        TextWrapping="Wrap" />
                             <ContentControl x:Name="helpTopic"
                                             Content="{TemplateBinding Property=HelpTopic}"

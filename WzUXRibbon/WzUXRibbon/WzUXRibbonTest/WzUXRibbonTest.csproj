@@ -58,6 +58,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data\IRibbonStateStorage.cs" />
+    <Compile Include="Data\RibbonStateStorage.cs" />
     <Compile Include="GroupNameConverter.cs" />
     <Compile Include="RibbonPage.xaml.cs">
       <DependentUpon>RibbonPage.xaml</DependentUpon>

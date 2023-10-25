@@ -720,7 +720,7 @@ namespace WzUXRibbon.Adorners
                         0), this.AdornedElement);
                     keyTipInformation.Position = new Point(keyTipInformation.Position.X, rows[2] - (keyTipSize.Height / 2));
                 }
-                else if (keyTipInformation.AssociatedElement is RibbonTabItem || keyTipInformation.AssociatedElement is Backstage)
+                else if (keyTipInformation.AssociatedElement is RibbonTabItem)
                 {
                     // Ribbon Tab Item Exclusive Placement
                     var keyTipSize = keyTipInformation.KeyTip.DesiredSize;
@@ -737,18 +737,6 @@ namespace WzUXRibbon.Adorners
                         new Point(
                             (elementSize.Height / 3.0) + 2,
                             (elementSize.Height / 4.0) + 2), this.AdornedElement);
-                }
-                else if (keyTipInformation.AssociatedElement.Parent is BackstageTabControl)
-                {
-                    // Backstage Items Exclusive Placement
-                    var keyTipSize = keyTipInformation.KeyTip.DesiredSize;
-                    var elementSize = keyTipInformation.VisualTarget.DesiredSize;
-                    var parent = (UIElement)keyTipInformation.VisualTarget.Parent;
-                    var positionInParent = keyTipInformation.VisualTarget.TranslatePoint(default, parent);
-                    keyTipInformation.Position = parent.TranslatePoint(
-                        new Point(
-                            5,
-                            positionInParent.Y + ((elementSize.Height / 2.0) - keyTipSize.Height)), this.AdornedElement);
                 }
                 else
                 {

@@ -10,9 +10,6 @@
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/ScreenTip.xaml" />
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/GalleryGroupContainer.xaml" />
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/SeparatorTabItem.xaml" />
-        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/BackstageTabControl.xaml" />
-        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/BackstageTabItem.xaml" />
-        <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/Backstage.xaml" />
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/Button.xaml" />
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/CheckBox.xaml" />
         <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/DropDownButton.xaml" />
@@ -57,18 +54,6 @@
     <Style TargetType="{x:Type controls:SeparatorTabItem}"
            BasedOn="{StaticResource Ribbon.Styles.SeparatorTabItem}" />
 
-    <Style TargetType="{x:Type controls:Backstage}"
-           BasedOn="{StaticResource Ribbon.Styles.RibbonBackstage}" />
-    <Style TargetType="{x:Type controls:BackstageTabControl}"
-           BasedOn="{StaticResource Ribbon.Styles.BackstageTabControl}" />
-    <Style TargetType="{x:Type controls:BackstageTabItem}"
-           BasedOn="{StaticResource Ribbon.Styles.BackstageTabItem}" />
-
-    <Style TargetType="{x:Type controls:StartScreen}"
-           BasedOn="{StaticResource Ribbon.Styles.RibbonStartScreen}" />
-    <!--<Style TargetType="{x:Type controls:StartScreenTabControl}"
-           BasedOn="{StaticResource Ribbon.Styles.StartScreenTabControl}" />-->
-
     <Style TargetType="{x:Type controls:Button}"
            BasedOn="{StaticResource Ribbon.Styles.Button}" />
     <Style TargetType="{x:Type controls:CheckBox}"
@@ -102,8 +87,6 @@
            BasedOn="{StaticResource Ribbon.Styles.ContextMenu}" />
     <!--<Style TargetType="{x:Type controls:MenuItem}"
            BasedOn="{StaticResource Ribbon.Styles.MenuItem}" />-->
-    <!--<Style TargetType="{x:Type controls:StatusBarItem}"
-           BasedOn="{StaticResource Ribbon.Styles.RibbonStatusBarItem}" />-->
     <Style TargetType="{x:Type controls:GroupSeparatorMenuItem}"
            BasedOn="{StaticResource Ribbon.Styles.MenuGroupSeparator}" />
     <Style TargetType="{x:Type controls:RibbonTitleBar}"

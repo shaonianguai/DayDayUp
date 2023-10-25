@@ -641,8 +641,6 @@ namespace WzUXRibbon.Controls
                             this.TabControlParent.SelectedItem = newItem;
                             this.TabControlParent.IsDropDownOpen = true;
                         }
-
-                        this.TabControlParent.RaiseRequestBackstageClose();
                     }
                     else
                     {

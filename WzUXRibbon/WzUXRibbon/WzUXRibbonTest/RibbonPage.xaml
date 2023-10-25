@@ -34,9 +34,9 @@
 
     <Grid>
         <wzRibbon:Ribbon x:Name="RibbonControl"
-                         IsMinimized="False"
-                         Loaded="Ribbon_Loaded"
+                         CanMinimize="True"
                          CanUseSimplified="False"
+                         Loaded="Ribbon_Loaded"
                          AutomaticStateManagement="True">
 
             <wzRibbon:Ribbon.Menu>
@@ -439,6 +439,46 @@
                     <wzRibbon:Button Header="Invert Selection"
                                          Icon="pack://application:,,,/WzUXRibbonTest;component/Images/selectAll.png"
                                          SizeDefinition="Middle,Middle,Small"/>
+                </wzRibbon:RibbonGroupBox>
+                <wzRibbon:RibbonGroupBox Header="Test11">
+                    <wzRibbon:Button Header="Search"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/search.png"
+                                         Margin="0,5,0,0"/>
+                    <wzRibbon:Button Header="Move To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/move.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Copy To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/copy.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Delete"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/delete.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Wipe"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/swipe.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Rename"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/rename.png"
+                                         Margin="8,5,0,0"/>
+                </wzRibbon:RibbonGroupBox>
+                <wzRibbon:RibbonGroupBox Header="Test22">
+                    <wzRibbon:Button Header="Search"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/search.png"
+                                         Margin="0,5,0,0"/>
+                    <wzRibbon:Button Header="Move To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/move.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Copy To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/copy.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Delete"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/delete.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Wipe"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/swipe.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Rename"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/rename.png"
+                                         Margin="8,5,0,0"/>
                 </wzRibbon:RibbonGroupBox>
             </wzRibbon:RibbonTabItem>
 

@@ -5,7 +5,6 @@ using System.Collections.Specialized;
 
 namespace WzUXRibbon.Collections
 {
-
     public class CollectionSyncHelper<TItem>
     {
         /// <summary>

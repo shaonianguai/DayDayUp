@@ -492,12 +492,9 @@ namespace WzUXRibbon.Services
                 return;
             }
 
-            // Special behavior for backstage, application menu and start screen.
+            // Special behavior for application menu
             // If one of those is open we have to forward key tips directly to them.
-            var keyTipsTarget = this.GetStartScreen()
-                                ?? this.GetBackstage()
-                                ?? this.GetApplicationMenu()
-                                ?? this.ribbon;
+            var keyTipsTarget = this.GetApplicationMenu() ?? this.ribbon;
 
             if (keyTipsTarget is null)
             {
@@ -540,25 +537,6 @@ namespace WzUXRibbon.Services
             }
         }
 
-        private FrameworkElement GetBackstage()
-        {
-            if (this.ribbon.Menu is null)
-            {
-                return null;
-            }
-
-            var control = this.ribbon.Menu as Backstage ?? UIHelper.FindImmediateVisualChild<Backstage>(this.ribbon.Menu, IsVisible);
-
-            if (control is null)
-            {
-                return null;
-            }
-
-            return control.IsOpen
-                ? control
-                : null;
-        }
-
         private FrameworkElement GetApplicationMenu()
         {
             if (this.ribbon.Menu is null)
@@ -574,20 +552,6 @@ namespace WzUXRibbon.Services
             }
 
             return control.IsDropDownOpen
-                ? control
-                : null;
-        }
-
-        private FrameworkElement GetStartScreen()
-        {
-            var control = this.ribbon.StartScreen;
-
-            if (control is null)
-            {
-                return null;
-            }
-
-            return control.IsOpen
                 ? control
                 : null;
         }

@@ -63,10 +63,6 @@
     <Compile Include="Collections\CollectionSyncHelper.cs" />
     <Compile Include="Collections\ItemCollectionWithLogicalTreeSupport.cs" />
     <Compile Include="Controls\ApplicationMenu.cs" />
-    <Compile Include="Controls\Backstage.cs" />
-    <Compile Include="Controls\BackstageAdorner.cs" />
-    <Compile Include="Controls\BackstageTabControl.cs" />
-    <Compile Include="Controls\BackstageTabItem.cs" />
     <Compile Include="Controls\Button.cs" />
     <Compile Include="Controls\CheckBox.cs" />
     <Compile Include="Controls\ColorGallery.cs" />
@@ -108,7 +104,6 @@
     <Compile Include="Controls\SeparatorTabItem.cs" />
     <Compile Include="Controls\Spinner.cs" />
     <Compile Include="Controls\SplitButton.cs" />
-    <Compile Include="Controls\StartScreen.cs" />
     <Compile Include="Controls\TextBox.cs" />
     <Compile Include="Controls\ToggleButton.cs" />
     <Compile Include="Controls\TwoLineLabel.cs" />
@@ -124,7 +119,6 @@
     <Compile Include="Converters\SpinnerTextToValueConverter.cs" />
     <Compile Include="Converters\StaticConverters.cs" />
     <Compile Include="Data\KeyTipInformation.cs" />
-    <Compile Include="Data\RibbonStateStorage.cs" />
     <Compile Include="Effects\GrayscaleEffect.cs" />
     <Compile Include="Extensibility\IKeyTipInformationProvider.cs" />
     <Compile Include="Extensions\AutomationPeerExtensions.cs" />
@@ -147,16 +141,9 @@
     <Compile Include="Internal\SizeConstants.cs" />
     <Compile Include="Internal\TypeHelper.cs" />
     <Compile Include="IToggleButton.cs" />
-    <Compile Include="Languages\English.cs" />
-    <Compile Include="Localization\RibbonLocalization.cs" />
-    <Compile Include="Localization\RibbonLocalizationAttribute.cs" />
-    <Compile Include="Localization\RibbonLocalizationBase.cs" />
     <Compile Include="Peers\GalleryItemAutomationPeer.cs" />
     <Compile Include="Peers\GalleryItemWrapperAutomationPeer.cs" />
     <Compile Include="Peers\RibbonAutomationPeer.cs" />
-    <Compile Include="Peers\RibbonBackstageAutomationPeer.cs" />
-    <Compile Include="Peers\RibbonBackstageTabControlAutomationPeer.cs" />
-    <Compile Include="Peers\RibbonBackstageTabItemAutomationPeer.cs" />
     <Compile Include="Peers\RibbonButtonAutomationPeer.cs" />
     <Compile Include="Peers\RibbonCheckBoxAutomationPeer.cs" />
     <Compile Include="Peers\RibbonComboBoxAutomationPeer.cs" />
@@ -185,7 +172,6 @@
     <Compile Include="Services\PopupService.cs" />
     <Compile Include="Services\ToolTipService.cs" />
     <Compile Include="StyleSelectors\ApplicationMenuItemContainerStyleSelector.cs" />
-    <Compile Include="StyleSelectors\BackstageTabControlItemContainerStyleSelector.cs" />
     <Compile Include="StyleSelectors\HeaderApplicationMenuItemItemContainerStyleSelector.cs" />
     <Compile Include="StyleSelectors\SplitedApplicationMenuItemItemContainerStyleSelector.cs" />
     <Compile Include="Utils\NativeMethods.cs" />
@@ -221,7 +207,6 @@
     <Compile Include="Internal\ScopeGuard.cs" />
     <Compile Include="Internal\UIHelper.cs" />
     <Compile Include="IRibbonControl.cs" />
-    <Compile Include="IRibbonStateStorage.cs" />
     <Compile Include="IScalableRibbonControl.cs" />
     <Compile Include="ISimplifiedRibbonControl.cs" />
     <Compile Include="ISimplifiedStateControl.cs" />
@@ -263,22 +248,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Themes\Controls\ApplicationMenuItem.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Themes\Controls\Backstage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Themes\Controls\BackstageControls.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Themes\Controls\BackstageTabControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Themes\Controls\BackstageTabItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

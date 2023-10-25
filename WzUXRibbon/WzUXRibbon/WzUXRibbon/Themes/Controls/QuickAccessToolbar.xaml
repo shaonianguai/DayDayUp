@@ -175,18 +175,18 @@
                                        IsEnabled="{TemplateBinding IsEnabled}"
                                        KeyboardNavigation.TabIndex="3"
                                        Size="Small"
-                                       ToolTip="DropDownButton ToolTip Text test"
+                                       ToolTip="Customize Quick Access Toolbar"
                                        Visibility="{Binding IsMenuDropDownVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}">
-                    <controls:GroupSeparatorMenuItem Header="GroupSeparatorMenuItem Header Text test"
+                    <controls:GroupSeparatorMenuItem Header="Customize Quick Access Toolbar"
                                                    Style="{DynamicResource Ribbon.Styles.MenuGroupSeparator}" />
                     <StackPanel x:Name="PART_MenuPanel" />
                     <Separator x:Name="menuSeparator"
                                Style="{DynamicResource Ribbon.Styles.MenuSeparator}" />
                     <controls:MenuItem x:Name="PART_ShowBelow"
-                                     Header="PART_ShowBelow Header Text test"
+                                     Header="Show Below the Ribbon"
                                      CanAddToQuickAccessToolBar="False" />
                     <controls:MenuItem x:Name="PART_ShowAbove"
-                                     Header="PART_ShowAbove Header Text test"
+                                     Header="Show Above the Ribbon"
                                      CanAddToQuickAccessToolBar="False"
                                      Visibility="Collapsed" />
                 </controls:DropDownButton>
@@ -203,7 +203,7 @@
                                      KeyboardNavigation.TabIndex="2"
                                      KeyboardNavigation.TabNavigation="Local"
                                      Size="Small"
-                                     ToolTip="PART_ToolbarDownButton ToolTip Text test"
+                                     ToolTip="More controls"
                                      Visibility="Collapsed">
                 <controls:DropDownButton.ContextMenu>
                     <ContextMenu />

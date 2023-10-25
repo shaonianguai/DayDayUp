@@ -35,14 +35,14 @@
                 </Grid.RowDefinitions>
 
                 <controls:RibbonTabControl x:Name="PART_RibbonTabControl"
-                                         AreTabHeadersVisible="{TemplateBinding AreTabHeadersVisible}"
-                                         ContentHeight="{TemplateBinding ContentHeight}"
-                                         ContextMenu="{Binding ContextMenu, ElementName=PART_LayoutRoot}"
-                                         IsDisplayOptionsButtonVisible="{TemplateBinding IsDisplayOptionsButtonVisible}"
-                                         IsMouseWheelScrollingEnabled="{TemplateBinding IsMouseWheelScrollingEnabled}"
-                                         IsMouseWheelScrollingEnabledEverywhere="{TemplateBinding IsMouseWheelScrollingEnabledEverywhere}"
-                                         IsToolBarVisible="{TemplateBinding IsToolBarVisible}"
-                                         Menu="{TemplateBinding Menu}" />
+                                           AreTabHeadersVisible="{TemplateBinding AreTabHeadersVisible}"
+                                           ContentHeight="{TemplateBinding ContentHeight}"
+                                           ContextMenu="{Binding ContextMenu, ElementName=PART_LayoutRoot}"
+                                           IsDisplayOptionsButtonVisible="{TemplateBinding IsDisplayOptionsButtonVisible}"
+                                           IsMouseWheelScrollingEnabled="{TemplateBinding IsMouseWheelScrollingEnabled}"
+                                           IsMouseWheelScrollingEnabledEverywhere="{TemplateBinding IsMouseWheelScrollingEnabledEverywhere}"
+                                           IsToolBarVisible="{TemplateBinding IsToolBarVisible}"
+                                           Menu="{TemplateBinding Menu}"/>
 
                 <ContentControl x:Name="quickAccessToolBarHolder"
                                 Grid.Row="1"

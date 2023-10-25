@@ -134,7 +134,7 @@
                 <ControlTemplate TargetType="{x:Type controls:ColorGallery}">
                     <StackPanel KeyboardNavigation.DirectionalNavigation="Contained">
                         <controls:MenuItem x:Name="PART_AutomaticColor"
-                                         Header="Menu Item Header Text test">
+                                           Header="Automatic">
                             <controls:MenuItem.Icon>
                                 <Rectangle Width="16"
                                            Height="16"
@@ -183,7 +183,7 @@
                             </StackPanel>
                         </ScrollViewer>
                         <controls:MenuItem x:Name="PART_NoColor"
-                                         Header="PART_NoColor Header Text test">
+                                           Header="No color">
                             <controls:MenuItem.Icon>
                                 <Rectangle Width="16"
                                            Height="16"
@@ -202,7 +202,7 @@
                             </Separator.Template>
                         </Separator>
                         <controls:MenuItem x:Name="PART_MoreColors"
-                                         Header="PART_MoreColors Header Text test"
+                                         Header="More colors..."
                                          Icon="{DynamicResource Ribbon.Images.MoreColors}" />
                     </StackPanel>
                     <ControlTemplate.Triggers>

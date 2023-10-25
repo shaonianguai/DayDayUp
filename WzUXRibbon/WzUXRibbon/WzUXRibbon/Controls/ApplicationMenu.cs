@@ -5,7 +5,6 @@ using System.Windows.Controls;
 using System.Windows;
 using WzUXRibbon.Helpers;
 using WzUXRibbon.Internal.KnownBoxes;
-using WzUXRibbon.Localization;
 
 namespace WzUXRibbon.Controls
 {
@@ -73,7 +72,7 @@ namespace WzUXRibbon.Controls
 
         private static object CoerceKeys(DependencyObject d, object basevalue)
         {
-            return basevalue ?? RibbonLocalization.Current.Localization.BackstageButtonKeyTip;
+            return basevalue;
         }
 
         /// <summary>

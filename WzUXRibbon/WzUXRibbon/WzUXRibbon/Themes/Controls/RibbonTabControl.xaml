@@ -142,11 +142,6 @@
         <Setter Property="VerticalAlignment" Value="Top" />
     </Style>
 
-    <controls:ScreenTip x:Key="Ribbon.ScreenTips.Resources.RibbonTabControl.DisplayOptionsScreenTip"
-                      Title="Title Text test"
-                      x:Shared="False"
-                      Text="Text test" />
-
     <ControlTemplate x:Key="Ribbon.Templates.RibbonTabControl"
                      TargetType="{x:Type controls:RibbonTabControl}">
         <ControlTemplate.Resources>
@@ -335,32 +330,6 @@
                     <StackPanel x:Name="PART_ToolbarPanel"
                                 Orientation="Horizontal"
                                 Visibility="{Binding IsToolBarVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}" />
-
-                    <!--<controls:DropDownButton x:Name="PART_DisplayOptionsButton"
-                                           Style="{DynamicResource Ribbon.Styles.RibbonTabControl.DisplayOptionsButton}"
-                                           Width="22"
-                                           Height="22"
-                                           Margin="0"
-                                           Icon="{DynamicResource Ribbon.Images.RibbonDisplayOptions}"
-                                           Size="Small"
-                                           ToolTip="{DynamicResource Ribbon.ScreenTips.Resources.RibbonTabControl.DisplayOptionsScreenTip}"
-                                           Visibility="{Binding IsDisplayOptionsButtonVisible, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}">
-                        <controls:MenuItem Header="Show Ribbon"
-                                         FontWeight="Bold"
-                                         Foreground="{DynamicResource Ribbon.Brushes.Black}"
-                                         IsEnabled="False"
-                                         Template="{DynamicResource Ribbon.Templates.MenuItem.HeaderOnly}"
-                                         Visibility="{Binding CanMinimize, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}"
-                                         Opacity="1" />
-                        <controls:MenuItem Header="Expand the Ribbon"
-                                         IsCheckable="True"
-                                         IsChecked="{Binding IsMinimized, RelativeSource={RelativeSource TemplatedParent}, Converter={x:Static converters:StaticConverters.InverseBoolConverter}}"
-                                         Visibility="{Binding CanMinimize, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}" />
-                        <controls:MenuItem Header="Minimize the Ribbon"
-                                         IsCheckable="True"
-                                         IsChecked="{Binding IsMinimized, RelativeSource={RelativeSource TemplatedParent}}"
-                                         Visibility="{Binding CanMinimize, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource Ribbon.Converters.BoolToVisibilityConverter}}" />
-                        </controls:DropDownButton>-->
                 </StackPanel>
             </Grid>
 

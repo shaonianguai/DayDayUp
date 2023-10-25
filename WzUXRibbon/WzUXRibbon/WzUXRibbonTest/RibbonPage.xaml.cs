@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WzUXRibbonTest.Data;
 
 namespace WzUXRibbonTest
 {
@@ -20,6 +21,8 @@ namespace WzUXRibbonTest
     /// </summary>
     public partial class RibbonPage : Page
     {
+        private RibbonStateData _ribbonStateData;
+
         public RibbonPage()
         {
             InitializeComponent();
@@ -32,8 +35,11 @@ namespace WzUXRibbonTest
 
         private void Ribbon_Loaded(object sender, RoutedEventArgs e)
         {
-            //var ribbon = sender as WzUXRibbon.Controls.Ribbon;
-            //ribbon.IsMinimized = false;
+            // stored data
+            _ribbonStateData = new RibbonStateData(RibbonControl);
+            _ribbonStateData.Load();
+
+            RibbonControl.IsMinimized = false;
         }
 
         private void Help_Button_Click(object sender, RoutedEventArgs e)
@@ -48,14 +54,7 @@ namespace WzUXRibbonTest
 
         private void ExpandOrMinmizedRibbonButton_Click(object sender, RoutedEventArgs e)
         {
-            if (RibbonControl.IsMinimized)
-            {
-                RibbonControl.IsMinimized = false;
-            }
-            else
-            {
-                RibbonControl.IsMinimized = true;
-            }
+            RibbonControl.IsMinimized = RibbonControl.IsMinimized ? false : true;
         }
     }
 }

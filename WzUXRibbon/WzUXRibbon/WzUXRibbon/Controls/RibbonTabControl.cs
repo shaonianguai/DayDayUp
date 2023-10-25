@@ -59,11 +59,6 @@ namespace WzUXRibbon.Controls
 
         #region Events
 
-        /// <summary>
-        /// Event which is fired when the, maybe listening, <see cref="Backstage"/> should be closed
-        /// </summary>
-        public event EventHandler RequestBackstageClose;
-
         /// <inheritdoc />
         public event EventHandler DropDownOpened;
 
@@ -77,7 +72,7 @@ namespace WzUXRibbon.Controls
         #region Menu
 
         /// <summary>
-        /// Gets or sets file menu control (can be application menu button, backstage button and so on)
+        /// Gets or sets file menu control (can be application menu button)
         /// </summary>
         public UIElement Menu
         {
@@ -1007,8 +1002,6 @@ namespace WzUXRibbon.Controls
         {
             var ribbonTabControl = (RibbonTabControl)d;
 
-            ribbonTabControl.RaiseRequestBackstageClose();
-
             if (ribbonTabControl.IsDropDownOpen)
             {
                 ribbonTabControl.OnRibbonTabPopupOpening();
@@ -1023,14 +1016,6 @@ namespace WzUXRibbon.Controls
                 var peer = UIElementAutomationPeer.CreatePeerForElement(ribbonTabControl.SelectedTabItem) as WzUXRibbon.Automation.Peers.RibbonTabItemAutomationPeer;
                 peer?.RaiseTabExpandCollapseAutomationEvent((bool)e.OldValue, (bool)e.NewValue);
             }
-        }
-
-        /// <summary>
-        /// Raises an event causing the Backstage-View to be closed
-        /// </summary>
-        public void RaiseRequestBackstageClose()
-        {
-            this.RequestBackstageClose?.Invoke(this, EventArgs.Empty);
         }
 
         #endregion
