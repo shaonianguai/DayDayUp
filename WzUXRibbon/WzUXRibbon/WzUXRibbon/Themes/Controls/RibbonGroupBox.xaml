@@ -73,7 +73,7 @@
         <Setter Property="BorderBrush" Value="Transparent" />
         <Setter Property="controls:KeyTip.Margin" Value="0,15,0,0" />
         <Setter Property="attachedProperties:RibbonProperties.IconSize" Value="Small" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual}" />
+        <Setter Property="Focusable" Value="False" />
         <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.LabelText}" />
         <Setter Property="HeaderTemplateSelector" Value="{Binding Source={x:Static wzUXRibbon:RibbonGroupBoxHeaderTemplateSelector.Instance}}" />
         <Setter Property="Height" Value="Auto" />

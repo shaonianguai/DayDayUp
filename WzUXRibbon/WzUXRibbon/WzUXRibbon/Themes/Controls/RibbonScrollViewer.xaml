@@ -69,12 +69,13 @@
                                                 ContentTemplate="{TemplateBinding ContentTemplate}"
                                                 IsHitTestVisible="True" />
                         <RepeatButton Style="{DynamicResource Ribbon.Styles.ScrollButton}"
+                                      Delay="100"
                                       Width="13"
                                       Height="Auto"
                                       HorizontalAlignment="Left"
                                       VerticalAlignment="Stretch"
-                                      Command="{x:Static ScrollBar.LineLeftCommand}"
-                                      CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
+                                      Command="{x:Static controls:LeftOrRighnLineCommand.LeftLineScrollCommand}"
+                                      CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=controls:RibbonGroupsContainerScrollViewer}}"
                                       Focusable="false">
                             <RepeatButton.Visibility>
                                 <MultiBinding Converter="{StaticResource Ribbon.Converters.MenuScrollingVisibilityConverter}"
@@ -102,12 +103,13 @@
                                   StrokeThickness="0" />
                         </RepeatButton>
                         <RepeatButton Style="{DynamicResource Ribbon.Styles.ScrollButton}"
+                                      Delay="100"
                                       Width="13"
                                       Height="Auto"
                                       HorizontalAlignment="Right"
                                       VerticalAlignment="Stretch"
-                                      Command="{x:Static ScrollBar.LineRightCommand}"
-                                      CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
+                                      Command="{x:Static controls:LeftOrRighnLineCommand.RightLineScrollCommand}"
+                                      CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=controls:RibbonGroupsContainerScrollViewer}}"
                                       Focusable="false">
                             <RepeatButton.Visibility>
                                 <MultiBinding Converter="{StaticResource Ribbon.Converters.MenuScrollingVisibilityConverter}"

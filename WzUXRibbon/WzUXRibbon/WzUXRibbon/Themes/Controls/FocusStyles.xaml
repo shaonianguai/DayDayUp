@@ -28,7 +28,8 @@
         <Setter Property="Margin" Value="-1" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Stroke" Value="{DynamicResource Ribbon.Brushes.Black}" />
-        <Setter Property="StrokeThickness" Value="2" />
+        <Setter Property="StrokeThickness" Value="1" />
+        <Setter Property="StrokeDashArray" Value="1.5 1.5"/>
     </Style>
 
     <ControlTemplate x:Key="Ribbon.Templates.FocusVisual"

@@ -180,7 +180,7 @@
     <!-- RibbonTabControl -->
     <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabControl.Background" Color="{StaticResource Ribbon.Colors.White}" options:Freeze="True" />
     <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabControl.Foreground" Color="{StaticResource Ribbon.Colors.Black}" options:Freeze="True" />
-    <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabControl.Content.Background" Color="{StaticResource Ribbon.Colors.White}" options:Freeze="True" />
+    <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabControl.Content.Background" Color="#FFF5F6F7" options:Freeze="True" />
     <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabControl.Content.Border" Color="Transparent" options:Freeze="True" />
     <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabControl.Content.Foreground" Color="{StaticResource Ribbon.Colors.Black}" options:Freeze="True" />
     <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabControl.TabsGrid.Background" Color="Transparent" options:Freeze="True" />
@@ -193,8 +193,8 @@
 
     <!-- RibbonTabItem -->
     <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabItem.Foreground" Color="{StaticResource Ribbon.Colors.Black}" options:Freeze="True" />
-    <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabItem.Border" Color="{StaticResource Ribbon.Colors.Gray8}" options:Freeze="True" />
-    <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabItem.Active.Background" Color="{StaticResource Ribbon.Colors.White}" options:Freeze="True" />
+    <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabItem.Border" Color="#FFDADBDC" options:Freeze="True" />
+    <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabItem.Active.Background" Color="#FFF5F6F7" options:Freeze="True" />
     <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabItem.MouseOver.Background" Color="Transparent" options:Freeze="True" />
     <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabItem.MouseOver.Foreground" Color="{StaticResource Ribbon.Colors.Highlight}" options:Freeze="True" />
     <SolidColorBrush x:Key="Ribbon.Brushes.RibbonTabItem.Selected.Foreground" Color="{StaticResource Ribbon.Colors.Gray1}" options:Freeze="True" />

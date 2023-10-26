@@ -134,10 +134,14 @@
                 <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.ToggleButton.CheckedMouseOver.Background}" />
                 <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.ToggleButton.CheckedMouseOver.Border}" />
             </MultiTrigger>
-            <Trigger Property="IsPressed" Value="True">
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsPressed" Value="True" />
+                    <Condition Property="IsChecked" Value="False" />
+                </MultiTrigger.Conditions>
                 <Setter TargetName="border" Property="Background" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Background}" />
                 <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.Button.Pressed.Border}" />
-            </Trigger>
+            </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
 

@@ -23,7 +23,6 @@ namespace WzUXRibbon.Controls
     [StyleTypedProperty(Property = nameof(ItemContainerStyle), StyleTargetType = typeof(RibbonTabItem))]
     [TemplatePart(Name = "PART_Popup", Type = typeof(Popup))]
     [TemplatePart(Name = "PART_TabsContainer", Type = typeof(Panel))]
-    //[TemplatePart(Name = "PART_DisplayOptionsButton", Type = typeof(Control))]
     [TemplatePart(Name = "PART_ToolbarPanel", Type = typeof(Panel))]
     [TemplatePart(Name = "PART_SelectedContentPresenter", Type = typeof(ContentPresenter))]
     public class RibbonTabControl : Selector, IDropDownControl, ILogicalChildSupport

@@ -62,6 +62,7 @@
     <Compile Include="AttachedProperties\RibbonProperties.cs" />
     <Compile Include="Collections\CollectionSyncHelper.cs" />
     <Compile Include="Collections\ItemCollectionWithLogicalTreeSupport.cs" />
+    <Compile Include="Command\ModelCommand.cs" />
     <Compile Include="Controls\ApplicationMenu.cs" />
     <Compile Include="Controls\Button.cs" />
     <Compile Include="Controls\CheckBox.cs" />

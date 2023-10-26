@@ -46,11 +46,12 @@
             </BulletDecorator.Bullet>
 
             <ContentControl x:Name="PART_HeaderContentHost"
-                            Margin="8 0 0 0"
+                            Margin="8 -5 0 0"
                             Content="{TemplateBinding Header}"
                             ContentTemplate="{TemplateBinding HeaderTemplate}"
                             ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}"
-                            Focusable="False" />
+                            Focusable="False" 
+                            VerticalAlignment="Center"/>
         </BulletDecorator>
         <ControlTemplate.Triggers>
             <Trigger Property="IsMouseOver" Value="True">

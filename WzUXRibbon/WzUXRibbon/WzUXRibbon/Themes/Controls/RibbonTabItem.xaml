@@ -121,7 +121,7 @@
         <Setter Property="BorderBrush" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.Border}" />
         <Setter Property="attachedProperties:RibbonProperties.MouseOverBackground" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.MouseOver.Background}" />
         <Setter Property="attachedProperties:RibbonProperties.MouseOverForeground" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.MouseOver.Foreground}" />
-        <Setter Property="FocusVisualStyle" Value="{DynamicResource Ribbon.Styles.FocusVisual.Empty}" />
+        <Setter Property="Focusable" Value="False"/>
         <Setter Property="Foreground" Value="{DynamicResource Ribbon.Brushes.RibbonTabItem.Foreground}" />
         <Setter Property="HeaderTemplate">
             <Setter.Value>

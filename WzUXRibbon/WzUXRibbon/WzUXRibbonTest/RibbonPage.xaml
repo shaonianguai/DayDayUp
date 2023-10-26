@@ -15,9 +15,10 @@
                 <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Common.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/ApplicationMenuItem.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/MenuItem.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RadioButton.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
-            <local:ToggleButtonGroupNameConverter x:Key="toggleButtonGroupNameConverter"/>
+            <local:CheckButtonGroupNameConverter x:Key="checkButtonGroupNameConverter"/>
             <DrawingImage x:Key="Ribbon.Images.Help" x:Shared="False">
                 <DrawingImage.Drawing>
                     <DrawingGroup>
@@ -132,7 +133,8 @@
             </wzRibbon:Ribbon.Menu>
 
             <wzRibbon:Ribbon.ToolBarItems>
-                <wzRibbon:Button Click="Avatar_Button_Click"
+                <wzRibbon:Button Header="Avatat Test"
+                                 Click="Avatar_Button_Click"
                                  Size="Middle"
                                  Icon="pack://application:,,,/WzUXRibbonTest;component/Images/avatar.png"
                                  Margin="0,0,20,0">
@@ -292,11 +294,11 @@
                                                Margin="0,10,0,5"
                                                SizeDefinition="Middle"
                                                Icon="pack://application:,,,/WzUXRibbonTest;component/Images/Zip_16_16_32.png"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipFileType}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ZipFileType}"/>
                             <wzRibbon:ToggleButton Header="Zipx File"
                                                SizeDefinition="Middle"
                                                Icon="pack://application:,,,/WzUXRibbonTest;component/Images/Zipx_16_16_32.png"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipFileType}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ZipFileType}"/>
 
                         </wzRibbon:RibbonToolBar>
 
@@ -309,17 +311,17 @@
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipMethodGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ZipMethodGroup}"/>
                                 <wzRibbon:MenuItem Header="Super fast"
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipMethodGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ZipMethodGroup}"/>
                                 <wzRibbon:MenuItem Header="No compression"
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipMethodGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ZipMethodGroup}"/>
 
                             </wzRibbon:DropDownButton>
                             <wzRibbon:DropDownButton Header="Zipx Method"
@@ -329,22 +331,22 @@
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
                                 <wzRibbon:MenuItem Header="LZMA"
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
                                 <wzRibbon:MenuItem Header="Zstd"
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
                                 <wzRibbon:MenuItem Header="XZ"
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ZipXMethodGroup}"/>
                             </wzRibbon:DropDownButton>
                         </wzRibbon:RibbonToolBar>
                     </Grid>
@@ -353,7 +355,7 @@
                     <wzRibbon:ToggleButton Header="Encrypt"
                                            Margin="10,5,10,0"
                                            LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/encryption.png"
-                                           GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=EncryptGroup}"/>
+                                           GroupName="{x:Null}"/>
                 </wzRibbon:RibbonGroupBox>
             </wzRibbon:RibbonTabItem>
 
@@ -461,6 +463,46 @@
                                          Margin="8,5,0,0"/>
                 </wzRibbon:RibbonGroupBox>
                 <wzRibbon:RibbonGroupBox Header="Test22">
+                    <wzRibbon:Button Header="Search"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/search.png"
+                                         Margin="0,5,0,0"/>
+                    <wzRibbon:Button Header="Move To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/move.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Copy To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/copy.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Delete"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/delete.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Wipe"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/swipe.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Rename"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/rename.png"
+                                         Margin="8,5,0,0"/>
+                </wzRibbon:RibbonGroupBox>
+                <wzRibbon:RibbonGroupBox Header="Test33">
+                    <wzRibbon:Button Header="Search"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/search.png"
+                                         Margin="0,5,0,0"/>
+                    <wzRibbon:Button Header="Move To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/move.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Copy To"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/copy.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Delete"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/delete.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Wipe"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/swipe.png"
+                                         Margin="8,5,0,0"/>
+                    <wzRibbon:Button Header="Rename"
+                                         LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/rename.png"
+                                         Margin="8,5,0,0"/>
+                </wzRibbon:RibbonGroupBox>
+                <wzRibbon:RibbonGroupBox Header="Test44">
                     <wzRibbon:Button Header="Search"
                                          LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/search.png"
                                          Margin="0,5,0,0"/>
@@ -600,11 +642,11 @@
                     <wzRibbon:ToggleButton Header="Files"
                                            Margin="5,5,5,0"
                                            LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/FilesPane_32_32_32.png"
-                                           GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=PanesShowGroup}"/>
+                                           GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=PanesShowGroup}"/>
                     <wzRibbon:ToggleButton Header="Actions"
                                            Margin="0,5,5,0"
                                            LargeIcon="pack://application:,,,/WzUXRibbonTest;component/Images/ActionsPane_32_32_32.png"
-                                           GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=PanesShowGroup}"/>
+                                           GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=PanesShowGroup}"/>
                 </wzRibbon:RibbonGroupBox>
                 <wzRibbon:RibbonGroupBox Header="Current View">
                     <wzRibbon:RibbonToolBar>
@@ -617,27 +659,27 @@
                                                IsCheckable="True"
                                                IsChecked="True"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
                             <wzRibbon:MenuItem Header="Type"
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
                             <wzRibbon:MenuItem Header="Date Modified"
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
                             <wzRibbon:MenuItem Header="Size"
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
                             <wzRibbon:MenuItem Header="Path"
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=SortByGroup}"/>
                         </wzRibbon:DropDownButton>
                         <wzRibbon:DropDownButton Header="Columns"
                                                  ClosePopupOnMouseDownDelay="250"
@@ -648,14 +690,22 @@
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ColumnsGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ColumnsGroup}"/>
                             <wzRibbon:MenuItem Header="All files in Zip"
                                                IsCheckable="True"
                                                IsChecked="False"
                                                Style="{StaticResource Ribbon.Styles.MenuItem}"
-                                               GroupName="{Binding Converter={StaticResource toggleButtonGroupNameConverter}, ConverterParameter=ColumnsGroup}"/>
+                                               GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=ColumnsGroup}"/>
                         </wzRibbon:DropDownButton>
                     </wzRibbon:RibbonToolBar>
+                </wzRibbon:RibbonGroupBox>
+                <wzRibbon:RibbonGroupBox Header="Radio Button Group">
+                    <wzRibbon:RadioButton Header="Radio-Test-11"
+                                          Margin="0,5,5,0"
+                                          GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=RadioTestGroup}"/>
+                    <wzRibbon:RadioButton Header="Radio-Test-22"
+                                          Margin="0,5,5,0"
+                                          GroupName="{Binding Converter={StaticResource checkButtonGroupNameConverter}, ConverterParameter=RadioTestGroup}"/>
                 </wzRibbon:RibbonGroupBox>
             </wzRibbon:RibbonTabItem>
         </wzRibbon:Ribbon>

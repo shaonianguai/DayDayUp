@@ -88,7 +88,6 @@
         <Setter Property="IsTabStop" Value="False" />
         <!--<Setter Property="QuickAccessToolBarHeight" Value="{Binding TitleBar.ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type wzUXRibbon:IRibbonWindow}}, FallbackValue=23}" />-->
         <Setter Property="Template" Value="{DynamicResource Ribbon.Templates.Ribbon}" />
-        <!--<Setter Property="TitleBar" Value="{Binding TitleBar, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type wzUXRibbon:IRibbonWindow}}, FallbackValue={x:Null}}" />-->
         <Setter Property="VerticalAlignment" Value="Top" />
     </Style>
 </ResourceDictionary>
