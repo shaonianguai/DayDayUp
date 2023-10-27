@@ -1011,9 +1011,6 @@ namespace WzUXRibbon.Controls
         /// <returns><c>true</c> if the cache was reset. Otherwise <c>false</c>.</returns>
         public bool TryClearCacheAndResetStateAndScaleAndNotifyParentRibbonGroupsContainer()
         {
-            // We should try to clear the entire cache.
-            // The entire cache should only be cleared if we don't do regular measuring, but only if some event outside our own measuring code caused size changes (such as elements getting visible/invisible or being added/removed).
-            // For reference https://github.com/fluentribbon/Fluent.Ribbon/issues/834
             if (this.TryClearCacheAndResetStateAndScale())
             {
                 UIHelper.GetParent<RibbonGroupsContainer>(this)?.GroupBoxCacheClearedAndStateAndScaleResetted(this);

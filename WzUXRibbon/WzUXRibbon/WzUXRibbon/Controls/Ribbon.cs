@@ -1536,33 +1536,33 @@ namespace WzUXRibbon.Controls
                 this.toolBarItemsSync = new CollectionSyncHelper<UIElement>(this.ToolBarItems, this.TabControl.ToolBarItems);
             }
 
-            if (this.QuickAccessToolBar != null)
-            {
-                this.ClearQuickAccessToolBar();
+            //if (this.QuickAccessToolBar != null)
+            //{
+            //    this.ClearQuickAccessToolBar();
 
-                this.quickAccessItemsSync?.Target.Clear();
-            }
+            //    this.quickAccessItemsSync?.Target.Clear();
+            //}
 
-            this.QuickAccessToolBar = this.GetTemplateChild("PART_QuickAccessToolBar") as QuickAccessToolBar;
+            //this.QuickAccessToolBar = this.GetTemplateChild("PART_QuickAccessToolBar") as QuickAccessToolBar;
 
-            if (this.QuickAccessToolBar != null)
-            {
-                this.quickAccessItemsSync = new CollectionSyncHelper<QuickAccessMenuItem>(this.QuickAccessItems, this.QuickAccessToolBar.QuickAccessItems);
+            //if (this.QuickAccessToolBar != null)
+            //{
+            //    this.quickAccessItemsSync = new CollectionSyncHelper<QuickAccessMenuItem>(this.QuickAccessItems, this.QuickAccessToolBar.QuickAccessItems);
 
-                {
-                    var binding = new Binding(nameof(this.CanQuickAccessLocationChanging))
-                    {
-                        Source = this,
-                        Mode = BindingMode.OneWay
-                    };
-                    this.QuickAccessToolBar.SetBinding(QuickAccessToolBar.CanQuickAccessLocationChangingProperty, binding);
-                }
-            }
+            //    {
+            //        var binding = new Binding(nameof(this.CanQuickAccessLocationChanging))
+            //        {
+            //            Source = this,
+            //            Mode = BindingMode.OneWay
+            //        };
+            //        this.QuickAccessToolBar.SetBinding(QuickAccessToolBar.CanQuickAccessLocationChangingProperty, binding);
+            //    }
+            //}
 
-            if (this.ShowQuickAccessToolBarAboveRibbon)
-            {
-                this.MoveQuickAccessToolBarToTitleBar(this.TitleBar);
-            }
+            //if (this.ShowQuickAccessToolBarAboveRibbon)
+            //{
+            //    this.MoveQuickAccessToolBarToTitleBar(this.TitleBar);
+            //}
         }
 
         /// <inheritdoc />

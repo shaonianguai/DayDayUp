@@ -36,7 +36,7 @@ namespace WzUXRibbon.Internal
         /// <summary>
         /// Starts the scope guard.
         /// </summary>
-        /// <returns>The current instance for fluent usage.</returns>
+        /// <returns>The current instance usage.</returns>
         public ScopeGuard Start()
         {
             if (this.IsActive)

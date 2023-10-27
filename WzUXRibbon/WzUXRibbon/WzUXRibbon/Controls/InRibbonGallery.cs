@@ -1240,10 +1240,6 @@ namespace WzUXRibbon.Controls
         private void OnIsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             var groupBox = UIHelper.GetParent<RibbonGroupBox>(this);
-
-            // Only notify the parent group-box if we are not currently being shown in the collapsed popup.
-            // Otherwise we will cause application freezes as we would be constantly flipped between being visible and not visible.
-            // See https://github.com/fluentribbon/Fluent.Ribbon/issues/900 for reference
             if (groupBox?.IsDropDownOpen == false)
             {
                 groupBox.TryClearCacheAndResetStateAndScaleAndNotifyParentRibbonGroupsContainer();

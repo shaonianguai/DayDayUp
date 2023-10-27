@@ -247,7 +247,7 @@
                         <DataTrigger Binding="{Binding ThemeColors.Count, RelativeSource={RelativeSource Self}}" Value="0">
                             <Setter TargetName="themeColorsSeparator" Property="Visibility" Value="Collapsed" />
                         </DataTrigger>
-                        <!--<DataTrigger Binding="{Binding Count, Source={x:Static Fluent:ColorGallery.RecentColors}}" Value="0">
+                        <!--<DataTrigger Binding="{Binding Count, Source={x:Static ColorGallery.RecentColors}}" Value="0">
                             <Setter TargetName="recentColorsSeparator" Property="Visibility" Value="Collapsed" />
                         </DataTrigger>-->
                     </ControlTemplate.Triggers>

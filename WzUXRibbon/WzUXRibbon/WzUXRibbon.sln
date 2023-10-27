@@ -12,18 +12,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WzUXRibbonTest", "WzUXRibbo
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{17317D1D-D68E-4D60-8897-068A92703E3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{17317D1D-D68E-4D60-8897-068A92703E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{17317D1D-D68E-4D60-8897-068A92703E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{17317D1D-D68E-4D60-8897-068A92703E3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D7BE7869-945D-432B-A702-48EC591D4FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7BE7869-945D-432B-A702-48EC591D4FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7BE7869-945D-432B-A702-48EC591D4FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7BE7869-945D-432B-A702-48EC591D4FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17317D1D-D68E-4D60-8897-068A92703E3F}.Debug|x64.ActiveCfg = Debug|x64
+		{17317D1D-D68E-4D60-8897-068A92703E3F}.Debug|x64.Build.0 = Debug|x64
+		{17317D1D-D68E-4D60-8897-068A92703E3F}.Release|x64.ActiveCfg = Release|x64
+		{17317D1D-D68E-4D60-8897-068A92703E3F}.Release|x64.Build.0 = Release|x64
+		{D7BE7869-945D-432B-A702-48EC591D4FD5}.Debug|x64.ActiveCfg = Debug|x64
+		{D7BE7869-945D-432B-A702-48EC591D4FD5}.Debug|x64.Build.0 = Debug|x64
+		{D7BE7869-945D-432B-A702-48EC591D4FD5}.Release|x64.ActiveCfg = Release|x64
+		{D7BE7869-945D-432B-A702-48EC591D4FD5}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
