@@ -1,10 +1,8 @@
-﻿using JetBrains.Annotations;
-using System.Windows;
+﻿using System.Windows;
 using WzUXRibbon.Internal.KnownBoxes;
 
 namespace WzUXRibbon.AttachedProperties
 {
-    [PublicAPI]
     public class InputControlProperties : DependencyObject
     {
         public static readonly DependencyProperty InputWidthProperty = DependencyProperty.RegisterAttached(

@@ -31,9 +31,9 @@ namespace WzUXRibbon.Effects
 
         private PixelShader CreatePixelShader()
         {
-            var pixelShader = new PixelShader { UriSource = new Uri(@"pack://application:,,,/Themes/Effects/Grayscale.ps", UriKind.RelativeOrAbsolute) };
+            //var pixelShader = new PixelShader { UriSource = new Uri(@"pack://application:,,,/Themes/Effects/Grayscale.ps", UriKind.RelativeOrAbsolute) };
 
-            return pixelShader;
+            return null;
         }
 
         /// <summary>

@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Media;
 using WzUXRibbon.Controls;
 using WzUXRibbon.Data;
@@ -9,7 +8,6 @@ using WzUXRibbon.Internal.KnownBoxes;
 
 namespace WzUXRibbon.AttachedProperties
 {
-    [PublicAPI]
     public class RibbonProperties : DependencyObject
     {
         #region Size Property
