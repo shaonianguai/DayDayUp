@@ -2,6 +2,8 @@
 using System.Windows.Media.Effects;
 using System.Windows.Media;
 using System.Windows;
+using System.Reflection;
+using System.IO;
 
 namespace WzUXRibbon.Effects
 {
@@ -31,9 +33,25 @@ namespace WzUXRibbon.Effects
 
         private PixelShader CreatePixelShader()
         {
-            //var pixelShader = new PixelShader { UriSource = new Uri(@"pack://application:,,,/Themes/Effects/Grayscale.ps", UriKind.RelativeOrAbsolute) };
+            var pixelShader = new PixelShader();
+            pixelShader.SetStreamSource(new MemoryStream(Properties.Resources.Grayscale));
 
-            return null;
+            return pixelShader;
+        }
+
+        private Uri MakePackUri(string relativeFile)
+        {
+            Assembly a = typeof(GrayscaleEffect).Assembly;
+
+            // Extract the short name.
+            string assemblyShortName = a.ToString().Split(',')[0];
+
+            string uriString = "pack://application:,,,/" +
+                assemblyShortName +
+                ";component/" +
+                relativeFile;
+
+            return new Uri(uriString);
         }
 
         /// <summary>

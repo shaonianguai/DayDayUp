@@ -120,7 +120,8 @@
 
                         <wzRibbon:MenuItem Header="Close"
                                            Icon="pack://application:,,,/WzUXRibbonTest;component/Images/close.png"
-                                           Style="{StaticResource Ribbon.Styles.ApplicationMenu.MenuItem }"/>
+                                           Style="{StaticResource Ribbon.Styles.ApplicationMenu.MenuItem }"
+                                           IsEnabled="False"/>
 
                         <Separator />
 

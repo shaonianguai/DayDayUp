@@ -61,6 +61,16 @@ namespace WzUXRibbon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Grayscale {
+            get {
+                object obj = ResourceManager.GetObject("Grayscale", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to test.
         /// </summary>
         internal static string Test {
