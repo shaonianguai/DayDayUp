@@ -5,7 +5,6 @@ using WzUXRibbon.Utils;
 
 namespace WzUXRibbon.Internal
 {
-
     internal class FocusWrapper
     {
         private readonly IInputElement inputElement;

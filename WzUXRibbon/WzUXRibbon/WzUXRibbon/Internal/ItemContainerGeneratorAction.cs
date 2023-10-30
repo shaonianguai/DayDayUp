@@ -10,35 +10,18 @@ namespace WzUXRibbon.Internal
 {
     internal class ItemContainerGeneratorAction
     {
-        /// <summary>
-        /// Creates a new instance used to queue action for completion or items changes of <see cref="ItemContainerGenerator"/>
-        /// </summary>
-        /// <param name="generator">The <see cref="ItemContainerGenerator"/> to be used.</param>
-        /// <param name="action">The <see cref="System.Action"/> that should be invoked.</param>
         public ItemContainerGeneratorAction(ItemContainerGenerator generator, Action action)
         {
             this.Generator = generator;
             this.Action = action;
         }
 
-        /// <summary>
-        /// Gets the <see cref="ItemContainerGenerator"/> to be used.
-        /// </summary>
         public ItemContainerGenerator Generator { get; }
 
-        /// <summary>
-        /// Gets the <see cref="System.Action"/> that should be invoked.
-        /// </summary>
         public Action Action { get; }
 
-        /// <summary>
-        /// Gets the current wait state. <c>true</c> in case <see cref="QueueAction"/> was called and we are waiting for the <see cref="Generator"/> to finish.
-        /// </summary>
         public bool IsWaitingForGenerator { get; private set; }
 
-        /// <summary>
-        /// Queues <see cref="Action"/> for invocation.
-        /// </summary>
         public void QueueAction()
         {
             if (this.Generator.Status != GeneratorStatus.ContainersGenerated)
