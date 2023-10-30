@@ -158,7 +158,7 @@
     <Compile Include="Internal\KnownBoxes\VisibilityBoxes.cs" />
     <Compile Include="Internal\SizeConstants.cs" />
     <Compile Include="Internal\TypeHelper.cs" />
-    <Compile Include="IToggleButton.cs" />
+    <Compile Include="Interface\IToggleButton.cs" />
     <Compile Include="Peers\GalleryItemAutomationPeer.cs" />
     <Compile Include="Peers\GalleryItemWrapperAutomationPeer.cs" />
     <Compile Include="Peers\RibbonAutomationPeer.cs" />
@@ -211,12 +211,12 @@
     <Compile Include="Extensions\ICommandSourceExtensions.cs" />
     <Compile Include="Extensions\ItemContainerGeneratorExtensions.cs" />
     <Compile Include="Helpers\LogicalChildSupportHelper.cs" />
-    <Compile Include="IDropDownControl.cs" />
-    <Compile Include="IHeaderedControl.cs" />
-    <Compile Include="IKeyTipedControl.cs" />
-    <Compile Include="ILargeIconProvider.cs" />
-    <Compile Include="ILogicalChildSupport.cs" />
-    <Compile Include="IMediumIconProvider.cs" />
+    <Compile Include="Interface\IDropDownControl.cs" />
+    <Compile Include="Interface\IHeaderedControl.cs" />
+    <Compile Include="Interface\IKeyTipedControl.cs" />
+    <Compile Include="Interface\ILargeIconProvider.cs" />
+    <Compile Include="Interface\ILogicalChildSupport.cs" />
+    <Compile Include="Interface\IMediumIconProvider.cs" />
     <Compile Include="Internal\CommandHelper.cs" />
     <Compile Include="Internal\ItemContainerGeneratorAction.cs" />
     <Compile Include="Internal\KnownBoxes\BooleanBoxes.cs" />
@@ -224,10 +224,10 @@
     <Compile Include="Internal\KnownBoxes\IconSizeBoxes.cs" />
     <Compile Include="Internal\ScopeGuard.cs" />
     <Compile Include="Internal\UIHelper.cs" />
-    <Compile Include="IRibbonControl.cs" />
-    <Compile Include="IScalableRibbonControl.cs" />
-    <Compile Include="ISimplifiedRibbonControl.cs" />
-    <Compile Include="ISimplifiedStateControl.cs" />
+    <Compile Include="Interface\IRibbonControl.cs" />
+    <Compile Include="Interface\IScalableRibbonControl.cs" />
+    <Compile Include="Interface\ISimplifiedRibbonControl.cs" />
+    <Compile Include="Interface\ISimplifiedStateControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -267,7 +267,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Themes\Common.xaml">
+    <Page Include="Themes\SharedStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

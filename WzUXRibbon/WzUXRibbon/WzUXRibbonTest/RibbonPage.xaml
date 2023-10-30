@@ -12,7 +12,7 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Common.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/SharedStyles.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/ApplicationMenuItem.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/MenuItem.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/WzUXRibbon;component/Themes/Controls/RadioButton.xaml" />
