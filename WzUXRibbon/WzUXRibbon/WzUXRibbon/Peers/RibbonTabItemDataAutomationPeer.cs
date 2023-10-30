@@ -16,13 +16,13 @@ namespace WzUXRibbon.Automation.Peers
         {
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return "RibbonTabItem";
         }
 
-        /// <inheritdoc />
+        
         protected override string GetNameCore()
         {
             var nameCore = base.GetNameCore();
@@ -39,7 +39,7 @@ namespace WzUXRibbon.Automation.Peers
             return nameCore;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetAccessKeyCore()
         {
             var text = (this.GetWrapper() as RibbonTabItem)?.KeyTip;
@@ -51,7 +51,7 @@ namespace WzUXRibbon.Automation.Peers
             return text;
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationControlType GetAutomationControlTypeCore()
         {
             return AutomationControlType.TabItem;

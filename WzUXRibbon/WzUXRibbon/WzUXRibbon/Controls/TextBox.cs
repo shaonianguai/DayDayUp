@@ -55,7 +55,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
@@ -63,7 +63,7 @@ namespace WzUXRibbon.Controls
             this.contentHost = this.Template.FindName("PART_ContentHost", this) as UIElement;
         }
 
-        /// <inheritdoc />
+        
         // Handling context menu manually to fix #653
         protected override void OnContextMenuOpening(ContextMenuEventArgs e)
         {
@@ -86,7 +86,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnContextMenuClosing(ContextMenuEventArgs e)
         {
             this.InvalidateProperty(ContextMenuProperty);
@@ -94,7 +94,7 @@ namespace WzUXRibbon.Controls
             base.OnContextMenuClosing(e);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnKeyUp(KeyEventArgs e)
         {
             // Avoid Click invocation (from RibbonControl)
@@ -111,7 +111,7 @@ namespace WzUXRibbon.Controls
 
         #region Quick Access Item Creating
 
-        /// <inheritdoc />
+        
         public virtual FrameworkElement CreateQuickAccessItem()
         {
             var textBoxForQAT = new TextBox();
@@ -121,7 +121,7 @@ namespace WzUXRibbon.Controls
             return textBoxForQAT;
         }
 
-        /// <inheritdoc />
+        
         public bool CanAddToQuickAccessToolBar
         {
             get { return (bool)this.GetValue(CanAddToQuickAccessToolBarProperty); }
@@ -159,7 +159,7 @@ namespace WzUXRibbon.Controls
 
         #region Implementation of Ribbon interfaces
 
-        /// <inheritdoc />
+        
         public KeyTipPressedResult OnKeyTipPressed()
         {
             this.SelectAll();
@@ -168,14 +168,14 @@ namespace WzUXRibbon.Controls
             return new KeyTipPressedResult(true, false);
         }
 
-        /// <inheritdoc />
+        
         public void OnKeyTipBack()
         {
         }
 
         #region Size
 
-        /// <inheritdoc />
+        
         public RibbonControlSize Size
         {
             get { return (RibbonControlSize)this.GetValue(SizeProperty); }
@@ -189,7 +189,7 @@ namespace WzUXRibbon.Controls
 
         #region SizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SizeDefinitionProperty); }
@@ -203,7 +203,7 @@ namespace WzUXRibbon.Controls
 
         #region SimplifiedSizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SimplifiedSizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SimplifiedSizeDefinitionProperty); }
@@ -217,7 +217,7 @@ namespace WzUXRibbon.Controls
 
         #region KeyTip
 
-        /// <inheritdoc />
+        
         public string KeyTip
         {
             get { return (string)this.GetValue(KeyTipProperty); }
@@ -231,7 +231,7 @@ namespace WzUXRibbon.Controls
 
         #region Header
 
-        /// <inheritdoc />
+        
         public object Header
         {
             get { return this.GetValue(HeaderProperty); }
@@ -241,7 +241,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="Header"/> dependency property.</summary>
         public static readonly DependencyProperty HeaderProperty = RibbonControl.HeaderProperty.AddOwner(typeof(TextBox), new PropertyMetadata(LogicalChildSupportHelper.OnLogicalChildPropertyChanged));
 
-        /// <inheritdoc />
+        
         public DataTemplate HeaderTemplate
         {
             get { return (DataTemplate)this.GetValue(HeaderTemplateProperty); }
@@ -251,7 +251,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="HeaderTemplate"/> dependency property.</summary>
         public static readonly DependencyProperty HeaderTemplateProperty = RibbonControl.HeaderTemplateProperty.AddOwner(typeof(TextBox), new PropertyMetadata());
 
-        /// <inheritdoc />
+        
         public DataTemplateSelector HeaderTemplateSelector
         {
             get { return (DataTemplateSelector)this.GetValue(HeaderTemplateSelectorProperty); }
@@ -265,7 +265,7 @@ namespace WzUXRibbon.Controls
 
         #region Icon
 
-        /// <inheritdoc />
+        
         public object Icon
         {
             get { return this.GetValue(IconProperty); }
@@ -279,7 +279,7 @@ namespace WzUXRibbon.Controls
 
         #region MediumIcon
 
-        /// <inheritdoc />
+        
         public object MediumIcon
         {
             get { return this.GetValue(MediumIconProperty); }
@@ -293,25 +293,25 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         void ISimplifiedStateControl.UpdateSimplifiedState(bool isSimplified)
         {
             this.IsSimplified = isSimplified;
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get
@@ -339,7 +339,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonTextBoxAutomationPeer(this);
     }
 }

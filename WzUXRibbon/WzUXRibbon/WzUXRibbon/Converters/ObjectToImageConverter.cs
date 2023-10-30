@@ -157,7 +157,7 @@ namespace WzUXRibbon.Converters
 
         #region Implementation of IValueConverter
 
-        /// <inheritdoc />
+        
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var desiredSize = Size.Empty;
@@ -177,7 +177,7 @@ namespace WzUXRibbon.Converters
             return this.Convert(value, null, desiredSize, targetType);
         }
 
-        /// <inheritdoc />
+        
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             return Binding.DoNothing;
@@ -195,7 +195,7 @@ namespace WzUXRibbon.Converters
 
         #region Implementation of IMultiValueConverter
 
-        /// <inheritdoc />
+        
         public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
         {
             var desiredSize = Size.Empty;
@@ -239,7 +239,7 @@ namespace WzUXRibbon.Converters
             return this.Convert(values[0], targetVisual, desiredSize, targetType);
         }
 
-        /// <inheritdoc />
+        
         public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
         {
             throw new NotImplementedException();
@@ -249,7 +249,7 @@ namespace WzUXRibbon.Converters
 
         #region Implementation of MarkupExtension
 
-        /// <inheritdoc />
+        
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
             return this.CreateMultiBinding(serviceProvider);

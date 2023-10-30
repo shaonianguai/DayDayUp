@@ -19,7 +19,7 @@ namespace WzUXRibbon.Controls
             VerticalAlignmentProperty.OverrideMetadata(typeof(WindowSteeringHelperControl), new FrameworkPropertyMetadata(VerticalAlignment.Stretch));
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
         {
             base.OnMouseLeftButtonDown(e);
@@ -30,7 +30,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseRightButtonUp(MouseButtonEventArgs e)
         {
             base.OnMouseRightButtonUp(e);

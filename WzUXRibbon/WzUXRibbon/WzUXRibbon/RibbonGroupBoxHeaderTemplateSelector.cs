@@ -11,7 +11,7 @@ namespace WzUXRibbon
         /// </summary>
         public static readonly RibbonGroupBoxHeaderTemplateSelector Instance = new RibbonGroupBoxHeaderTemplateSelector();
 
-        /// <inheritdoc />
+        
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
             var element = (FrameworkElement)container;

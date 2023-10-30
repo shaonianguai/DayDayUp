@@ -109,7 +109,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             this.textRun = this.GetTemplateChild("PART_TextRun") as AccessText;
@@ -118,7 +118,7 @@ namespace WzUXRibbon.Controls
             this.UpdateTextRun();
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.TwoLineLabelAutomationPeer(this);
 
         #endregion

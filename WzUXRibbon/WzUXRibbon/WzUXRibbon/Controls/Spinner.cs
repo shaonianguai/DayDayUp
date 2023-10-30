@@ -39,7 +39,7 @@ namespace WzUXRibbon.Controls
 
         #region SimplifiedSizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SimplifiedSizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SimplifiedSizeDefinitionProperty); }
@@ -53,7 +53,7 @@ namespace WzUXRibbon.Controls
 
         #region MediumIcon
 
-        /// <inheritdoc />
+        
         public object MediumIcon
         {
             get { return this.GetValue(MediumIconProperty); }
@@ -450,7 +450,7 @@ namespace WzUXRibbon.Controls
 
         #region Event Handling
 
-        /// <inheritdoc />
+        
         public override KeyTipPressedResult OnKeyTipPressed()
         {
             if (this.textBox is null)
@@ -592,13 +592,13 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         void ISimplifiedStateControl.UpdateSimplifiedState(bool isSimplified)
         {
             this.IsSimplified = isSimplified;
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get

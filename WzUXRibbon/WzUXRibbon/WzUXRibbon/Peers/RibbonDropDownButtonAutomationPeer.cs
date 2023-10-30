@@ -19,25 +19,25 @@ namespace WzUXRibbon.Automation.Peers
 
         private DropDownButton OwnerDropDownButton { get; }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return this.Owner.GetType().Name;
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationControlType GetAutomationControlTypeCore()
         {
             return AutomationControlType.Custom;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetLocalizedControlTypeCore()
         {
             return this.Owner.GetType().Name;
         }
 
-        /// <inheritdoc />
+        
         public override object GetPattern(PatternInterface patternInterface)
         {
             switch (patternInterface)
@@ -51,19 +51,19 @@ namespace WzUXRibbon.Automation.Peers
 
         #region IExpandCollapseProvider Members
 
-        /// <inheritdoc />
+        
         void IExpandCollapseProvider.Collapse()
         {
             this.OwnerDropDownButton.IsDropDownOpen = false;
         }
 
-        /// <inheritdoc />
+        
         void IExpandCollapseProvider.Expand()
         {
             this.OwnerDropDownButton.IsDropDownOpen = true;
         }
 
-        /// <inheritdoc />
+        
         ExpandCollapseState IExpandCollapseProvider.ExpandCollapseState => this.OwnerDropDownButton.IsDropDownOpen == false ? ExpandCollapseState.Collapsed : ExpandCollapseState.Expanded;
 
         [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]

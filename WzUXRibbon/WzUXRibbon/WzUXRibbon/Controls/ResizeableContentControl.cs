@@ -7,7 +7,7 @@ using WzUXRibbon.Internal.KnownBoxes;
 
 namespace WzUXRibbon.Controls
 {
-    /// <inheritdoc />
+    
     [TemplatePart(Name = "PART_ResizeVerticalThumb", Type = typeof(Thumb))]
     [TemplatePart(Name = "PART_ResizeBothThumb", Type = typeof(Thumb))]
     public class ResizeableContentControl : ContentControl
@@ -45,7 +45,7 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();

@@ -42,7 +42,7 @@ namespace WzUXRibbon.Automation.Peers
             return "TwoLineLabel";
         }
 
-        /// <inheritdoc />
+        
         protected override string GetNameCore()
         {
             return ((TwoLineLabel)this.Owner).Text;

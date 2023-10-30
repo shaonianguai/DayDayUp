@@ -15,20 +15,20 @@ namespace WzUXRibbon.Automation.Peers
         {
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationControlType GetAutomationControlTypeCore()
         {
             return AutomationControlType.ListItem;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             var wrapperPeer = this.GetWrapperPeer();
             return wrapperPeer?.GetClassName() ?? string.Empty;
         }
 
-        /// <inheritdoc />
+        
         public override object GetPattern(PatternInterface patternInterface)
         {
             // Doesnt implement any patterns of its own, so just forward to the wrapper peer. 

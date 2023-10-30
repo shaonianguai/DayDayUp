@@ -61,7 +61,7 @@ namespace WzUXRibbon.Controls
 
         #region SizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SizeDefinitionProperty); }
@@ -75,7 +75,7 @@ namespace WzUXRibbon.Controls
 
         #region SimplifiedSizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SimplifiedSizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SimplifiedSizeDefinitionProperty); }
@@ -89,7 +89,7 @@ namespace WzUXRibbon.Controls
 
         #region KeyTip
 
-        /// <inheritdoc />
+        
         public string KeyTip
         {
             get { return (string)this.GetValue(KeyTipProperty); }
@@ -104,10 +104,10 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         public Popup DropDownPopup { get; private set; }
 
-        /// <inheritdoc />
+        
         public bool IsContextMenuOpened { get; set; }
 
         #region DismissOnClickOutside
@@ -131,7 +131,7 @@ namespace WzUXRibbon.Controls
 
         #region Header
 
-        /// <inheritdoc />
+        
         public object Header
         {
             get { return this.GetValue(HeaderProperty); }
@@ -141,7 +141,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="Header"/> dependency property.</summary>
         public static readonly DependencyProperty HeaderProperty = RibbonControl.HeaderProperty.AddOwner(typeof(DropDownButton), new PropertyMetadata(LogicalChildSupportHelper.OnLogicalChildPropertyChanged));
 
-        /// <inheritdoc />
+        
         public DataTemplate HeaderTemplate
         {
             get { return (DataTemplate)this.GetValue(HeaderTemplateProperty); }
@@ -151,7 +151,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="HeaderTemplate"/> dependency property.</summary>
         public static readonly DependencyProperty HeaderTemplateProperty = RibbonControl.HeaderTemplateProperty.AddOwner(typeof(DropDownButton), new PropertyMetadata());
 
-        /// <inheritdoc />
+        
         public DataTemplateSelector HeaderTemplateSelector
         {
             get { return (DataTemplateSelector)this.GetValue(HeaderTemplateSelectorProperty); }
@@ -165,7 +165,7 @@ namespace WzUXRibbon.Controls
 
         #region Icon
 
-        /// <inheritdoc />
+        
         public object Icon
         {
             get { return this.GetValue(IconProperty); }
@@ -179,7 +179,7 @@ namespace WzUXRibbon.Controls
 
         #region LargeIcon
 
-        /// <inheritdoc />
+        
         public object LargeIcon
         {
             get { return this.GetValue(LargeIconProperty); }
@@ -193,7 +193,7 @@ namespace WzUXRibbon.Controls
 
         #region MediumIcon
 
-        /// <inheritdoc />
+        
         public object MediumIcon
         {
             get { return this.GetValue(MediumIconProperty); }
@@ -224,7 +224,7 @@ namespace WzUXRibbon.Controls
 
         #region IsDropDownOpen
 
-        /// <inheritdoc />
+        
         public bool IsDropDownOpen
         {
             get { return (bool)this.GetValue(IsDropDownOpenProperty); }
@@ -366,10 +366,10 @@ namespace WzUXRibbon.Controls
 
         #region Events
 
-        /// <inheritdoc />
+        
         public event EventHandler DropDownOpened;
 
-        /// <inheritdoc />
+        
         public event EventHandler DropDownClosed;
 
         #endregion
@@ -461,7 +461,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             this.UnSubscribeEvents();
@@ -487,13 +487,13 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         protected override DependencyObject GetContainerForItemOverride()
         {
             return new MenuItem();
         }
 
-        /// <inheritdoc />
+        
         protected override bool IsItemItsOwnContainerOverride(object item)
         {
             return item is FrameworkElement;
@@ -548,7 +548,7 @@ namespace WzUXRibbon.Controls
             this.IsDropDownOpen = !this.IsDropDownOpen;
         }
 
-        /// <inheritdoc />
+        
         protected override void OnKeyDown(KeyEventArgs e)
         {
             if (e.Handled)
@@ -644,7 +644,7 @@ namespace WzUXRibbon.Controls
 
         #region Methods
 
-        /// <inheritdoc />
+        
         public virtual KeyTipPressedResult OnKeyTipPressed()
         {
             this.IsDropDownOpen = true;
@@ -652,7 +652,7 @@ namespace WzUXRibbon.Controls
             return new KeyTipPressedResult(true, true);
         }
 
-        /// <inheritdoc />
+        
         public void OnKeyTipBack()
         {
             this.IsDropDownOpen = false;
@@ -754,7 +754,7 @@ namespace WzUXRibbon.Controls
 
         #region Quick Access Item Creating
 
-        /// <inheritdoc />
+        
         public virtual FrameworkElement CreateQuickAccessItem()
         {
             var button = new DropDownButton
@@ -845,7 +845,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         public bool CanAddToQuickAccessToolBar
         {
             get { return (bool)this.GetValue(CanAddToQuickAccessToolBarProperty); }
@@ -857,7 +857,7 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonDropDownButtonAutomationPeer(this);
 
         #region MenuItem workarounds
@@ -881,25 +881,25 @@ namespace WzUXRibbon.Controls
 
         #endregion MenuItem workarounds
 
-        /// <inheritdoc />
+        
         void ISimplifiedStateControl.UpdateSimplifiedState(bool isSimplified)
         {
             this.IsSimplified = isSimplified;
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get

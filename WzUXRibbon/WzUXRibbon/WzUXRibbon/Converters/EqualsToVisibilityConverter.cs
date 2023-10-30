@@ -7,9 +7,6 @@ namespace WzUXRibbon.Converters
 {
     public class EqualsToVisibilityConverter : IValueConverter
     {
-        #region Implementation of IValueConverter
-
-        /// <inheritdoc />
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value == parameter
@@ -21,12 +18,9 @@ namespace WzUXRibbon.Converters
             return VisibilityBoxes.Collapsed;
         }
 
-        /// <inheritdoc />
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             return Binding.DoNothing;
         }
-
-        #endregion
     }
 }

@@ -247,10 +247,10 @@ namespace WzUXRibbon.Controls
 
         private readonly VisualCollection visualCollection;
 
-        /// <inheritdoc />
+        
         protected override int VisualChildrenCount => base.VisualChildrenCount + this.visualCollection.Count;
 
-        /// <inheritdoc />
+        
         protected override Visual GetVisualChild(int index)
         {
             if (index < base.VisualChildrenCount)
@@ -415,7 +415,7 @@ namespace WzUXRibbon.Controls
             this.InvalidateMeasure();
         }
 
-        /// <inheritdoc />
+        
         protected override void OnVisualChildrenChanged(DependencyObject visualAdded, DependencyObject visualRemoved)
         {
             base.OnVisualChildrenChanged(visualAdded, visualRemoved);
@@ -437,7 +437,7 @@ namespace WzUXRibbon.Controls
 
         #region Layout Overrides
 
-        /// <inheritdoc />
+        
         protected override Size MeasureOverride(Size availableSize)
         {
             double width = 0;
@@ -454,7 +454,7 @@ namespace WzUXRibbon.Controls
             return size;
         }
 
-        /// <inheritdoc />
+        
         protected override Size ArrangeOverride(Size finalSize)
         {
             var finalRect = new Rect(finalSize);
@@ -511,7 +511,7 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get

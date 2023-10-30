@@ -52,7 +52,7 @@ namespace WzUXRibbon.Automation.Peers
             }
         }
 
-        /// <inheritdoc />
+        
         protected override List<AutomationPeer> GetChildrenCore()
         {
             var list = base.GetChildrenCore();
@@ -70,13 +70,13 @@ namespace WzUXRibbon.Automation.Peers
             return list;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return this.Owner.GetType().Name;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetNameCore()
         {
             var name = base.GetNameCore();
@@ -89,7 +89,7 @@ namespace WzUXRibbon.Automation.Peers
             return name ?? string.Empty;
         }
 
-        /// <inheritdoc />
+        
         public override object GetPattern(PatternInterface patternInterface)
         {
             switch (patternInterface)
@@ -105,12 +105,12 @@ namespace WzUXRibbon.Automation.Peers
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void SetFocusCore()
         {
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationControlType GetAutomationControlTypeCore()
         {
             return this.IsCollapseOrExpandValid
@@ -120,7 +120,7 @@ namespace WzUXRibbon.Automation.Peers
 
         #region IExpandCollapseProvider Members
 
-        /// <inheritdoc />
+        
         void IExpandCollapseProvider.Expand()
         {
             if (this.IsCollapseOrExpandValid == false)
@@ -131,7 +131,7 @@ namespace WzUXRibbon.Automation.Peers
             this.OwningGroup.IsDropDownOpen = true;
         }
 
-        /// <inheritdoc />
+        
         void IExpandCollapseProvider.Collapse()
         {
             if (this.IsCollapseOrExpandValid == false)
@@ -142,7 +142,7 @@ namespace WzUXRibbon.Automation.Peers
             this.OwningGroup.IsDropDownOpen = false;
         }
 
-        /// <inheritdoc />
+        
         ExpandCollapseState IExpandCollapseProvider.ExpandCollapseState => this.IsCollapseOrExpandValid
             ? ExpandCollapseState.Collapsed
             : ExpandCollapseState.Expanded;
@@ -161,7 +161,7 @@ namespace WzUXRibbon.Automation.Peers
 
         #region IScrollItemProvider Members
 
-        /// <inheritdoc />
+        
         void IScrollItemProvider.ScrollIntoView()
         {
             this.OwningGroup.BringIntoView();

@@ -542,7 +542,6 @@ namespace WzUXRibbon.Adorners
 
         #region Layout & Visual Children
 
-        /// <inheritdoc />
         protected override Size ArrangeOverride(Size finalSize)
         {
             this.LogDebug("ArrangeOverride");
@@ -555,7 +554,6 @@ namespace WzUXRibbon.Adorners
             return finalSize;
         }
 
-        /// <inheritdoc />
         protected override Size MeasureOverride(Size constraint)
         {
             this.LogDebug("MeasureOverride");
@@ -829,10 +827,8 @@ namespace WzUXRibbon.Adorners
             translatedPoint.Y = rows[index] - (keyTipInformation.KeyTip.DesiredSize.Height / 2.0);
         }
 
-        /// <inheritdoc />
         protected override int VisualChildrenCount => this.keyTipInformations.Count;
 
-        /// <inheritdoc />
         protected override Visual GetVisualChild(int index)
         {
             return this.keyTipInformations[index].KeyTip;

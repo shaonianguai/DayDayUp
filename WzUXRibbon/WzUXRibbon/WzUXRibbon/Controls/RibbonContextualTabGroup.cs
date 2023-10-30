@@ -264,7 +264,7 @@ namespace WzUXRibbon.Controls
 
         #region Override
 
-        /// <inheritdoc />
+        
         protected override void OnMouseLeftButtonUp(MouseButtonEventArgs e)
         {
             var firstVisibleItem = this.FirstVisibleAndEnabledItem;

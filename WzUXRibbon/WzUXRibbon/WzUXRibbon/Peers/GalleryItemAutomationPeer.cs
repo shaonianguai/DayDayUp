@@ -14,19 +14,19 @@ namespace WzUXRibbon.Automation.Peers
         {
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return "GalleryItem";
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationControlType GetAutomationControlTypeCore()
         {
             return AutomationControlType.ListItem;
         }
 
-        /// <inheritdoc />
+        
         public override object GetPattern(PatternInterface patternInterface)
         {
             if (patternInterface == PatternInterface.ScrollItem)

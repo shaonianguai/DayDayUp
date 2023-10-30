@@ -19,19 +19,19 @@ namespace WzUXRibbon.Automation.Peers
 
         private RibbonTabControl OwningRibbonTabControl { get; }
 
-        /// <inheritdoc />
+        
         protected override ItemAutomationPeer CreateItemAutomationPeer(object item)
         {
             return new RibbonTabItemDataAutomationPeer(item, this);
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return this.Owner.GetType().Name;
         }
 
-        /// <inheritdoc />
+        
         protected override Point GetClickablePointCore()
         {
             return new Point(double.NaN, double.NaN);
@@ -41,7 +41,7 @@ namespace WzUXRibbon.Automation.Peers
 
         bool ISelectionProvider.CanSelectMultiple => false;
 
-        /// <inheritdoc />
+        
         public override object GetPattern(PatternInterface patternInterface)
         {
             switch (patternInterface)
@@ -74,7 +74,7 @@ namespace WzUXRibbon.Automation.Peers
             return base.GetPattern(patternInterface);
         }
 
-        /// <inheritdoc />
+        
         protected override List<AutomationPeer> GetChildrenCore()
         {
             var children = base.GetChildrenCore() ?? new List<AutomationPeer>();

@@ -118,7 +118,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         protected override HitTestResult HitTestCore(PointHitTestParameters hitTestParameters)
         {
             var baseResult = base.HitTestCore(hitTestParameters);
@@ -131,7 +131,7 @@ namespace WzUXRibbon.Controls
             return baseResult;
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseRightButtonUp(MouseButtonEventArgs e)
         {
             base.OnMouseRightButtonUp(e);
@@ -145,7 +145,7 @@ namespace WzUXRibbon.Controls
             WindowSteeringHelper.ShowSystemMenu(this, e);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
         {
             base.OnMouseLeftButtonDown(e);
@@ -165,19 +165,19 @@ namespace WzUXRibbon.Controls
             WindowSteeringHelper.HandleMouseLeftButtonDown(e, true, true);
         }
 
-        /// <inheritdoc />
+        
         protected override DependencyObject GetContainerForItemOverride()
         {
             return new RibbonContextualTabGroup();
         }
 
-        /// <inheritdoc />
+        
         protected override bool IsItemItsOwnContainerOverride(object item)
         {
             return item is RibbonContextualTabGroup;
         }
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
@@ -191,7 +191,7 @@ namespace WzUXRibbon.Controls
                                                       || this.itemsContainer != null;
         }
 
-        /// <inheritdoc />
+        
         protected override Size MeasureOverride(Size constraint)
         {
             if (this.isAtLeastOneRequiredControlPresent == false)
@@ -221,7 +221,7 @@ namespace WzUXRibbon.Controls
             return new Size(width, maxHeight);
         }
 
-        /// <inheritdoc />
+        
         protected override Size ArrangeOverride(Size arrangeBounds)
         {
             if (this.isAtLeastOneRequiredControlPresent == false)
@@ -522,7 +522,7 @@ namespace WzUXRibbon.Controls
             this.ForceMeasureAndArrange();
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonTitleBarAutomationPeer(this);
     }
 }

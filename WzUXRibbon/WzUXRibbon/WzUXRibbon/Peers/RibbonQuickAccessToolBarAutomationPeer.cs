@@ -18,19 +18,19 @@ namespace WzUXRibbon.Automation.Peers
 
         private QuickAccessToolBar OwningQuickAccessToolBar { get; }
 
-        /// <inheritdoc />
+        
         protected override AutomationControlType GetAutomationControlTypeCore()
         {
             return AutomationControlType.ToolBar;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return this.Owner.GetType().Name;
         }
 
-        /// <inheritdoc />
+        
         protected override List<AutomationPeer> GetChildrenCore()
         {
             var children = new List<AutomationPeer>();

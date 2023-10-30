@@ -85,7 +85,6 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
         protected override void OnContextMenuOpening(ContextMenuEventArgs e)
         {
             if (ReferenceEquals(e.Source, this))
@@ -104,7 +103,6 @@ namespace WzUXRibbon.Controls
 
         #region Quick Access Toolbar
 
-        /// <inheritdoc />
         public override FrameworkElement CreateQuickAccessItem()
         {
             throw new NotImplementedException();
@@ -112,7 +110,6 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
         protected override IEnumerator LogicalChildren
         {
             get

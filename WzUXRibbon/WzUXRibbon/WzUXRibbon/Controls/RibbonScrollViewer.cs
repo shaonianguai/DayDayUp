@@ -7,7 +7,7 @@ namespace WzUXRibbon.Controls
 {
     public class RibbonScrollViewer : ScrollViewer
     {
-        /// <inheritdoc />
+        
         protected override HitTestResult HitTestCore(PointHitTestParameters hitTestParameters)
         {
             if (this.VisualChildrenCount > 0
@@ -19,7 +19,7 @@ namespace WzUXRibbon.Controls
             return base.HitTestCore(hitTestParameters);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseWheel(MouseWheelEventArgs e)
         {
             if (e.Handled)

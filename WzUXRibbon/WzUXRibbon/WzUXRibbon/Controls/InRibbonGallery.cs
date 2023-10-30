@@ -70,7 +70,7 @@ namespace WzUXRibbon.Controls
 
         #region Size
 
-        /// <inheritdoc />
+        
         public RibbonControlSize Size
         {
             get { return (RibbonControlSize)this.GetValue(SizeProperty); }
@@ -84,7 +84,7 @@ namespace WzUXRibbon.Controls
 
         #region SizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SizeDefinitionProperty); }
@@ -98,7 +98,7 @@ namespace WzUXRibbon.Controls
 
         #region SimplifiedSizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SimplifiedSizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SimplifiedSizeDefinitionProperty); }
@@ -112,7 +112,7 @@ namespace WzUXRibbon.Controls
 
         #region KeyTip
 
-        /// <inheritdoc />
+        
         public string KeyTip
         {
             get { return (string)this.GetValue(KeyTipProperty); }
@@ -129,7 +129,7 @@ namespace WzUXRibbon.Controls
 
         #region Header
 
-        /// <inheritdoc />
+        
         public object Header
         {
             get { return this.GetValue(HeaderProperty); }
@@ -139,7 +139,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="Header"/> dependency property.</summary>
         public static readonly DependencyProperty HeaderProperty = RibbonControl.HeaderProperty.AddOwner(typeof(InRibbonGallery), new PropertyMetadata(LogicalChildSupportHelper.OnLogicalChildPropertyChanged));
 
-        /// <inheritdoc />
+        
         public DataTemplate HeaderTemplate
         {
             get { return (DataTemplate)this.GetValue(HeaderTemplateProperty); }
@@ -149,7 +149,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="HeaderTemplate"/> dependency property.</summary>
         public static readonly DependencyProperty HeaderTemplateProperty = RibbonControl.HeaderTemplateProperty.AddOwner(typeof(InRibbonGallery), new PropertyMetadata());
 
-        /// <inheritdoc />
+        
         public DataTemplateSelector HeaderTemplateSelector
         {
             get { return (DataTemplateSelector)this.GetValue(HeaderTemplateSelectorProperty); }
@@ -163,7 +163,7 @@ namespace WzUXRibbon.Controls
 
         #region Icon
 
-        /// <inheritdoc />
+        
         public object Icon
         {
             get { return this.GetValue(IconProperty); }
@@ -547,13 +547,13 @@ namespace WzUXRibbon.Controls
 
         #region IsDropDownOpen
 
-        /// <inheritdoc />
+        
         public Popup DropDownPopup { get; private set; }
 
-        /// <inheritdoc />
+        
         public bool IsContextMenuOpened { get; set; }
 
-        /// <inheritdoc />
+        
         public bool IsDropDownOpen
         {
             get { return (bool)this.GetValue(IsDropDownOpenProperty); }
@@ -736,7 +736,7 @@ namespace WzUXRibbon.Controls
 
         #region LargeIcon
 
-        /// <inheritdoc />
+        
         public object LargeIcon
         {
             get { return this.GetValue(LargeIconProperty); }
@@ -750,7 +750,7 @@ namespace WzUXRibbon.Controls
 
         #region MediumIcon
 
-        /// <inheritdoc />
+        
         public object MediumIcon
         {
             get { return this.GetValue(MediumIconProperty); }
@@ -1009,13 +1009,13 @@ namespace WzUXRibbon.Controls
 
         #region Events
 
-        /// <inheritdoc />
+        
         public event EventHandler Scaled;
 
-        /// <inheritdoc />
+        
         public event EventHandler DropDownOpened;
 
-        /// <inheritdoc />
+        
         public event EventHandler DropDownClosed;
 
         #endregion
@@ -1077,7 +1077,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         protected override void OnKeyUp(KeyEventArgs e)
         {
             base.OnKeyUp(e);
@@ -1101,7 +1101,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         public KeyTipPressedResult OnKeyTipPressed()
         {
             this.IsDropDownOpen = true;
@@ -1109,13 +1109,13 @@ namespace WzUXRibbon.Controls
             return new KeyTipPressedResult(false, true);
         }
 
-        /// <inheritdoc />
+        
         public void OnKeyTipBack()
         {
             this.IsDropDownOpen = false;
         }
 
-        /// <inheritdoc />
+        
         protected override void OnSelectionChanged(SelectionChangedEventArgs e)
         {
             foreach (var item in e.RemovedItems)
@@ -1150,7 +1150,7 @@ namespace WzUXRibbon.Controls
             peerForElement.RaiseSelectionEvents(e);
         }
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             if (this.expandButton != null)
@@ -1266,7 +1266,7 @@ namespace WzUXRibbon.Controls
             this.isButtonClicked = true;
         }
 
-        /// <inheritdoc />
+        
         public void OnSizePropertyChanged(RibbonControlSize previous, RibbonControlSize current)
         {
             if (this.CanCollapseToButton)
@@ -1283,19 +1283,19 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override DependencyObject GetContainerForItemOverride()
         {
             return new GalleryItem();
         }
 
-        /// <inheritdoc />
+        
         protected override bool IsItemItsOwnContainerOverride(object item)
         {
             return item is GalleryItem;
         }
 
-        /// <inheritdoc />
+        
         protected override void OnItemsChanged(NotifyCollectionChangedEventArgs e)
         {
             base.OnItemsChanged(e);
@@ -1308,7 +1308,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnKeyDown(KeyEventArgs e)
         {
             if (e.Key == Key.Escape)
@@ -1323,7 +1323,7 @@ namespace WzUXRibbon.Controls
 
         #region QuickAccess
 
-        /// <inheritdoc />
+        
         public virtual FrameworkElement CreateQuickAccessItem()
         {
             var gallery = new InRibbonGallery();
@@ -1474,7 +1474,7 @@ namespace WzUXRibbon.Controls
             }, DispatcherPriority.SystemIdle);
         }
 
-        /// <inheritdoc />
+        
         public bool CanAddToQuickAccessToolBar
         {
             get { return (bool)this.GetValue(CanAddToQuickAccessToolBarProperty); }
@@ -1488,7 +1488,7 @@ namespace WzUXRibbon.Controls
 
         #region Implementation of IScalableRibbonControl
 
-        /// <inheritdoc />
+        
         public void ResetScale()
         {
             if (this.CanCollapseToButton
@@ -1507,7 +1507,7 @@ namespace WzUXRibbon.Controls
             this.InvalidateMeasure();
         }
 
-        /// <inheritdoc />
+        
         public void Enlarge()
         {
             if (this.CanCollapseToButton
@@ -1531,7 +1531,7 @@ namespace WzUXRibbon.Controls
             this.Scaled?.Invoke(this, EventArgs.Empty);
         }
 
-        /// <inheritdoc />
+        
         public void Reduce()
         {
             if (this.galleryPanel != null
@@ -1556,7 +1556,7 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         void ISimplifiedStateControl.UpdateSimplifiedState(bool isSimplified)
         {
             this.IsSimplified = isSimplified;
@@ -1566,19 +1566,19 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get
@@ -1611,7 +1611,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonInRibbonGalleryAutomationPeer(this);
 
         internal class GalleryPanelState

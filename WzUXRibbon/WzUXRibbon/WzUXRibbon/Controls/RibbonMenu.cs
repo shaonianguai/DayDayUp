@@ -19,13 +19,13 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         protected override DependencyObject GetContainerForItemOverride()
         {
             return new MenuItem();
         }
 
-        /// <inheritdoc />
+        
         protected override bool IsItemItsOwnContainerOverride(object item)
         {
             return item is System.Windows.Controls.MenuItem

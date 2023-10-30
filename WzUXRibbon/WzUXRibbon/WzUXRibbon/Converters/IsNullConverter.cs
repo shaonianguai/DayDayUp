@@ -12,13 +12,13 @@ namespace WzUXRibbon.Converters
         /// </summary>
         public static readonly IsNullConverter Instance = new IsNullConverter();
 
-        /// <inheritdoc />
+        
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             return BooleanBoxes.Box(value is null);
         }
 
-        /// <inheritdoc />
+        
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             return Binding.DoNothing;

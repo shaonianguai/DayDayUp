@@ -12,7 +12,7 @@ namespace WzUXRibbon.Controls
     {
         private readonly List<Size> sizes = new List<Size>();
 
-        /// <inheritdoc />
+        
         protected override Size ArrangeOverride(Size finalSize)
         {
             var finalRect = new Rect(finalSize);
@@ -30,7 +30,7 @@ namespace WzUXRibbon.Controls
             return finalSize;
         }
 
-        /// <inheritdoc />
+        
         protected override Size MeasureOverride(Size availableSize)
         {
             var allGroupsWidth = 0D;

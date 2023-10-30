@@ -371,22 +371,22 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonScreenTipAutomationPeer(this);
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get

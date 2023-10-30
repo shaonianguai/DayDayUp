@@ -91,7 +91,7 @@ namespace WzUXRibbon.Services
         /// </summary>
         public DismissPopupReason DismissReason { get; set; }
 
-        /// <inheritdoc />
+        
         protected override void InvokeEventHandler(Delegate genericHandler, object genericTarget)
         {
             var handler = (EventHandler<DismissPopupEventArgs>)genericHandler;

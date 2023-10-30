@@ -26,7 +26,7 @@ namespace WzUXRibbon.Controls
     {
         #region KeyTip
 
-        /// <inheritdoc />
+        
         public string KeyTip
         {
             get { return (string)this.GetValue(KeyTipProperty); }
@@ -43,7 +43,7 @@ namespace WzUXRibbon.Controls
 
         #region Header
 
-        /// <inheritdoc />
+        
         public object Header
         {
             get { return this.GetValue(HeaderProperty); }
@@ -54,7 +54,7 @@ namespace WzUXRibbon.Controls
         public static readonly DependencyProperty HeaderProperty =
             DependencyProperty.Register(nameof(Header), typeof(object), typeof(RibbonControl), new PropertyMetadata(LogicalChildSupportHelper.OnLogicalChildPropertyChanged));
 
-        /// <inheritdoc />
+        
         public DataTemplate HeaderTemplate
         {
             get { return (DataTemplate)this.GetValue(HeaderTemplateProperty); }
@@ -65,7 +65,7 @@ namespace WzUXRibbon.Controls
         public static readonly DependencyProperty HeaderTemplateProperty =
             DependencyProperty.Register(nameof(HeaderTemplate), typeof(DataTemplate), typeof(RibbonControl), new PropertyMetadata());
 
-        /// <inheritdoc />
+        
         public DataTemplateSelector HeaderTemplateSelector
         {
             get { return (DataTemplateSelector)this.GetValue(HeaderTemplateSelectorProperty); }
@@ -80,7 +80,7 @@ namespace WzUXRibbon.Controls
 
         #region Icon
 
-        /// <inheritdoc />
+        
         public object Icon
         {
             get { return this.GetValue(IconProperty); }
@@ -96,7 +96,7 @@ namespace WzUXRibbon.Controls
 
         private bool currentCanExecute = true;
 
-        /// <inheritdoc />
+        
         [Category("Action")]
         [Localizability(LocalizationCategory.NeverLocalize)]
         [Bindable(true)]
@@ -113,7 +113,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         [Bindable(true)]
         [Localizability(LocalizationCategory.NeverLocalize)]
         [Category("Action")]
@@ -130,7 +130,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         [Bindable(true)]
         [Category("Action")]
         public IInputElement CommandTarget
@@ -209,14 +209,14 @@ namespace WzUXRibbon.Controls
 
         #region IsEnabled
 
-        /// <inheritdoc />
+        
         protected override bool IsEnabledCore => base.IsEnabledCore && (this.currentCanExecute || this.Command is null);
 
         #endregion
 
         #region Size
 
-        /// <inheritdoc />
+        
         public RibbonControlSize Size
         {
             get { return (RibbonControlSize)this.GetValue(SizeProperty); }
@@ -230,7 +230,7 @@ namespace WzUXRibbon.Controls
 
         #region SizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SizeDefinitionProperty); }
@@ -266,7 +266,7 @@ namespace WzUXRibbon.Controls
 
         #region QuickAccess
 
-        /// <inheritdoc />
+        
         public abstract FrameworkElement CreateQuickAccessItem();
 
         /// <summary>
@@ -358,7 +358,7 @@ namespace WzUXRibbon.Controls
             RibbonProperties.SetSize(element, RibbonControlSize.Small);
         }
 
-        /// <inheritdoc />
+        
         public bool CanAddToQuickAccessToolBar
         {
             get { return (bool)this.GetValue(CanAddToQuickAccessToolBarProperty); }
@@ -412,13 +412,13 @@ namespace WzUXRibbon.Controls
 
         #region Methods
 
-        /// <inheritdoc />
+        
         public virtual KeyTipPressedResult OnKeyTipPressed()
         {
             return KeyTipPressedResult.Empty;
         }
 
-        /// <inheritdoc />
+        
         public virtual void OnKeyTipBack()
         {
         }
@@ -503,19 +503,19 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get
@@ -538,7 +538,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonControlAutomationPeer(this);
     }
 }

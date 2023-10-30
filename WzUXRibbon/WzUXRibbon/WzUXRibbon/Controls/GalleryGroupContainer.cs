@@ -129,7 +129,7 @@ namespace WzUXRibbon.Controls
             DefaultStyleKeyProperty.OverrideMetadata(typeof(GalleryGroupContainer), new FrameworkPropertyMetadata(typeof(GalleryGroupContainer)));
         }
 
-        /// <inheritdoc />
+        
         protected override void OnItemsPanelChanged(ItemsPanelTemplate oldItemsPanel, ItemsPanelTemplate newItemsPanel)
         {
             base.OnItemsPanelChanged(oldItemsPanel, newItemsPanel);

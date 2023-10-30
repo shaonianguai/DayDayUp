@@ -8,7 +8,6 @@ namespace WzUXRibbon.Converters
 {
     public sealed class ApplicationMenuRightScrollViewerExtractorConverter : IValueConverter
     {
-        /// <inheritdoc />
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value is ApplicationMenu menu)
@@ -19,7 +18,6 @@ namespace WzUXRibbon.Converters
             return value;
         }
 
-        /// <inheritdoc />
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             return value;

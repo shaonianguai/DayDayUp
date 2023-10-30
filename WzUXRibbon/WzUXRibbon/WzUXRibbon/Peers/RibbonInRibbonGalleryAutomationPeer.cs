@@ -20,13 +20,13 @@ namespace WzUXRibbon.Automation.Peers
             this.owner = owner;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return this.Owner.GetType().Name;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetNameCore()
         {
             var name = base.GetNameCore();
@@ -39,19 +39,19 @@ namespace WzUXRibbon.Automation.Peers
             return name;
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationControlType GetAutomationControlTypeCore()
         {
             return AutomationControlType.List;
         }
 
-        /// <inheritdoc />
+        
         protected override ItemAutomationPeer CreateItemAutomationPeer(object item)
         {
             return new GalleryItemAutomationPeer(item, this);
         }
 
-        /// <inheritdoc />
+        
         public override object GetPattern(PatternInterface patternInterface)
         {
             if(patternInterface == PatternInterface.ExpandCollapse
@@ -65,7 +65,7 @@ namespace WzUXRibbon.Automation.Peers
             }
         }
 
-        /// <inheritdoc />
+        
         public void Collapse()
         {
             if (!this.IsEnabled())
@@ -76,7 +76,7 @@ namespace WzUXRibbon.Automation.Peers
             this.owner.SetCurrentValue(InRibbonGallery.IsDropDownOpenProperty, BooleanBoxes.FalseBox);
         }
 
-        /// <inheritdoc />
+        
         public void Expand()
         {
             if (!this.IsEnabled())
@@ -87,7 +87,7 @@ namespace WzUXRibbon.Automation.Peers
             this.owner.SetCurrentValue(InRibbonGallery.IsDropDownOpenProperty, BooleanBoxes.TrueBox);
         }
 
-        /// <inheritdoc />
+        
         public ExpandCollapseState ExpandCollapseState => this.owner.IsDropDownOpen
             ? ExpandCollapseState.Expanded
             : ExpandCollapseState.Collapsed;

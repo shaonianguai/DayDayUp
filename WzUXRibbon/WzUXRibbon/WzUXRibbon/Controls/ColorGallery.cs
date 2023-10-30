@@ -698,7 +698,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();

@@ -30,14 +30,14 @@ namespace WzUXRibbon.Controls
 
         #region Methods
 
-        /// <inheritdoc />
+        
         protected override Size MeasureCore(Size availableSize)
         {
             this.Target.Measure(availableSize);
             return this.Target.DesiredSize;
         }
 
-        /// <inheritdoc />
+        
         protected override void ArrangeCore(Rect finalRect)
         {
             base.ArrangeCore(finalRect);

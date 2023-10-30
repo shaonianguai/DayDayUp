@@ -100,7 +100,7 @@ namespace WzUXRibbon.Controls
 
         #region Invalidating
 
-        /// <inheritdoc />
+        
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -112,7 +112,7 @@ namespace WzUXRibbon.Controls
 
         #region Implementation of IRibbonSizeChangedSink
 
-        /// <inheritdoc />
+        
         public void OnSizePropertyChanged(RibbonControlSize previous, RibbonControlSize current)
         {
             // todo: do we really need this? Size is a DependencyProperty.

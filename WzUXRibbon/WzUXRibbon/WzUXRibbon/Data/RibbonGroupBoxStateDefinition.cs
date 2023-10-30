@@ -180,7 +180,7 @@ namespace WzUXRibbon.Data
 
         #region Overrides of ValueType
 
-        /// <inheritdoc />
+        
         public override bool Equals(object obj)
         {
             if (obj is null)
@@ -194,7 +194,7 @@ namespace WzUXRibbon.Data
 
         #region Equality members
 
-        /// <inheritdoc />
+        
         public bool Equals(RibbonGroupBoxStateDefinition other)
         {
             var currentStates = this.GetStates();
@@ -214,7 +214,7 @@ namespace WzUXRibbon.Data
             return true;
         }
 
-        /// <inheritdoc />
+        
         public override int GetHashCode()
         {
             unchecked

@@ -12,13 +12,13 @@ namespace WzUXRibbon.Automation.Peers
         {
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return "RibbonButton";
         }
 
-        /// <inheritdoc />
+        
         protected override string GetNameCore()
         {
             var name = base.GetNameCore();
@@ -31,7 +31,7 @@ namespace WzUXRibbon.Automation.Peers
             return name;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetAccessKeyCore()
         {
             var text = ((WzUXRibbon.Controls.Button)this.Owner).KeyTip;
@@ -43,7 +43,7 @@ namespace WzUXRibbon.Automation.Peers
             return text;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetHelpTextCore()
         {
             var text = base.GetHelpTextCore();

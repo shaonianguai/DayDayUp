@@ -6,7 +6,6 @@ namespace WzUXRibbon.Converters
 {
     public class InvertNumericConverter : IValueConverter
     {
-        /// <inheritdoc />
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             {
@@ -40,7 +39,6 @@ namespace WzUXRibbon.Converters
             return value;
         }
 
-        /// <inheritdoc />
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             return this.Convert(value, targetType, parameter, culture);

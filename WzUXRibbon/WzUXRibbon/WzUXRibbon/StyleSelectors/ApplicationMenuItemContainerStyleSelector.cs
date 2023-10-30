@@ -10,7 +10,7 @@ namespace WzUXRibbon.StyleSelectors
         /// </summary>
         public static ApplicationMenuItemContainerStyleSelector Instance { get; } = new ApplicationMenuItemContainerStyleSelector();
 
-        /// <inheritdoc />
+        
         public override Style SelectStyle(object item, DependencyObject container)
         {
             switch (item)

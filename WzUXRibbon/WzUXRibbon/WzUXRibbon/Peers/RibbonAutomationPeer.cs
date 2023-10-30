@@ -22,13 +22,13 @@ namespace WzUXRibbon.Automation.Peers
 
         private Ribbon OwningRibbon { get; }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return this.Owner.GetType().Name;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetNameCore()
         {
             var name = base.GetNameCore();
@@ -41,13 +41,13 @@ namespace WzUXRibbon.Automation.Peers
             return name;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetLocalizedControlTypeCore()
         {
             return "Ribbon";
         }
 
-        /// <inheritdoc />
+        
         public override object GetPattern(PatternInterface patternInterface)
         {
             switch (patternInterface)
@@ -74,7 +74,7 @@ namespace WzUXRibbon.Automation.Peers
             return base.GetPattern(patternInterface);
         }
 
-        /// <inheritdoc />
+        
         protected override List<AutomationPeer> GetChildrenCore()
         {
             var children = new List<AutomationPeer>();
@@ -134,19 +134,19 @@ namespace WzUXRibbon.Automation.Peers
 
         #region IExpandCollapseProvider Members
 
-        /// <inheritdoc />
+        
         void IExpandCollapseProvider.Collapse()
         {
             this.OwningRibbon.IsMinimized = true;
         }
 
-        /// <inheritdoc />
+        
         void IExpandCollapseProvider.Expand()
         {
             this.OwningRibbon.IsMinimized = false;
         }
 
-        /// <inheritdoc />
+        
         ExpandCollapseState IExpandCollapseProvider.ExpandCollapseState => this.OwningRibbon.IsMinimized ? ExpandCollapseState.Collapsed : ExpandCollapseState.Expanded;
 
         [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]

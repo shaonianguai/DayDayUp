@@ -39,7 +39,7 @@ namespace WzUXRibbon.Controls
 
         #region Size
 
-        /// <inheritdoc />
+        
         public RibbonControlSize Size
         {
             get { return (RibbonControlSize)this.GetValue(SizeProperty); }
@@ -53,7 +53,7 @@ namespace WzUXRibbon.Controls
 
         #region SizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SizeDefinitionProperty); }
@@ -67,7 +67,7 @@ namespace WzUXRibbon.Controls
 
         #region KeyTip
 
-        /// <inheritdoc />
+        
         public string KeyTip
         {
             get { return (string)this.GetValue(KeyTipProperty); }
@@ -82,10 +82,10 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         public Popup DropDownPopup { get; private set; }
 
-        /// <inheritdoc />
+        
         public bool IsContextMenuOpened { get; set; }
 
         #region Description
@@ -107,7 +107,7 @@ namespace WzUXRibbon.Controls
 
         #region IsDropDownOpen
 
-        /// <inheritdoc />
+        
         public bool IsDropDownOpen
         {
             get { return this.IsSubmenuOpen; }
@@ -187,14 +187,14 @@ namespace WzUXRibbon.Controls
 
         #region GroupName
 
-        /// <inheritdoc />
+        
         public string GroupName
         {
             get { return (string)this.GetValue(GroupNameProperty); }
             set { this.SetValue(GroupNameProperty, value); }
         }
 
-        /// <inheritdoc />
+        
         bool? IToggleButton.IsChecked
         {
             get { return this.IsChecked; }
@@ -210,10 +210,10 @@ namespace WzUXRibbon.Controls
 
         #region Events
 
-        /// <inheritdoc />
+        
         public event EventHandler DropDownOpened;
 
-        /// <inheritdoc />
+        
         public event EventHandler DropDownClosed;
 
         #endregion
@@ -243,7 +243,7 @@ namespace WzUXRibbon.Controls
             WzUXRibbon.Services.ContextMenuService.Coerce(this);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseWheel(MouseWheelEventArgs e)
         {
             base.OnMouseWheel(e);
@@ -285,7 +285,7 @@ namespace WzUXRibbon.Controls
 
         #region QuickAccess
 
-        /// <inheritdoc />
+        
         public virtual FrameworkElement CreateQuickAccessItem()
         {
             if (this.HasItems)
@@ -374,7 +374,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         public bool CanAddToQuickAccessToolBar
         {
             get { return (bool)this.GetValue(CanAddToQuickAccessToolBarProperty); }
@@ -390,7 +390,7 @@ namespace WzUXRibbon.Controls
 
         #region Public
 
-        /// <inheritdoc />
+        
         public virtual KeyTipPressedResult OnKeyTipPressed()
         {
             if (this.HasItems == false)
@@ -408,7 +408,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         public void OnKeyTipBack()
         {
             this.IsDropDownOpen = false;
@@ -418,13 +418,13 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         protected override DependencyObject GetContainerForItemOverride()
         {
             return new MenuItem();
         }
 
-        /// <inheritdoc />
+        
         protected override bool IsItemItsOwnContainerOverride(object item)
         {
             return item is FrameworkElement;
@@ -451,7 +451,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnIsKeyboardFocusedChanged(DependencyPropertyChangedEventArgs e)
         {
             base.OnIsKeyboardFocusedChanged(e);
@@ -462,7 +462,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseEnter(MouseEventArgs e)
         {
             base.OnMouseEnter(e);
@@ -478,7 +478,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseLeave(MouseEventArgs e)
         {
             base.OnMouseLeave(e);
@@ -495,7 +495,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnContextMenuOpening(ContextMenuEventArgs e)
         {
             this.isContextMenuOpening = true;
@@ -510,7 +510,7 @@ namespace WzUXRibbon.Controls
             base.OnContextMenuOpening(e);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnContextMenuClosing(ContextMenuEventArgs e)
         {
             this.isContextMenuOpening = false;
@@ -520,7 +520,7 @@ namespace WzUXRibbon.Controls
 
         #endregion Non MenuBase ItemsControl workarounds
 
-        /// <inheritdoc />
+        
         protected override void OnMouseLeftButtonUp(MouseButtonEventArgs e)
         {
             if (e.ClickCount == 1)
@@ -538,7 +538,7 @@ namespace WzUXRibbon.Controls
             base.OnMouseLeftButtonUp(e);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnClick()
         {
             // Close popup on click
@@ -570,7 +570,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             if (this.DropDownPopup != null)
@@ -595,7 +595,7 @@ namespace WzUXRibbon.Controls
             this.menuPanel = this.GetTemplateChild("PART_MenuPanel") as Panel;
         }
 
-        /// <inheritdoc />
+        
         protected override void OnKeyDown(KeyEventArgs e)
         {
             if (e.Key == Key.Escape)
@@ -717,19 +717,19 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get

@@ -19,7 +19,7 @@ namespace WzUXRibbon.Automation.Peers
 
         private RibbonTabItem OwningTab { get; }
 
-        /// <inheritdoc />
+        
         public override object GetPattern(PatternInterface patternInterface)
         {
             switch (patternInterface)
@@ -41,7 +41,7 @@ namespace WzUXRibbon.Automation.Peers
             return base.GetPattern(patternInterface);
         }
 
-        /// <inheritdoc />
+        
         protected override List<AutomationPeer> GetChildrenCore()
         {
             var children = GetHeaderChildren() ?? new List<AutomationPeer>();
@@ -79,13 +79,13 @@ namespace WzUXRibbon.Automation.Peers
             }
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return this.Owner.GetType().Name;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetAccessKeyCore()
         {
             var text = this.OwningTab.KeyTip;

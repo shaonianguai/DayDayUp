@@ -504,19 +504,19 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         protected override DependencyObject GetContainerForItemOverride()
         {
             return new GalleryItem();
         }
 
-        /// <inheritdoc />
+        
         protected override bool IsItemItsOwnContainerOverride(object item)
         {
             return item is GalleryItem;
         }
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             if (this.groupsMenuButton != null)

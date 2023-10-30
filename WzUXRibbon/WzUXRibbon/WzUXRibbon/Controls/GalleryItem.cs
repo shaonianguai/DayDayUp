@@ -20,7 +20,7 @@ namespace WzUXRibbon.Controls
 
         #region KeyTip
 
-        /// <inheritdoc />
+        
         public string KeyTip
         {
             get { return (string)this.GetValue(KeyTipProperty); }
@@ -83,7 +83,7 @@ namespace WzUXRibbon.Controls
 
         private bool currentCanExecute = true;
 
-        /// <inheritdoc />
+        
         [Category("Action")]
         [Localizability(LocalizationCategory.NeverLocalize)]
         [Bindable(true)]
@@ -100,7 +100,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         [Bindable(true)]
         [Localizability(LocalizationCategory.NeverLocalize)]
         [Category("Action")]
@@ -117,7 +117,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         [Bindable(true)]
         [Category("Action")]
         public IInputElement CommandTarget
@@ -222,7 +222,7 @@ namespace WzUXRibbon.Controls
 
         #region IsEnabled
 
-        /// <inheritdoc />
+        
         protected override bool IsEnabledCore => base.IsEnabledCore && (this.currentCanExecute || this.Command is null);
 
         #endregion
@@ -308,7 +308,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
         {
             this.IsPressed = true;
@@ -316,7 +316,7 @@ namespace WzUXRibbon.Controls
             e.Handled = true;
         }
 
-        /// <inheritdoc />
+        
         protected override void OnLostMouseCapture(MouseEventArgs e)
         {
             base.OnLostMouseCapture(e);
@@ -324,7 +324,7 @@ namespace WzUXRibbon.Controls
             this.IsPressed = false;
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseLeftButtonUp(MouseButtonEventArgs e)
         {
             this.IsPressed = false;
@@ -344,7 +344,7 @@ namespace WzUXRibbon.Controls
             e.Handled = true;
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseEnter(MouseEventArgs e)
         {
             base.OnMouseEnter(e);
@@ -352,7 +352,7 @@ namespace WzUXRibbon.Controls
             CommandHelper.Execute(this.PreviewCommand, this, null);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseLeave(MouseEventArgs e)
         {
             base.OnMouseLeave(e);
@@ -360,7 +360,7 @@ namespace WzUXRibbon.Controls
             CommandHelper.Execute(this.CancelPreviewCommand, this, null);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnKeyUp(KeyEventArgs e)
         {
             base.OnKeyUp(e);
@@ -401,7 +401,7 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         public KeyTipPressedResult OnKeyTipPressed()
         {
             this.RaiseClick();
@@ -409,12 +409,12 @@ namespace WzUXRibbon.Controls
             return KeyTipPressedResult.Empty;
         }
 
-        /// <inheritdoc />
+        
         public void OnKeyTipBack()
         {
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.GalleryItemWrapperAutomationPeer(this);
     }
 }

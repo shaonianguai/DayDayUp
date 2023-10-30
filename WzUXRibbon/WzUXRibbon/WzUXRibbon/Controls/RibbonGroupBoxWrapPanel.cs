@@ -233,7 +233,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override Size MeasureOverride(Size constraint)
         {
             var curLineSize = new UvSize(this.Orientation);
@@ -295,7 +295,7 @@ namespace WzUXRibbon.Controls
             return new Size(panelSize.Width, panelSize.Height);
         }
 
-        /// <inheritdoc />
+        
         protected override Size ArrangeOverride(Size finalSize)
         {
             var parentRibbonGroupBox = UIHelper.GetParent<RibbonGroupBox>(this);

@@ -58,10 +58,10 @@ namespace WzUXRibbon.Controls
 
         #region Events
 
-        /// <inheritdoc />
+        
         public event EventHandler DropDownOpened;
 
-        /// <inheritdoc />
+        
         public event EventHandler DropDownClosed;
 
         #endregion
@@ -86,7 +86,7 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         public Popup DropDownPopup { get; private set; }
 
         /// <summary>
@@ -101,7 +101,7 @@ namespace WzUXRibbon.Controls
         /// </summary>
         public ContentPresenter SelectedContentPresenter { get; private set; }
 
-        /// <inheritdoc />
+        
         public bool IsContextMenuOpened { get; set; }
 
         /// <summary>
@@ -175,7 +175,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="CanUseSimplified"/> dependency property.</summary>
         public static readonly DependencyProperty CanUseSimplifiedProperty = DependencyProperty.Register(nameof(CanUseSimplified), typeof(bool), typeof(RibbonTabControl), new PropertyMetadata(BooleanBoxes.FalseBox));
 
-        /// <inheritdoc />
+        
         public bool IsDropDownOpen
         {
             get { return (bool)this.GetValue(IsDropDownOpenProperty); }
@@ -440,26 +440,26 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         protected override void OnInitialized(EventArgs e)
         {
             base.OnInitialized(e);
             this.ItemContainerGenerator.StatusChanged += this.OnGeneratorStatusChanged;
         }
 
-        /// <inheritdoc />
+        
         protected override DependencyObject GetContainerForItemOverride()
         {
             return new RibbonTabItem();
         }
 
-        /// <inheritdoc />
+        
         protected override bool IsItemItsOwnContainerOverride(object item)
         {
             return item is RibbonTabItem;
         }
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             this.TabsContainer = this.GetTemplateChild("PART_TabsContainer") as Panel;
@@ -498,7 +498,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnItemsChanged(NotifyCollectionChangedEventArgs e)
         {
             base.OnItemsChanged(e);
@@ -530,7 +530,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnSelectionChanged(SelectionChangedEventArgs e)
         {
             var newSelectedItem = e.AddedItems.Count > 0
@@ -563,7 +563,7 @@ namespace WzUXRibbon.Controls
             base.OnSelectionChanged(e);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnPreviewMouseWheel(MouseWheelEventArgs e)
         {
             if (!this.IsMouseWheelScrollingEnabledEverywhere || !this.IsMouseOver)
@@ -591,7 +591,7 @@ namespace WzUXRibbon.Controls
             e.Handled = true;
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseWheel(MouseWheelEventArgs e)
         {
             // Mouse wheel on tab container may be used to cycle selected tab.
@@ -601,7 +601,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnKeyDown(KeyEventArgs e)
         {
             base.OnKeyDown(e);
@@ -672,7 +672,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonTabControlAutomationPeer(this);
 
         #endregion
@@ -1054,19 +1054,19 @@ namespace WzUXRibbon.Controls
             return null;
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get

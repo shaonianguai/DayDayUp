@@ -39,7 +39,7 @@ namespace WzUXRibbon.Controls
 
         #region Command
 
-        /// <inheritdoc />
+        
         [Category("Action")]
         [Localizability(LocalizationCategory.NeverLocalize)]
         [Bindable(true)]
@@ -56,7 +56,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         [Bindable(true)]
         [Localizability(LocalizationCategory.NeverLocalize)]
         [Category("Action")]
@@ -73,7 +73,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         [Bindable(true)]
         [Category("Action")]
         public IInputElement CommandTarget
@@ -102,7 +102,7 @@ namespace WzUXRibbon.Controls
 
         #region GroupName
 
-        /// <inheritdoc />
+        
         public string GroupName
         {
             get { return (string)this.GetValue(GroupNameProperty); }
@@ -116,7 +116,7 @@ namespace WzUXRibbon.Controls
 
         #region IsChecked
 
-        /// <inheritdoc />
+        
         public bool? IsChecked
         {
             get { return (bool?)this.GetValue(IsCheckedProperty); }
@@ -421,7 +421,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             this.UnSubscribeEvents();
@@ -437,7 +437,7 @@ namespace WzUXRibbon.Controls
             this.SubscribeEvents();
         }
 
-        /// <inheritdoc />
+        
         protected override void OnPreviewMouseLeftButtonDown(MouseButtonEventArgs e)
         {
             if (!PopupService.IsMousePhysicallyOver(this.button))
@@ -450,12 +450,12 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonSplitButtonAutomationPeer(this);
 
         #region Overrides of DropDownButton
 
-        /// <inheritdoc />
+        
         protected override void OnKeyDown(KeyEventArgs e)
         {
             base.OnKeyDown(e);
@@ -483,7 +483,7 @@ namespace WzUXRibbon.Controls
 
         #region Quick Access Item Creating
 
-        /// <inheritdoc />
+        
         public override FrameworkElement CreateQuickAccessItem()
         {
             var buttonForQAT = new SplitButton
@@ -501,7 +501,7 @@ namespace WzUXRibbon.Controls
             return buttonForQAT;
         }
 
-        /// <inheritdoc />
+        
         protected override void BindQuickAccessItem(FrameworkElement element)
         {
             RibbonControl.Bind(this, element, nameof(this.DisplayMemberPath), DisplayMemberPathProperty, BindingMode.OneWay);
@@ -538,7 +538,7 @@ namespace WzUXRibbon.Controls
 
         #region Implementation of IKeyTipInformationProvider
 
-        /// <inheritdoc />
+        
         public IEnumerable<KeyTipInformation> GetKeyTipInformations(bool hide)
         {
             if (string.IsNullOrEmpty(this.KeyTip) == false
@@ -574,7 +574,7 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         protected override void OnIsSimplifiedChanged(bool oldValue, bool newValue)
         {
             base.OnIsSimplifiedChanged(oldValue, newValue);
@@ -584,7 +584,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get

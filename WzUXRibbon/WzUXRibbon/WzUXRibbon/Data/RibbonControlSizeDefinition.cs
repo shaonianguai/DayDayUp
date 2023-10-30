@@ -157,7 +157,7 @@ namespace WzUXRibbon.Data
 
         #region Overrides of ValueType
 
-        /// <inheritdoc />
+        
         public override bool Equals(object obj)
         {
             if (obj is null)
@@ -171,13 +171,13 @@ namespace WzUXRibbon.Data
 
         #region Equality members
 
-        /// <inheritdoc />
+        
         public bool Equals(RibbonControlSizeDefinition other)
         {
             return this.Large == other.Large && this.Middle == other.Middle && this.Small == other.Small;
         }
 
-        /// <inheritdoc />
+        
         public override int GetHashCode()
         {
             unchecked

@@ -4,11 +4,9 @@ using System.Windows.Media;
 
 namespace WzUXRibbon.Converters
 {
-
     [ValueConversion(typeof(Color), typeof(SolidColorBrush))]
     public class ColorToSolidColorBrushValueConverter : IValueConverter
     {
-        /// <inheritdoc />
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
             switch (value)
@@ -23,7 +21,6 @@ namespace WzUXRibbon.Converters
             throw new InvalidOperationException($"Unsupported type [{value.GetType().Name}], ColorToSolidColorBrushValueConverter.Convert()");
         }
 
-        /// <inheritdoc />
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
             switch (value)

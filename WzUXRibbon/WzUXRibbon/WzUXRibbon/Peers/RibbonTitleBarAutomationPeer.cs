@@ -15,25 +15,25 @@ namespace WzUXRibbon.Automation.Peers
         {
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationControlType GetAutomationControlTypeCore()
         {
             return AutomationControlType.Header;
         }
 
-        /// <inheritdoc />
+        
         protected override bool IsContentElementCore()
         {
             return false;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return this.Owner.GetType().Name;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetNameCore()
         {
             var contentPresenter = this.Owner as HeaderedContentControl;

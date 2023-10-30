@@ -196,14 +196,14 @@ namespace WzUXRibbon.Controls
             };
         }
 
-        /// <inheritdoc />
+        
         protected override void OnContextMenuOpening(ContextMenuEventArgs e)
         {
             contextMenuOwner = this;
             base.OnContextMenuOpening(e);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnContextMenuClosing(ContextMenuEventArgs e)
         {
             contextMenuOwner = null;
@@ -1500,14 +1500,14 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnGotFocus(RoutedEventArgs e)
         {
             var ribbonTabItem = (RibbonTabItem)this.TabControl?.SelectedItem;
             ribbonTabItem?.Focus();
         }
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             this.layoutRoot = this.GetTemplateChild("PART_LayoutRoot") as Panel;
@@ -1565,7 +1565,7 @@ namespace WzUXRibbon.Controls
             //}
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonAutomationPeer(this);
 
         private void MoveQuickAccessToolBarToTitleBar(RibbonTitleBar titleBar)
@@ -1874,19 +1874,19 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get

@@ -28,7 +28,7 @@ namespace WzUXRibbon.Controls
 
         #region Layout Overridings
 
-        /// <inheritdoc />
+        
         protected override Size MeasureOverride(Size availableSize)
         {
             if (this.InternalChildren.Count == 0)
@@ -189,7 +189,7 @@ namespace WzUXRibbon.Controls
             return new Size(width, height);
         }
 
-        /// <inheritdoc />
+        
         protected override Size ArrangeOverride(Size finalSize)
         {
             var finalRect = new Rect(finalSize)
@@ -243,14 +243,14 @@ namespace WzUXRibbon.Controls
 
         #region IScrollInfo Members
 
-        /// <inheritdoc />
+        
         public ScrollViewer ScrollOwner
         {
             get { return this.ScrollData.ScrollOwner; }
             set { this.ScrollData.ScrollOwner = value; }
         }
 
-        /// <inheritdoc />
+        
         public void SetHorizontalOffset(double offset)
         {
             var newValue = CoerceOffset(ValidateInputOffset(offset, nameof(this.HorizontalOffset)), this.ScrollData.ExtentWidth, this.ScrollData.ViewportWidth);
@@ -263,28 +263,28 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         public double ExtentWidth => this.ScrollData.ExtentWidth;
 
-        /// <inheritdoc />
+        
         public double HorizontalOffset => this.ScrollData.OffsetX;
 
-        /// <inheritdoc />
+        
         public double ViewportWidth => this.ScrollData.ViewportWidth;
 
-        /// <inheritdoc />
+        
         public void LineLeft()
         {
             this.SetHorizontalOffset(this.HorizontalOffset - 16.0);
         }
 
-        /// <inheritdoc />
+        
         public void LineRight()
         {
             this.SetHorizontalOffset(this.HorizontalOffset + 16.0);
         }
 
-        /// <inheritdoc />
+        
         public Rect MakeVisible(Visual visual, Rect rectangle)
         {
             // We can only work on visuals that are us or children.
@@ -369,13 +369,13 @@ namespace WzUXRibbon.Controls
         {
         }
 
-        /// <inheritdoc />
+        
         public void MouseWheelLeft()
         {
             this.SetHorizontalOffset(this.HorizontalOffset - 16);
         }
 
-        /// <inheritdoc />
+        
         public void MouseWheelRight()
         {
             this.SetHorizontalOffset(this.HorizontalOffset + 16);
@@ -409,13 +409,13 @@ namespace WzUXRibbon.Controls
         {
         }
 
-        /// <inheritdoc />
+        
         public void PageLeft()
         {
             this.SetHorizontalOffset(this.HorizontalOffset - this.ViewportWidth);
         }
 
-        /// <inheritdoc />
+        
         public void PageRight()
         {
             this.SetHorizontalOffset(this.HorizontalOffset + this.ViewportWidth);
@@ -435,14 +435,14 @@ namespace WzUXRibbon.Controls
         {
         }
 
-        /// <inheritdoc />
+        
         public bool CanVerticallyScroll
         {
             get => false;
             set { }
         }
 
-        /// <inheritdoc />
+        
         public bool CanHorizontallyScroll
         {
             get => true;

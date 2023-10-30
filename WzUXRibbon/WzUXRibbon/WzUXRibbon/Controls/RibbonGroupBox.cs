@@ -67,7 +67,7 @@ namespace WzUXRibbon.Controls
 
         #region KeyTip
 
-        /// <inheritdoc />
+        
         public string KeyTip
         {
             get { return (string)this.GetValue(KeyTipProperty); }
@@ -108,10 +108,10 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         public Popup DropDownPopup { get; private set; }
 
-        /// <inheritdoc />
+        
         public bool IsContextMenuOpened { get; set; }
 
         /// <summary>
@@ -571,7 +571,7 @@ namespace WzUXRibbon.Controls
 
         #region IsOpen
 
-        /// <inheritdoc />
+        
         public bool IsDropDownOpen
         {
             get { return (bool)this.GetValue(IsDropDownOpenProperty); }
@@ -616,7 +616,7 @@ namespace WzUXRibbon.Controls
 
         #region MediumIcon
 
-        /// <inheritdoc />
+        
         public object MediumIcon
         {
             get { return this.GetValue(MediumIconProperty); }
@@ -630,7 +630,7 @@ namespace WzUXRibbon.Controls
 
         #region LargeIcon
 
-        /// <inheritdoc />
+        
         public object LargeIcon
         {
             get { return this.GetValue(LargeIconProperty); }
@@ -707,10 +707,10 @@ namespace WzUXRibbon.Controls
         /// </summary>
         public event RoutedEventHandler LauncherClick;
 
-        /// <inheritdoc />
+        
         public event EventHandler DropDownOpened;
 
-        /// <inheritdoc />
+        
         public event EventHandler DropDownClosed;
 
         #endregion
@@ -1092,7 +1092,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             this.UnSubscribeEvents();
@@ -1124,7 +1124,7 @@ namespace WzUXRibbon.Controls
             this.SubscribeEvents();
         }
 
-        /// <inheritdoc />
+        
         protected override void OnItemsChanged(NotifyCollectionChangedEventArgs e)
         {
             base.OnItemsChanged(e);
@@ -1132,7 +1132,7 @@ namespace WzUXRibbon.Controls
             this.TryClearCacheAndResetStateAndScaleAndNotifyParentRibbonGroupsContainer();
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
         {
             if (ReferenceEquals(e.Source, this) == false
@@ -1157,7 +1157,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnKeyDown(KeyEventArgs e)
         {
             if (this.IsInButtonState == false
@@ -1194,7 +1194,7 @@ namespace WzUXRibbon.Controls
             base.OnKeyDown(e);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnChildDesiredSizeChanged(UIElement child)
         {
             base.OnChildDesiredSizeChanged(child);
@@ -1313,7 +1313,7 @@ namespace WzUXRibbon.Controls
 
         #region Implementation of IKeyTipedControl
 
-        /// <inheritdoc />
+        
         public KeyTipPressedResult OnKeyTipPressed()
         {
             if (this.State is RibbonGroupBoxState.Collapsed || this.State is RibbonGroupBoxState.QuickAccess)
@@ -1326,7 +1326,7 @@ namespace WzUXRibbon.Controls
             return KeyTipPressedResult.Empty;
         }
 
-        /// <inheritdoc />
+        
         public void OnKeyTipBack()
         {
             this.IsDropDownOpen = false;
@@ -1334,25 +1334,25 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         void ISimplifiedStateControl.UpdateSimplifiedState(bool isSimplified)
         {
             this.IsSimplified = isSimplified;
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get
@@ -1385,7 +1385,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonGroupBoxAutomationPeer(this);
     }
 }

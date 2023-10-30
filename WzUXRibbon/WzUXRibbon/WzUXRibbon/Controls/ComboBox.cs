@@ -51,7 +51,7 @@ namespace WzUXRibbon.Controls
 
         #region Size
 
-        /// <inheritdoc />
+        
         public RibbonControlSize Size
         {
             get { return (RibbonControlSize)this.GetValue(SizeProperty); }
@@ -65,7 +65,7 @@ namespace WzUXRibbon.Controls
 
         #region SizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SizeDefinitionProperty); }
@@ -79,7 +79,7 @@ namespace WzUXRibbon.Controls
 
         #region SimplifiedSizeDefinition
 
-        /// <inheritdoc />
+        
         public RibbonControlSizeDefinition SimplifiedSizeDefinition
         {
             get { return (RibbonControlSizeDefinition)this.GetValue(SimplifiedSizeDefinitionProperty); }
@@ -93,7 +93,7 @@ namespace WzUXRibbon.Controls
 
         #region KeyTip
 
-        /// <inheritdoc />
+        
         public string KeyTip
         {
             get { return (string)this.GetValue(KeyTipProperty); }
@@ -105,15 +105,15 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         public Popup DropDownPopup { get; private set; }
 
-        /// <inheritdoc />
+        
         public bool IsContextMenuOpened { get; set; }
 
         #region Header
 
-        /// <inheritdoc />
+        
         public object Header
         {
             get { return this.GetValue(HeaderProperty); }
@@ -123,7 +123,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="Header"/> dependency property.</summary>
         public static readonly DependencyProperty HeaderProperty = RibbonControl.HeaderProperty.AddOwner(typeof(ComboBox), new PropertyMetadata(LogicalChildSupportHelper.OnLogicalChildPropertyChanged));
 
-        /// <inheritdoc />
+        
         public DataTemplate HeaderTemplate
         {
             get { return (DataTemplate)this.GetValue(HeaderTemplateProperty); }
@@ -133,7 +133,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="HeaderTemplate"/> dependency property.</summary>
         public static readonly DependencyProperty HeaderTemplateProperty = RibbonControl.HeaderTemplateProperty.AddOwner(typeof(ComboBox), new PropertyMetadata());
 
-        /// <inheritdoc />
+        
         public DataTemplateSelector HeaderTemplateSelector
         {
             get { return (DataTemplateSelector)this.GetValue(HeaderTemplateSelectorProperty); }
@@ -147,7 +147,7 @@ namespace WzUXRibbon.Controls
 
         #region Icon
 
-        /// <inheritdoc />
+        
         public object Icon
         {
             get { return this.GetValue(IconProperty); }
@@ -161,7 +161,7 @@ namespace WzUXRibbon.Controls
 
         #region MediumIcon
 
-        /// <inheritdoc />
+        
         public object MediumIcon
         {
             get { return this.GetValue(MediumIconProperty); }
@@ -405,7 +405,7 @@ namespace WzUXRibbon.Controls
 
         #region QuickAccess
 
-        /// <inheritdoc />
+        
         public virtual FrameworkElement CreateQuickAccessItem()
         {
             var combo = new ComboBox();
@@ -604,7 +604,7 @@ namespace WzUXRibbon.Controls
             this.UpdateQuickAccessCombo();
         }
 
-        /// <inheritdoc />
+        
         public bool CanAddToQuickAccessToolBar
         {
             get { return (bool)this.GetValue(CanAddToQuickAccessToolBarProperty); }
@@ -618,7 +618,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             this.dropDownButton = this.GetTemplateChild("PART_ToggleButton") as ToggleButton;
@@ -648,7 +648,7 @@ namespace WzUXRibbon.Controls
             base.OnApplyTemplate();
         }
 
-        /// <inheritdoc />
+        
         protected override void OnDropDownOpened(EventArgs e)
         {
             base.OnDropDownOpened(e);
@@ -695,7 +695,7 @@ namespace WzUXRibbon.Controls
             popupChild?.UpdateLayout();
         }
 
-        /// <inheritdoc />
+        
         protected override void OnDropDownClosed(EventArgs e)
         {
             base.OnDropDownClosed(e);
@@ -740,7 +740,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnPreviewKeyDown(KeyEventArgs e)
         {
             if (this.IsEditable
@@ -755,7 +755,7 @@ namespace WzUXRibbon.Controls
             base.OnPreviewKeyDown(e);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnKeyDown(KeyEventArgs e)
         {
             var baseKeyDownCalled = false;
@@ -805,7 +805,7 @@ namespace WzUXRibbon.Controls
 
         #region Methods
 
-        /// <inheritdoc />
+        
         public virtual KeyTipPressedResult OnKeyTipPressed()
         {
             if (this.IsKeyboardFocusWithin == false)
@@ -823,7 +823,7 @@ namespace WzUXRibbon.Controls
             return new KeyTipPressedResult(true, false);
         }
 
-        /// <inheritdoc />
+        
         public void OnKeyTipBack()
         {
         }
@@ -844,7 +844,7 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         void ISimplifiedStateControl.UpdateSimplifiedState(bool isSimplified)
         {
             this.IsSimplified = isSimplified;
@@ -854,19 +854,19 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get
@@ -899,7 +899,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonComboBoxAutomationPeer(this);
     }
 }

@@ -13,7 +13,7 @@ namespace WzUXRibbon.Converters
         /// </summary>
         public static readonly SpinnerTextToValueConverter DefaultInstance = new SpinnerTextToValueConverter();
 
-        /// <inheritdoc />
+        
         public virtual object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var converterParam = (Tuple<string, double>)parameter;
@@ -23,7 +23,7 @@ namespace WzUXRibbon.Converters
             return this.TextToDouble((string)value, format, previousValue, culture);
         }
 
-        /// <inheritdoc />
+        
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             return this.DoubleToText((double)value, (string)parameter, culture);

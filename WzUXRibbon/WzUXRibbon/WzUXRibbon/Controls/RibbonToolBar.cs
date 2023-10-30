@@ -146,7 +146,7 @@ namespace WzUXRibbon.Controls
 
         #region Logical & Visual Tree
 
-        /// <inheritdoc />
+        
         protected override int VisualChildrenCount
         {
             get
@@ -167,7 +167,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override Visual GetVisualChild(int index)
         {
             if (this.LayoutDefinitions.Count == 0)
@@ -184,7 +184,7 @@ namespace WzUXRibbon.Controls
             return this.actualChildren[index];
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get
@@ -323,7 +323,7 @@ namespace WzUXRibbon.Controls
 
         #region Size Property Changing
 
-        /// <inheritdoc />
+        
         public void OnSizePropertyChanged(RibbonControlSize previous, RibbonControlSize current)
         {
             this.rebuildVisualAndLogicalChildren = true;
@@ -334,7 +334,7 @@ namespace WzUXRibbon.Controls
 
         #region Implementation of ISimplifiedStateControl
 
-        /// <inheritdoc />
+        
         void ISimplifiedStateControl.UpdateSimplifiedState(bool isSimplified)
         {
             this.IsSimplified = isSimplified;
@@ -344,7 +344,7 @@ namespace WzUXRibbon.Controls
 
         #region Layout Overriding
 
-        /// <inheritdoc />
+        
         protected override Size MeasureOverride(Size availableSize)
         {
             var layoutDefinition = this.GetCurrentLayoutDefinition();
@@ -391,7 +391,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override Size ArrangeOverride(Size finalSize)
         {
             var layoutDefinition = this.GetCurrentLayoutDefinition();
@@ -720,7 +720,7 @@ namespace WzUXRibbon.Controls
 
         #region QAT Support
 
-        /// <inheritdoc />
+        
         public override FrameworkElement CreateQuickAccessItem()
         {
             throw new NotImplementedException();

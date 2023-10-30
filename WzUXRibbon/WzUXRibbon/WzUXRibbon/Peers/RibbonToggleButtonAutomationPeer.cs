@@ -10,13 +10,13 @@
         {
         }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return "RibbonToggleButton";
         }
 
-        /// <inheritdoc />
+        
         protected override string GetNameCore()
         {
             var name = base.GetNameCore();

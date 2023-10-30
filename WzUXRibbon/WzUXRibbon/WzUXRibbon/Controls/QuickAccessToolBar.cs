@@ -329,7 +329,7 @@ namespace WzUXRibbon.Controls
 
         #region Override
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             if (this.showAbove != null)
@@ -424,7 +424,7 @@ namespace WzUXRibbon.Controls
             this.ShowAboveRibbon = true;
         }
 
-        /// <inheritdoc />
+        
         protected override Size MeasureOverride(Size constraint)
         {
             if (this.IsLoaded == false)
@@ -681,22 +681,22 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new WzUXRibbon.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer(this);
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get

@@ -107,7 +107,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get

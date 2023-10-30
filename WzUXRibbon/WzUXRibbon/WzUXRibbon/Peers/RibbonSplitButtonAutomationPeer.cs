@@ -24,19 +24,19 @@ namespace WzUXRibbon.Automation.Peers
 
         private SplitButton SplitButtonOnwer { get; }
 
-        /// <inheritdoc />
+        
         protected override string GetClassNameCore()
         {
             return this.Owner.GetType().Name;
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationControlType GetAutomationControlTypeCore()
         {
             return AutomationControlType.SplitButton;
         }
 
-        /// <inheritdoc />
+        
         public override object GetPattern(PatternInterface patternInterface)
         {
             switch (patternInterface)
@@ -49,7 +49,7 @@ namespace WzUXRibbon.Automation.Peers
             }
         }
 
-        /// <inheritdoc />
+        
         protected override string GetAutomationIdCore()
         {
             var id = base.GetAutomationIdCore();
@@ -66,7 +66,7 @@ namespace WzUXRibbon.Automation.Peers
             return id ?? string.Empty;
         }
 
-        /// <inheritdoc />
+        
         protected override string GetNameCore()
         {
             var name = base.GetNameCore();
@@ -87,7 +87,7 @@ namespace WzUXRibbon.Automation.Peers
             return name;
         }
 
-        /// <inheritdoc />
+        
         public void Invoke()
         {
             if (this.IsEnabled() == false)

@@ -83,7 +83,7 @@ namespace WzUXRibbon.Controls
 
         #region KeyTip
 
-        /// <inheritdoc />
+        
         public string KeyTip
         {
             get { return (string)this.GetValue(KeyTipProperty); }
@@ -353,7 +353,7 @@ namespace WzUXRibbon.Controls
 
         #region Header Property
 
-        /// <inheritdoc />
+        
         public object Header
         {
             get { return this.GetValue(HeaderProperty); }
@@ -363,7 +363,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="Header"/> dependency property.</summary>
         public static readonly DependencyProperty HeaderProperty = RibbonControl.HeaderProperty.AddOwner(typeof(RibbonTabItem), new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.AffectsMeasure, LogicalChildSupportHelper.OnLogicalChildPropertyChanged));
 
-        /// <inheritdoc />
+        
         public DataTemplate HeaderTemplate
         {
             get { return (DataTemplate)this.GetValue(HeaderTemplateProperty); }
@@ -373,7 +373,7 @@ namespace WzUXRibbon.Controls
         /// <summary>Identifies the <see cref="HeaderTemplate"/> dependency property.</summary>
         public static readonly DependencyProperty HeaderTemplateProperty = RibbonControl.HeaderTemplateProperty.AddOwner(typeof(RibbonTabItem), new PropertyMetadata());
 
-        /// <inheritdoc />
+        
         public DataTemplateSelector HeaderTemplateSelector
         {
             get { return (DataTemplateSelector)this.GetValue(HeaderTemplateSelectorProperty); }
@@ -533,7 +533,7 @@ namespace WzUXRibbon.Controls
 
         #region Overrides
 
-        /// <inheritdoc />
+        
         protected override Size MeasureOverride(Size constraint)
         {
             if (this.contentContainer is null)
@@ -585,7 +585,7 @@ namespace WzUXRibbon.Controls
             return baseConstraint;
         }
 
-        /// <inheritdoc />
+        
         protected override Size ArrangeOverride(Size arrangeBounds)
         {
             var result = base.ArrangeOverride(arrangeBounds);
@@ -596,7 +596,7 @@ namespace WzUXRibbon.Controls
             return result;
         }
 
-        /// <inheritdoc />
+        
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
@@ -606,7 +606,7 @@ namespace WzUXRibbon.Controls
             this.contentContainer = this.GetTemplateChild("PART_ContentContainer") as Border;
         }
 
-        /// <inheritdoc />
+        
         protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
         {
             if (ReferenceEquals(e.Source, this)
@@ -652,7 +652,7 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         protected override void OnKeyDown(KeyEventArgs e)
         {
             switch (e.Key)
@@ -673,7 +673,7 @@ namespace WzUXRibbon.Controls
             base.OnKeyDown(e);
         }
 
-        /// <inheritdoc />
+        
         protected override void OnGotKeyboardFocus(KeyboardFocusChangedEventArgs e)
         {
             base.OnGotKeyboardFocus(e);
@@ -681,7 +681,7 @@ namespace WzUXRibbon.Controls
             this.SetCurrentValue(IsSelectedProperty, BooleanBoxes.TrueBox);
         }
 
-        /// <inheritdoc />
+        
         protected override AutomationPeer OnCreateAutomationPeer() => new RibbonTabItemAutomationPeer(this);
 
         #endregion
@@ -772,7 +772,7 @@ namespace WzUXRibbon.Controls
 
         #endregion
 
-        /// <inheritdoc />
+        
         public KeyTipPressedResult OnKeyTipPressed()
         {
             if (this.TabControlParent?.SelectedItem is RibbonTabItem currentSelectedItem)
@@ -798,7 +798,7 @@ namespace WzUXRibbon.Controls
             return result;
         }
 
-        /// <inheritdoc />
+        
         public void OnKeyTipBack()
         {
             if (this.TabControlParent != null
@@ -808,25 +808,25 @@ namespace WzUXRibbon.Controls
             }
         }
 
-        /// <inheritdoc />
+        
         void ISimplifiedStateControl.UpdateSimplifiedState(bool isSimplified)
         {
             this.IsSimplified = isSimplified;
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.AddLogicalChild(object child)
         {
             this.AddLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         void ILogicalChildSupport.RemoveLogicalChild(object child)
         {
             this.RemoveLogicalChild(child);
         }
 
-        /// <inheritdoc />
+        
         protected override IEnumerator LogicalChildren
         {
             get
