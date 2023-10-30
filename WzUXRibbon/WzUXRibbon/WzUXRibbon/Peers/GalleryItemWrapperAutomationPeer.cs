@@ -9,11 +9,9 @@ namespace WzUXRibbon.Automation.Peers
             : base(owner)
         {
         }
-
         
         protected override string GetClassNameCore() => "ListBoxItem";
 
-        
         protected override AutomationControlType GetAutomationControlTypeCore() => AutomationControlType.ListItem;
     }
 }
