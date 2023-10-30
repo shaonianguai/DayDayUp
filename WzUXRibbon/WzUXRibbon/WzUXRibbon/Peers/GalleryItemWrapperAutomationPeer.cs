@@ -5,7 +5,6 @@ namespace WzUXRibbon.Automation.Peers
 {
     public class GalleryItemWrapperAutomationPeer : FrameworkElementAutomationPeer
     {
-        /// <inheritdoc cref="FrameworkElementAutomationPeer" />
         public GalleryItemWrapperAutomationPeer(GalleryItem owner)
             : base(owner)
         {
