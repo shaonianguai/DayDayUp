@@ -7,9 +7,6 @@ namespace WzUXRibbon.Services
 {
     public static class ContextMenuService
     {
-        /// <summary>
-        /// Attach needed parameters to control
-        /// </summary>
         public static void Attach(Type type)
         {
             System.Windows.Controls.ContextMenuService.ShowOnDisabledProperty.OverrideMetadata(type, new FrameworkPropertyMetadata(BooleanBoxes.TrueBox));
@@ -21,10 +18,6 @@ namespace WzUXRibbon.Services
             d.CoerceValue(FrameworkElement.ContextMenuProperty);
         }
 
-        /// <summary>
-        /// Coerces the ContextMenu for <paramref name="d"/>.
-        /// </summary>
-        /// <returns></returns>
         public static object CoerceContextMenu(DependencyObject d, object basevalue)
         {
             var control = d as IQuickAccessItemProvider;
@@ -37,9 +30,6 @@ namespace WzUXRibbon.Services
             return basevalue;
         }
 
-        /// <summary>
-        /// Coerce control context menu
-        /// </summary>
         public static void Coerce(DependencyObject o)
         {
             o.CoerceValue(FrameworkElement.ContextMenuProperty);

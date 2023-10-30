@@ -21,32 +21,15 @@ namespace WzUXRibbon.Services
         #region Fields
 
         private ScopeGuard windowPreviewKeyDownScopeGuard;
-
-        // Host element, usually this is Ribbon
         private readonly Ribbon ribbon;
-
-        // Timer to show KeyTips with delay
         private readonly DispatcherTimer timer;
-
-        // Is KeyTips Activited now
         private KeyTipAdorner activeAdornerChain;
-        // This element must be remembered to restore focus
         private FocusWrapper backUpFocusedControl;
-
-        // Window where we attached
         private Window window;
-
-        // Whether we attached to window
         private bool attached;
-
-        // Attached HWND source
         private HwndSource attachedHwndSource;
-
         private string currentUserInput;
 
-        /// <summary>
-        /// Checks if any key-tips are visible.
-        /// </summary>
         public bool AreAnyKeyTipsVisible
         {
             get
@@ -68,11 +51,8 @@ namespace WzUXRibbon.Services
         Key.RightCtrl,
         Key.LeftAlt,
         Key.RightAlt,
-    };
+        };
 
-        /// <summary>
-        /// The default keys used to activate key tips.
-        /// </summary>
         public static IList<Key> DefaultKeyTipKeys =>
             new List<Key>
             {
@@ -81,33 +61,22 @@ namespace WzUXRibbon.Services
             Key.F10
             };
 
-        /// <summary>
-        /// List of key tip activation keys.
-        /// </summary>
         public IList<Key> KeyTipKeys { get; } = DefaultKeyTipKeys;
 
         #endregion
 
         #region Initialization
 
-        /// <summary>
-        /// Default constrctor
-        /// </summary>
-        /// <param name="ribbon">Host element</param>
         public KeyTipService(Ribbon ribbon)
         {
             this.ribbon = ribbon ?? throw new ArgumentNullException(nameof(ribbon));
 
-            // Initialize timer
             this.timer = new DispatcherTimer(TimeSpan.FromSeconds(0.7), DispatcherPriority.SystemIdle, this.OnDelayedShow, Dispatcher.CurrentDispatcher);
             this.timer.Stop();
         }
 
         #endregion
 
-        /// <summary>
-        /// Attaches self
-        /// </summary>
         public void Attach()
         {
             if (this.attached)
@@ -117,7 +86,6 @@ namespace WzUXRibbon.Services
 
             this.attached = true;
 
-            // KeyTip service must not work in design mode
             if (DesignerProperties.GetIsInDesignMode(this.ribbon))
             {
                 return;
@@ -132,14 +100,10 @@ namespace WzUXRibbon.Services
             this.window.PreviewKeyDown += this.OnWindowPreviewKeyDown;
             this.window.KeyUp += this.OnWindowKeyUp;
 
-            // Hookup non client area messages
             this.attachedHwndSource = (HwndSource)PresentationSource.FromVisual(this.window);
             this.attachedHwndSource?.AddHook(this.WindowProc);
         }
 
-        /// <summary>
-        /// Detachs self
-        /// </summary>
         public void Detach()
         {
             if (this.attached == false)
@@ -149,7 +113,6 @@ namespace WzUXRibbon.Services
 
             this.attached = false;
 
-            // prevent delay show
             this.timer.Stop();
 
             if (this.window != null)
@@ -160,16 +123,13 @@ namespace WzUXRibbon.Services
                 this.window = null;
             }
 
-            // Unhook non client area messages
             this.attachedHwndSource?.RemoveHook(this.WindowProc);
         }
 
-        // Window's messages hook up
         private IntPtr WindowProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
             var message = (uint)msg;
 
-            // We must terminate the keytip's adorner chain if:
             if (message == NativeMethods.WM_NCACTIVATE // mouse clicks in non client area
                 || (message is NativeMethods.WM_ACTIVATE && wParam == IntPtr.Zero) // the window is deactivated
                 || (message >= NativeMethods.WM_NCLBUTTONDOWN && message <= NativeMethods.WM_NCXBUTTONDBLCLK) // mouse click (non client area)
@@ -181,8 +141,6 @@ namespace WzUXRibbon.Services
                 }
             }
 
-            // Fix for #632.
-            // Yes this looks awkward, calling the PopupService here, but the alternative would be to let the PopupService know about windows.
             if (ShouldDismissAllPopups(message, wParam))
             {
                 PopupService.RaiseDismissPopupEvent(this.ribbon, DismissPopupMode.Always, DismissPopupReason.ApplicationLostFocus);
@@ -194,7 +152,7 @@ namespace WzUXRibbon.Services
 
             bool ShouldDismissAllPopups(uint messageParam, IntPtr intPtrParam)
             {
-                if((messageParam == NativeMethods.WM_ACTIVATE && intPtrParam == IntPtr.Zero)
+                if ((messageParam == NativeMethods.WM_ACTIVATE && intPtrParam == IntPtr.Zero)
                     || messageParam == NativeMethods.WM_SIZE
                     || messageParam == NativeMethods.WM_DESTROY
                     || messageParam == NativeMethods.WM_QUIT)
@@ -239,8 +197,6 @@ namespace WzUXRibbon.Services
                     return;
                 }
 
-                // Keytips should be cancelled if Alt+Num0 is pressed #241.
-                // This allows entering special keys via numpad.
                 if (e.KeyboardDevice.Modifiers == ModifierKeys.Alt
                     && e.SystemKey >= Key.NumPad0
                     && e.SystemKey <= Key.NumPad9)
@@ -282,24 +238,16 @@ namespace WzUXRibbon.Services
                     var isKeyRealInput = string.IsNullOrEmpty(key) == false
                                          && key != "\t";
 
-                    // Don't do anything and let WPF handle the rest
                     if (isKeyRealInput == false)
                     {
-                        // This block is a "temporary" fix for keyboard navigation not matching the office behavior.
-                        // If someone finds a way to implement it properly, here is your starting point.
-                        // In office: If you navigate by keyboard (in menus) and keytips are shown they are shown or hidden based on the menu you are in.
-                        // Implementing navigation the way office does would require complex focus/state tracking etc. so i decided to just terminate keytips and not restore focus.
-                        {
-                            this.backUpFocusedControl = null;
-                            this.Terminate();
-                        }
+                        this.backUpFocusedControl = null;
+                        this.Terminate();
 
                         return;
                     }
 
                     var shownImmediately = false;
 
-                    // Should we show the keytips and immediately react to key?
                     if (this.activeAdornerChain is null
                         || this.activeAdornerChain.IsAdornerChainAlive == false
                         || this.activeAdornerChain.AreAnyKeyTipsVisible == false)
@@ -318,21 +266,18 @@ namespace WzUXRibbon.Services
 
                     if (this.activeAdornerChain.ActiveKeyTipAdorner.ContainsKeyTipStartingWith(this.currentUserInput) == false)
                     {
-                        // Handles access-keys #258
                         if (shownImmediately)
                         {
                             this.Terminate();
                             return;
                         }
 
-                        // KeyTipService should dismiss keytips if the first key does not match any keytips #908
                         if (this.activeAdornerChain.AdornedElement is Ribbon)
                         {
                             this.Terminate();
                             return;
                         }
 
-                        // If no key tips match the current input, continue with the previously entered and still correct keys.
                         this.currentUserInput = previousInput;
                         System.Media.SystemSounds.Beep.Play();
                         e.Handled = true;
@@ -394,7 +339,6 @@ namespace WzUXRibbon.Services
                 ? e.SystemKey
                 : e.Key;
 
-            // Shift + F10 is meant to open the context menu. So we just ignore it.
             if (realKey == Key.F10
                 && (Keyboard.IsKeyDown(Key.LeftShift)
                     || Keyboard.IsKeyDown(Key.RightShift)))
@@ -482,9 +426,6 @@ namespace WzUXRibbon.Services
         {
             this.timer.Stop();
 
-            // Check whether the window is
-            // - still present (prevents exceptions when window is closed by system commands)
-            // - still active (prevents keytips showing during Alt-Tab'ing)
             if (this.window is null
                 || this.window.IsActive == false)
             {
@@ -492,8 +433,6 @@ namespace WzUXRibbon.Services
                 return;
             }
 
-            // Special behavior for application menu
-            // If one of those is open we have to forward key tips directly to them.
             var keyTipsTarget = this.GetApplicationMenu() ?? this.ribbon;
 
             if (keyTipsTarget is null)
@@ -505,7 +444,6 @@ namespace WzUXRibbon.Services
 
             this.backUpFocusedControl = null;
 
-            // If focus is inside the Ribbon already we don't want to jump around after finishing with KeyTips
             if (UIHelper.GetParent<Ribbon>(Keyboard.FocusedElement as DependencyObject) is null)
             {
                 this.backUpFocusedControl = FocusWrapper.GetWrapperForCurrentFocus();
@@ -513,7 +451,6 @@ namespace WzUXRibbon.Services
 
             if (keyTipsTarget is Ribbon && this.ribbon.TabControl != null)
             {
-                // Focus ribbon
                 int selectedIndex = Math.Max(this.ribbon.TabControl.SelectedIndex, 0);
                 (this.ribbon.TabControl.ItemContainerGenerator.ContainerFromIndex(selectedIndex) as UIElement)?.Focus();
             }
@@ -525,12 +462,10 @@ namespace WzUXRibbon.Services
                 this.activeAdornerChain.Terminated -= this.OnAdornerChainTerminated;
             }
 
-            // to mimik the Office behavior we always attach the adorner to the ribbon
             this.activeAdornerChain = new KeyTipAdorner(this.ribbon, this.ribbon, null);
             this.activeAdornerChain.Terminated += this.OnAdornerChainTerminated;
             this.activeAdornerChain.Attach();
 
-            // continuation of Office mimik: if the real target wasn't the ribbon we immediately forward to the target control
             if (keyTipsTarget as Ribbon == null)
             {
                 this.activeAdornerChain.Forward(string.Empty, keyTipsTarget, false);

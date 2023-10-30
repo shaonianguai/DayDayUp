@@ -10,11 +10,9 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Automation.Peers;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Markup;
 using WzUXRibbon.Collections;
-using WzUXRibbon.Data;
 using WzUXRibbon.Helpers;
 using WzUXRibbon.Internal.KnownBoxes;
 
@@ -420,30 +418,20 @@ namespace WzUXRibbon.Controls
 
         private ObservableCollection<Key> keyTipKeys;
 
-        // Collection of contextual tab groups
         private ObservableCollection<RibbonContextualTabGroup> contextualGroups;
 
-        // Collection of tabs
         private ObservableCollection<RibbonTabItem> tabs;
         private CollectionSyncHelper<RibbonTabItem> tabsSync;
 
-        // Collection of toolbar items
         private ObservableCollection<UIElement> toolBarItems;
         private CollectionSyncHelper<UIElement> toolBarItemsSync;
 
-        // Ribbon quick access toolbar
-
-        // Ribbon layout root
         private Panel layoutRoot;
 
-        // Handles F10, Alt and so on
         private readonly WzUXRibbon.Services.KeyTipService keyTipService;
 
-        // Collection of quick-access menu items
         private ObservableCollection<QuickAccessMenuItem> quickAccessItems;
         private CollectionSyncHelper<QuickAccessMenuItem> quickAccessItemsSync;
-
-        // Currently added in QAT items
 
         private Window ownerWindow;
 

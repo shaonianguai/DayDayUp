@@ -5,12 +5,8 @@ namespace WzUXRibbon.StyleSelectors
 {
     public class SplitedApplicationMenuItemItemContainerStyleSelector : StyleSelector
     {
-        /// <summary>
-        ///     A singleton instance for <see cref="HeaderApplicationMenuItemItemContainerStyleSelector" />.
-        /// </summary>
         public static SplitedApplicationMenuItemItemContainerStyleSelector Instance { get; } = new SplitedApplicationMenuItemItemContainerStyleSelector();
 
-        
         public override Style SelectStyle(object item, DependencyObject container)
         {
             switch (item)

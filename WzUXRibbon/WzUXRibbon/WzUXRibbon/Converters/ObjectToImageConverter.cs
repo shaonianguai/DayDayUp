@@ -16,45 +16,24 @@ using WzUXRibbon.Internal;
 
 namespace WzUXRibbon.Converters
 {
-    // Summary:
-    //     Stores DPI information from which a System.Windows.Media.Visual or System.Windows.UIElement
-    //     is rendered.
     public struct DpiScale
     {
-        /// <summary>
-        /// Initializes a new instance of the DpiScale structure.
-        /// </summary>
         public DpiScale(double dpiScaleX, double dpiScaleY)
         {
             _dpiScaleX = dpiScaleX;
             _dpiScaleY = dpiScaleY;
         }
 
-        /// <summary>
-        /// Gets the DPI scale on the X axis.When DPI is 96, <see cref="DpiScaleX"/> is 1. 
-        /// </summary>
-        /// <remarks>
-        /// On Windows Desktop, this value is the same as <see cref="DpiScaleY"/>
-        /// </remarks>
         public double DpiScaleX
         {
             get { return _dpiScaleX; }
         }
 
-        /// <summary>
-        /// Gets the DPI scale on the Y axis. When DPI is 96, <see cref="DpiScaleY"/> is 1. 
-        /// </summary>
-        /// <remarks>
-        /// On Windows Desktop, this value is the same as <see cref="DpiScaleX"/>
-        /// </remarks>
         public double DpiScaleY
         {
             get { return _dpiScaleY; }
         }
 
-        /// <summary>
-        /// Get or sets the PixelsPerDip at which the text should be rendered.
-        /// </summary>
         public double PixelsPerDip
         {
             get { return _dpiScaleY; }
@@ -80,48 +59,25 @@ namespace WzUXRibbon.Converters
         private static readonly ImageSource imageNotFoundImageSource = (ImageSource)CreateImageNotFoundImageSource().GetAsFrozen();
         private static readonly SizeConverter sizeConverter = new SizeConverter();
 
-        /// <summary>
-        /// Creates a new instance.
-        /// </summary>
         public ObjectToImageConverter()
         {
         }
 
-        /// <summary>
-        /// Creates a new instance.
-        /// </summary>
-        /// <param name="input">The object or binding to which the converter should be applied to.</param>
         public ObjectToImageConverter(object input)
             : this(input, Size.Empty, null)
         {
         }
 
-        /// <summary>
-        /// Creates a new instance.
-        /// </summary>
-        /// <param name="input">The object or binding to which the converter should be applied to.</param>
-        /// <param name="desiredSize">The desired size for the image.</param>
         public ObjectToImageConverter(object input, Size desiredSize)
             : this(input, desiredSize, null)
         {
         }
 
-        /// <summary>
-        /// Creates a new instance.
-        /// </summary>
-        /// <param name="input">The object or binding to which the converter should be applied to.</param>
-        /// <param name="desiredSize">The desired size for the image.</param>
         public ObjectToImageConverter(object input, object desiredSize)
             : this(input, desiredSize, null)
         {
         }
 
-        /// <summary>
-        /// Creates a new instance.
-        /// </summary>
-        /// <param name="input">The object or binding to which the converter should be applied to.</param>
-        /// <param name="desiredSize">The desired size for the image.</param>
-        /// <param name="targetVisualBinding">The target visual on which the image/icon should be shown.</param>
         public ObjectToImageConverter(object input, object desiredSize, Binding targetVisualBinding)
         {
             if (desiredSize is Size desiredSizeValue
@@ -137,27 +93,17 @@ namespace WzUXRibbon.Converters
             this.TargetVisualBinding = targetVisualBinding;
         }
 
-        /// <summary>
-        /// The target visual on which the image/icon should be shown.
-        /// </summary>
         [ConstructorArgument("targetVisualBinding")]
         public Binding TargetVisualBinding { get; set; }
 
-        /// <summary>
-        /// The binding to which the converter should be applied to.
-        /// </summary>
         [ConstructorArgument("iconBinding")]
         public Binding IconBinding { get; set; }
 
-        /// <summary>
-        /// The binding for the desired size for the image.
-        /// </summary>
         [ConstructorArgument("desiredSize")]
         public Binding DesiredSizeBinding { get; set; }
 
         #region Implementation of IValueConverter
 
-        
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var desiredSize = Size.Empty;
@@ -183,9 +129,6 @@ namespace WzUXRibbon.Converters
             return Binding.DoNothing;
         }
 
-        /// <summary>
-        /// Returns the value to convert.
-        /// </summary>
         protected virtual object GetValueToConvert(object value, Size desiredSize, Visual targetVisual)
         {
             return value;
@@ -201,7 +144,6 @@ namespace WzUXRibbon.Converters
             var desiredSize = Size.Empty;
             var valuesLength = values.Length;
 
-            // TargetVisual can be at index 1 or index 2, depending on the number of values passed
             var targetVisual = valuesLength == 2
                 ? values[1] as Visual
                 : null;
@@ -308,51 +250,20 @@ namespace WzUXRibbon.Converters
             return image;
         }
 
-        /// <summary>
-        /// Extracts an <see cref="ImageSource"/> from <paramref name="value"/> which closest matches the <paramref name="desiredSize"/>.
-        /// </summary>
-        /// <param name="value">Value from which the <see cref="ImageSource"/> should be extracted. It can be of type <see cref="ImageSource"/></param>
-        /// <param name="desiredSize">The desired size to extract from <paramref name="value"/> .</param>
-        /// <returns>An frozen <see cref="ImageSource"/> which closest matches <paramref name="desiredSize"/></returns>
         public static ImageSource CreateFrozenImageSource(object value, Size desiredSize)
         {
-            // We have to use a frozen instance. Otherwise we run into trouble if the same instance is used in multiple locations.
-            // In case of BitmapImage it even gets worse when using the same Uri...
             return GetAsFrozenIfPossible(CreateImageSource(value, desiredSize));
         }
-
-        /// <summary>
-        /// Extracts an <see cref="ImageSource"/> from <paramref name="value"/> which closest matches the <paramref name="desiredSize"/>.
-        /// </summary>
-        /// <param name="value">Value from which the <see cref="ImageSource"/> should be extracted. It can be of type <see cref="ImageSource"/></param>
-        /// <param name="targetVisual">The target on which the <see cref="ImageSource"/> will be used.</param>
-        /// <param name="desiredSize">The desired size to extract from <paramref name="value"/> .</param>
-        /// <returns>An frozen <see cref="ImageSource"/> which closest matches <paramref name="desiredSize"/></returns>
         public static ImageSource CreateFrozenImageSource(object value, Visual targetVisual, Size desiredSize)
         {
-            // We have to use a frozen instance. Otherwise we run into trouble if the same instance is used in multiple locations.
-            // In case of BitmapImage it even gets worse when using the same Uri...
             return GetAsFrozenIfPossible(CreateImageSource(value, targetVisual, desiredSize));
         }
 
-        /// <summary>
-        /// Extracts an <see cref="ImageSource"/> from <paramref name="value"/> which closest matches the <paramref name="desiredSize"/>.
-        /// </summary>
-        /// <param name="value">Value from which the <see cref="ImageSource"/> should be extracted. It can be of type <see cref="ImageSource"/></param>
-        /// <param name="desiredSize">The desired size to extract from <paramref name="value"/> .</param>
-        /// <returns>An <see cref="ImageSource"/> which closest matches <paramref name="desiredSize"/></returns>
         public static ImageSource CreateImageSource(object value, Size desiredSize)
         {
             return CreateImageSource(value, null, desiredSize);
         }
 
-        /// <summary>
-        /// Extracts an <see cref="ImageSource"/> from <paramref name="value"/> which closest matches the <paramref name="desiredSize"/>.
-        /// </summary>
-        /// <param name="value">Value from which the <see cref="ImageSource"/> should be extracted. It can be of type <see cref="ImageSource"/></param>
-        /// /// <param name="targetVisual">The target on which the <see cref="ImageSource"/> will be used.</param>
-        /// <param name="desiredSize">The desired size to extract from <paramref name="value"/> .</param>
-        /// <returns>An <see cref="ImageSource"/> which closest matches <paramref name="desiredSize"/></returns>
         public static ImageSource CreateImageSource(object value, Visual targetVisual, Size desiredSize)
         {
             if (value is null)
@@ -387,9 +298,6 @@ namespace WzUXRibbon.Converters
                 return ExtractImageSource(icon, targetVisual, desiredSize);
             }
 
-            // !!! Danger zone ahead !!!
-            // !!! Please do not copy that code somewhere and blame me for failures !!!
-            // Hack to get the value from resource expressions
             {
                 if (targetVisual != null // to get values for resource expressions we need a DependencyObject
                     && value is Expression expression)
@@ -402,7 +310,6 @@ namespace WzUXRibbon.Converters
                         var valueFromExpression = method.Invoke(expression, new object[]
                         {
                         targetVisual,
-                        // to get values from resource expressions we need a DependencyProperty, so just pass a random one
                         RibbonProperties.SizeProperty
                         });
 
@@ -434,10 +341,8 @@ namespace WzUXRibbon.Converters
         {
             var imageUri = new Uri(imagePath, UriKind.RelativeOrAbsolute);
 
-            // Allow things like "Images\Green.png"
             if (imageUri.IsAbsoluteUri == false)
             {
-                // If that file does not exist, try to find it using resource notation
                 if (File.Exists(imagePath) == false)
                 {
                     var slash = string.Empty;
@@ -505,24 +410,17 @@ namespace WzUXRibbon.Converters
                 .ThenBy(f => f.Height)
                 .ToList();
 
-            // if there is no matching frame, get the largest frame
             return framesOrderedByWidth
                        .FirstOrDefault(f => f.Width >= scaledDesiredSize.Width
                                             && f.Height >= scaledDesiredSize.Height)
                    ?? framesOrderedByWidth.Last();
         }
 
-        /// <summary>
-        /// Get the scaled desired size.
-        /// </summary>
         protected static Size GetScaledDesiredSize(Size desiredSize, Visual targetVisual)
         {
             return GetScaledDesiredSize(desiredSize, GetDpiScale(targetVisual));
         }
 
-        /// <summary>
-        /// Get the scaled desired size.
-        /// </summary>
         private static Size GetScaledDesiredSize(Size desiredSize, DpiScale dpiScale)
         {
             if (desiredSize.IsEmpty)
@@ -550,7 +448,6 @@ namespace WzUXRibbon.Converters
 
                 if (presentationSource?.CompositionTarget != null)
                 {
-                    // dpi.M11 = dpiX, dpi.M22 = dpiY
                     return new DpiScale(presentationSource.CompositionTarget.TransformToDevice.M11, presentationSource.CompositionTarget.TransformToDevice.M22);
                 }
             }

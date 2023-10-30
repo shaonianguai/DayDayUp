@@ -8,9 +8,6 @@ namespace WzUXRibbon.Converters
 
     public class SpinnerTextToValueConverter : IValueConverter
     {
-        /// <summary>
-        /// Gets a default instance of <see cref="SpinnerTextToValueConverter"/>.
-        /// </summary>
         public static readonly SpinnerTextToValueConverter DefaultInstance = new SpinnerTextToValueConverter();
 
         
@@ -29,13 +26,8 @@ namespace WzUXRibbon.Converters
             return this.DoubleToText((double)value, (string)parameter, culture);
         }
 
-        /// <summary>
-        /// Converts the given <paramref name="text"/> to a <see cref="double"/>.
-        /// </summary>
-        /// <returns>The <see cref="double"/> value converted from <paramref name="text"/> or <paramref name="previousValue"/> if the conversion fails.</returns>
         public virtual double TextToDouble(string text, string format, double previousValue, CultureInfo culture)
         {
-            // Remove all except digits, signs and commas
             var stringBuilder = new StringBuilder();
 
             foreach (var symbol in text)
@@ -59,10 +51,6 @@ namespace WzUXRibbon.Converters
             return doubleValue;
         }
 
-        /// <summary>
-        /// Converts <paramref name="value"/> to a formatted text using <paramref name="format"/>.
-        /// </summary>
-        /// <returns><paramref name="value"/> converted to a <see cref="string"/>.</returns>
         public virtual string DoubleToText(double value, string format, CultureInfo culture)
         {
             return value.ToString(format, culture);
