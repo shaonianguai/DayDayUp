@@ -5,31 +5,17 @@ using System.Linq;
 
 namespace WzUXRibbon.Collections
 {
-
     public class ItemCollectionWithLogicalTreeSupport<TItem> : ObservableCollection<TItem>
     {
-        /// <summary>
-        /// Creates a new instance.
-        /// </summary>
-        /// <param name="parent">The parent which supports logical children.</param>
         public ItemCollectionWithLogicalTreeSupport(ILogicalChildSupport parent)
         {
             this.Parent = parent ?? throw new ArgumentNullException(nameof(parent));
         }
 
-        /// <summary>
-        /// Gets whether this collections parent has logical ownership of the items.
-        /// </summary>
         public bool IsOwningItems { get; private set; } = true;
 
-        /// <summary>
-        /// The parent object which support logical children.
-        /// </summary>
         public ILogicalChildSupport Parent { get; }
 
-        /// <summary>
-        /// Adds all items to the logical tree of <see cref="Parent"/>.
-        /// </summary>
         public void AquireLogicalOwnership()
         {
             if (this.IsOwningItems)
@@ -45,9 +31,6 @@ namespace WzUXRibbon.Collections
             }
         }
 
-        /// <summary>
-        /// Removes all items from the logical tree of <see cref="Parent"/>.
-        /// </summary>
         public void ReleaseLogicalOwnership()
         {
             if (this.IsOwningItems == false)
@@ -63,9 +46,6 @@ namespace WzUXRibbon.Collections
             this.IsOwningItems = false;
         }
 
-        /// <summary>
-        /// Gets all items where the logical parent is <see cref="Parent"/>.
-        /// </summary>
         public IEnumerable<TItem> GetLogicalChildren()
         {
             if (this.IsOwningItems == false)
@@ -76,7 +56,6 @@ namespace WzUXRibbon.Collections
             return this.Items;
         }
 
-        /// <inheritdoc />
         protected override void InsertItem(int index, TItem item)
         {
             base.InsertItem(index, item);
@@ -84,7 +63,6 @@ namespace WzUXRibbon.Collections
             this.AddLogicalChild(item);
         }
 
-        /// <inheritdoc />
         protected override void RemoveItem(int index)
         {
             this.RemoveLogicalChild(this[index]);
@@ -92,7 +70,6 @@ namespace WzUXRibbon.Collections
             base.RemoveItem(index);
         }
 
-        /// <inheritdoc />
         protected override void SetItem(int index, TItem item)
         {
             var oldItem = this[index];
@@ -110,7 +87,6 @@ namespace WzUXRibbon.Collections
             }
         }
 
-        /// <inheritdoc />
         protected override void ClearItems()
         {
             foreach (var item in this.Items)

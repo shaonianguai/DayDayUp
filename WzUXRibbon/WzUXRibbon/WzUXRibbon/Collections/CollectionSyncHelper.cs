@@ -7,9 +7,6 @@ namespace WzUXRibbon.Collections
 {
     public class CollectionSyncHelper<TItem>
     {
-        /// <summary>
-        /// Creates a new instance with <paramref name="source"/> as <see cref="Source"/> and <paramref name="target"/> as <see cref="Target"/>.
-        /// </summary>
         public CollectionSyncHelper(ObservableCollection<TItem> source, IList target)
         {
             this.Source = source ?? throw new ArgumentNullException(nameof(source));
@@ -20,19 +17,10 @@ namespace WzUXRibbon.Collections
             this.Source.CollectionChanged += this.SourceOnCollectionChanged;
         }
 
-        /// <summary>
-        /// The source collection.
-        /// </summary>
         public ObservableCollection<TItem> Source { get; }
 
-        /// <summary>
-        /// The target collection.
-        /// </summary>
         public IList Target { get; }
 
-        /// <summary>
-        /// Clears <see cref="Target"/> and then copies all items from <see cref="Source"/> to <see cref="Target"/>.
-        /// </summary>
         private void SyncTarget()
         {
             this.Target.Clear();
