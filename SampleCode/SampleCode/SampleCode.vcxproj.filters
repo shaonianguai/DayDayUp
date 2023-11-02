@@ -39,6 +39,9 @@
     </ClCompile>
     <ClCompile Include="TestMySharedPtr.cpp" />
     <ClCompile Include="TestSmartPtr.cpp" />
+    <ClCompile Include="试题.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Headers">
