@@ -59,3 +59,16 @@ T* singleton<T>::m_instance = NULL;
 //        std::cout << "constructor called!" << std::endl;
 //    }
 //};
+
+//class Singleton {
+//public:
+//    static Singleton& getInstance() {
+//        static Singleton instance;
+//        return instance;
+//    }
+//private:
+//    Singleton() = default;
+//    ~Singleton() = default;
+//    Singleton(const Singleton&) = delete;
+//    Singleton& operator=(const Singleton&) = delete;
+//};
