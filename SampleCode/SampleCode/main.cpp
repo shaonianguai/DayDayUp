@@ -8,6 +8,7 @@
 #include "CSmartPtr.h"
 #include "Share_PtrAndUnique_Ptr.h"
 #include "SpinLock.h"
+#include "ThreadSafeQueue.h"
 
 struct S
 {

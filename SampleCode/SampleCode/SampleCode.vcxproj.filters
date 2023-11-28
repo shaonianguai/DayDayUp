@@ -28,6 +28,9 @@
     <ClInclude Include="SpinLock.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="ThreadSafeQueue.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
